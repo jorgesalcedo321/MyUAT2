@@ -3,7 +3,7 @@
     <apiVersion>51.0</apiVersion>
     <packageVersions>
         <majorNumber>1</majorNumber>
-        <minorNumber>27</minorNumber>
+        <minorNumber>30</minorNumber>
         <namespace>ampi</namespace>
     </packageVersions>
     <status>Active</status>

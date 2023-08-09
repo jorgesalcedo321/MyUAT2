@@ -187,6 +187,10 @@ public class FinancialTriggerHandler {
     }
 
     public void beforeUpdateRestrictionDeletion(List<ampi__Financial__c> oldFinancials, List<ampi__Financial__c> newFinancials) {
+        Boolean hasCustomPermission = FeatureManagement.checkPermission('Manage_Restrictions');
+        if (hasCustomPermission)
+            return;
+        
         for(ampi__Financial__c acc : newFinancials){
             if (acc.ampi__Category__c == '3 CMG CI') {
                 for(ampi__Financial__c accold : oldFinancials) {

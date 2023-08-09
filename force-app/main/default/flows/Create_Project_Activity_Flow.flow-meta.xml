@@ -4,7 +4,7 @@
     <assignments>
         <name>assign_variable</name>
         <label>assign_variable</label>
-        <locationX>940</locationX>
+        <locationX>1024</locationX>
         <locationY>50</locationY>
         <assignmentItems>
             <assignToReference>overarching_end_result</assignToReference>
@@ -27,7 +27,7 @@
     <assignments>
         <name>Count_Implementation_Plans</name>
         <label>Count Implementation Plans</label>
-        <locationX>477</locationX>
+        <locationX>561</locationX>
         <locationY>763</locationY>
         <assignmentItems>
             <assignToReference>var_Implementation_Plan_Count</assignToReference>
@@ -41,9 +41,41 @@
         </connector>
     </assignments>
     <assignments>
+        <name>Set_Error_For_Activities</name>
+        <label>Set Error For Activities</label>
+        <locationX>650</locationX>
+        <locationY>451</locationY>
+        <assignmentItems>
+            <assignToReference>error_message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>&quot;Activity type is mandatory on Standard, Grant and Humanitarian projects. Please select the activity type to continue generating the activity.&quot;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Error_Message_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Error_for_Result_Base</name>
+        <label>Set Error for Result Base</label>
+        <locationX>658</locationX>
+        <locationY>625</locationY>
+        <assignmentItems>
+            <assignToReference>error_message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Activities for type &quot;ResultsBased&quot; needs a Parent Activity or a Result Statement at least</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Error_Message_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Set_Implementation_Plan_ID</name>
         <label>Set Implementation Plan ID</label>
-        <locationX>1016</locationX>
+        <locationX>1100</locationX>
         <locationY>1047</locationY>
         <assignmentItems>
             <assignToReference>var_Implementation_Plan_ID</assignToReference>
@@ -59,7 +91,7 @@
     <assignments>
         <name>Set_Order_Id_from_activities_with_no_Parent_Activity_and_PRS</name>
         <label>Set Order Id from activities with no Parent Activity and PRS</label>
-        <locationX>896</locationX>
+        <locationX>980</locationX>
         <locationY>467</locationY>
         <assignmentItems>
             <assignToReference>new_order_Id</assignToReference>
@@ -75,7 +107,7 @@
     <assignments>
         <name>Set_Order_Id_From_Activity</name>
         <label>Set Order Id From Activity</label>
-        <locationX>1194</locationX>
+        <locationX>1278</locationX>
         <locationY>466</locationY>
         <assignmentItems>
             <assignToReference>new_order_Id</assignToReference>
@@ -91,7 +123,7 @@
     <assignments>
         <name>Set_Order_Id_From_Project_Result_Statement</name>
         <label>Set Order Id From Project Result Statement</label>
-        <locationX>1045</locationX>
+        <locationX>1129</locationX>
         <locationY>472</locationY>
         <assignmentItems>
             <assignToReference>new_order_Id</assignToReference>
@@ -196,8 +228,8 @@
         <description>Validation should happen when user tries to save activity on standard grant and humanitarian projects without activity type.</description>
         <name>Activity_Type_is_mandatory</name>
         <label>Activity Type is mandatory?</label>
-        <locationX>756</locationX>
-        <locationY>483</locationY>
+        <locationX>837</locationX>
+        <locationY>450</locationY>
         <defaultConnector>
             <targetReference>what_is_selected</targetReference>
         </defaultConnector>
@@ -241,15 +273,82 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Missing_Activity_Type</targetReference>
+                <targetReference>Set_Error_For_Activities</targetReference>
             </connector>
             <label>Yes</label>
         </rules>
     </decisions>
     <decisions>
+        <name>Check_If</name>
+        <label>Check If ResultBase Type Is Selected Correctly</label>
+        <locationX>849</locationX>
+        <locationY>626</locationY>
+        <defaultConnector>
+            <targetReference>Activity_Type_is_mandatory</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Yes</defaultConnectorLabel>
+        <rules>
+            <name>No</name>
+            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</conditionLogic>
+            <conditions>
+                <leftValueReference>Activity_Type_New</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>choice_Results_Based</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Parent_Activity_New_RB</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>choice_None</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Result_Statement_New</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>choice_None</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Parent_Activity_New_RB</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Result_Statement_New</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Parent_Activity_New_RB</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Result_Statement_New</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Error_for_Result_Base</targetReference>
+            </connector>
+            <label>No</label>
+        </rules>
+    </decisions>
+    <decisions>
         <name>Existing_Implementation_Plans</name>
         <label>Existing Implementation Plans?</label>
-        <locationX>469</locationX>
+        <locationX>553</locationX>
         <locationY>910</locationY>
         <defaultConnector>
             <targetReference>No_Implementation_Plans</targetReference>
@@ -289,7 +388,7 @@
     <decisions>
         <name>what_is_selected</name>
         <label>what is selected</label>
-        <locationX>628</locationX>
+        <locationX>712</locationX>
         <locationY>170</locationY>
         <defaultConnector>
             <targetReference>Get_None_Related_Activities_for_Next_Id</targetReference>
@@ -578,7 +677,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <loops>
         <name>Find_Single_Implementation_Plan</name>
         <label>Find Single Implementation Plan</label>
-        <locationX>784</locationX>
+        <locationX>868</locationX>
         <locationY>1047</locationY>
         <collectionReference>Get_Implementation_Plans</collectionReference>
         <iterationOrder>Asc</iterationOrder>
@@ -611,7 +710,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <recordCreates>
         <name>Create_Activity_record</name>
         <label>Create Activity</label>
-        <locationX>1196</locationX>
+        <locationX>1280</locationX>
         <locationY>810</locationY>
         <connector>
             <targetReference>Trigger_Page_Refresh</targetReference>
@@ -715,7 +814,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <recordCreates>
         <name>Create_Implementation_Plan</name>
         <label>Create Implementation Plan</label>
-        <locationX>238</locationX>
+        <locationX>322</locationX>
         <locationY>860</locationY>
         <connector>
             <targetReference>Get_Implementation_Plans</targetReference>
@@ -745,7 +844,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
         <description>Publish a Platform Event to get the Refresh Banner/Icon to display to the User after they have created an Activity.</description>
         <name>Trigger_Page_Refresh</name>
         <label>Trigger Page Refresh</label>
-        <locationX>1346</locationX>
+        <locationX>1430</locationX>
         <locationY>644</locationY>
         <connector>
             <targetReference>Choose_Parent_Or_Project_Result_Statement</targetReference>
@@ -780,7 +879,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <recordLookups>
         <name>Get_Activity_For_Next_Order_ID</name>
         <label>Get Activity For Next Order ID</label>
-        <locationX>1169</locationX>
+        <locationX>1253</locationX>
         <locationY>156</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -810,8 +909,8 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <recordLookups>
         <name>Get_Implementation_Plans</name>
         <label>Get Implementation Plans</label>
-        <locationX>478</locationX>
-        <locationY>617</locationY>
+        <locationX>358</locationX>
+        <locationY>683</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Count_Implementation_Plans</targetReference>
@@ -831,7 +930,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <recordLookups>
         <name>Get_None_Related_Activities_for_Next_Id</name>
         <label>Get None Related Activities for Next Id</label>
-        <locationX>919</locationX>
+        <locationX>1003</locationX>
         <locationY>339</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -868,7 +967,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <recordLookups>
         <name>Get_Project_record</name>
         <label>Get Project record</label>
-        <locationX>179</locationX>
+        <locationX>263</locationX>
         <locationY>193</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -889,7 +988,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <recordLookups>
         <name>Get_Project_Result_Statement_for_Next_Id</name>
         <label>Get Project Result Statement for Next Id</label>
-        <locationX>1045</locationX>
+        <locationX>1129</locationX>
         <locationY>238</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -919,7 +1018,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <recordLookups>
         <name>Get_PTAs</name>
         <label>GetPTAs</label>
-        <locationX>274</locationX>
+        <locationX>358</locationX>
         <locationY>485</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -944,8 +1043,8 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <recordLookups>
         <name>Get_Record_Type_From_Project</name>
         <label>Get Record Type From Project</label>
-        <locationX>469</locationX>
-        <locationY>201</locationY>
+        <locationX>50</locationX>
+        <locationY>191</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Check_Access_Permissions</targetReference>
@@ -966,13 +1065,13 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <screens>
         <name>Choose_Parent_Or_Project_Result_Statement</name>
         <label>Choose Parent Or Project Result Statement</label>
-        <locationX>813</locationX>
-        <locationY>684</locationY>
+        <locationX>868</locationX>
+        <locationY>801</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>Activity_Type_is_mandatory</targetReference>
+            <targetReference>Check_If</targetReference>
         </connector>
         <fields>
             <name>Activity_Type_Task_Milestone_New</name>
@@ -1073,7 +1172,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <screens>
         <name>Create_Activity</name>
         <label>Create Activity</label>
-        <locationX>1017</locationX>
+        <locationX>1101</locationX>
         <locationY>827</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -1390,10 +1489,26 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
         <showHeader>false</showHeader>
     </screens>
     <screens>
+        <name>Error_Message_Screen</name>
+        <label>Error Message Screen</label>
+        <locationX>509</locationX>
+        <locationY>577</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>false</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Error_activity_type</name>
+            <fieldText>&lt;p&gt;&lt;em&gt;{!error_message}&lt;/em&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
         <description>Shows Error on Process</description>
         <name>Error_Screen</name>
         <label>Error Screen</label>
-        <locationX>1388</locationX>
+        <locationX>1472</locationX>
         <locationY>813</locationY>
         <allowBack>true</allowBack>
         <allowFinish>false</allowFinish>
@@ -1412,25 +1527,9 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
         <showHeader>false</showHeader>
     </screens>
     <screens>
-        <name>Missing_Activity_Type</name>
-        <label>Missing Activity Type</label>
-        <locationX>614</locationX>
-        <locationY>502</locationY>
-        <allowBack>true</allowBack>
-        <allowFinish>false</allowFinish>
-        <allowPause>false</allowPause>
-        <fields>
-            <name>Error_activity_type</name>
-            <fieldText>&lt;p&gt;&lt;em style=&quot;background-color: rgb(255, 255, 255); font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; color: rgb(23, 43, 77);&quot;&gt;Activity type is mandatory on Standard, Grant and Humanitarian projects. Please select the activity type to continue generating the activity.&lt;/em&gt;&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>false</showHeader>
-    </screens>
-    <screens>
         <name>No_Implementation_Plans</name>
         <label>No Implementation Plans</label>
-        <locationX>362</locationX>
+        <locationX>446</locationX>
         <locationY>1191</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1460,7 +1559,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <screens>
         <name>Output</name>
         <label>Output</label>
-        <locationX>1020</locationX>
+        <locationX>1104</locationX>
         <locationY>944</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -1481,8 +1580,8 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <screens>
         <name>Select_Implementation_Plan</name>
         <label>Select Implementation Plan</label>
-        <locationX>627</locationX>
-        <locationY>685</locationY>
+        <locationX>715</locationX>
+        <locationY>800</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1501,7 +1600,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
         <showHeader>false</showHeader>
     </screens>
     <start>
-        <locationX>50</locationX>
+        <locationX>134</locationX>
         <locationY>336</locationY>
         <connector>
             <targetReference>Get_Project_record</targetReference>
@@ -1511,8 +1610,8 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <subflows>
         <name>Check_Access_Permissions</name>
         <label>Check Access Permissions</label>
-        <locationX>475</locationX>
-        <locationY>477</locationY>
+        <locationX>50</locationX>
+        <locationY>485</locationY>
         <connector>
             <targetReference>Get_PTAs</targetReference>
         </connector>
@@ -1534,6 +1633,13 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
         <value>
             <stringValue>TEXT({!Parent_Activity_New_Overarching})</stringValue>
         </value>
+    </variables>
+    <variables>
+        <name>error_message</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
     </variables>
     <variables>
         <name>new_order_Id</name>

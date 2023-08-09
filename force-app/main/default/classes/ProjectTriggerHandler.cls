@@ -55,7 +55,7 @@ public class ProjectTriggerHandler {
             }
             
             System.debug('####afterUpdateInFormulationCreateMonitoringPeriodsForProjects ' + Limits.getQueries() + ' max queries: ' + Limits.getLimitQueries());
-            afterUpdateInFormulationCreateMonitoringPeriodsForProjects(currentProject);
+            afterUpdateInFormulationCreateMonitoringPeriodsForProjects(currentProject, newProject);
             System.debug('####beforeDeleteUpdateRestrictBaseProjectsDeletion  ' + Limits.getQueries() + ' max queries: ' + Limits.getLimitQueries());
             beforeDeleteUpdateRestrictBaseProjectsDeletion(currentProject);
             System.debug('....recordtypeName:' + recordtypeName);
@@ -505,8 +505,8 @@ public class ProjectTriggerHandler {
         }  
     }
     
-    private void afterUpdateInFormulationCreateMonitoringPeriodsForProjects(ampi__project__c acc) {
-    	if (acc.Phase__c == 'Formulation') {
+    private void afterUpdateInFormulationCreateMonitoringPeriodsForProjects(ampi__project__c acc, ampi__project__c  newProject) {
+    	if (acc.Phase__c == 'Formulation' && acc.Phase__c == newProject.Phase__c) {
              ExtraCreateObjects.createMonitoringPeriodByProjectAndMonth(acc.Id);
         }
     }

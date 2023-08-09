@@ -1474,6 +1474,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Monitoring_Period_Config__mdt.Number_MP_Generated_Projects__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>NA_Risk_Matrix__mdt.Category__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -8619,6 +8624,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Macro-Macro Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Monitoring_Period_Config__mdt-Monitoring Period Config Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>NA_Risk_Matrix__mdt-NA Risk Matrix Layout</layout>

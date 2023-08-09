@@ -18,27 +18,46 @@ public without sharing class ExtraCreateObjects {
     
     public static void createMonitoringPeriodByProjectAndMonth(Id projectId) {
         String reportType = 'Monthly';
-        Date initialDate = Date.newinstance(Date.today().year(), 1, 1);                    
-        Integer reportingPeriodCounts = [SELECT Count() FROM ampi__Reporting_Period__c 
+        Integer count = 0, reportingPeriodCounts = 0;
+        System.debug('####createMonitoringPeriodByProjectAndMonth 1:' + Limits.getQueries() + ' max queries: ' + Limits.getLimitQueries());
+            
+        List<ampi__Reporting_Period__c> reportingPeriods = [SELECT ampi__Reporting_Period_Start_Date__c FROM ampi__Reporting_Period__c 
                                                             WHERE ampi__Project__c =: projectId AND 
-                                                            	  ampi__Reporting_Period_Start_Date__c =: initialDate AND 
-                                                                  ampi__Report_Type__c =: reportType];
-
-            system.debug('### reportingPeriodCounts:' + reportingPeriodCounts); 
-            String reportingPeriodId;  
+                                                            	  CALENDAR_YEAR(ampi__Reporting_Period_Start_Date__c) =: Date.today().year() AND 
+																  ampi__Report_Type__c = 'Monthly' ORDER BY ampi__Reporting_Period_Start_Date__c  ASC];
                     
-            if (reportingPeriodCounts == 0) {
+        System.debug('####createMonitoringPeriodByProjectAndMonth 2:' + Limits.getQueries() + ' max queries: ' + Limits.getLimitQueries());
+        if (reportingPeriods.size() < 12) {
+            	List<Monitoring_Period_Config__mdt> mpconf = Monitoring_Period_Config__mdt.getAll().values();
+                Integer monthsToInsert = 0;
+            
+            	if (mpconf.size() > 0) {
+                    monthsToInsert = Integer.ValueOf(mpconf[0].Number_MP_Generated_Projects__c);
+                }
+            
                 //List<ampi__Reporting_Period__c> rps = new List<ampi__Reporting_Period__c>();
                 for(Integer i = 1; i <= 12; i++) {
                     try {
-                        initialDate = Date.newinstance(Date.today().year(), i, 1);                    
-                        ampi__Reporting_Period__c reportingPeriod = new ampi__Reporting_Period__c();
-                        reportingPeriod.ampi__Label__c = initialDate.year() + '-' + (initialDate.month() + '').leftPad(2,'0');
-                        reportingPeriod.ampi__Report_Type__c = reportType;
-                        reportingPeriod.ampi__Reporting_Period_Start_Date__c = initialDate;
-                        reportingPeriod.ampi__Reporting_Period_End_Date__c = initialDate.addMonths(1).addDays(-1);//reportingPeriod.ampi__Reporting_Period_Start_Date__c.addYears(durationInYears);
-                        reportingPeriod.ampi__Project__c = projectId;
-                        INSERT reportingPeriod;
+                        reportingPeriodCounts = 0;
+                        Date initialDate = Date.newinstance(Date.today().year(), i, 1); 
+                        Date endDate = initialDate.addMonths(1).addDays(-1);
+                        for (ampi__Reporting_Period__c rp : reportingPeriods) {
+                            if (initialDate == rp.ampi__Reporting_Period_Start_Date__c) {
+                            	reportingPeriodCounts++;
+                            }
+                        }
+                        
+                        if (reportingPeriodCounts == 0 && count < monthsToInsert) {
+                            ampi__Reporting_Period__c reportingPeriod = new ampi__Reporting_Period__c();
+                            reportingPeriod.ampi__Label__c = initialDate.year() + '-' + (initialDate.month() + '').leftPad(2,'0');
+                            reportingPeriod.ampi__Report_Type__c = reportType;
+                            reportingPeriod.ampi__Reporting_Period_Start_Date__c = initialDate;
+                            reportingPeriod.ampi__Reporting_Period_End_Date__c = endDate;//reportingPeriod.ampi__Reporting_Period_Start_Date__c.addYears(durationInYears);
+                            reportingPeriod.ampi__Project__c = projectId;
+                            INSERT reportingPeriod;
+                            System.debug('####createMonitoringPeriodByProjectAndMonth 3:' + Limits.getQueries() + ' max queries: ' + Limits.getLimitQueries());
+                            count++;
+                        }
                     } catch(Exception ex) {
                         System.debug('#### MP ex: Month ' + i + ':' + ex.getMessage());
                     }
