@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Is_Scored__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to determine whether a user can score a Question record while reviewing its parent Submission. If marked as TRUE, the Question will have an input field for a score on the SubmissionResponseScoring component.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this checkbox to enable or prevent reviewers from assigning a score to responses to this question.</inlineHelpText>
+    <label>Is Scored</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

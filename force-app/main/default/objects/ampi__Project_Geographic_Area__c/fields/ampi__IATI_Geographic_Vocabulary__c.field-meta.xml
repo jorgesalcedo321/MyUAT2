@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Geographic_Vocabulary__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to select which vocabulary is used when filling in the IATI Code field.</description>
+    <externalId>false</externalId>
+    <label>IATI Geographic Vocabulary</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A1</fullName>
+                <default>false</default>
+                <label>Global Admininistrative Unit Layers</label>
+            </value>
+            <value>
+                <fullName>A2</fullName>
+                <default>false</default>
+                <label>UN Second Administrative Level Boundary Project</label>
+            </value>
+            <value>
+                <fullName>A3</fullName>
+                <default>false</default>
+                <label>Global Administrative Areas</label>
+            </value>
+            <value>
+                <fullName>A4</fullName>
+                <default>false</default>
+                <label>ISO Country</label>
+            </value>
+            <value>
+                <fullName>G1</fullName>
+                <default>false</default>
+                <label>Geonames</label>
+            </value>
+            <value>
+                <fullName>G2</fullName>
+                <default>false</default>
+                <label>OpenStreetMap</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

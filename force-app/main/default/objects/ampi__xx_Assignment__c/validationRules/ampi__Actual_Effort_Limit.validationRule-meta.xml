@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Actual_Effort_Limit</fullName>
+    <active>true</active>
+    <description>This Validation Rule verifies that the value saved in ampi__xx_Actual_Effort__c does not exceed 100%</description>
+    <errorConditionFormula>ampi__xx_Actual_Effort__c  &gt; 1</errorConditionFormula>
+    <errorDisplayField>ampi__xx_Actual_Effort__c</errorDisplayField>
+    <errorMessage>The Actual Effort cannot exceed 100%</errorMessage>
+</ValidationRule>

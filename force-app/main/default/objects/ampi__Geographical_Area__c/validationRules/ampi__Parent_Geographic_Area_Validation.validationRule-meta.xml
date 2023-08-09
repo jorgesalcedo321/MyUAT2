@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Parent_Geographic_Area_Validation</fullName>
+    <active>false</active>
+    <description>This rule forces a geographic hierarchy.</description>
+    <errorConditionFormula>OR(
+   AND(ISPICKVAL(ampi__Type__c, &quot;Neighbourhood/Village/City&quot;), OR (ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;School&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;Neighbourhood/Village/City&quot;))),
+      AND(ISPICKVAL(ampi__Type__c, &quot;District&quot;), OR (ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;School&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;Neighbourhood/Village/City&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;District&quot;))),
+          AND(ISPICKVAL(ampi__Type__c, &quot;Province&quot;), OR (ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;School&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;Neighbourhood/Village/City&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;District&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;Province&quot;))),
+                AND(ISPICKVAL(ampi__Type__c, &quot;Country&quot;), OR (ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;School&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;Neighbourhood/Village/City&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;District&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;Province&quot;), ISPICKVAL(ampi__Parent_Geographical_Area__r.ampi__Type__c, &quot;Country&quot;)))
+
+)</errorConditionFormula>
+    <errorMessage>The parent geographic area you have selected is a sub-unit of the geographic area you are creating.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Hierarchy__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field to generate a Project&apos;s hierarchical level for IATI reporting. The hierarchical level within the reporting organisation’s subdivision of its units of aid. (eg activity = 1; sub-activity = 2; sub-sub-activity = 3). If hierarchy is not reported then 1 is assumed. If multiple levels are reported then, to avoid double counting, financial transactions should only be reported at the lowest hierarchical level.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISBLANK(ampi__Parent_Project__c),
+    1,
+    IF(
+        ISBLANK(ampi__Parent_Project__r.ampi__Parent_Project__c),
+        2,
+        IF(
+            ISBLANK(ampi__Parent_Project__r.ampi__Parent_Project__r.ampi__Parent_Project__c),
+            3,
+            IF(
+                ISBLANK(ampi__Parent_Project__r.ampi__Parent_Project__r.ampi__Parent_Project__r.ampi__Parent_Project__c),
+                4,
+				NULL
+			)
+		)
+	)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IATI Hierarchy</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

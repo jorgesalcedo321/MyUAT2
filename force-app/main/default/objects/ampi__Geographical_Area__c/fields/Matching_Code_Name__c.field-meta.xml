@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Matching_Code_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Matching Code &amp; Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Included in international sponsorship programme</fullName>
+                <default>false</default>
+                <label>Included in international sponsorship programme</label>
+            </value>
+            <value>
+                <fullName>0 - Not included in sponsorship programme</fullName>
+                <default>false</default>
+                <label>0 - Not included in sponsorship programme</label>
+            </value>
+            <value>
+                <fullName>10 - Is in international sponsorship programme</fullName>
+                <default>false</default>
+                <label>10 - Is in international sponsorship programme</label>
+            </value>
+            <value>
+                <fullName>11 - Is in international sponsorship programme – only existing child sponsorships</fullName>
+                <default>false</default>
+                <label>11 - Is in international sponsorship programme – only existing child sponsorships</label>
+            </value>
+            <value>
+                <fullName>12 - Is not in international sponsorship programme</fullName>
+                <default>false</default>
+                <label>12 - Is not in international sponsorship programme</label>
+            </value>
+            <value>
+                <fullName>20 - Sponsorships on request only</fullName>
+                <default>false</default>
+                <label>20 - Sponsorships on request only</label>
+            </value>
+            <value>
+                <fullName>30 - No international sponsorships</fullName>
+                <default>false</default>
+                <label>30 - No international sponsorships</label>
+            </value>
+            <value>
+                <fullName>40 - Reserved for norway</fullName>
+                <default>false</default>
+                <label>40 - Reserved for norway</label>
+            </value>
+            <value>
+                <fullName>41 - Reserved for norway/austria</fullName>
+                <default>false</default>
+                <label>41 - Reserved for norway/austria</label>
+            </value>
+            <value>
+                <fullName>42 - Reserved for e.v.</fullName>
+                <default>false</default>
+                <label>42 - Reserved for e.v.</label>
+            </value>
+            <value>
+                <fullName>43 - Reserved for sweden</fullName>
+                <default>false</default>
+                <label>43 - Reserved for sweden</label>
+            </value>
+            <value>
+                <fullName>44 - Reserved for luxemburg</fullName>
+                <default>false</default>
+                <label>44 - Reserved for luxemburg</label>
+            </value>
+            <value>
+                <fullName>45 - Reserved for hgfd</fullName>
+                <default>false</default>
+                <label>45 - Reserved for hgfd</label>
+            </value>
+            <value>
+                <fullName>46 - Reserved for switzerland</fullName>
+                <default>false</default>
+                <label>46 - Reserved for switzerland</label>
+            </value>
+            <value>
+                <fullName>47 - Reserved for norway/switzerland</fullName>
+                <default>false</default>
+                <label>47 - Reserved for norway/switzerland</label>
+            </value>
+            <value>
+                <fullName>48 - Reserved for norway/sweden</fullName>
+                <default>false</default>
+                <label>48 - Reserved for norway/sweden</label>
+            </value>
+            <value>
+                <fullName>49 - Reserved for norway/denmark</fullName>
+                <default>false</default>
+                <label>49 - Reserved for norway/denmark</label>
+            </value>
+            <value>
+                <fullName>50 - Temporarily closed down</fullName>
+                <default>false</default>
+                <label>50 - Temporarily closed down</label>
+            </value>
+            <value>
+                <fullName>51 - Reserved for denmark</fullName>
+                <default>false</default>
+                <label>51 - Reserved for denmark</label>
+            </value>
+            <value>
+                <fullName>52 - Reserved for netherlands</fullName>
+                <default>false</default>
+                <label>52 - Reserved for netherlands</label>
+            </value>
+            <value>
+                <fullName>53 - Reserved for fifa</fullName>
+                <default>false</default>
+                <label>53 - Reserved for fifa</label>
+            </value>
+            <value>
+                <fullName>54 - Reserved for switzerland/denmark</fullName>
+                <default>false</default>
+                <label>54 - Reserved for switzerland/denmark</label>
+            </value>
+            <value>
+                <fullName>55 - Reserved for belgium</fullName>
+                <default>false</default>
+                <label>55 - Reserved for belgium</label>
+            </value>
+            <value>
+                <fullName>56 - Reserved for canada</fullName>
+                <default>false</default>
+                <label>56 - Reserved for canada</label>
+            </value>
+            <value>
+                <fullName>60 - No new sponsorships, status unclear</fullName>
+                <default>false</default>
+                <label>60 - No new sponsorships, status unclear</label>
+            </value>
+            <value>
+                <fullName>70 - Segregated/closed down</fullName>
+                <default>false</default>
+                <label>70 - Segregated/closed down</label>
+            </value>
+            <value>
+                <fullName>80 - Waiting for release</fullName>
+                <default>false</default>
+                <label>80 - Waiting for release</label>
+            </value>
+            <value>
+                <fullName>90 - Special case tibet</fullName>
+                <default>false</default>
+                <label>90 - Special case tibet</label>
+            </value>
+            <value>
+                <fullName>99 - Part of sponsored sos programme</fullName>
+                <default>false</default>
+                <label>99 - Part of sponsored sos programme</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

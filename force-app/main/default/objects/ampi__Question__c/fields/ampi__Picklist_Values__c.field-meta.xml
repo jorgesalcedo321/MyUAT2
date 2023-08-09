@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Picklist_Values__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text area field to store the custom comma-separated picklist values for a Question where the Response Type is Picklist or Multiselect Picklist. The values entered here are dynamically displayed as a picklist in the Lightning component on Submission response records.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set the response values for a picklist question by entering comma-separated values in this field.</inlineHelpText>
+    <label>Picklist Values</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

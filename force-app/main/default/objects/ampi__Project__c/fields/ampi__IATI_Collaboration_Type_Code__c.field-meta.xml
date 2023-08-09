@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Collaboration_Type_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that prints an associated code based on the value selected in the ampi__IATI_Collaboration_Type__c field</description>
+    <externalId>false</externalId>
+    <formula>CASE(ampi__IATI_Collaboration_Type__c,
+&quot;Bilateral&quot;,1,
+&quot;Multilateral (inflows)&quot;,2,
+&quot;Bilateral, core contributions to NGOs and other private bodies / PPPs&quot;,3,
+&quot;Multilateral outflows&quot;,4,
+&quot;Private sector outflows&quot;,6,
+&quot;Bilateral, ex-post reporting on NGOs’ activities funded through core contributions&quot;,7,
+&quot;Bilateral, triangular co-operation&quot;,8,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The code associated with the collaboration involved in the activity&apos;s disbursements, e.g. bilateral or multilateral.</inlineHelpText>
+    <label>IATI Collaboration Type Code</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

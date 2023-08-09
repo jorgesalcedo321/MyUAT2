@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Default_Targets_RP_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field specifies which Reporting Period should be opened when navigating to the SetTargets page of this Project__c. If no Id is specified, then the Reporting Period will default to the first Reporting Period on the list, ordered by ascending End Date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field specifies which Reporting Period should open on the Set Targets page, using its 18char Salesforce ID. If no ID is specified, then the Reporting Period list will default to the first reporting period on the list, ordered by End_Date__c.</inlineHelpText>
+    <label>Default Targets RP Id</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

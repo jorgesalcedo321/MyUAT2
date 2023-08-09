@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__All</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Unique_Name__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Order_ID__c</columns>
+    <columns>Order_Number__c</columns>
+    <columns>ampi__Description__c</columns>
+    <columns>ampi__Label__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ampi__Objective__c</field>
+        <operation>contains</operation>
+        <value>Proporcionar de camas a los niños</value>
+    </filters>
+    <label>All</label>
+</ListView>

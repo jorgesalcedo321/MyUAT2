@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_this_an_Umbrella_Project__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Fill yes, if this project is taking place across multiple countries or regions. Register sub-projects per country in a separate step. If your project takes place only in one country, choose no.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Tick the box, if this project is taking place across multiple countries or regions. Register sub-projects per country in a separate step. If your project takes place only in one country, leave the box empty.See Knowledge Base</inlineHelpText>
+    <label>Is this an Umbrella Project?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

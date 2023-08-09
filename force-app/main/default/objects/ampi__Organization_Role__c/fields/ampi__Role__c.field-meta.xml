@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Role__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist tracking the role that an organization played in an activity.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a role that an organization played in an activity.</inlineHelpText>
+    <label>Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Funding</fullName>
+                <default>false</default>
+                <label>Funding</label>
+            </value>
+            <value>
+                <fullName>Accountable</fullName>
+                <default>false</default>
+                <label>Accountable</label>
+            </value>
+            <value>
+                <fullName>Extending</fullName>
+                <default>false</default>
+                <label>Extending</label>
+            </value>
+            <value>
+                <fullName>Implementing</fullName>
+                <default>false</default>
+                <label>Implementing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

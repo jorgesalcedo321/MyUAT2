@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Validation_Compliance_Submission__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When checked, process builder will fire to create a new Amp Submission record which is copied from the SOS &quot;Validation Compliance Check&quot; template (ID stored in Custom Label Validation_Compliance_Check_Template_ID), which is then completed by PPC approver.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, a new Validation Compliance Check record is created for a PPC approver to complete, while the Project is locked for approval.</inlineHelpText>
+    <label>Create Validation Compliance Submission</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

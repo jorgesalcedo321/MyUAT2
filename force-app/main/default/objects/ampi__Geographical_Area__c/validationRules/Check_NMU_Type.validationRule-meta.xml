@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_NMU_Type</fullName>
+    <active>false</active>
+    <errorConditionFormula>TEXT(ampi__Type__c) == &quot;National Management Unit&quot; &amp;&amp; (TEXT(ampi__Parent_Geographical_Area__r.ampi__Type__c) &lt;&gt; &quot;Programme&quot; ||
+TEXT(ampi__Parent_Geographical_Area__r.Program_Type__c) &lt;&gt; &quot;National Office Programme&quot; ||
+NOT(
+TEXT(Program_Unit_Type__c) == &quot;NBAD-Advocacy-963&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;NB-National Branch Office-961&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;NBFR-National Branch O. FR-962&quot;
+))</errorConditionFormula>
+    <errorMessage>National Management Unit type must have a parent geographic area of type &quot;programme&quot; and programme type &quot;National Office Programme&quot; and programme unit type must be valid</errorMessage>
+</ValidationRule>

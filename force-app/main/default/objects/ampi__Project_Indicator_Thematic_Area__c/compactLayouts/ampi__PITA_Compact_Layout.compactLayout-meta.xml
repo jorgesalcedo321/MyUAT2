@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__PITA_Compact_Layout</fullName>
+    <fields>ampi__Project_Indicator__c</fields>
+    <fields>ampi__Thematic_Area__c</fields>
+    <label>PITA Compact Layout</label>
+</CompactLayout>

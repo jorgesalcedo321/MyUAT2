@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_Name__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <formula>IF(Project__c &lt;&gt; &apos;&apos;, Project__r.Project_Number_ID__c, IF(ampi__Implementation_Plan__r.ampi__Project__c &lt;&gt; &apos;&apos;, ampi__Implementation_Plan__r.ampi__Project__r.Project_Number_ID__c, &apos;NO_PROJECT&apos;)) + CASE(ampi__Type__c, &apos;Results-Based&apos;, &apos;_RA&apos;, &apos;Overarching&apos;, &apos;_OA&apos;, &apos;&apos;) + &apos;_&apos; + 
+IF(TEXT(ampi__Type__c) == &apos;Results-Based&apos;,  
+    IF (ISBLANK(ampi__Parent_Activity__c), 
+        (ampi__Project_Objective__r.Order_ID__c  + &apos;_&apos; + Order_ID__c + &apos; &apos;),
+        (ampi__Parent_Activity__r.Order_ID__c + &apos;_&apos; + Order_ID__c + &apos; &apos;)), &apos;&apos;) + 
+IF(TEXT(ampi__Type__c) == &apos;Overarching&apos;,  
+    IF (ampi__Parent_Activity__c &lt;&gt; &apos;&apos;, 
+        (ampi__Parent_Activity__r.Order_ID__c + &apos;_&apos; + Order_ID__c),
+							  Order_ID__c), &apos;&apos;)</formula>
+    <label>Unique Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Exclude_From_IATI__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to control whether this Reporting Period (and its related Results) is printed into the IATI Activity XML. If marked as TRUE, this Reporting Period (and its related Results) are not printed into the IATI Activity XML.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if this information should be excluded from IATI</inlineHelpText>
+    <label>Exclude from IATI</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

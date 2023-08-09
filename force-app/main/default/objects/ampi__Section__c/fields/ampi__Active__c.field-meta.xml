@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Active__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to control whether or not a Section is displayed in a Submission template. If this field is TRUE, it will be cloned when a new Submission is created from the parent template. If this field is FALSE, it will not be cloned when a new Submission is created.</description>
+    <externalId>false</externalId>
+    <label>Active</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

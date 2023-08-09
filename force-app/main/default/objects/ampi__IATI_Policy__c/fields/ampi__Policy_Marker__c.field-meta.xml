@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Policy_Marker__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to select the Policy Marker.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the Policy Marker</inlineHelpText>
+    <label>Policy Marker</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gender Equality</fullName>
+                <default>false</default>
+                <label>Gender Equality</label>
+            </value>
+            <value>
+                <fullName>Aid to Environment</fullName>
+                <default>false</default>
+                <label>Aid to Environment</label>
+            </value>
+            <value>
+                <fullName>Participatory Development/Good Governance</fullName>
+                <default>false</default>
+                <label>Participatory Development/Good Governance</label>
+            </value>
+            <value>
+                <fullName>Trade Development</fullName>
+                <default>false</default>
+                <label>Trade Development</label>
+            </value>
+            <value>
+                <fullName>Aid Targeting the Objectives of the Convention on Biological Diversity</fullName>
+                <default>false</default>
+                <label>Aid Targeting the Objectives of the Convention on Biological Diversity</label>
+            </value>
+            <value>
+                <fullName>Aid Targeting the Objectives of the Framework Convention on Climate Change - Mitigation</fullName>
+                <default>false</default>
+                <label>Aid Targeting the Objectives of the Framework Convention on Climate Change - Mitigation</label>
+            </value>
+            <value>
+                <fullName>Aid Targeting the Objectives of the Framework Convention on Climate Change - Adaptation</fullName>
+                <default>false</default>
+                <label>Aid Targeting the Objectives of the Framework Convention on Climate Change - Adaptation</label>
+            </value>
+            <value>
+                <fullName>Aid Targeting the Objectives of the Convention to Combat Desertification</fullName>
+                <default>false</default>
+                <label>Aid Targeting the Objectives of the Convention to Combat Desertification</label>
+            </value>
+            <value>
+                <fullName>Reproductive, Maternal, Newborn and Child Health (RMNCH)</fullName>
+                <default>false</default>
+                <label>Reproductive, Maternal, Newborn and Child Health (RMNCH)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ampi__Project__c = &apos;&apos;, &apos;&apos;, ampi__Project__r.Project_Number_ID__c +  CASE(ampi__Level__c, &apos;Outcome&apos;, &apos;_OC_&apos;  + Order_ID__c, &apos;Output&apos;, &apos;_OP_&apos;  + Order_ID__c,&apos;Impact&apos;, &apos;_IM_&apos;  + Order_ID__c, &apos;&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Unique Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

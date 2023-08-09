@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Transaction_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date field to track date of transaction for IATI Reporting. This value is printed into the transaction/transaction-date/@iso-date in the IATI Activity XML. This date cannot be in the future.</description>
+    <externalId>false</externalId>
+    <label>IATI Transaction Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

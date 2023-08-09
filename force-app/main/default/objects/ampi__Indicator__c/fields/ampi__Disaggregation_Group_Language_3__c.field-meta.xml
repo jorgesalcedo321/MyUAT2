@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Disaggregation_Group_Language_3__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Tertiary translated version of Disaggregation_Group__c. This value is printed in Disaggregation_Group_Translated__c when USER_LANGUAGE_CODE = 3.</description>
+    <externalId>false</externalId>
+    <label>Disaggregation Group Language 3</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

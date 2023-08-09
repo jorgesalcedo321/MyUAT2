@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Cumulative__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This checkbox is to indicate if this indicator should be cumulated across reporting periods (i.e. the Target/Result for the most recent Reporting Period includes the Target/Result from the previous reporting period).</description>
+    <externalId>false</externalId>
+    <label>Cumulative?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

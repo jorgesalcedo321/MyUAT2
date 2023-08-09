@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__PR_Compact_Layout</fullName>
+    <fields>ampi__Contact__c</fields>
+    <fields>ampi__Role__c</fields>
+    <fields>ampi__Type__c</fields>
+    <fields>ampi__Active__c</fields>
+    <label>PR_Compact_Layout</label>
+</CompactLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Providing_Project__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to the Project which is providing funds to another Project</description>
+    <externalId>false</externalId>
+    <label>IATI Providing Project</label>
+    <referenceTo>ampi__Project__c</referenceTo>
+    <relationshipLabel>Organization Roles (IATI Receiving Project)</relationshipLabel>
+    <relationshipName>IATI_Receiving_Projects</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

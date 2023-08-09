@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Parent_Project__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup field to refer to parent project to create a hierarchy of projects.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Only applicable for sub-projects that are part of a multi-country project. Select the respective umbrella project. See Knowledge Base on how to create multicountry projects.</inlineHelpText>
+    <label>Parent Project</label>
+    <referenceTo>ampi__Project__c</referenceTo>
+    <relationshipLabel>Projects</relationshipLabel>
+    <relationshipName>Projects</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

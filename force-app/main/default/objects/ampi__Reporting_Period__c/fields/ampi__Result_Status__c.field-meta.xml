@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Result_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field is to specify the status of results for this reporting period. If set to &quot;Submitted&quot;, then the AddResults page is locked from editing for this Reporting Period.</description>
+    <externalId>false</externalId>
+    <label>Result Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <label>Scheduled / In Progress</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

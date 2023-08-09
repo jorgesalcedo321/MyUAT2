@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to track the status and progress of an Activity. This field is unrestricted and can be modified by subscribers.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Changing the status of activities from &quot;new&quot; to either &quot;planning&quot;, &quot;in progress&quot;, &quot;delayed&quot; or &quot;completed&quot; will trigger a synchronization to D365 IF the activity belongs to either the following (budgeting) year or to current year.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ampi__xx_Activity_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Planning</fullName>
+                <default>false</default>
+                <label>Planning</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Cancelled/NA</fullName>
+                <default>false</default>
+                <label>Cancelled/NA</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Task</controllingFieldValue>
+            <valueName>Planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task</controllingFieldValue>
+            <valueName>In Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task</controllingFieldValue>
+            <controllingFieldValue>Milestone</controllingFieldValue>
+            <valueName>Complete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task</controllingFieldValue>
+            <valueName>New</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Task</controllingFieldValue>
+            <controllingFieldValue>Milestone</controllingFieldValue>
+            <valueName>Cancelled/NA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Milestone</controllingFieldValue>
+            <valueName>Open</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

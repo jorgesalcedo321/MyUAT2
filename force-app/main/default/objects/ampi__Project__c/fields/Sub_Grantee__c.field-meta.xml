@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Grantee__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Add a description of the sub-granting constellation (Who is the back-donor? Who is the sub-granting organisation? Who is the sub-grantee?). Check knowledge Base if you are not sure what is meant by a sub-grant.</inlineHelpText>
+    <label>Sub-Grant Description</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

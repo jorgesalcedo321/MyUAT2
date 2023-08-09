@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Areas_of_Intervention__c</fullName>
+    <externalId>false</externalId>
+    <label>SOS Humanitarian Strategy Focus</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Group Activities for Child Well-being</fullName>
+                <default>false</default>
+                <label>Group Activities for Child Well-being</label>
+            </value>
+            <value>
+                <fullName>Preserving Family Unity</fullName>
+                <default>false</default>
+                <label>Preserving Family Unity</label>
+            </value>
+            <value>
+                <fullName>Education in Emergencies</fullName>
+                <default>false</default>
+                <label>Education in Emergencies</label>
+            </value>
+            <value>
+                <fullName>Mental Health and Psychosocial Support</fullName>
+                <default>false</default>
+                <label>Mental Health and Psychosocial Support</label>
+            </value>
+            <value>
+                <fullName>Interim Alternative Care</fullName>
+                <default>false</default>
+                <label>Interim Alternative Care</label>
+            </value>
+            <value>
+                <fullName>Case Management</fullName>
+                <default>false</default>
+                <label>Case Management</label>
+            </value>
+            <value>
+                <fullName>Cash Transfer Programming (CTP)</fullName>
+                <default>false</default>
+                <label>Cash Transfer Programming (CTP)</label>
+            </value>
+            <value>
+                <fullName>Child Friendly Space</fullName>
+                <default>false</default>
+                <label>Child Friendly Space</label>
+            </value>
+            <value>
+                <fullName>Community Outreach</fullName>
+                <default>false</default>
+                <label>Community Outreach</label>
+            </value>
+            <value>
+                <fullName>Early Childhood Development</fullName>
+                <default>false</default>
+                <label>Early Childhood Development</label>
+            </value>
+            <value>
+                <fullName>Family Reunificaton</fullName>
+                <default>false</default>
+                <label>Family Reunificaton</label>
+            </value>
+            <value>
+                <fullName>Family Strenghtening</fullName>
+                <default>false</default>
+                <label>Family Strenghtening</label>
+            </value>
+            <value>
+                <fullName>Food distribution</fullName>
+                <default>false</default>
+                <label>Food distribution</label>
+            </value>
+            <value>
+                <fullName>Livelihood</fullName>
+                <default>false</default>
+                <label>Livelihood</label>
+            </value>
+            <value>
+                <fullName>MHPSS</fullName>
+                <default>false</default>
+                <label>MHPSS</label>
+            </value>
+            <value>
+                <fullName>Prevention of Family Separation</fullName>
+                <default>false</default>
+                <label>Prevention of Family Separation</label>
+            </value>
+            <value>
+                <fullName>Employability</fullName>
+                <default>false</default>
+                <label>Employability</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

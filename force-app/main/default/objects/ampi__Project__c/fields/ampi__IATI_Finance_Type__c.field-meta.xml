@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Finance_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to choose the type of finance (e.g. grant, loan, debt relief, etc) per the IATI Activity standard.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of Classification; The type of finance (e.g. grant, loan, debt relief, etc). This the default value for all transactions in the activity report; it can be overridden by individual transactions.</inlineHelpText>
+    <label>IATI Finance Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Standard grant</fullName>
+                <default>false</default>
+                <label>Standard grant</label>
+            </value>
+            <value>
+                <fullName>Subsidies to national private investors</fullName>
+                <default>false</default>
+                <label>Subsidies to national private investors</label>
+            </value>
+            <value>
+                <fullName>Interest subsidy</fullName>
+                <default>false</default>
+                <label>Interest subsidy</label>
+            </value>
+            <value>
+                <fullName>Interest subsidy to national private exporters</fullName>
+                <default>false</default>
+                <label>Interest subsidy to national private exporters</label>
+            </value>
+            <value>
+                <fullName>Capital subscription on deposit basis</fullName>
+                <default>false</default>
+                <label>Capital subscription on deposit basis</label>
+            </value>
+            <value>
+                <fullName>Capital subscription on encashment basis</fullName>
+                <default>false</default>
+                <label>Capital subscription on encashment basis</label>
+            </value>
+            <value>
+                <fullName>Aid loan excluding debt reorganisation</fullName>
+                <default>false</default>
+                <label>Aid loan excluding debt reorganisation</label>
+            </value>
+            <value>
+                <fullName>Investment-related loan to developing countries</fullName>
+                <default>false</default>
+                <label>Investment-related loan to developing countries</label>
+            </value>
+            <value>
+                <fullName>Loan in a joint venture with the recipient</fullName>
+                <default>false</default>
+                <label>Loan in a joint venture with the recipient</label>
+            </value>
+            <value>
+                <fullName>Loan to national private investor</fullName>
+                <default>false</default>
+                <label>Loan to national private investor</label>
+            </value>
+            <value>
+                <fullName>Loan to national private exporter</fullName>
+                <default>false</default>
+                <label>Loan to national private exporter</label>
+            </value>
+            <value>
+                <fullName>Standard loan</fullName>
+                <default>false</default>
+                <label>Standard loan</label>
+            </value>
+            <value>
+                <fullName>Reimbursable grant</fullName>
+                <default>false</default>
+                <label>Reimbursable grant</label>
+            </value>
+            <value>
+                <fullName>Bonds</fullName>
+                <default>false</default>
+                <label>Bonds</label>
+            </value>
+            <value>
+                <fullName>Asset-backed securities</fullName>
+                <default>false</default>
+                <label>Asset-backed securities</label>
+            </value>
+            <value>
+                <fullName>Other debt securities</fullName>
+                <default>false</default>
+                <label>Other debt securities</label>
+            </value>
+            <value>
+                <fullName>Subordinated loan</fullName>
+                <default>false</default>
+                <label>Subordinated loan</label>
+            </value>
+            <value>
+                <fullName>Preferred equity</fullName>
+                <default>false</default>
+                <label>Preferred equity</label>
+            </value>
+            <value>
+                <fullName>Other hybrid instruments</fullName>
+                <default>false</default>
+                <label>Other hybrid instruments</label>
+            </value>
+            <value>
+                <fullName>Non-banks guaranteed export credits</fullName>
+                <default>false</default>
+                <label>Non-banks guaranteed export credits</label>
+            </value>
+            <value>
+                <fullName>Non-banks non-guaranteed portions of guaranteed export credits</fullName>
+                <default>false</default>
+                <label>Non-banks non-guaranteed portions of guaranteed export credits</label>
+            </value>
+            <value>
+                <fullName>Bank export credits</fullName>
+                <default>false</default>
+                <label>Bank export credits</label>
+            </value>
+            <value>
+                <fullName>Common equity</fullName>
+                <default>false</default>
+                <label>Common equity</label>
+            </value>
+            <value>
+                <fullName>Acquisition of equity not part of joint venture in developing countries</fullName>
+                <default>false</default>
+                <label>Acquisition of equity not part of joint venture in developing countries</label>
+            </value>
+            <value>
+                <fullName>Other acquisition of equity</fullName>
+                <default>false</default>
+                <label>Other acquisition of equity</label>
+            </value>
+            <value>
+                <fullName>Shares in collective investment vehicles</fullName>
+                <default>false</default>
+                <label>Shares in collective investment vehicles</label>
+            </value>
+            <value>
+                <fullName>Reinvested earnings</fullName>
+                <default>false</default>
+                <label>Reinvested earnings</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness/conversion: ODA claims (P)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness/conversion: ODA claims (P)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness/conversion: ODA claims (I)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness/conversion: ODA claims (I)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness/conversion: OOF claims (P)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness/conversion: OOF claims (P)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness/conversion: OOF claims (I)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness/conversion: OOF claims (I)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness/conversion: Private claims (P)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness/conversion: Private claims (P)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness/conversion: Private claims (I)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness/conversion: Private claims (I)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness: OOF claims (DSR)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness: OOF claims (DSR)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness: Private claims (DSR)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness: Private claims (DSR)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness: Other</fullName>
+                <default>false</default>
+                <label>Debt forgiveness: Other</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: ODA claims (P)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: ODA claims (P)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: ODA claims (I)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: ODA claims (I)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: OOF claims (P)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: OOF claims (P)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: OOF claims (I)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: OOF claims (I)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: Private claims (P)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: Private claims (P)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: Private claims (I)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: Private claims (I)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: OOF claims (DSR)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: OOF claims (DSR)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: Private claims (DSR)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: Private claims (DSR)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: OOF claim (DSR - original loan principal)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: OOF claim (DSR - original loan principal)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: OOF claim (DSR - original loan interest)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: OOF claim (DSR - original loan interest)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: Private claim (DSR - original loan principal)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: Private claim (DSR - original loan principal)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness/conversion: export credit claims (P)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness/conversion: export credit claims (P)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness/conversion: export credit claims (I)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness/conversion: export credit claims (I)</label>
+            </value>
+            <value>
+                <fullName>Debt forgiveness: export credit claims (DSR)</fullName>
+                <default>false</default>
+                <label>Debt forgiveness: export credit claims (DSR)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: export credit claims (P)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: export credit claims (P)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: export credit claims (I)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: export credit claims (I)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: export credit claims (DSR)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: export credit claims (DSR)</label>
+            </value>
+            <value>
+                <fullName>Debt rescheduling: export credit claim (DSR - original loan principal)</fullName>
+                <default>false</default>
+                <label>Debt rescheduling: export credit claim (DSR - original loan principal)</label>
+            </value>
+            <value>
+                <fullName>Foreign direct investment</fullName>
+                <default>false</default>
+                <label>Foreign direct investment</label>
+            </value>
+            <value>
+                <fullName>Other foreign direct investment, including reinvested earnings</fullName>
+                <default>false</default>
+                <label>Other foreign direct investment, including reinvested earnings</label>
+            </value>
+            <value>
+                <fullName>Bank bonds</fullName>
+                <default>false</default>
+                <label>Bank bonds</label>
+            </value>
+            <value>
+                <fullName>Non-bank bonds</fullName>
+                <default>false</default>
+                <label>Non-bank bonds</label>
+            </value>
+            <value>
+                <fullName>Other bank securities/claims</fullName>
+                <default>false</default>
+                <label>Other bank securities/claims</label>
+            </value>
+            <value>
+                <fullName>Other non-bank securities/claims</fullName>
+                <default>false</default>
+                <label>Other non-bank securities/claims</label>
+            </value>
+            <value>
+                <fullName>Securities and other instruments issued by multilateral agencies</fullName>
+                <default>false</default>
+                <label>Securities and other instruments issued by multilateral agencies</label>
+            </value>
+            <value>
+                <fullName>Guarantees/insurance</fullName>
+                <default>false</default>
+                <label>Guarantees/insurance</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

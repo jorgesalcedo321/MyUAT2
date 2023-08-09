@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Percentage_Less_Than_100</fullName>
+    <active>false</active>
+    <description>IATI Percentage should not exceed 100%</description>
+    <errorConditionFormula>ampi__IATI_Percentage__c&gt;1.0</errorConditionFormula>
+    <errorDisplayField>ampi__IATI_Percentage__c</errorDisplayField>
+    <errorMessage>IATI Percentage should not exceed 100%</errorMessage>
+</ValidationRule>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSAM_In_Identification</fullName>
+    <active>true</active>
+    <description>Validation to guide users to correct next Project Status from &quot;In Identification&quot;</description>
+    <errorConditionFormula>(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+(RecordType.DeveloperName =&quot;Standard&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;In Identification&quot;)
+&amp;&amp;
+ISPICKVAL( Early_PSA_Feedback_Desired__c,&quot;No&quot;)
+&amp;&amp;
+CASE( ampi__Project_Status__c ,
+&quot;In Formulation&quot;, 1,
+&quot;Cancelled&quot;, 1,
+0) = 0)
+)
+||
+(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+(RecordType.DeveloperName =&quot;Standard&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;In Identification&quot;)
+&amp;&amp;
+ISPICKVAL( Early_PSA_Feedback_Desired__c,&quot;Yes&quot;)
+&amp;&amp;
+CASE( ampi__Project_Status__c ,
+&quot;New&quot;, 1,
+&quot;Idea Submitted&quot;, 1,
+&quot;Cancelled&quot;, 1,
+0) = 0)
+)</errorConditionFormula>
+    <errorMessage>Please set Project Status to an allowed Project Status: &quot;New&quot;, &quot;Idea Submitted&quot; (if Early Feedback Desired = Yes), &quot;In Formulation&quot; (if Early Feedback Desired = No), or &quot;Cancelled&quot;.</errorMessage>
+</ValidationRule>

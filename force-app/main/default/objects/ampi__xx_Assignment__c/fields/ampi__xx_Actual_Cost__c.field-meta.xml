@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Actual_Cost__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This formula field calculates the actual cost of assignment based on the end date, start date, and actual effort</description>
+    <externalId>false</externalId>
+    <formula>ampi__xx_Actual_Effort__c *( ampi__xx_End_Date__c - ampi__xx_Start_Date__c + 1)*
+IF(ISPICKVAL(ampi__xx_Position__r.ampi__xx_Time_Unit_For_Costing__c,&quot;Day&quot;),ampi__xx_Position__r.ampi__xx_Unit_Cost__c,
+IF(ISPICKVAL(ampi__xx_Position__r.ampi__xx_Time_Unit_For_Costing__c,&quot;Hour&quot;),8*ampi__xx_Position__r.ampi__xx_Unit_Cost__c,
+IF(ISPICKVAL(ampi__xx_Position__r.ampi__xx_Time_Unit_For_Costing__c,&quot;Year&quot;),ampi__xx_Position__r.ampi__xx_Unit_Cost__c/365.25, NULL)
+)
+)</formula>
+    <label>Actual Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

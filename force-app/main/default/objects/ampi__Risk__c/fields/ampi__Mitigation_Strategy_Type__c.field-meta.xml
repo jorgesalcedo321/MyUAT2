@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Mitigation_Strategy_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Define the type of mitigation strategy</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For each risk, a decision is taken to determine whether a mitigation strategy is needed, and if so, what type of strategy to undertake. For this, evaluate the combined severity of the risk&apos;s probability, proximity, potential impact and probability.</inlineHelpText>
+    <label>Mitigation Strategy Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Avoid</fullName>
+                <default>false</default>
+                <label>Avoid</label>
+            </value>
+            <value>
+                <fullName>Limit</fullName>
+                <default>false</default>
+                <label>Limit</label>
+            </value>
+            <value>
+                <fullName>Monitor</fullName>
+                <default>false</default>
+                <label>Monitor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

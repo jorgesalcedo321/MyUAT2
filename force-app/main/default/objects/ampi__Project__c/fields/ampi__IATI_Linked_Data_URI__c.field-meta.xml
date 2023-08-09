@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Linked_Data_URI__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Text field to link to any external data that should be published alongside the IATI data stored within Amp Impact.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This link will be published in the IATI Activity file and must be publicly accessible.</inlineHelpText>
+    <label>IATI Linked Data URI</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

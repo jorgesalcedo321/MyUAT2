@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Aid_Type_Vocabulary__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A code for the vocabulary aid-type classifications. If omitted the Aid Type (OECD DAC) codelist is assumed. The code must be a valid value in the Aid Type Vocabulary codelist. The selected value will be printed into the iati-activities/iati-activity/transaction/aid-type/@vocabulary attribute in the IATI Activity XML.</description>
+    <externalId>false</externalId>
+    <label>IATI Aid Type Vocabulary</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ampi__IATI_Aid_Type_Vocabulary</valueSetName>
+    </valueSet>
+</CustomField>

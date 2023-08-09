@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Programme_Unit_Type</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(ampi__Type__c) == &quot;Programme Unit&quot; &amp;&amp;
+(TEXT(ampi__Parent_Geographical_Area__r.ampi__Type__c) &lt;&gt; &quot;Programme&quot; ||
+TEXT(ampi__Parent_Geographical_Area__r.Program_Type__c) &lt;&gt; &quot;Programme&quot; ||
+NOT(
+TEXT(Program_Unit_Type__c) == &quot;FLC-Family-like Care-160&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;SIL-Supervised Independent Living Arrangement-140&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;SGH-Small Group Homes-180&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;FFC-Foster Family Care-170&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;OAC-Other Alternative Care-150&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;DFE-Direct Family Empowerment-210&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;ECD-Early Childhood Care &amp; Development-330&quot;||
+TEXT(Program_Unit_Type__c) == &quot;EDU-Primary &amp; Secondary Education-310&quot;||
+TEXT(Program_Unit_Type__c) == &quot;EET-Employment &amp; Entrepreneurship Traninig-340&quot;||
+TEXT(Program_Unit_Type__c) == &quot;CPT-Child and Youth Care Practitioners&apos; Training-320&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;MED-Medical Care-420&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;HPP-Health Promotion &amp; Prevention-410&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;HA-Humanitarian action-510&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;OA-Other Activities-610&quot; ||
+TEXT(Program_Unit_Type__c) == &quot;CFE-Community Empowerment for Family Empowerment-220&quot;
+)
+)</errorConditionFormula>
+    <errorMessage>Programme Unit type must have a parent geographic area of type and programme type &quot;programme&quot; and programme unit type must be valid</errorMessage>
+</ValidationRule>

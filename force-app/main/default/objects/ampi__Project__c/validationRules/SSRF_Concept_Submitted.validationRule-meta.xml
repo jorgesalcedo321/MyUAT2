@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSRF_Concept_Submitted</fullName>
+    <active>true</active>
+    <description>Prevents users from selecting status &quot;Concept Submitted&quot; if required fields are left empty for Standard projects.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;Standard&quot;
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;Concept Submitted&quot;)
+&amp;&amp;
+(
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;In Formulation&quot;)
+&amp;&amp;
+(
+ISPICKVAL(New_SOS_Location__c, &quot;&quot;)||
+ISPICKVAL( SOS_Role__c, &quot;&quot;)||
+ISBLANK( Funding_organisation__c )||
+ISBLANK( Planned_Implementation_Start_Date__c )||
+ISBLANK( Planned_Implementation_End_Date__c )
+)
+)</errorConditionFormula>
+    <errorMessage>Please fill in mandatory fields for Status &quot;Concept Submitted&quot;: New SOS Programme, SOS Role, Funding Org, Planned Start &amp; End Dates</errorMessage>
+</ValidationRule>

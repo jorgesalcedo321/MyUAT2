@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Description_length_cannot_exceed_1024</fullName>
+    <active>true</active>
+    <description>Project Descriptions should never exceed 1200, otherwise they cause an issue when sync&apos;d to the Sharepoint Folder description via the integration.</description>
+    <errorConditionFormula>NOT($Permission.Manage_Restrictions) &amp;&amp; (LEN(ampi__Description__c) &gt; 1024)</errorConditionFormula>
+    <errorDisplayField>ampi__Description__c</errorDisplayField>
+    <errorMessage>Project Descriptions must be less than 1024 characters in length. Please shorten your description.</errorMessage>
+</ValidationRule>

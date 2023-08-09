@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Calculation_Formula_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text area to store the formula created by the user in the calculation formula pop-up, using the Project Indicator Ids. This is populated by the Calculation Formula popup. This field determines how the Calculation Batch runs.</description>
+    <externalId>false</externalId>
+    <label>Calculation Formula Id</label>
+    <length>500</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

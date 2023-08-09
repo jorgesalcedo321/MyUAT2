@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Additional_Project_Description__c</fullName>
+    <description>Please add other relevant information here. Length set to 13000 char.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please add other relevant information here. Length set to 13000 characters.  The description can be changed and updated at any time throughout the process.</inlineHelpText>
+    <label>Additional Project Description</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

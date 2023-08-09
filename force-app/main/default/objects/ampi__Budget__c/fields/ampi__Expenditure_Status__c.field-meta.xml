@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Expenditure_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to track the progress and status of expenditure against a budget. This field is unrestricted and can be modified by subscribers.</description>
+    <externalId>false</externalId>
+    <label>Expenditure Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Planning</fullName>
+                <default>false</default>
+                <label>Planning</label>
+            </value>
+            <value>
+                <fullName>Under Review</fullName>
+                <default>false</default>
+                <label>Under Review</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

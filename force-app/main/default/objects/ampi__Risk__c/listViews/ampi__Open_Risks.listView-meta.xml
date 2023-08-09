@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Open_Risks</fullName>
+    <columns>NAME</columns>
+    <columns>ampi__Risk_Register__c</columns>
+    <columns>ampi__Category__c</columns>
+    <columns>ampi__xx_Probability_Icon__c</columns>
+    <columns>ampi__xx_Potential_Impact_Icon__c</columns>
+    <columns>ampi__xx_Overall_Score__c</columns>
+    <columns>ampi__xx_Control_Over_Risk_Icon__c</columns>
+    <columns>ampi__xx_Risk_Level_Icon__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ampi__Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <label>Open Risks</label>
+</ListView>

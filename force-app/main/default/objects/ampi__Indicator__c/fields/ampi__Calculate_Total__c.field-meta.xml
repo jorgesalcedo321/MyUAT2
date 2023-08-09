@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Calculate_Total__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field is to specify if total for disaggregated results should be calculated</description>
+    <externalId>false</externalId>
+    <label>Calculate Total</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sum Total</fullName>
+                <default>false</default>
+                <label>Sum Total</label>
+            </value>
+            <value>
+                <fullName>Don&apos;t Sum Total</fullName>
+                <default>false</default>
+                <label>Don&apos;t Sum Total</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

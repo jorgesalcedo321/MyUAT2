@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Thematic_Area_Ids__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Trigger concatenates all IDs of Thematic Areas which have a child Project Indicator Thematic Area with the Project Indicator. This is used when filtering Project Indicators on the ManageIndicators page -- all Project Indicator records with the selected Thematic Area ID in this field will be shown in results.</description>
+    <externalId>false</externalId>
+    <label>Thematic Area Ids</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

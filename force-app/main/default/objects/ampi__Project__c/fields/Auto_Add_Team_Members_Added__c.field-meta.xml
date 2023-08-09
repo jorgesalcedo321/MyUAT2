@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Add_Team_Members_Added__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to prevent team members from being added to a project multiple times</description>
+    <externalId>false</externalId>
+    <label>Auto Add Team Members Added?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

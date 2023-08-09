@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__All</fullName>
+    <columns>NAME</columns>
+    <columns>Implementing_Organisation__c</columns>
+    <columns>ampi__Role__c</columns>
+    <columns>Funding_Amount__c</columns>
+    <columns>Requested_Amount__c</columns>
+    <columns>ampi__IATI_Providing_Project__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

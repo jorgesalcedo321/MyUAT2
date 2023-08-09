@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Activities_Service_Type</fullName>
+    <active>false</active>
+    <description>The Service type cannot be changed after the Project Status &quot;Application Approved&quot; for Grant projects</description>
+    <errorConditionFormula>AND(
+				ISCHANGED(Thematic_Area__c),
+				Project__r.RecordType.DeveloperName = &apos;Grant&apos;,
+				OR(
+				ISPICKVAL(Project__r.ampi__Project_Status__c  , &apos;Application Approved&apos;),				
+				ISPICKVAL(Project__r.ampi__Project_Status__c  , &apos;Application Rejected&apos;),
+				ISPICKVAL(Project__r.ampi__Project_Status__c  , &apos;In Implementation&apos;),
+				ISPICKVAL(Project__r.ampi__Project_Status__c  , &apos;Cancelled&apos;),
+    ISPICKVAL(Project__r.Phase__c , &apos;Implementation&apos;),
+    ISPICKVAL(Project__r.Phase__c , &apos;Closure&apos;) 
+    )
+)</errorConditionFormula>
+    <errorMessage>The Service type cannot be modified after the &quot;Project Status&quot;: &quot;Application Approved&quot;</errorMessage>
+</ValidationRule>

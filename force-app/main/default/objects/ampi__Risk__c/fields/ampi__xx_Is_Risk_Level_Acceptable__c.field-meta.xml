@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Is_Risk_Level_Acceptable__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that compares ampi__xx_Acceptable_Risk_Level__c with ampi__xx_Risk_Level__c and specifies whether a Risk has been brought down to it&apos;s accepted level</description>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL(ampi__xx_Acceptable_Risk_Level__c,&quot;&quot;),ISPICKVAL(ampi__xx_Risk_Level__c,&quot;&quot;)),&quot;Not Enough Information&quot;,IF(CASE(ampi__xx_Acceptable_Risk_Level__c,&quot;High Risk&quot;,5,&quot;Medium High Risk&quot;,4,&quot;Medium Risk&quot;,3,&quot;Medium Low Risk&quot;,2,&quot;Low Risk&quot;,1,0)&gt;=CASE(ampi__xx_Risk_Level__c,&quot;High Risk&quot;,5,&quot;Medium High Risk&quot;,4,&quot;Medium Risk&quot;,3,&quot;Medium Low Risk&quot;,2,&quot;Low Risk&quot;,1,0),&quot;Yes&quot;,&quot;No&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Formula field that returns &quot;Not Enough Information&quot;, &quot;Yes&quot;, or &quot;No&quot; after comparing the values of the picklist fields Risk Level and Acceptable Risk Level</inlineHelpText>
+    <label>Is Risk Level Acceptable?</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

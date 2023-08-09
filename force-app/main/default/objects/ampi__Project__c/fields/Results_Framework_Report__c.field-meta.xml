@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Results_Framework_Report__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(IF(CONTAINS(LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260)), &apos;.force.com&apos;),
+&apos;/s/report/00O9E000000kkCqUAI?reportFilters=%5B%7B%22operator%22%3A%22equals%22%2C%22column%22%3A%22ampi__Objective__c.ampi__Project__c.Project_ID_Text__c%22%2C%22value%22%3A%22&apos; &amp; Project_ID_Text__c &amp; &apos;%22%7D%5D&apos;, 
+&apos;/lightning/r/Report/00O1i000001fS9MEAU/view?fv0=&apos; &amp; Project_ID_Text__c), &apos;Report Link Here&apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Results Framework Report</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

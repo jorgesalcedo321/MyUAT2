@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_cant_be_in_the_future</fullName>
+    <active>true</active>
+    <description>Prevent user from creating approval date in advance.</description>
+    <errorConditionFormula>Full_Application_Submission_Date__c  &gt;  TODAY()</errorConditionFormula>
+    <errorDisplayField>Full_Application_Submission_Date__c</errorDisplayField>
+    <errorMessage>Submission Date can´t be in the future. Please fill in only after the application was submitted for approval.</errorMessage>
+</ValidationRule>

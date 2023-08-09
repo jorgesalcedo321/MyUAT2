@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probability_Value__c</fullName>
+    <description>Assigns a numerical value 1-5 based on the selection in the &quot;Probability&quot; field.</description>
+    <externalId>false</externalId>
+    <formula>CASE(ampi__Probability__c,
+&quot;Very Unlikely&quot;,1,
+&quot;Unlikely&quot;,2,
+&quot;May Occur&quot;,3,
+&quot;Likely&quot;,4,
+&quot;Very Likely&quot;,5,
+&quot;Muy Poco Probable&quot;,1,
+&quot;Poco Probable&quot;,2,
+&quot;Podria Ocurrir&quot;,3,
+&quot;Probable&quot;,4,
+&quot;Muy Probable&quot;,5,
+0)</formula>
+    <label>Probability Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

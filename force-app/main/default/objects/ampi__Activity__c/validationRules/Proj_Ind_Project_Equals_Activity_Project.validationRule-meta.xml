@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proj_Ind_Project_Equals_Activity_Project</fullName>
+    <active>false</active>
+    <description>The Project on the Project Indicator must match the Project on the Implementation Plan of the Activity</description>
+    <errorConditionFormula>ampi__Project_Indicator__r.ampi__Project__c  &lt;&gt;  ampi__Implementation_Plan__r.ampi__Project__c</errorConditionFormula>
+    <errorMessage>Please select a Project Indicator from the Project on which you are working</errorMessage>
+</ValidationRule>

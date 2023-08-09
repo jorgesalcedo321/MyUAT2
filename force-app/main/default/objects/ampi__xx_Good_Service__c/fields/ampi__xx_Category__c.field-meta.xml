@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to categorise the product as either good or service.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Pick whether this is a good or service.</inlineHelpText>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Good</fullName>
+                <default>false</default>
+                <label>Good</label>
+            </value>
+            <value>
+                <fullName>Service</fullName>
+                <default>false</default>
+                <label>Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

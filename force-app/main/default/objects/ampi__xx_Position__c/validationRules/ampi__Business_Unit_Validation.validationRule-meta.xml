@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Business_Unit_Validation</fullName>
+    <active>true</active>
+    <description>This Validation Rule verifies that only Accounts with the Type as &apos;Business Unit&apos; can be saved in the ampi__xx_Business_Unit__c field.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK( ampi__xx_Business_Unit__c )) ,NOT(ISPICKVAL( ampi__xx_Business_Unit__r.Type, &quot;Business Unit&quot;)))</errorConditionFormula>
+    <errorDisplayField>ampi__xx_Business_Unit__c</errorDisplayField>
+    <errorMessage>The selected Account is not a Business Unit</errorMessage>
+</ValidationRule>

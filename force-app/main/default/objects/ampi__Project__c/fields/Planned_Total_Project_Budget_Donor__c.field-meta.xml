@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Planned_Total_Project_Budget_Donor__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Mandatory for status &quot;concept/application submitted&quot;. 
+Indicate here the planned total project budget for its entire duration in donor currency.</inlineHelpText>
+    <label>Planned Total Project Budget (DCY)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

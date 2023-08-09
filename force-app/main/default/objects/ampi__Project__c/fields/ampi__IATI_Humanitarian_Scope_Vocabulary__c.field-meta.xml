@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Humanitarian_Scope_Vocabulary__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to select which organisation&apos;s vocabulary is being used to classify the humanitarian scope of an IATI Activity for IATI reporting.</description>
+    <externalId>false</externalId>
+    <label>IATI Humanitarian Scope Vocabulary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-2</fullName>
+                <default>false</default>
+                <label>Glide</label>
+            </value>
+            <value>
+                <fullName>2-1</fullName>
+                <default>false</default>
+                <label>Humanitarian Plan</label>
+            </value>
+            <value>
+                <fullName>99</fullName>
+                <default>false</default>
+                <label>Reporting Organisation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Required_Qualifications__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Text field to indicate qualifications such as credentials, licenses, and skills required for the job</description>
+    <externalId>false</externalId>
+    <label>Required Qualifications</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

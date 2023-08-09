@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Role_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that allocates a code based on the Role</description>
+    <externalId>false</externalId>
+    <formula>CASE (ampi__Role__c,&quot;Funding&quot;,1,
+&quot;Accountable&quot;,2,
+&quot;Extending&quot;,3,
+&quot;Implementing&quot;,4,null)</formula>
+    <inlineHelpText>Code that corresponds to the Role</inlineHelpText>
+    <label>IATI Role Code</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

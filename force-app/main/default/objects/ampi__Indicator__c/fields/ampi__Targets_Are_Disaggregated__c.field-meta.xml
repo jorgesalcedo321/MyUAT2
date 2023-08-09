@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Targets_Are_Disaggregated__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox to mark whether targets should be disaggregated at the same level as results. If FALSE, then only one value is entered for targets at any particular target frequency and geographic disaggregation combination.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if targets are tracked at the same disaggregation levels (i.e. by sex and/or custom disaggregation level) as results. Leave this box blank if targets are not tracked with any level of disaggregation.</inlineHelpText>
+    <label>Targets Are Disaggregated?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

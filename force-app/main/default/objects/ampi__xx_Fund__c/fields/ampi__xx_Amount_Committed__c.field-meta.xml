@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Amount_Committed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Sum of all Allocations with the status &apos;Committed&apos; associated with the fund that have been created for various projects. The value of this field is updated by the flows Fund_Allocations_Rollup and Fund_Allocations_Deletion. All users except System Admin will have only Read access to this field via the page layout.</description>
+    <externalId>false</externalId>
+    <label>Amount Committed</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

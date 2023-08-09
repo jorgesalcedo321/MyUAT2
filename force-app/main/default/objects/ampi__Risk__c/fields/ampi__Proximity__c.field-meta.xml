@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Proximity__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Track how close the project is, in terms of time, to a risk occurring</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Evaluate how close we are, in terms of time, to the risk occurring</inlineHelpText>
+    <label>Proximity</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <label>Low</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <label>Medium</label>
+            </value>
+            <value>
+                <fullName>High</fullName>
+                <default>false</default>
+                <label>High</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

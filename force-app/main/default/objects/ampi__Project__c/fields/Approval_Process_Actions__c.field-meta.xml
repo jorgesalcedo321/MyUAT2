@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Process_Actions__c</fullName>
+    <externalId>false</externalId>
+    <label>Approval Process Actions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Create Checklist Documents</fullName>
+                <default>false</default>
+                <label>Create Checklist Documents</label>
+            </value>
+            <value>
+                <fullName>Create Agreement Draft</fullName>
+                <default>false</default>
+                <label>Create Agreement Draft</label>
+            </value>
+            <value>
+                <fullName>Notify New Agreement</fullName>
+                <default>false</default>
+                <label>Notify New Agreement</label>
+            </value>
+            <value>
+                <fullName>Update Agreement Status</fullName>
+                <default>false</default>
+                <label>Update Agreement Status</label>
+            </value>
+            <value>
+                <fullName>Update Agreement Signed Status</fullName>
+                <default>false</default>
+                <label>Update Agreement Signed Status</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

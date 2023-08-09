@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Impact_or_Objective_Shouldnt_Have_Order</fullName>
+    <active>false</active>
+    <description>Prevents users from entering an Order Number value if they are creating/editing a Result Statement at the &quot;Impact&quot; or &quot;Objective&quot; level.</description>
+    <errorConditionFormula>AND(
+TEXT(ampi__Level__c) &lt;&gt; &apos;Output&apos;,
+TEXT(ampi__Level__c) &lt;&gt; &apos;Outcome&apos;,
+NOT(ISBLANK(Order_Number__c))
+)</errorConditionFormula>
+    <errorDisplayField>Order_Number__c</errorDisplayField>
+    <errorMessage>Only Result Statements at the Output or Outcome level may be assigned an Order Number. Please leave this field blank if you are creating an Impact or Objective Result Statement (since there should only be 1 per Project).</errorMessage>
+</ValidationRule>

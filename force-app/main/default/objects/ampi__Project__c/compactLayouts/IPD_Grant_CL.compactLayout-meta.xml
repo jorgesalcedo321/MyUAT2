@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IPD_Grant_CL</fullName>
+    <fields>Name</fields>
+    <fields>ampi__Project_Status__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>OwnerId</fields>
+    <fields>Project_ID_Text__c</fields>
+    <fields>External_Donor__c</fields>
+    <fields>Approved_Total_Projec_Budget_Eur__c</fields>
+    <fields>Contract_Eligibility_Start_Date__c</fields>
+    <fields>Contract_Eligibility_End_Date__c</fields>
+    <label>IPD Grant CL</label>
+</CompactLayout>

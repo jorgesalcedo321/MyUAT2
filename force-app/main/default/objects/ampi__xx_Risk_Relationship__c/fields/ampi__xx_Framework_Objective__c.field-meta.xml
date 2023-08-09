@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Framework_Objective__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup relationship from the Risk Relationship object to the Framework Objective object.</description>
+    <externalId>false</externalId>
+    <label>Framework Objective</label>
+    <referenceTo>ampi__Objective__c</referenceTo>
+    <relationshipLabel>Risk Relationships</relationshipLabel>
+    <relationshipName>Risk_Relationships</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

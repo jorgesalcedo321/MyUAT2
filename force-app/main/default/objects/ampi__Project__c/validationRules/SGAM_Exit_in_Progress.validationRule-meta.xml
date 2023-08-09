@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGAM_Exit_in_Progress</fullName>
+    <active>true</active>
+    <description>Validation to guide users to correct next Project Status from &quot;Exit in Progress&quot; for Grant Projects</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+RecordType.DeveloperName =&quot;Grant&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Exit in Progress&quot;)
+&amp;&amp;
+CASE( ampi__Project_Status__c ,
+&quot;Final Report Submitted&quot;, 1,
+0) = 0</errorConditionFormula>
+    <errorMessage>Allowed Project Status: &quot;Final Report Submitted&quot;.</errorMessage>
+</ValidationRule>

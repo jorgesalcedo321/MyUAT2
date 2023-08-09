@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_Setup_Construction</fullName>
+    <active>false</active>
+    <description>Prevents users from selecting status &quot;In Setup&quot; if required fields are left empty (Construction RT)</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &quot;Construction&quot;,
+ISPICKVAL( ampi__Project_Status__c , &quot;In Setup&quot;),
+OR(
+ISPICKVAL( Currency__c , &quot;&quot;),
+ISBLANK(GPS__c)
+)
+)</errorConditionFormula>
+    <errorMessage>One or more mandatory fields are missing for Status &quot;In Setup&quot;: Currency, GPS</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This formula field copies the Result Status from related Reporting Period. This field is unrestricted and can be modified by subscribers.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(ampi__Reporting_Period__r.ampi__Result_Status__c)</formula>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

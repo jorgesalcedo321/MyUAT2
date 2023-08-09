@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Indicator__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup field to connect this junction object to an Indicator.</description>
+    <externalId>false</externalId>
+    <label>Indicator</label>
+    <referenceTo>ampi__Indicator__c</referenceTo>
+    <relationshipLabel>Disaggregated Indicators</relationshipLabel>
+    <relationshipName>Disaggregated_Indicators</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

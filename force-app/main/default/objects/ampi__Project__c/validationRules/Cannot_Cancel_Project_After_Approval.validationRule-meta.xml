@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Cancel_Project_After_Approval</fullName>
+    <active>true</active>
+    <description>Project cannot be given status &quot;Cancelled&quot; after receiving status &quot;Application Approved&quot;</description>
+    <errorConditionFormula>AND
+(ISPICKVAL
+(
+PRIORVALUE(ampi__Project_Status__c)
+,&quot;Application Approved&quot;
+)
+,(ISPICKVAL(ampi__Project_Status__c,&quot;Cancelled&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>ampi__Project_Status__c</errorDisplayField>
+    <errorMessage>Project cannot be given status &quot;Cancelled&quot; after receiving status &quot;Application Approved&quot;</errorMessage>
+</ValidationRule>

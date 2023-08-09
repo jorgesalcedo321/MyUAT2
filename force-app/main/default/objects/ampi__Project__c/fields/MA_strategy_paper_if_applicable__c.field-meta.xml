@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MA_strategy_paper_if_applicable__c</fullName>
+    <externalId>false</externalId>
+    <formula>SOS_Implementing_Organisation__r.MA_strategy_paper_if_applicable__c</formula>
+    <label>MA-strategy paper (if applicable)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

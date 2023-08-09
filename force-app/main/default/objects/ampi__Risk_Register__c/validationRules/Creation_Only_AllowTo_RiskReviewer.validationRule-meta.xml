@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Creation_Only_AllowTo_RiskReviewer</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISNEW(),
+NOT(OR(Programme__r.Parent_MA__r.NA_Risk_Reviewer__r.Email = $User.Email,$Profile.Name == &quot;System Administrator&quot;)))</errorConditionFormula>
+    <errorMessage>Unsufficient rights to create a Location Security Risk Assessment. Only Risk Reviewer from the MA can create it.</errorMessage>
+</ValidationRule>

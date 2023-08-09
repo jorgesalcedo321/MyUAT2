@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Exclude_From_IATI__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to indicate whether or not this indicator should be excluded from IATI</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if this indicator should be excluded from IATI</inlineHelpText>
+    <label>Exclude from IATI</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

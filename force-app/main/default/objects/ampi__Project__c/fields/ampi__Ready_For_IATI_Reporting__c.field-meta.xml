@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Ready_For_IATI_Reporting__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to record whether or not the project is ready for IATI reporting.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate if the project is ready for IATI reporting</inlineHelpText>
+    <label>Ready for IATI reporting?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

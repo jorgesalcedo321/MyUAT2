@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transition_Project_Type__c</fullName>
+    <description>Used by finance to indicate LUCY legacy project category</description>
+    <externalId>false</externalId>
+    <label>Transition Project Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>National services</fullName>
+                <default>false</default>
+                <label>National services</label>
+            </value>
+            <value>
+                <fullName>Child Money Gift</fullName>
+                <default>false</default>
+                <label>Child Money Gift</label>
+            </value>
+            <value>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+                <label>Advocacy</label>
+            </value>
+            <value>
+                <fullName>Running Costs</fullName>
+                <default>false</default>
+                <label>Running Costs</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>Grant</fullName>
+                <default>false</default>
+                <label>Grant</label>
+            </value>
+            <value>
+                <fullName>Emergency</fullName>
+                <default>false</default>
+                <label>Emergency</label>
+            </value>
+            <value>
+                <fullName>IF4C</fullName>
+                <default>false</default>
+                <label>IF4C</label>
+            </value>
+            <value>
+                <fullName>GSC</fullName>
+                <default>false</default>
+                <label>GSC</label>
+            </value>
+            <value>
+                <fullName>Covid</fullName>
+                <default>false</default>
+                <label>Covid</label>
+            </value>
+            <value>
+                <fullName>Fund Development</fullName>
+                <default>false</default>
+                <label>Fund Development</label>
+            </value>
+            <value>
+                <fullName>Income generation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Income generation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

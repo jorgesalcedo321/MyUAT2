@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Type_Mandatory_Grant</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.Manage_Restrictions) &amp;&amp; AND(
+    RecordType.DeveloperName = &quot;Grant&quot;,
+				OR(
+    ISPICKVAL( ampi__Project_Status__c , &quot;Application Submitted&quot;),
+				ISPICKVAL( ampi__Project_Status__c , &quot;Application Approved&quot;),
+				ISPICKVAL( ampi__Project_Status__c , &quot;Application Rejected&quot;),
+				ISPICKVAL( ampi__Project_Status__c , &quot;In Implementation&quot;),
+  		ISPICKVAL( Phase__c , &quot;Implementation&quot;),
+				ISPICKVAL( Phase__c , &quot;Closure&quot;)
+				),
+			 Service_Type_Assigned__c= false
+)</errorConditionFormula>
+    <errorMessage>The project must have at least one &quot;Service Type&quot; added</errorMessage>
+</ValidationRule>

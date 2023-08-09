@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Female_Result_Qualitative__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Rich text field to store result for a qualitative indicator with sex-disaggregated value as female</description>
+    <externalId>false</externalId>
+    <label>Female Result Qualitative</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Aid_Type_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that associates a code with ampi__IATI_Aid_Type__c.</description>
+    <externalId>false</externalId>
+    <formula>CASE(ampi__IATI_Aid_Type__c,
+&quot;General budget support&quot;,&quot;A01&quot;,
+&quot;Sector budget support&quot;,&quot;A02&quot;,
+&quot;Core support to NGOs, other private bodies, PPPs and research institutes&quot;,&quot;B01&quot;,
+&quot;Core contributions to multilateral institutions&quot;,&quot;B02&quot;,
+&quot;Contributions to specific-purpose programmes and funds managed by international organisations (multilateral, INGO)&quot;,&quot;B03&quot;,
+&quot;Basket funds/pooled funding&quot;,&quot;B04&quot;,
+&quot;Project-type interventions&quot;,&quot;C01&quot;,
+&quot;Donor country personnel&quot;,&quot;D01&quot;,
+&quot;Other technical assistance&quot;,&quot;D02&quot;,
+&quot;Scholarships/training in donor country&quot;,&quot;E01&quot;,
+&quot;Imputed student costs&quot;,&quot;E02&quot;,
+&quot;Debt relief&quot;,&quot;F01&quot;,&quot;Administrative costs not included elsewhere&quot;,&quot;G01&quot;,
+&quot;Development awareness&quot;,&quot;H01&quot;,
+&quot;Refugees in donor countries&quot;,&quot;H02&quot;,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Code corresponding to IATI Aid Type</inlineHelpText>
+    <label>IATI Aid Type Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

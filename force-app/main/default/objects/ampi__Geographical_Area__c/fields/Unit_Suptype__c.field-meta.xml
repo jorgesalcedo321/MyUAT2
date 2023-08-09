@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Suptype__c</fullName>
+    <externalId>false</externalId>
+    <label>Unit Suptype</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Unit_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Construction project-0</fullName>
+                <default>false</default>
+                <label>Construction project-0</label>
+            </value>
+            <value>
+                <fullName>YC-Youth Care-140</fullName>
+                <default>false</default>
+                <label>YC-Youth Care-140</label>
+            </value>
+            <value>
+                <fullName>OAC-Other Alternative Care-150</fullName>
+                <default>false</default>
+                <label>OAC-Other Alternative Care-150</label>
+            </value>
+            <value>
+                <fullName>SFC-SOS Family Care-160</fullName>
+                <default>false</default>
+                <label>SFC-SOS Family Care-160</label>
+            </value>
+            <value>
+                <fullName>FFC-Foster Family Care-170</fullName>
+                <default>false</default>
+                <label>FFC-Foster Family Care-170</label>
+            </value>
+            <value>
+                <fullName>SGH-Small Group Homes-180</fullName>
+                <default>false</default>
+                <label>SGH-Small Group Homes-180</label>
+            </value>
+            <value>
+                <fullName>FS-Family Strengthening-210</fullName>
+                <default>false</default>
+                <label>FS-Family Strengthening-210</label>
+            </value>
+            <value>
+                <fullName>EDU-Primary &amp; Secondary Education-310</fullName>
+                <default>false</default>
+                <label>EDU-Primary &amp; Secondary Education-310</label>
+            </value>
+            <value>
+                <fullName>CT-Care Training-320</fullName>
+                <default>false</default>
+                <label>CT-Care Training-320</label>
+            </value>
+            <value>
+                <fullName>ECD-Early Childhood Care &amp; Development-330</fullName>
+                <default>false</default>
+                <label>ECD-Early Childhood Care &amp; Development-330</label>
+            </value>
+            <value>
+                <fullName>EET-Employment &amp; Entrepreneurship Training-340</fullName>
+                <default>false</default>
+                <label>EET-Employment &amp; Entrepreneurship Training-340</label>
+            </value>
+            <value>
+                <fullName>HPP-Health Promotion &amp; Prevention-410</fullName>
+                <default>false</default>
+                <label>HPP-Health Promotion &amp; Prevention-410</label>
+            </value>
+            <value>
+                <fullName>MED-Medical Care-420</fullName>
+                <default>false</default>
+                <label>MED-Medical Care-420</label>
+            </value>
+            <value>
+                <fullName>ER-Emergency Response-510</fullName>
+                <default>false</default>
+                <label>ER-Emergency Response-510</label>
+            </value>
+            <value>
+                <fullName>OA-Other Activities-610</fullName>
+                <default>false</default>
+                <label>OA-Other Activities-610</label>
+            </value>
+            <value>
+                <fullName>CV-Inactive SOS Children&apos;s Village-100</fullName>
+                <default>false</default>
+                <label>CV-Inactive SOS Children&apos;s Village-100</label>
+            </value>
+            <value>
+                <fullName>YF1-Inactive SOS Youth Facility-201</fullName>
+                <default>false</default>
+                <label>YF1-Inactive SOS Youth Facility-201</label>
+            </value>
+            <value>
+                <fullName>YF2-Inactive SOS Youth Programme-202</fullName>
+                <default>false</default>
+                <label>YF2-Inactive SOS Youth Programme-202</label>
+            </value>
+            <value>
+                <fullName>KG-Inactive SOS Kindergarten-300</fullName>
+                <default>false</default>
+                <label>KG-Inactive SOS Kindergarten-300</label>
+            </value>
+            <value>
+                <fullName>SL-Inactive SOS Hermann Gmeiner School-400</fullName>
+                <default>false</default>
+                <label>SL-Inactive SOS Hermann Gmeiner School-400</label>
+            </value>
+            <value>
+                <fullName>SL1-Inactive SOS HG School I-401</fullName>
+                <default>false</default>
+                <label>SL1-Inactive SOS HG School I-401</label>
+            </value>
+            <value>
+                <fullName>SL2-Inactive SOS HG School II-402</fullName>
+                <default>false</default>
+                <label>SL2-Inactive SOS HG School II-402</label>
+            </value>
+            <value>
+                <fullName>TC1-Inactive SOS Mother and Staff Training Centre-501</fullName>
+                <default>false</default>
+                <label>TC1-Inactive SOS Mother and Staff Training Centre-501</label>
+            </value>
+            <value>
+                <fullName>TC2-Inactive SOS Vocational Training Centre-502</fullName>
+                <default>false</default>
+                <label>TC2-Inactive SOS Vocational Training Centre-502</label>
+            </value>
+            <value>
+                <fullName>SC1-Inactive SOS Family Strengthening Programme-601</fullName>
+                <default>false</default>
+                <label>SC1-Inactive SOS Family Strengthening Programme-601</label>
+            </value>
+            <value>
+                <fullName>SC2-Inactive SOS Social Centre-602</fullName>
+                <default>false</default>
+                <label>SC2-Inactive SOS Social Centre-602</label>
+            </value>
+            <value>
+                <fullName>MC-Inactive SOS Medical Centre-700</fullName>
+                <default>false</default>
+                <label>MC-Inactive SOS Medical Centre-700</label>
+            </value>
+            <value>
+                <fullName>MC1-Inactive SOS Medical Centre I-701</fullName>
+                <default>false</default>
+                <label>MC1-Inactive SOS Medical Centre I-701</label>
+            </value>
+            <value>
+                <fullName>MC2-Inactive SOS Medical Centre II-702</fullName>
+                <default>false</default>
+                <label>MC2-Inactive SOS Medical Centre II-702</label>
+            </value>
+            <value>
+                <fullName>EP-Inactive SOS Emergency Relief Programme-800</fullName>
+                <default>false</default>
+                <label>EP-Inactive SOS Emergency Relief Programme-800</label>
+            </value>
+            <value>
+                <fullName>IOR-International Office Region-910</fullName>
+                <default>false</default>
+                <label>IOR-International Office Region-910</label>
+            </value>
+            <value>
+                <fullName>IB-International Branch Office-911</fullName>
+                <default>false</default>
+                <label>IB-International Branch Office-911</label>
+            </value>
+            <value>
+                <fullName>RBFR-Inactive Regional Branch O. FR-912</fullName>
+                <default>false</default>
+                <label>RBFR-Inactive Regional Branch O. FR-912</label>
+            </value>
+            <value>
+                <fullName>IORC-International Office Region Cost Centre-919</fullName>
+                <default>false</default>
+                <label>IORC-International Office Region Cost Centre-919</label>
+            </value>
+            <value>
+                <fullName>CO-Inactive Continental Office-930</fullName>
+                <default>false</default>
+                <label>CO-Inactive Continental Office-930</label>
+            </value>
+            <value>
+                <fullName>CB-Inactive Continental Branch Office-931</fullName>
+                <default>false</default>
+                <label>CB-Inactive Continental Branch Office-931</label>
+            </value>
+            <value>
+                <fullName>CBFR-Inactive Continental Branch O. FR-932</fullName>
+                <default>false</default>
+                <label>CBFR-Inactive Continental Branch O. FR-932</label>
+            </value>
+            <value>
+                <fullName>COC-Inactive Continental Office Cost Centre-939</fullName>
+                <default>false</default>
+                <label>COC-Inactive Continental Office Cost Centre-939</label>
+            </value>
+            <value>
+                <fullName>IO-International Office-940</fullName>
+                <default>false</default>
+                <label>IO-International Office-940</label>
+            </value>
+            <value>
+                <fullName>IOC-International Office Cost Centre-949</fullName>
+                <default>false</default>
+                <label>IOC-International Office Cost Centre-949</label>
+            </value>
+            <value>
+                <fullName>NA-National Judicial Entity-950</fullName>
+                <default>false</default>
+                <label>NA-National Judicial Entity-950</label>
+            </value>
+            <value>
+                <fullName>PA-Promoting Association-970</fullName>
+                <default>false</default>
+                <label>PA-Promoting Association-970</label>
+            </value>
+            <value>
+                <fullName>SA-Supporting Association-980</fullName>
+                <default>false</default>
+                <label>SA-Supporting Association-980</label>
+            </value>
+            <value>
+                <fullName>NO-National Office-960</fullName>
+                <default>false</default>
+                <label>NO-National Office-960</label>
+            </value>
+            <value>
+                <fullName>NB-National Branch Office-961</fullName>
+                <default>false</default>
+                <label>NB-National Branch Office-961</label>
+            </value>
+            <value>
+                <fullName>NBFR-National Branch O. FR-962</fullName>
+                <default>false</default>
+                <label>NBFR-National Branch O. FR-962</label>
+            </value>
+            <value>
+                <fullName>NBAD-Advocacy-963</fullName>
+                <default>false</default>
+                <label>NBAD-Advocacy-963</label>
+            </value>
+            <value>
+                <fullName>NBFE-National Branch O. FE-964</fullName>
+                <default>false</default>
+                <label>NBFE-National Branch O. FE-964</label>
+            </value>
+            <value>
+                <fullName>HGA-Hermann Gmeiner Academy-990</fullName>
+                <default>false</default>
+                <label>HGA-Hermann Gmeiner Academy-990</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>40-SOS Hermann Gmeiner School</controllingFieldValue>
+            <valueName>SL-Inactive SOS Hermann Gmeiner School-400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40-SOS Hermann Gmeiner School</controllingFieldValue>
+            <valueName>SL1-Inactive SOS HG School I-401</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40-SOS Hermann Gmeiner School</controllingFieldValue>
+            <valueName>SL2-Inactive SOS HG School II-402</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>50-SOS Vocational Training Centre</controllingFieldValue>
+            <valueName>TC1-Inactive SOS Mother and Staff Training Centre-501</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>50-SOS Vocational Training Centre</controllingFieldValue>
+            <valueName>TC2-Inactive SOS Vocational Training Centre-502</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60-SOS Social Centre</controllingFieldValue>
+            <valueName>SC1-Inactive SOS Family Strengthening Programme-601</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60-SOS Social Centre</controllingFieldValue>
+            <valueName>SC2-Inactive SOS Social Centre-602</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>70-SOS Medical Centre</controllingFieldValue>
+            <valueName>MC-Inactive SOS Medical Centre-700</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>70-SOS Medical Centre</controllingFieldValue>
+            <valueName>MC1-Inactive SOS Medical Centre I-701</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>70-SOS Medical Centre</controllingFieldValue>
+            <valueName>MC2-Inactive SOS Medical Centre II-702</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>80-SOS Emergency Relief Programme</controllingFieldValue>
+            <valueName>EP-Inactive SOS Emergency Relief Programme-800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>91-International Office Region</controllingFieldValue>
+            <valueName>IOR-International Office Region-910</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>91-International Office Region</controllingFieldValue>
+            <valueName>IB-International Branch Office-911</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>91-International Office Region</controllingFieldValue>
+            <valueName>RBFR-Inactive Regional Branch O. FR-912</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>91-International Office Region</controllingFieldValue>
+            <valueName>IORC-International Office Region Cost Centre-919</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>93-Inactive Continental Office</controllingFieldValue>
+            <valueName>CO-Inactive Continental Office-930</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>93-Inactive Continental Office</controllingFieldValue>
+            <valueName>CB-Inactive Continental Branch Office-931</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>93-Inactive Continental Office</controllingFieldValue>
+            <valueName>CBFR-Inactive Continental Branch O. FR-932</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>93-Inactive Continental Office</controllingFieldValue>
+            <valueName>COC-Inactive Continental Office Cost Centre-939</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>94-International Office</controllingFieldValue>
+            <valueName>IO-International Office-940</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>94-International Office</controllingFieldValue>
+            <valueName>IOC-International Office Cost Centre-949</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>95-National Legal Entity</controllingFieldValue>
+            <valueName>NA-National Judicial Entity-950</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>95-National Legal Entity</controllingFieldValue>
+            <valueName>PA-Promoting Association-970</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>95-National Legal Entity</controllingFieldValue>
+            <valueName>SA-Supporting Association-980</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0-Construction Project</controllingFieldValue>
+            <valueName>Construction project-0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1-Alternative Care</controllingFieldValue>
+            <valueName>YC-Youth Care-140</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1-Alternative Care</controllingFieldValue>
+            <valueName>OAC-Other Alternative Care-150</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1-Alternative Care</controllingFieldValue>
+            <valueName>SFC-SOS Family Care-160</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1-Alternative Care</controllingFieldValue>
+            <valueName>FFC-Foster Family Care-170</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>1-Alternative Care</controllingFieldValue>
+            <valueName>SGH-Small Group Homes-180</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>2-Family Strengthening</controllingFieldValue>
+            <valueName>FS-Family Strengthening-210</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3-Education</controllingFieldValue>
+            <valueName>EDU-Primary &amp; Secondary Education-310</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3-Education</controllingFieldValue>
+            <valueName>CT-Care Training-320</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3-Education</controllingFieldValue>
+            <valueName>ECD-Early Childhood Care &amp; Development-330</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>3-Education</controllingFieldValue>
+            <valueName>EET-Employment &amp; Entrepreneurship Training-340</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>4-Health</controllingFieldValue>
+            <valueName>HPP-Health Promotion &amp; Prevention-410</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>4-Health</controllingFieldValue>
+            <valueName>MED-Medical Care-420</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>5-Emergency Response</controllingFieldValue>
+            <valueName>ER-Emergency Response-510</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>6-Other Activites</controllingFieldValue>
+            <valueName>OA-Other Activities-610</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10-SOS Children&apos;s Village</controllingFieldValue>
+            <valueName>CV-Inactive SOS Children&apos;s Village-100</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>20-SOS Youth Facility</controllingFieldValue>
+            <valueName>YF1-Inactive SOS Youth Facility-201</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>20-SOS Youth Facility</controllingFieldValue>
+            <valueName>YF2-Inactive SOS Youth Programme-202</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>96-National Office</controllingFieldValue>
+            <valueName>NO-National Office-960</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>96-National Office</controllingFieldValue>
+            <valueName>NB-National Branch Office-961</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>96-National Office</controllingFieldValue>
+            <valueName>NBFR-National Branch O. FR-962</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>96-National Office</controllingFieldValue>
+            <valueName>NBAD-Advocacy-963</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>96-National Office</controllingFieldValue>
+            <valueName>NBFE-National Branch O. FE-964</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>30-SOS Kindergarten</controllingFieldValue>
+            <valueName>KG-Inactive SOS Kindergarten-300</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>99-Hermann Gmeiner Academy</controllingFieldValue>
+            <valueName>HGA-Hermann Gmeiner Academy-990</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

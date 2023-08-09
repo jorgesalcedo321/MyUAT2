@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Type_Active</fullName>
+    <active>true</active>
+    <description>The Service Type selected have to be Active</description>
+    <errorConditionFormula>ampi__Thematic_Area__r.ampi__Active__c = false</errorConditionFormula>
+    <errorMessage>The &quot;Service Type&quot; selected have to be Active</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Amount_Editable_Pending_Decision</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+ISCHANGED( Funding_Amount__c )
+&amp;&amp;
+TEXT(Status__c) &lt;&gt; &quot;Decision in Progress&quot;
+&amp;&amp;
+ampi__Project__r.RecordType.Name = &quot;Funding Opportunity&quot;</errorConditionFormula>
+    <errorDisplayField>Funding_Amount__c</errorDisplayField>
+    <errorMessage>Funding Amount can only be entered once the Status of the Agreement is set to Decision in Progress.</errorMessage>
+</ValidationRule>

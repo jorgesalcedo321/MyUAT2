@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Flow_Type_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that associates code with the ampi__IATI_Flow_Type__c</description>
+    <externalId>false</externalId>
+    <formula>CASE(ampi__IATI_Flow_Type__c,
+&quot;ODA&quot;,10,
+&quot;OOF&quot;,20,
+&quot;Non-export credit OOF&quot;,21,
+&quot;Officially supported export credits&quot;,22,
+&quot;Private Grants&quot;,30,
+&quot;Private market&quot;,35,
+&quot;Private Foreign Direct Investment&quot;,36,
+&quot;Other Private flows at market terms&quot;,37,
+&quot;Non flow&quot;,40,
+&quot;Other flows&quot;,50,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Code corresponding to the IATI Flow Type</inlineHelpText>
+    <label>IATI Flow Type Code</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

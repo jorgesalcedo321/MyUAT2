@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGAM_Final_Report_Submitted</fullName>
+    <active>true</active>
+    <description>Validation to guide users to correct next Project Status from &quot;Final Report Submitted&quot;</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Final Report Submitted&quot;)
+&amp;&amp;
+CASE( ampi__Project_Status__c ,
+&quot;Project Closed&quot;, 1,
+0) = 0</errorConditionFormula>
+    <errorMessage>Allowed Project Status: &quot;Project Closed&quot;.</errorMessage>
+</ValidationRule>

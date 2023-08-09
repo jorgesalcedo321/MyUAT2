@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Role__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist to represent the different roles / titles that an individual might hold in a project.</description>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Monitoring &amp; Evaluation Officer</fullName>
+                <default>false</default>
+                <label>Monitoring &amp; Evaluation Officer</label>
+            </value>
+            <value>
+                <fullName>External Stakeholder</fullName>
+                <default>false</default>
+                <label>External Stakeholder</label>
+            </value>
+            <value>
+                <fullName>Data Entry</fullName>
+                <default>false</default>
+                <label>Data Entry</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

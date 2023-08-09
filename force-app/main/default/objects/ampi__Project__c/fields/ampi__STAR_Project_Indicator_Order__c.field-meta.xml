@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__STAR_Project_Indicator_Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to determine which field on Project Indicator that SetTargets and AddResults should use to order the Project Indicators listed in the tables. If left NULL, the tables will sort by alphabetically ascending Definition.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a field from Project Indicator to alphabetically order the tables on SetTargets and AddResults. If no field is selected, the table will by default be ordered alphabetically by Indicator Definition.</inlineHelpText>
+    <label>STAR Project Indicator Order</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ampi__Indicator_Fields</valueSetName>
+    </valueSet>
+</CustomField>

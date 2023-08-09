@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Unrestricted picklist field to store and track the status of a Submission response. If set to &quot;Submitted&quot;, then the SubmissionResponseForm component is locked for editing.</description>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Reviewed</fullName>
+                <default>false</default>
+                <label>Reviewed</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

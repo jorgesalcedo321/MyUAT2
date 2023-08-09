@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Disbursement_Channel__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist to select Disbursement Channels as based on IATI codelist (http://reference.iatistandard.org/203/codelists/DisbursementChannel/). The code list sits in the API Name/value of the picklist value, while the Label is the human-readable name of the Disbursement Channel. This code is printed into the transaction/disbursement-channel/@code attribute in the IATI Activity XML.</description>
+    <externalId>false</externalId>
+    <label>IATI Disbursement Channel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ampi__IATI_Disbursement_Channel</valueSetName>
+    </valueSet>
+</CustomField>

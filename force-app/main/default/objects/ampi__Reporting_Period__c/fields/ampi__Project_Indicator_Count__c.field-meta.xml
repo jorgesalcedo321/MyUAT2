@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Project_Indicator_Count__c</fullName>
+    <deprecated>false</deprecated>
+    <description>[NOT IN USE] Number field to store the count of project indicators that are related to this Reporting Period record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field holds the total number of Project Indicators related to this Reporting Period.</inlineHelpText>
+    <label>Project Indicator Count</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

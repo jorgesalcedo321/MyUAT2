@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Incorrect_Disbursement_Selected</fullName>
+    <active>true</active>
+    <description>Validation Rule to ensure that selected Disbursement looks upto same project that parent Project IATI Sector looks upto</description>
+    <errorConditionFormula>AND((ampi__Disbursement__r.ampi__Project__c  &lt;&gt;  ampi__Project_IATI_Sector__r.ampi__Project__c),NOT(ISBLANK( ampi__Disbursement__c )) )</errorConditionFormula>
+    <errorDisplayField>ampi__Disbursement__c</errorDisplayField>
+    <errorMessage>Incorrect Budget Selected: Selected Disbursement should look upto same project that parent Project IATI Sector looks upto</errorMessage>
+</ValidationRule>

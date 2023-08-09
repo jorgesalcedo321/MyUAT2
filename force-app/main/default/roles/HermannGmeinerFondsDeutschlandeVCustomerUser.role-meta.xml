@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Hermann-Gmeiner-Fonds Deutschland e.V. Customer User</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Hermann-Gmeiner-Fonds Deutschland e.V. Customer User</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Project_Manager</parentRole>
+</Role>

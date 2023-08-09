@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Condition_Attached__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to choose whether or not there are conditions attached to the activity for IATI reporting.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate whether or not there are terms and conditions attached to the activity that, if not met, may influence the delivery of commitments made by participating organizations</inlineHelpText>
+    <label>IATI Condition Attached</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Control_Over_Risk__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Assess how much control a team has over this potential risk occurring (e.g. low, medium, high)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Evaluate our ability to be able to influence the impact and priority of the risk</inlineHelpText>
+    <label>Control Over Risk</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <label>Low</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <label>Medium</label>
+            </value>
+            <value>
+                <fullName>High</fullName>
+                <default>false</default>
+                <label>High</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

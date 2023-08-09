@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Template_Compact_Layout</fullName>
+    <fields>ampi__Description__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>ampi__Related_To__c</fields>
+    <label>Template Compact Layout</label>
+</CompactLayout>

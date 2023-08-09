@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Review_Template__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Risk Review Template</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>ampi__Submission__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Template</value>
+        </filterItems>
+        <infoMessage>Please select which Submission Template you want to use for the Risk Review.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ampi__Submission__c</referenceTo>
+    <relationshipLabel>Risk Reviews</relationshipLabel>
+    <relationshipName>Risk_Reviews</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

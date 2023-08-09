@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGRF_In_Implementation</fullName>
+    <active>false</active>
+    <description>Prevents users from selecting status &quot;In implementation&quot; if required field is left empty.</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &apos;System Administrator&apos;
+&amp;&amp;
+RecordType.DeveloperName = &quot;Grant&quot; 
+&amp;&amp;
+(Is_this_an_Umbrella_Project__c = FALSE)
+&amp;&amp;
+ISPICKVAL( ampi__Project_Status__c , &quot;In implementation&quot;)
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Application Approved&quot;)
+&amp;&amp;
+(
+ISBLANK( Start_Implementation__c )||
+PU_Count__c  = 0
+)</errorConditionFormula>
+    <errorMessage>One or more mandatory fields are missing for Status &quot;In Implementation&quot;: Start Implementation Date​.</errorMessage>
+</ValidationRule>

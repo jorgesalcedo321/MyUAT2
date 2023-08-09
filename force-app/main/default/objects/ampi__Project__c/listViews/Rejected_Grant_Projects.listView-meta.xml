@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejected_Grant_Projects</fullName>
+    <columns>Project_ID_Text__c</columns>
+    <columns>Legacy_ID__c</columns>
+    <columns>NAME</columns>
+    <columns>ampi__Project_Status__c</columns>
+    <columns>Phase__c</columns>
+    <columns>IOR_Informed__c</columns>
+    <columns>IOR_Comments__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Is_this_an_Umbrella_Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IOR_Informed__c</field>
+        <operation>equals</operation>
+        <value>No</value>
+    </filters>
+    <label>Grant Projects not reviewed by IOR</label>
+</ListView>

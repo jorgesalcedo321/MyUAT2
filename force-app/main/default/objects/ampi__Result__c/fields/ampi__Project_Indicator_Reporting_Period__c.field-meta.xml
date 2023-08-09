@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Project_Indicator_Reporting_Period__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This lookup field is to specify the projct indicator reporting period</description>
+    <externalId>false</externalId>
+    <label>Project Indicator Reporting Period</label>
+    <referenceTo>ampi__Project_Indicator_Reporting_Period__c</referenceTo>
+    <relationshipLabel>Results</relationshipLabel>
+    <relationshipName>Results</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

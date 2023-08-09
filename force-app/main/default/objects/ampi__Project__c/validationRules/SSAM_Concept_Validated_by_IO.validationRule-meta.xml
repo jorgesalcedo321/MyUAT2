@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSAM_Concept_Validated_by_IO</fullName>
+    <active>true</active>
+    <description>Validation to guide users to correct next Project Status from &quot;Concept Validated&quot; for Standard Projects</description>
+    <errorConditionFormula>(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+$Profile.Name &lt;&gt; &quot;Project Owner&quot;
+&amp;&amp;
+$Profile.Name &lt;&gt; &quot;Super User&quot;
+&amp;&amp;
+RecordType.DeveloperName = &quot;Standard&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Concept Validated&quot;)
+&amp;&amp;
+ISPICKVAL(International_Funding_Required_for_Imp__c, &quot;Yes&quot;)
+&amp;&amp;
+CASE( ampi__Project_Status__c ,
+&quot;Funding Approved&quot;, 1,
+&quot;Concept in Pipeline&quot;, 1,
+&quot;Cancelled&quot;, 1,
+&quot;Concept Validated&quot;, 1,
+0) = 0
+)
+||
+(
+$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+$Profile.Name &lt;&gt; &quot;Project Owner&quot;
+&amp;&amp;
+$Profile.Name &lt;&gt; &quot;Super User&quot;
+&amp;&amp;
+RecordType.DeveloperName = &quot;Standard&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Concept Validated&quot;)
+&amp;&amp;
+ISPICKVAL(International_Funding_Required_for_Imp__c, &quot;No&quot;)
+&amp;&amp;
+CASE( ampi__Project_Status__c ,
+&quot;In Implementation&quot;, 1,
+&quot;Cancelled&quot;, 1,
+&quot;Concept Validated&quot;, 1,					
+0) = 0
+)</errorConditionFormula>
+    <errorMessage>Please set Project Status to an allowed Project Status: If International Funding Required = Yes &quot;Concept In Pipeline&quot;, &quot;Funding Approved&quot;, or &quot;Cancelled&quot;. If International Funding Required = No, you may move the status to &quot;In Implementation&quot;.</errorMessage>
+</ValidationRule>

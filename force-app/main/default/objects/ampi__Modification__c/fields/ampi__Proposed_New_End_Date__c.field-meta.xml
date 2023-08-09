@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Proposed_New_End_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When a Modification is a no-cost extension or a costed extension, this date field allows the requester to propose a new end date for the project.</description>
+    <externalId>false</externalId>
+    <label>Proposed New End Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

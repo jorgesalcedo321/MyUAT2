@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsActive__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CreatedBy.FirstName = &apos;LUCY&apos; &amp;&amp; CreatedBy.LastName = &apos;Service Account&apos; &amp;&amp; RecordType.DeveloperName = &quot;Transition&quot; &amp;&amp;  ISPICKVAL(Transition_Project_Type__c, &apos;Construction&apos;) = FALSE &amp;&amp; New_PU_Count__c = 0, FALSE, TRUE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Active</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

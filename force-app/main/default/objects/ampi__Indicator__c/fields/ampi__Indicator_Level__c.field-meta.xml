@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Indicator_Level__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to specify the level indicator is tracking i.e. whether this indicator is tracking impact or progress</description>
+    <externalId>false</externalId>
+    <label>Indicator Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Activity</fullName>
+                <default>false</default>
+                <label>Activity</label>
+            </value>
+            <value>
+                <fullName>Outcome</fullName>
+                <default>false</default>
+                <label>Outcome</label>
+            </value>
+            <value>
+                <fullName>Output</fullName>
+                <default>false</default>
+                <label>Output</label>
+            </value>
+            <value>
+                <fullName>Objective</fullName>
+                <default>false</default>
+                <label>Objective</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

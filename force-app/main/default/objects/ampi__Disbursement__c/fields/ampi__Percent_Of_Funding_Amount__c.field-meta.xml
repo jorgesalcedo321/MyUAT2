@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Percent_Of_Funding_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This formula field calculates the percent contribution of disbursement record towards the funding amount of parent project</description>
+    <externalId>false</externalId>
+    <formula>IF(
+            AND(
+                NOT(ISNULL(ampi__Amount__c)) ,
+                NOT(ISNULL(ampi__Project__r.ampi__Funding_Amount__c))
+            ) ,
+            (ampi__Amount__c / ampi__Project__r.ampi__Funding_Amount__c ),
+            null
+            )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Percent Of Funding Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Amount_Requested_From_Donor_EUR__c</fullName>
+    <externalId>false</externalId>
+    <formula>Grant_Amount_Requested_From_Donor__c  /  Exchange_Rate_For_Proposed_Budget__c</formula>
+    <inlineHelpText>This value is calculated automatically based on the exchange rate that was provided. It shows the amount you ask from the donor in EUR. Values in EUR are important for global reporting.</inlineHelpText>
+    <label>Grant Amount Requested From Donor (EUR)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

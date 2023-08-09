@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SXAM_In_Identification</fullName>
+    <active>false</active>
+    <description>Validation to guide users to correct next Project Status from &quot;In Identification&quot;. [DEP] December 2020 with deployment of Standard Approvals.</description>
+    <errorConditionFormula>$User.ProfileId &lt;&gt; $Label.System_Administrator_Profile_ID
+&amp;&amp;
+(RecordType.DeveloperName =&quot;End_of_Involvement&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;In Identification&quot;)
+&amp;&amp;
+CASE( ampi__Project_Status__c ,
+&quot;Exit Submitted&quot;, 1,
+&quot;Cancelled&quot;, 1,
+&quot;New&quot;, 1,
+0) = 0)</errorConditionFormula>
+    <errorMessage>Please set Project Status to an allowed Project Status: &quot;In Identification&quot;, &quot;Exit Submitted&quot;, or &quot;Cancelled&quot;.</errorMessage>
+</ValidationRule>

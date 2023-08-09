@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Instructions__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text area field to provide reporters with additional guidance or instructions when responding to this Question record. The value in this field is displayed as helptext in the SubmissionResponseForm component.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this box to provide additional guidance to your submitting users on this question, for example - character limits, required images or tables, etc.</inlineHelpText>
+    <label>Instructions</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

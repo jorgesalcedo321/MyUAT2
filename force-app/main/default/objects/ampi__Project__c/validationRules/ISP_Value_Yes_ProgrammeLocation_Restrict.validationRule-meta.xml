@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISP_Value_Yes_ProgrammeLocation_Restrict</fullName>
+    <active>true</active>
+    <description>IF Programme ISP Available is “Temporarily closed for international sponsorship” Project ISP Available field on related projects cannot be set to “Yes”. It is still possible to set the value to “No” or “Temporarily closed for international sponsorship”</description>
+    <errorConditionFormula>ISCHANGED(ISP_Available__c) &amp;&amp; (RecordType.Name == &apos;Transition&apos; || RecordType.Name == &apos;Standard&apos;) &amp;&amp; TEXT(Programme_Location__r.ISP_Available__c) = &apos;Temporarily closed for international sponsorship&apos; &amp;&amp;  TEXT(ISP_Available__c) == &apos;Yes&apos;</errorConditionFormula>
+    <errorMessage>ISP Available cannot be set to &apos;Yes&apos; because Programme Location ISP Available is &apos;Temporarily closed for international sponsorship&apos;</errorMessage>
+</ValidationRule>

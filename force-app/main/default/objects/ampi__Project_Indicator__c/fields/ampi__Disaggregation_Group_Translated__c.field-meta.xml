@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Disaggregation_Group_Translated__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field to return a translated version of Disaggregation_Group__c if user is using Salesforce in a different language. Depending on user’s language locale, can return Disaggregation_Group__c, Disaggregation_Group_Language_1__c, Disaggregation_Group_Language_2__c, or Disaggregation_Group_Language_3__c. Displayed in ManageIndicators, SetTargets, and AddResults.</description>
+    <externalId>false</externalId>
+    <formula>CASE($Label.ampi__USER_LANGUAGE_CODE,
+    &apos;1&apos;, BLANKVALUE(ampi__Disaggregation_Group_Language_1__c, ampi__Disaggregation_Group__c),
+    &apos;2&apos;, BLANKVALUE(ampi__Disaggregation_Group_Language_2__c, ampi__Disaggregation_Group__c),
+    &apos;3&apos;, BLANKVALUE(ampi__Disaggregation_Group_Language_3__c, ampi__Disaggregation_Group__c),
+    ampi__Disaggregation_Group__c
+)</formula>
+    <label>Disaggregation Group Translated</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

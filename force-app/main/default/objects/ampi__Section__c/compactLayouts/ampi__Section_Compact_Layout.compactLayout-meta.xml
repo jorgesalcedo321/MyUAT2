@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Section_Compact_Layout</fullName>
+    <fields>ampi__Description__c</fields>
+    <fields>ampi__Default__c</fields>
+    <fields>ampi__Active__c</fields>
+    <fields>ampi__Order__c</fields>
+    <label>Section Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Amount_Agreements_in_Pipeline__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Total Amount in Agreements pending Approval.</inlineHelpText>
+    <label>Total Amount Agreements in Pipeline</label>
+    <summarizedField>ampi__Organization_Role__c.Requested_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>ampi__Organization_Role__c.Status__c</field>
+        <operation>equals</operation>
+        <value>In Formulation, Application Submitted, Under Review, Request for Revision Submitted, Decision in Progress</value>
+    </summaryFilterItems>
+    <summaryForeignKey>ampi__Organization_Role__c.ampi__Project__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Parent_Question__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Self-lookup field to track the parent Question from a Submission template on an Answer.</description>
+    <externalId>false</externalId>
+    <label>Parent Question</label>
+    <referenceTo>ampi__Question__c</referenceTo>
+    <relationshipLabel>Answers</relationshipLabel>
+    <relationshipName>Answers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

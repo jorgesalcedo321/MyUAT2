@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_PRS_And_ServiceType_For_Overarching</fullName>
+    <active>false</active>
+    <description>Overarching activities do not have Project Result statement and Service Type assigned</description>
+    <errorConditionFormula>TEXT(ampi__Type__c) == &quot;Overarching&quot; &amp;&amp; (ampi__Project_Objective__c &lt;&gt; &apos;&apos; || Thematic_Area__c &lt;&gt; &apos;&apos;)</errorConditionFormula>
+    <errorMessage>Overarching activities do not have Project Result statement and Service Type assigned</errorMessage>
+</ValidationRule>

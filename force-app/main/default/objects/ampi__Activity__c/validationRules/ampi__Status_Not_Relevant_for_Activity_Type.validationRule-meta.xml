@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Status_Not_Relevant_for_Activity_Type</fullName>
+    <active>false</active>
+    <description>Validation rule to ensure that correct status is selected for the select activity type (task/ milestone). Please update this validation rule if you have updated the field dependency between Activity Type and Status fields</description>
+    <errorConditionFormula>OR(
+ISPICKVAL(ampi__xx_Activity_Type__c, &quot;Task&quot;)  &amp;&amp; 
+ISPICKVAL(ampi__Status__c, &quot;Open&quot;),
+ISPICKVAL(ampi__xx_Activity_Type__c, &quot;Milestone&quot;)  &amp;&amp; 
+ISPICKVAL(ampi__Status__c, &quot;Planning&quot;),
+ISPICKVAL(ampi__xx_Activity_Type__c, &quot;Milestone&quot;)  &amp;&amp; 
+ISPICKVAL(ampi__Status__c, &quot;In Progress&quot;)
+)</errorConditionFormula>
+    <errorMessage>Incorrect Status Selected: The selected status is not relevant for the specified activity type (Task/ Milestone)</errorMessage>
+</ValidationRule>

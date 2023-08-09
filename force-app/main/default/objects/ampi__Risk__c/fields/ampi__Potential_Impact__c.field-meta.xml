@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Potential_Impact__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Assess the severity/potential harm of the risk (e.g. high, med, low) if it occurs - can be compared with Actual Impact</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Evaluate the consequences of the risk, if it does occur</inlineHelpText>
+    <label>Potential Impact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cause Early Termination or Major Problems</fullName>
+                <default>false</default>
+                <label>Severe</label>
+            </value>
+            <value>
+                <fullName>Significant Impact</fullName>
+                <default>false</default>
+                <label>Major</label>
+            </value>
+            <value>
+                <fullName>Moderate Impact</fullName>
+                <default>false</default>
+                <label>Moderate</label>
+            </value>
+            <value>
+                <fullName>Minor Impact</fullName>
+                <default>false</default>
+                <label>Minor</label>
+            </value>
+            <value>
+                <fullName>Almost No Impact</fullName>
+                <default>false</default>
+                <label>Almost None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

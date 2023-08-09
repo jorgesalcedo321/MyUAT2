@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Type__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Risk_Value__c = 0, null,
+IF(Risk_Value__c  &lt;= 4, &quot;Assumption&quot;,
+IF(Risk_Value__c &lt;= 12, &quot;Acceptable risk&quot;,
+IF(Risk_Value__c &lt;= 19, &quot;Acceptable or critical&quot;,
+IF(Risk_Value__c &lt;= 25, &quot;Critical risk&quot;,
+null)))))</formula>
+    <label>Risk Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

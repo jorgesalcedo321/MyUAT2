@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Estimated_Effort__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Percent field to estimate the level ​of effort required from related position for the activity. This field should not exceed 100%.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Estimated Effort cannot exceed 100%</inlineHelpText>
+    <label>Estimated Effort</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

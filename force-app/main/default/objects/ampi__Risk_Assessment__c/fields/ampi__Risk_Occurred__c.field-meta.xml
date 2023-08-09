@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Risk_Occurred__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Track if a risk event happened or not</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate if the Risk happened. Describe what happened in the &quot;Description of Event&quot; field</inlineHelpText>
+    <label>Risk Occurred?</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

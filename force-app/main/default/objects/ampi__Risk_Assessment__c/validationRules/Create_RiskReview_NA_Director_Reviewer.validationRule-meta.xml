@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_RiskReview_NA_Director_Reviewer</fullName>
+    <active>true</active>
+    <description>Only NA Director or Risk Reviewer are allowed to create a risk review that is related to this NA</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;NA_Safety_Security_Risk_Review_New&apos;, ISNEW(), NOT(OR (National_Association__r.NA_Risk_Reviewer__r.Email = $User.Email, National_Association__r.NA_Director__r.Email = $User.Email)))</errorConditionFormula>
+    <errorMessage>Only NA Director or Risk Reviewer are allowed to create a risk review that is related to this NA</errorMessage>
+</ValidationRule>

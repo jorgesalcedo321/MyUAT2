@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Target_Value__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Number field to store target for a quantitative indicator that are not disaggregated by sex</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Displays the target value for indicators that are not disaggregated by sex.</inlineHelpText>
+    <label>Target Value</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

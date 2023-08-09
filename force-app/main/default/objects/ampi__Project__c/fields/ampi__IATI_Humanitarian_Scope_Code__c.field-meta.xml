@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Humanitarian_Scope_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>[Not in Use - Candidate for Deprecation] Formula field that associates a code with the ampi__IATI_Humanitarian_Scope__c</description>
+    <externalId>false</externalId>
+    <formula>CASE(ampi__IATI_Humanitarian_Scope__c,&quot;Emergency&quot;,1,&quot;Appeal&quot;,2,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Code associated with the IATI Humanitarian Scope</inlineHelpText>
+    <label>IATI Humanitarian Scope Type Code</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

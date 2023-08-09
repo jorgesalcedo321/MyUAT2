@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Monitoring_Period__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Lookup to enable feature compactability</inlineHelpText>
+    <label>Monitoring Period</label>
+    <referenceTo>ampi__Reporting_Period__c</referenceTo>
+    <relationshipLabel>Projects</relationshipLabel>
+    <relationshipName>Projects</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

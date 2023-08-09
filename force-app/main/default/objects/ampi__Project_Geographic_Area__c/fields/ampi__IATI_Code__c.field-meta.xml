@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Text field to store the code of the Project Geographic Area for IATI reporting.</description>
+    <externalId>false</externalId>
+    <label>IATI Code</label>
+    <length>80</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

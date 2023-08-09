@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Output_must_have_parent_Outcome</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL(ampi__Level__c, &quot;Output&quot;) &amp;&amp; NOT(ISPICKVAL( ampi__Parent_Project_Objective__r.ampi__Level__c, &quot;Outcome&quot;))</errorConditionFormula>
+    <errorDisplayField>ampi__Parent_Project_Objective__c</errorDisplayField>
+    <errorMessage>You must associate an Output with a parent Outcome - not any other level.</errorMessage>
+</ValidationRule>

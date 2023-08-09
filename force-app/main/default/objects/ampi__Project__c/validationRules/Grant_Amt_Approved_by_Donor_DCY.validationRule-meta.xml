@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Amt_Approved_by_Donor_DCY</fullName>
+    <active>true</active>
+    <description>Grant Amount Approved by Donor (DCY) must be less than Approved Total Project Budget (DCY).</description>
+    <errorConditionFormula>Grant_Amount_Approved_By_Donor__c&gt;Approved_Total_Project_Budget_DCY__c</errorConditionFormula>
+    <errorDisplayField>Grant_Amount_Approved_By_Donor__c</errorDisplayField>
+    <errorMessage>Grant Amount Approved by Donor (DCY) must be less than Approved Total Project Budget (DCY)</errorMessage>
+</ValidationRule>

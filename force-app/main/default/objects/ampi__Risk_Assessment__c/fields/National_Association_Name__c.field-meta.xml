@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>National_Association_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(IF(OR(FIND(&apos;my.site.com&apos;, $Api.Partner_Server_URL_570)&gt;0,FIND(&apos;prodigi.sos-kd&apos;, $Api.Partner_Server_URL_570)&gt;0),&apos;/s/account&apos;,&apos;&apos;) + &apos;/&apos; +  National_Association__c, National_Association__r.Name, &apos;_self&apos;)</formula>
+    <label>National Association Name</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

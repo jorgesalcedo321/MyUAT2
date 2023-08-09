@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Policy_Marker_Vocabulary_URI_is_set</fullName>
+    <active>true</active>
+    <description>Ensure Policy Marker Vocabulary URI is populated if Vocabulary Code = 99.</description>
+    <errorConditionFormula>AND(ampi__Vocabulary_Code__c  = 99,  ISBLANK( ampi__IATI_Policy_Marker_Vocabulary_URI__c ))</errorConditionFormula>
+    <errorDisplayField>ampi__IATI_Policy_Marker_Vocabulary_URI__c</errorDisplayField>
+    <errorMessage>IATI Policy Marker Vocabulary URI must be filled out if the Vocabulary Code is set to 99.</errorMessage>
+</ValidationRule>

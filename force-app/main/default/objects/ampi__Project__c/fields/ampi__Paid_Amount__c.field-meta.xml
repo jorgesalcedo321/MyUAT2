@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Paid_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Roll up summary that sums the Amount values on all Disbursement records where Status equals &quot;Paid&quot;.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Summation of all disbursements for this project where the status is set to Paid.</inlineHelpText>
+    <label>Paid Amount</label>
+    <summarizedField>ampi__Disbursement__c.ampi__Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>ampi__Disbursement__c.ampi__Status__c</field>
+        <operation>equals</operation>
+        <value>Paid</value>
+    </summaryFilterItems>
+    <summaryForeignKey>ampi__Disbursement__c.ampi__Project__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

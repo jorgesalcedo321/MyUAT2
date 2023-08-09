@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Fund__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>A lookup to the fund from which an allocation is applied or committed.</description>
+    <externalId>false</externalId>
+    <label>Fund</label>
+    <referenceTo>ampi__xx_Fund__c</referenceTo>
+    <relationshipLabel>Allocations</relationshipLabel>
+    <relationshipName>Allocations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

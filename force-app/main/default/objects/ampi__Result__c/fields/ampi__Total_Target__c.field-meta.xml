@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Total_Target__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Calculates the total target value from a single Result record (i.e. sums target values that are disaggregated by sex).</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  OR(
+  ampi__Project_Indicator__r.ampi__Data_Type__c = &quot;Currency&quot;, 
+  ampi__Project_Indicator__r.ampi__Data_Type__c = &quot;Number&quot;
+  ), 
+  IF(
+    AND(
+      ampi__Project_Indicator__r.ampi__Cross_Disaggregation_by_Sex__c = TRUE,
+      ampi__Project_Indicator__r.ampi__Targets_Are_Disaggregated__c = TRUE
+      ), 
+    IF(
+      AND(
+        ISNULL(ampi__Female_Target__c), 
+        ISNULL(ampi__Male_Target__c), 
+        ISNULL(ampi__Unknown_Target__c)
+        ), 
+      null, 
+      NULLVALUE(ampi__Female_Target__c, 0.00) + NULLVALUE(ampi__Male_Target__c, 0.00) + NULLVALUE(ampi__Unknown_Target__c, 0.00)
+      ), 
+    ampi__Target_Value__c),
+    IF(
+      ampi__Project_Indicator__r.ampi__Data_Type__c = &quot;Percent&quot;,
+      ampi__Target_Value__c, 
+      null
+      ) 
+  )</formula>
+    <inlineHelpText>Calculates the total target value from a single Result record (i.e. sums target values that are disaggregated by sex).</inlineHelpText>
+    <label>Total Target</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

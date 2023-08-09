@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enable_for_External_Project_Team__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checking this checkbox will set up an External Project Team so that the Project Owner can add Team Members (Role = &quot;Project Contributor&quot;) to the Project for MA Portal users to be able to collaborate on the Project. This is automatically checked by automation if a Project Manager (external user) creates a new Project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Checking this checkbox will set up an External Project Team so that the Project Owner can add Team Members (Role = &quot;Project Contributor&quot;) to the Project for MA Portal users to be able to collaborate on the Project. This is automatically checked by automation if a Project Manager (external user) creates a new Project.</inlineHelpText>
+    <label>Enable for External Project Team?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Programme_Units</fullName>
+    <columns>NAME</columns>
+    <columns>Code__c</columns>
+    <columns>Long_Name__c</columns>
+    <columns>Parent_MA__c</columns>
+    <columns>ampi__Parent_Geographical_Area__c</columns>
+    <columns>Active__c</columns>
+    <columns>Pillar__c</columns>
+    <columns>Program_Unit_Type__c</columns>
+    <columns>SOS_Role__c</columns>
+    <columns>ampi__Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Programme Units</label>
+</ListView>

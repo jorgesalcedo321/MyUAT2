@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSRF_Exit_Validated_by_IO</fullName>
+    <active>false</active>
+    <description>Prevents users from selecting status &quot;Exit Validated by IO&quot; if required fields are left empty for Standard projects. [DEP] December 2020 with deployment of Standard Approvals.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;Standard&quot;
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;Exit Validated by IO&quot;)
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Exit Submitted&quot;)
+&amp;&amp;
+(
+Exit_strategy_validated_by_NA__c = False ||
+ISBLANK( Exit_strategy_validated_by_NA_date__c )||
+Exit_strategy_validated_by_IOR__c = False ||
+ISBLANK( Exit_strategy_validated_by_IOR_date__c )||
+Exit_strategy_validated_by_IO__c = False ||
+ISBLANK( Exit_strategy_validated_by_IO_date__c )||
+NOT(ISPICKVAL(Priority__c,&quot;High&quot;))||
+NOT(ISPICKVAL(Priority__c,&quot;Low&quot;))
+)</errorConditionFormula>
+    <errorMessage>Please fill in mandatory fields for Status &quot;Exit Validated by IO&quot;: Validation of Exit Strategy by NA, IOR and IO and their Dates plus Priority = High</errorMessage>
+</ValidationRule>

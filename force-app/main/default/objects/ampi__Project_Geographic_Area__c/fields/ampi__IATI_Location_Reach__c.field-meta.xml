@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Location_Reach__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to indicate how an IATI Activity was reaching this particular geographic location.</description>
+    <externalId>false</externalId>
+    <label>IATI Location Reach</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Activity</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Intended Beneficiaries</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

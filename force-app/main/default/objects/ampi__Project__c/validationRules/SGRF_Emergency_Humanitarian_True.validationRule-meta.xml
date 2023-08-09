@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGRF_Emergency_Humanitarian_True</fullName>
+    <active>true</active>
+    <description>Emergency Humanitarian Intervention value is needed to be set for the project status &quot;Concept in Formulation&quot; and if Multistage application = Yes or 
+project status is selected for &quot;Application in Formulation&quot; and if Multistage application = No</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;Grant&quot; &amp;&amp;
+OR((ISPICKVAL(ampi__Project_Status__c, &quot;Application in Formulation&quot;) &amp;&amp; ISPICKVAL(Multistage_application__c, &quot;No&quot;)), 
+(ISPICKVAL(ampi__Project_Status__c, &quot;Concept in Formulation&quot;) &amp;&amp;
+ISPICKVAL(Multistage_application__c, &quot;Yes&quot;)))  &amp;&amp;
+ISPICKVAL(Emergency_Humanitarian__c, &quot;&quot;)</errorConditionFormula>
+    <errorMessage>Please set value for the field &apos;Emergency Humanitarian Intervention&apos;&apos;, before moving the status to Application in Formulation or Concept in Formulation</errorMessage>
+</ValidationRule>

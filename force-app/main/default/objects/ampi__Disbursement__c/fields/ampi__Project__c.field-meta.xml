@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Project__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Master-Detail field to specify the project this disbursement belongs to.</description>
+    <externalId>false</externalId>
+    <label>Project</label>
+    <referenceTo>ampi__Project__c</referenceTo>
+    <relationshipLabel>Disbursements</relationshipLabel>
+    <relationshipName>Disbursements</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

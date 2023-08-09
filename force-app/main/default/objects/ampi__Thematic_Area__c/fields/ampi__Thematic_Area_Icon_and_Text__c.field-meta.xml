@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Thematic_Area_Icon_and_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Concatenation of Icon and Name field, used to populate on Other Target Objects</description>
+    <externalId>false</externalId>
+    <formula>ampi__Icon__c + &apos;#&apos; + ampi__Name_Translated__c</formula>
+    <label>Thematic Area Icon and Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

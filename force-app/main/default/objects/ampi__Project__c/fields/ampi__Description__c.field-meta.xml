@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text field to describe the project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Add description of your project (1024 char max), describe specific objectives. Include key words to ease the search (e.g. country, donor). The description can be changed and updated at any time and is shown on the Team Site.</inlineHelpText>
+    <label>Project Description</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Percentage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Percent field to indicate what percent of total funding for an IATI Activity is being directed towards a particular geographic area. The number in this field must fall between 0 and 100, and the totals of this field (for all geographic areas of any particular vocabulary) must not add up to more than 100.</description>
+    <externalId>false</externalId>
+    <label>IATI Percentage</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

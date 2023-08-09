@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Project__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Risk Registers must be associated with a Project so that grant-makers can, at the grant/project-level, make decisions on the grant/project based on the related Risks.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Associated with a Project with a Risk Register so that grant-makers can, at the grant/project-level, make decisions on the grant/project based on the related Risks</inlineHelpText>
+    <label>Project</label>
+    <referenceTo>ampi__Project__c</referenceTo>
+    <relationshipLabel>Risk Registers</relationshipLabel>
+    <relationshipName>Risk_Registers</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

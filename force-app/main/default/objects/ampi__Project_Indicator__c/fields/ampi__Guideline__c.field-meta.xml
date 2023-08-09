@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Guideline__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text field to specify the guidelines on how to measure this indicator.</description>
+    <externalId>false</externalId>
+    <label>Guideline</label>
+    <length>2500</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

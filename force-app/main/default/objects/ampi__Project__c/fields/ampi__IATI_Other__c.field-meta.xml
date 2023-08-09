@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Other__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text area field to capture any other notes/comments about an IATI Activity/Amp project.</description>
+    <externalId>false</externalId>
+    <label>IATI Other</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

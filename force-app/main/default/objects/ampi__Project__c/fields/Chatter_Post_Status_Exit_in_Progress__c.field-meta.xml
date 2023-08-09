@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chatter_Post_Status_Exit_in_Progress__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether the Chatter post has gone out when a project is in Status Exit in Progress</description>
+    <externalId>false</externalId>
+    <label>Chatter Post Status Exit in Progress</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

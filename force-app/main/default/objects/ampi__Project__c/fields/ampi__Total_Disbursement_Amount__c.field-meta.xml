@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Total_Disbursement_Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that sums the amounts in all disbursements added to this project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Summation of all disbursements that are created for this project.</inlineHelpText>
+    <label>Total Disbursement Amount</label>
+    <summarizedField>ampi__Disbursement__c.ampi__Amount__c</summarizedField>
+    <summaryForeignKey>ampi__Disbursement__c.ampi__Project__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Transaction_Type_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>[Candidate for Deprecation] Formula field that associates a code with ampi__IATI_Transaction_Type__c. This does not get printed into the IATI Activity XML.</description>
+    <externalId>false</externalId>
+    <formula>CASE(ampi__IATI_Transaction_Type__c, 
+&quot;Incoming Funds&quot;,1, 
+&quot;Outgoing Commitment&quot;,2, 
+&quot;Disbursement&quot;,3,
+&quot;Expenditure&quot;,4,
+&quot;Interest Payment&quot;,5,
+&quot;Loan Repayment&quot;,6,
+&quot;Reimbursement&quot;,7,
+&quot;Purchase of Equity&quot;,8,
+&quot;Sale of Equity&quot;,9,
+&quot;Credit Guarantee&quot;,10,
+&quot;Incoming Commitment&quot;,11,
+&quot;Outgoing Pledge&quot;,12,
+&quot;Incoming Pledge&quot;,13,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Code corresponding to IATI Transaction Type</inlineHelpText>
+    <label>IATI Transaction Type Code</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

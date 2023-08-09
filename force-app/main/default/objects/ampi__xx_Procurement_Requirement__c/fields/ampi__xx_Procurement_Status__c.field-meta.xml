@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Procurement_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to indicate the procurement status of related good or service for the related activity.</description>
+    <externalId>false</externalId>
+    <label>Procurement Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Planned</fullName>
+                <default>true</default>
+                <label>Planned</label>
+            </value>
+            <value>
+                <fullName>Requested</fullName>
+                <default>false</default>
+                <label>Requested</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Denied</fullName>
+                <default>false</default>
+                <label>Denied</label>
+            </value>
+            <value>
+                <fullName>Assigned</fullName>
+                <default>false</default>
+                <label>Assigned</label>
+            </value>
+            <value>
+                <fullName>Unassigned</fullName>
+                <default>false</default>
+                <label>Unassigned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

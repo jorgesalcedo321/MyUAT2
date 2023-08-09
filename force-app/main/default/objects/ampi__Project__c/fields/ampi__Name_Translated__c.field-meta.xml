@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Name_Translated__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field to return a translated version of Name if user is using Salesforce in a different language. Depending on user’s language locale, can return Name, Name_Language_1, Name_Language_2, or Name_Language_3. Displayed in ManageIndicators, SetTargets, and AddResults.</description>
+    <externalId>false</externalId>
+    <formula>CASE($Label.ampi__USER_LANGUAGE_CODE,
+    &apos;1&apos;, BLANKVALUE(ampi__Name_Language_1__c, Name),
+    &apos;2&apos;, BLANKVALUE(ampi__Name_Language_2__c, Name),
+    &apos;3&apos;, BLANKVALUE(ampi__Name_Language_3__c, Name),
+    Name
+)</formula>
+    <label>Name Translated</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

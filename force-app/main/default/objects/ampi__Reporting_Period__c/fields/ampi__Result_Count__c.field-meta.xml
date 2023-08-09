@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Result_Count__c</fullName>
+    <deprecated>false</deprecated>
+    <description>[NOT IN USE] Number field to store the count of Project Indicators related to this Reporting Period that have had Result data entered</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field holds the number of Project Indicators related to this Reporting Period that have Result data entered.</inlineHelpText>
+    <label>Result Count</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Identification_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Track when a risk was identified</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate the date this risk was initially identified</inlineHelpText>
+    <label>Identification Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

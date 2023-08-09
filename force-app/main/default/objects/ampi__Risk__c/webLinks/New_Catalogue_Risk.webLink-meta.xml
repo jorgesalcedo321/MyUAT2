@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Catalogue_Risk</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>New Catalogue Risk</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/lightning/o/ampi__Risk__c/new?defaultFieldValues=RecordTypeId=&quot;0121i000000cF3kAAE&quot;,Project__c={!ampi__Project__c.Id}</url>
+</WebLink>

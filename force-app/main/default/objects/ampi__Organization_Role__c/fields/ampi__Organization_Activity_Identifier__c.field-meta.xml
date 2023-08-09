@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Organization_Activity_Identifier__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The IATI standard allows for the recording of information on all organizations that participate in any part of the lifecycle of an aid activity: inter alia donors, beneficiaries, extending and implementing agencies.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter information on all organizations that participate in any part of the lifecycle of an aid activity here</inlineHelpText>
+    <label>Organization Activity Identifier</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist to denote the type of the financial record. The value in this picklist determines which rollup fields (Planned Revenue and Actual Revenue or Planned Expenditure and Actual Expenditure) a particular Financial record is counted in.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Expenditure</fullName>
+                <default>false</default>
+                <label>Expenditure</label>
+            </value>
+            <value>
+                <fullName>Revenue</fullName>
+                <default>false</default>
+                <label>Revenue</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

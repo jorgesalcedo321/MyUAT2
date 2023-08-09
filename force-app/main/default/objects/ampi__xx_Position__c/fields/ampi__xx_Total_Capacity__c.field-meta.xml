@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Total_Capacity__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Percent field to indicate the total level of effort required from the position</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Total Capacity cannot exceed 100%</inlineHelpText>
+    <label>Total Capacity (LOE)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

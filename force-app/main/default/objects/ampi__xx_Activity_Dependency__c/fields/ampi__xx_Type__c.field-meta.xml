@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Dependency relationship between the preceding activity and succeeding activity. The preceding activity must either start or finish before the succeeding activity can start or finish.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Define the dependency relationship between the predecessor and successor activities</inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>false</default>
+                <label>Finish to Start</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Start to Start</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Finish to Finish</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>Start to Finish</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

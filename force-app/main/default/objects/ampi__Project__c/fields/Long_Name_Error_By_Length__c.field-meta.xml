@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Long_Name_Error_By_Length__c</fullName>
+    <externalId>false</externalId>
+    <formula>LEN(Name_English_Translated__c) &gt; 40</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Long Name Error By Length</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

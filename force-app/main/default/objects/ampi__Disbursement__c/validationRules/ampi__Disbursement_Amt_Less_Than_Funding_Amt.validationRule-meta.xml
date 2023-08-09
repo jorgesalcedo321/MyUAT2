@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Disbursement_Amt_Less_Than_Funding_Amt</fullName>
+    <active>false</active>
+    <description>This validation rule prevents users from creating a Disbursement record if, after adding it, the total of Disbursement Amount values will exceed the Project&apos;s Funding Amount value.</description>
+    <errorConditionFormula>IF(
+  ISNEW(), 
+  (
+    (ampi__Project__r.ampi__Total_Disbursement_Amount__c + ampi__Amount__c) &gt; ampi__Project__r.ampi__Funding_Amount__c) , 
+  (
+    (ampi__Project__r.ampi__Total_Disbursement_Amount__c + ampi__Amount__c - PRIORVALUE(ampi__Amount__c)) &gt; ampi__Project__r.ampi__Funding_Amount__c) 
+)</errorConditionFormula>
+    <errorDisplayField>ampi__Amount__c</errorDisplayField>
+    <errorMessage>Disbursement amounts cannot have a total greater than the project&apos;s funding amount.</errorMessage>
+</ValidationRule>

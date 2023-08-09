@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Vocabulary_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>These field generates the IATI Sector Vocabulary Code based on the value selected in the ampi__Vocabulary__c picklist field.</description>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(ampi__Vocabulary__c),
+  &apos;OECD DAC CRS Purpose Codes (5 digit)&apos;, 1,
+  &apos;OECD DAC CRS Purpose Codes (3 digit)&apos;, 2,
+  &apos;Classification of the Functions of Government (UN)&apos;, 3,
+  &apos;Statistical classification of economic activities in the European Community&apos;, 4,
+  &apos;National Taxonomy for Exempt Entities (USA)&apos;, 5,
+  &apos;AidData&apos;, 6,
+  &apos;SDG Goal&apos;, 7,
+  &apos;SDG Target&apos;, 8,
+  &apos;SDG Indicator&apos;, 9,
+  &apos;Humanitarian Global Clusters (Inter-Agency Standing Committee)&apos;, 10,
+  &apos;Reporting Organization&apos;, 99,
+  &apos;Reporting Organization 2&apos;, 98,
+  null
+)</formula>
+    <label>Vocabulary Code</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

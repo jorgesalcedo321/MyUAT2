@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSRF_In_Formulation</fullName>
+    <active>true</active>
+    <description>Prevents users from selecting status &quot;In Formulation&quot; if required fields are left empty for Standard projects.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;Standard&quot;
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;In Formulation&quot;)
+&amp;&amp;
+(
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;In Identification&quot;)
+&amp;&amp;
+ISPICKVAL(Early_PSA_Feedback_Desired__c ,&quot;Yes&quot;)
+)</errorConditionFormula>
+    <errorMessage>Please fill in mandatory fields for Status &quot;In Formulation&quot;: Early Feedback Desired = No</errorMessage>
+</ValidationRule>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Early_PSA_Feedback_Desired__c</fullName>
+    <description>Renamed as part of Phase 3 - Sprint 4 release of Standard Project Approval processes.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate &apos;yes&apos; if the National Office or Donor requires a programme idea. This will trigger an approval process. Indicate &apos;no&apos; if this is not required</inlineHelpText>
+    <label>Programme Idea Required?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Risk_Cause_Subcategory__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field that specifies the sub-category of a Risk Cause.</description>
+    <externalId>false</externalId>
+    <label>Risk Cause Subcategory</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Emergency Situation</fullName>
+                <default>false</default>
+                <label>Emergency Situation</label>
+            </value>
+            <value>
+                <fullName>Humataranian Crises</fullName>
+                <default>false</default>
+                <label>Humataranian Crises</label>
+            </value>
+            <value>
+                <fullName>Change in Government Policy</fullName>
+                <default>false</default>
+                <label>Change in Government Policy</label>
+            </value>
+            <value>
+                <fullName>New Discovery</fullName>
+                <default>false</default>
+                <label>New Discovery</label>
+            </value>
+            <value>
+                <fullName>Organization Strategy</fullName>
+                <default>false</default>
+                <label>Organization Strategy</label>
+            </value>
+            <value>
+                <fullName>Programme Management Capacities</fullName>
+                <default>false</default>
+                <label>Programme Management Capacities</label>
+            </value>
+            <value>
+                <fullName>Human Resource Issues</fullName>
+                <default>false</default>
+                <label>Human Resource Issues</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

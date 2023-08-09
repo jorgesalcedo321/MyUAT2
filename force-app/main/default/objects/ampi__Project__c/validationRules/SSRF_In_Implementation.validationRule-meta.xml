@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSRF_In_Implementation</fullName>
+    <active>true</active>
+    <description>Prevents users from selecting status &quot;In Implementation&quot; if required fields are left empty for Standard projects.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;Standard&quot;
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;In Implementation&quot;)
+&amp;&amp;
+(
+(
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;In Formulation&quot;)
+&amp;&amp;
+(
+ISPICKVAL(New_SOS_Location__c, &quot;&quot;)||
+ISBLANK( Programme_Location__c )||
+ISPICKVAL( SOS_Role__c, &quot;&quot;)||
+PU_Count__c &lt; 1 ||
+ISBLANK( Funding_organisation__c )||
+ISBLANK( Concept_Note_Approved_by_NA_Date__c )||
+ISBLANK( Planned_Implementation_Start_Date__c )||
+ISBLANK( Planned_Implementation_End_Date__c )||
+ISBLANK( Actual_Implementation_Start_Date__c )
+)
+)
+||
+(
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Funding Approved&quot;)
+&amp;&amp;
+(
+ISBLANK( Programme_Location__c )||
+D365_PU_Count__c &lt; 1 ||
+ISBLANK( Actual_Implementation_Start_Date__c )
+)
+)
+||
+(
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Exit Validated by IO&quot;)
+&amp;&amp;
+(
+D365_PU_Count__c &lt; 1 ||
+NOT(Exit_strategy_funding_approved__c = False)
+)
+)
+||
+(
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Concept in Pipeline&quot;)
+&amp;&amp;
+(
+D365_PU_Count__c &lt; 1
+)
+)
+)</errorConditionFormula>
+    <errorMessage>Please fill in mandatory fields for Status &quot;In Implementation&quot;: New SOS Loc, Prog Location, SOS Role, at least 1 PU selected, Funding Org, Approved by NA plus Date, Planned Impl. Start &amp; End Dates, Actual Impl. Start Date.</errorMessage>
+</ValidationRule>

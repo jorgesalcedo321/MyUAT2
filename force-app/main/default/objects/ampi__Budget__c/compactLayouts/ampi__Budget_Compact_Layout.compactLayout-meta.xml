@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Budget_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>ampi__Budget_Status__c</fields>
+    <fields>ampi__Actual_Expenditure__c</fields>
+    <fields>ampi__Actual_Revenue__c</fields>
+    <label>Budget Compact Layout</label>
+</CompactLayout>

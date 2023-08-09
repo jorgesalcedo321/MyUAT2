@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Objective__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text field to store the comma-separated objectives related to this project indicator. This field is populated by the triggers on Project Indicator Objective.</description>
+    <externalId>false</externalId>
+    <label>Objective(s)</label>
+    <length>5000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

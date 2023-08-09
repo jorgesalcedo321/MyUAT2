@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Planned_Revenue__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This roll-up summary field sums the Amount Planned value for all child Financial records where Type is Revenue, providing the total Planned Revenue for the entire Budget.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This roll-up summary field sums the Amount Planned value for all child Financial records where Type is Revenue.</inlineHelpText>
+    <label>Planned Revenue</label>
+    <summarizedField>ampi__Financial__c.ampi__Amount_Planned__c</summarizedField>
+    <summaryFilterItems>
+        <field>ampi__Financial__c.ampi__Type__c</field>
+        <operation>equals</operation>
+        <value>Revenue</value>
+    </summaryFilterItems>
+    <summaryForeignKey>ampi__Financial__c.ampi__Budget__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

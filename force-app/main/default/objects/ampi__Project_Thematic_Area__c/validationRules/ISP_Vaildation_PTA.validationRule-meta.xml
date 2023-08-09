@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISP_Vaildation_PTA</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ampi__Project__r.RecordType.DeveloperName = &quot;Standard&quot; ||
+ampi__Project__r.RecordType.DeveloperName = &quot;Transition&quot;) &amp;&amp;
+TEXT( ampi__Project__r.ISP_Available__c) = &apos;No&apos; &amp;&amp; TEXT(ISP_Available__c) != &apos;No&apos;</errorConditionFormula>
+    <errorMessage>&quot;ISP available&quot; value can&apos;t be set different to &quot;No&quot; because &quot;Project ISP available&quot; value is set to &quot;No&quot;</errorMessage>
+</ValidationRule>

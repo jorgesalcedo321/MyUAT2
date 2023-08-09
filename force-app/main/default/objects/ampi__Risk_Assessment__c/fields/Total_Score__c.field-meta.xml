@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Score__c</fullName>
+    <externalId>false</externalId>
+    <formula>((
+IF(ISNULL(Social_Political_Score__c), 0, Social_Political_Score__c) +
+IF(ISNULL(Crime_Security_Score__c), 0, Crime_Security_Score__c) +
+IF(ISNULL(Conflict_Score__c), 0, Conflict_Score__c) +
+IF(ISNULL(Terrorism_Score__c), 0, Terrorism_Score__c) +
+IF(ISNULL(Kidnap_Score__c), 0, Kidnap_Score__c)
+)/5)*20</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Overall security risk for the National Association. Calculated automatically (Average score of Social &amp; Political, Crime &amp; Security, Conflict, Terrorism and Kidnap Scores)</inlineHelpText>
+    <label>National Context Risk</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

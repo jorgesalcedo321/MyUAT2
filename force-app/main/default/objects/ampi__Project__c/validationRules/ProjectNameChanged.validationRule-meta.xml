@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProjectNameChanged</fullName>
+    <active>false</active>
+    <description>Name Should not be changed in Community</description>
+    <errorConditionFormula>AND(ISCHANGED(Name), OR($Profile.Name = &quot;National PM/Director&quot;, $Profile.Name = &quot;Project Contributor&quot;))</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Project Name can not be updated</errorMessage>
+</ValidationRule>

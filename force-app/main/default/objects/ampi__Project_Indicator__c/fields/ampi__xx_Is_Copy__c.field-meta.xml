@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Is_Copy__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is marked as true if the Project Indicator is being copied from another Project Indicator as part of the Copy from Another Framework feature.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked, then this Project Indicator is a copy.</inlineHelpText>
+    <label>Is Copy?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

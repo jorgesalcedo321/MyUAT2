@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Previous_Project_Cycle__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Previous Project Cycle</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Standard</value>
+        </filterItems>
+        <filterItems>
+            <field>ampi__Project__c.ampi__Country__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.ampi__Country__c</valueField>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>ampi__Project__c</referenceTo>
+    <relationshipLabel>Projects (Previous Project Cycle)</relationshipLabel>
+    <relationshipName>Projects</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

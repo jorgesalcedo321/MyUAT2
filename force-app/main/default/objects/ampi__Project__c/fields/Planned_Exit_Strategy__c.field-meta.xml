@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Planned_Exit_Strategy__c</fullName>
+    <externalId>false</externalId>
+    <label>Planned Exit Strategy</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Closure</fullName>
+                <default>false</default>
+                <label>Closure</label>
+            </value>
+            <value>
+                <fullName>Continuation</fullName>
+                <default>false</default>
+                <label>Continuation</label>
+            </value>
+            <value>
+                <fullName>Transition to other existing SOS services</fullName>
+                <default>false</default>
+                <label>Transition to other existing SOS services</label>
+            </value>
+            <value>
+                <fullName>Transition to new SOS services</fullName>
+                <default>false</default>
+                <label>Transition to new SOS services</label>
+            </value>
+            <value>
+                <fullName>Transition to other stakeholders</fullName>
+                <default>false</default>
+                <label>Transition to other stakeholders</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

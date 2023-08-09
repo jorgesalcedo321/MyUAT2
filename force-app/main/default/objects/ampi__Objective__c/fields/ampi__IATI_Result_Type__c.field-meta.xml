@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Result_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Generate a code based on the Level of the IATI Result (Amp Objective) for IATI reporting.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(TEXT(ampi__Level__c)),null,
+  CASE(TEXT(ampi__Level__c), 
+    &quot;Output&quot;,&quot;1&quot;,
+    &quot;Outcome&quot;, &quot;2&quot;,
+    &quot;Impact&quot;, &quot;3&quot;,
+    &quot;9&quot;
+    )
+)</formula>
+    <label>IATI Result Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

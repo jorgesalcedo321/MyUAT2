@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Date_Submitted__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date field to specify when results were submitted for this reporting period. This field needs to be manually updated, system admins can set up custom automation to populate the field on custom criteria.</description>
+    <externalId>false</externalId>
+    <label>Date Submitted</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

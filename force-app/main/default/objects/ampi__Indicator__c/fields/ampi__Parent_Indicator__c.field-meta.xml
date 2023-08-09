@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Parent_Indicator__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Self-lookup field to create a hierarchy of catalog indicators</description>
+    <externalId>false</externalId>
+    <label>Parent Indicator</label>
+    <referenceTo>ampi__Indicator__c</referenceTo>
+    <relationshipLabel>Sub-Indicators</relationshipLabel>
+    <relationshipName>Child_Indicators</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

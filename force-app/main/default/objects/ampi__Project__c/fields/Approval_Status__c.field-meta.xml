@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Status__c</fullName>
+    <description>Captures the status of a project record once it has been submitted into an approval process. This field will update at the three various stages on the project lifecycle: In Identification, In Formulation, and In Implementation.</description>
+    <externalId>false</externalId>
+    <label>Approval Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Approved by NA</fullName>
+                <default>false</default>
+                <label>Approved by NA</label>
+            </value>
+            <value>
+                <fullName>Rejected by NA</fullName>
+                <default>false</default>
+                <label>Rejected by NA</label>
+            </value>
+            <value>
+                <fullName>Rejected by IOR</fullName>
+                <default>false</default>
+                <label>Rejected by IOR</label>
+            </value>
+            <value>
+                <fullName>Reviewed by IOR</fullName>
+                <default>false</default>
+                <label>Reviewed by IOR</label>
+            </value>
+            <value>
+                <fullName>Reviewed by PSA</fullName>
+                <default>false</default>
+                <label>Reviewed by PSA</label>
+            </value>
+            <value>
+                <fullName>Rejected by PSA</fullName>
+                <default>false</default>
+                <label>Rejected by PSA</label>
+            </value>
+            <value>
+                <fullName>Approved by IO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Approved by IO</label>
+            </value>
+            <value>
+                <fullName>Approved by IOR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Approved by IOR</label>
+            </value>
+            <value>
+                <fullName>Rejected by IO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected by IO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

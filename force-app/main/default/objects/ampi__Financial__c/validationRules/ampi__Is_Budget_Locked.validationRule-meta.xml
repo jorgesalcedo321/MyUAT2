@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Is_Budget_Locked</fullName>
+    <active>false</active>
+    <description>Throw an error if Budget is locked</description>
+    <errorConditionFormula>ampi__Budget__r.ampi__Locked__c = true</errorConditionFormula>
+    <errorMessage>Budget is locked</errorMessage>
+</ValidationRule>

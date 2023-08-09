@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRS_Mandatory_ResultsBased</fullName>
+    <active>false</active>
+    <description>Project Result Statement should be implemented only for Results-Based</description>
+    <errorConditionFormula>TEXT(ampi__Type__c) == &quot;Results-Based&quot; &amp;&amp; (ampi__Project_Objective__c == &apos;&apos;)</errorConditionFormula>
+    <errorMessage>Project Result Statement should be implemented only for Results-Based</errorMessage>
+</ValidationRule>

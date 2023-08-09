@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Concatenated_Label_Definition__c</fullName>
+    <description>Formula field to concatnate Objective Label and Definition for Result Statement picklist in Create Project Activity Flow.</description>
+    <externalId>false</externalId>
+    <formula>ampi__Label__c &amp; &quot; - &quot; &amp; ampi__Objective__r.ampi__Definition__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Concatenated Label Definition</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Risk_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Define the risk type to report on specific types of mitigation strategies</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Evaluate the type of risk, in terms of the length of its scope</inlineHelpText>
+    <label>Risk Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Short-term</fullName>
+                <default>false</default>
+                <label>Short-term</label>
+            </value>
+            <value>
+                <fullName>Medium-term</fullName>
+                <default>false</default>
+                <label>Medium-term</label>
+            </value>
+            <value>
+                <fullName>Long-term</fullName>
+                <default>false</default>
+                <label>Long-term</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

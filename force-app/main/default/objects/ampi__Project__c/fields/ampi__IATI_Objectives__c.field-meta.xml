@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Objectives__c</fullName>
+    <deprecated>false</deprecated>
+    <description>New long text area to capture high level objectives of an IATI Activity for reporting in the IATI Activity file.</description>
+    <externalId>false</externalId>
+    <label>Objectives</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

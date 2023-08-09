@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Framework_Objective__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This lookup field refers to parent framework objective</description>
+    <externalId>false</externalId>
+    <label>Framework Objective</label>
+    <referenceTo>ampi__Objective__c</referenceTo>
+    <relationshipLabel>Project Indicator Objectives</relationshipLabel>
+    <relationshipName>Project_Indicator_Objectives</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

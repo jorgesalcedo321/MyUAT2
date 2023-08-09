@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Contributing_Risk__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The primary lookup relationship to the Risk object from the Risk Relationship object.</description>
+    <externalId>false</externalId>
+    <label>Contributing Risk</label>
+    <referenceTo>ampi__Risk__c</referenceTo>
+    <relationshipLabel>Risk Relationships</relationshipLabel>
+    <relationshipName>Risk_Relationships</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

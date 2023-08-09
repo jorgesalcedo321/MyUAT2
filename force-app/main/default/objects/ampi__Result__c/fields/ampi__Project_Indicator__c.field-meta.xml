@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Project_Indicator__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Describes the Indicator for which Results and Targets are captured</description>
+    <externalId>false</externalId>
+    <label>Project Indicator</label>
+    <referenceTo>ampi__Project_Indicator__c</referenceTo>
+    <relationshipLabel>Results</relationshipLabel>
+    <relationshipName>Project_Results</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

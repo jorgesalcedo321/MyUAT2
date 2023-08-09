@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResultsBased_With_Parent_Or_ResultSta</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(ampi__Type__c) == &apos;Results-Based&apos; &amp;&amp; ampi__Parent_Activity__c == null &amp;&amp; ampi__Project_Objective__c == null</errorConditionFormula>
+    <errorMessage>Activities for type &quot;ResultsBased&quot; needs a Parent Activity or a Result Statement at least</errorMessage>
+</ValidationRule>

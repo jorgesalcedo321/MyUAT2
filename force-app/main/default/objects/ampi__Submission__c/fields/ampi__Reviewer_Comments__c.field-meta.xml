@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Reviewer_Comments__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text area field to store any comments that the reviewer might have regarding the Submission response as a whole</description>
+    <externalId>false</externalId>
+    <label>Reviewer Comments</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

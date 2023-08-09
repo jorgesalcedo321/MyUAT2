@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actuals_Total_Project_Exp_Cannot_be_neg</fullName>
+    <active>false</active>
+    <description>The field &quot;Actuals Total Project Expenditures (LCY)&quot; cannot be negative</description>
+    <errorConditionFormula>Actuals_Total_Project_Expenditures_LC__c&lt;0</errorConditionFormula>
+    <errorMessage>The field &quot;Actuals Total Project Expenditures (LCY)&quot; cannot be negative</errorMessage>
+</ValidationRule>

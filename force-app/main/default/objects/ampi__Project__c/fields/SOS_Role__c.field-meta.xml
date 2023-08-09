@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOS_Role__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose applicable option from the dropdown.</inlineHelpText>
+    <label>SOS Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SOS is main implementer</fullName>
+                <default>true</default>
+                <label>SOS is main implementer</label>
+            </value>
+            <value>
+                <fullName>SOS supports key implementation partner</fullName>
+                <default>false</default>
+                <label>SOS supports key implementation partner</label>
+            </value>
+            <value>
+                <fullName>SOS delivers programme in partnership</fullName>
+                <default>false</default>
+                <label>SOS delivers programme in partnership</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

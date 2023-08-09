@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Manage_Disbursements</fullName>
+    <availability>online</availability>
+    <description>Opens VF page with Disbursements table</description>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Manage Disbursements</masterLabel>
+    <openType>replace</openType>
+    <page>ampi__ManageDisbursements</page>
+    <protected>false</protected>
+</WebLink>

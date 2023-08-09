@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Unit__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Text field to specify the unit of measurement like Number of items, Kilogram, Hours etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the unit of measurement ( Number, Kilograms, Hours etc)</inlineHelpText>
+    <label>Unit</label>
+    <length>225</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

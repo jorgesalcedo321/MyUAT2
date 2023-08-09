@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shows_Risk_Register__c</fullName>
+    <externalId>false</externalId>
+    <formula>$Profile.Name = &apos;System Administrator&apos; ||  $User.Email == Programme_Risk_Reviewer__r.Email</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Shows Risk Register</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

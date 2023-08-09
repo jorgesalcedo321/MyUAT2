@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Vocabulary__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to select the vocabulary used to classify an indicator for IATI reporting.</description>
+    <externalId>false</externalId>
+    <label>IATI Vocabulary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>WHO Registry</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Sphere Handbook</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>US Foreign Assistance Framework</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>World Bank World Development Indicators</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>UN Millennium Development Goals Indicators</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>UNOCHA Humanitarian Response Indicators</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>HIV/AIDS Indicator Registry</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>Harmonized Indicators for Private Sector (HIPSO)</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>UN Sustainable Development Goals (SDG) Indicators</label>
+            </value>
+            <value>
+                <fullName>99</fullName>
+                <default>false</default>
+                <label>Reporting Organisation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Label__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Text field to specify the human readable name of reporting period.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Create a name for your reporting period that matches the duration of time that results are reported on. For example, for annual data, enter the “year name”. For quarterly data, enter “Q1 [year name]”.</inlineHelpText>
+    <label>Reporting Period Name</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

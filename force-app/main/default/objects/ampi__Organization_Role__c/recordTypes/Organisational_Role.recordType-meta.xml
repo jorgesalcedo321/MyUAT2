@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organisational_Role</fullName>
+    <active>true</active>
+    <label>Organisational Role</label>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Application Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decision in Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Formulation</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request for Revision Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Role__c</picklist>
+        <values>
+            <fullName>Accountable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Implementing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

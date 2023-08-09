@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Amount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Currency field to track the amount that an account or organization has allocated to a project. The value of this field is added to field(s) on ampi__xx_Fund__c depending on ampi__xx_Status__c of the ampi__Allocation__c record.</description>
+    <externalId>false</externalId>
+    <label>Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

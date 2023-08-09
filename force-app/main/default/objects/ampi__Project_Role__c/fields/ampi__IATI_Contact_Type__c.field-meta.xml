@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Contact_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to select the Contact Type for IATI Reporting. The selection will print a code into the IATI Activity XML&apos;s iati-activities/iati-activity/contact-info/@type attribute.</description>
+    <externalId>false</externalId>
+    <label>IATI Contact Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>General Enquiries</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Project Management</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>Financial Management</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>Communications</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

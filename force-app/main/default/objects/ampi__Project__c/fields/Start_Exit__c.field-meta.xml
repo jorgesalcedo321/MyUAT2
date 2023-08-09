@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Exit__c</fullName>
+    <externalId>false</externalId>
+    <formula>Contract_Eligibility_End_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Mandatory for status &quot;exit in progress&quot;. Actual date when project ends. It is calculated automatically but can be changed manually any time. This date can be earlier than the eligibility end date as in the contract (e.g. premature end of project).</inlineHelpText>
+    <label>Start Exit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

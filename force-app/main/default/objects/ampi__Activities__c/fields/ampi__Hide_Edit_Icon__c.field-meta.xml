@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Hide_Edit_Icon__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Controls visibility of Edit icon on ActivityChart Aura Component, and the Save button in the Edit pop-up of Activity Lightning Web Component. When this is saved as TRUE, Activity Lightning Web Component displays read-only fields in the Edit pop-up</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Control visibility of Edit Icon</inlineHelpText>
+    <label>Hide Edit Actions</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

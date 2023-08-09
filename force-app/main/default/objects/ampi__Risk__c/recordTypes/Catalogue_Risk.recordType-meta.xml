@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Catalogue_Risk</fullName>
+    <active>true</active>
+    <label>Catalogue Risk</label>
+    <picklistValues>
+        <picklist>Catalogue_Type__c</picklist>
+        <values>
+            <fullName>General Risks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety and Security Risks</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Nature_of_Risk__c</picklist>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Category__c</picklist>
+        <values>
+            <fullName>Child Safeguarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Human Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnerships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Political</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Control_Over_Risk__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Mitigation_Strategy_Type__c</picklist>
+        <values>
+            <fullName>Avoid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monitor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Potential_Impact__c</picklist>
+        <values>
+            <fullName>Almost No Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cause Early Termination or Major Problems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Significant Impact</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Priority__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Probability__c</picklist>
+        <values>
+            <fullName>Likely</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>May Occur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unlikely</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very Likely</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Very Unlikely</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Proximity__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Risk_Type__c</picklist>
+        <values>
+            <fullName>Long-term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium-term</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Short-term</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__xx_Acceptable_Risk_Level__c</picklist>
+        <values>
+            <fullName>High Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium High Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Low Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Risk</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__xx_Risk_Level__c</picklist>
+        <values>
+            <fullName>High Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium High Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Low Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium Risk</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

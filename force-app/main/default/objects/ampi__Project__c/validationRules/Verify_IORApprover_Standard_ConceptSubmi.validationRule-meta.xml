@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verify_IORApprover_Standard_ConceptSubmi</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName == &quot;Standard&quot; &amp;&amp;  TEXT(ampi__Project_Status__c) == &quot;Concept Submitted&quot; &amp;&amp; 
+TEXT(Approval_Status__c) == &quot;Approved by NA&quot; &amp;&amp;
+ISBLANK(IOR_Approver__c)</errorConditionFormula>
+    <errorMessage>IOR Approver is mandatory for &quot;Concept Submitted&quot; status and &quot;Approved By NA&quot; approval status on Standard projects</errorMessage>
+</ValidationRule>

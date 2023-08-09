@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOS_Project_Highlights</fullName>
+    <fields>Name</fields>
+    <fields>ampi__Project_Status__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>OwnerId</fields>
+    <fields>Project_ID_Text__c</fields>
+    <label>SOS Project Highlights</label>
+</CompactLayout>

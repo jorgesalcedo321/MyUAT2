@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Programmes_with_Parent_MA</fullName>
+    <columns>NAME</columns>
+    <columns>Code__c</columns>
+    <columns>Active__c</columns>
+    <columns>ampi__Parent_Geographical_Area__c</columns>
+    <columns>Parent_MA__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Long_Name__c</columns>
+    <columns>Program_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>ampi__Geographical_Area__c.Programme_Location</value>
+    </filters>
+    <filters>
+        <field>Parent_MA__c</field>
+        <operation>contains</operation>
+        <value>Alsace,PA France</value>
+    </filters>
+    <label>All Programmes with Parent MA</label>
+</ListView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Instrument__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Is a particular funding instrument funding this project? Currently you can select funding instruments only for certain donors e.g. EU, UN or BMZ. Contact service desk if you know other donors that use funding instruments,</inlineHelpText>
+    <label>Funding Instrument</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The Funding Instrument field must be populated with a Funding Instrument, and the Parent Organisation of the Funding Instrument must match the External Donor.</errorMessage>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Funding Instrument</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.ParentId</field>
+            <operation>equals</operation>
+            <valueField>$Source.External_Donor__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Projects (Funding Instrument)</relationshipLabel>
+    <relationshipName>Projects</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

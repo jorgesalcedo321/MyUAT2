@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Review_Name_Translated__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(TEXT($User.LanguageLocaleKey)),Name, CASE(LEFT(TEXT($User.LanguageLocaleKey), 2), &apos;es&apos;, BLANKVALUE(Risk_Review_Name_Language_1__c, Name), &apos;fr&apos;, BLANKVALUE(Risk_Review_Name_Language_2__c, Name), &apos;ru&apos;, BLANKVALUE(Risk_Review_Name_Language_3__c, Name),Name))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Risk Review Name Translated</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

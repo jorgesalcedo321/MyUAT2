@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Answer</fullName>
+    <active>true</active>
+    <description>Cloned versions of template questions that can also track responses and review scores</description>
+    <label>Answer</label>
+    <picklistValues>
+        <picklist>ampi__Response_Type__c</picklist>
+        <values>
+            <fullName>Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Picklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualitative</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

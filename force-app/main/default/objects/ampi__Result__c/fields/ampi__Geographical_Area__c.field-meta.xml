@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Geographical_Area__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This formula field copies geographical area from parent project indicator geographic area</description>
+    <externalId>false</externalId>
+    <formula>ampi__Project_Indicator_Geographic_Area__r.ampi__Geographic_Area__r.ampi__Name_Translated__c</formula>
+    <label>Geographical Area</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

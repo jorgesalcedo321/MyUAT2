@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_edit_1_baseline_or_target_field</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR(
+NOT(ISBLANK(ampi__Baseline__c)) &amp;&amp; NOT(ISBLANK( Baseline_Qualitative__c)),
+NOT(ISBLANK(Target_Qualitative_LOP__c)) &amp;&amp; NOT(ISBLANK( Target_Qualitative_LOP__c))
+)</errorConditionFormula>
+    <errorMessage>Please only enter a value for the Baseline OR Qualitative Baseline field, Target OR Qualitative Target field.</errorMessage>
+</ValidationRule>

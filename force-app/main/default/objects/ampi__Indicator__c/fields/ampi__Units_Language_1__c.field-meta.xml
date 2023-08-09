@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Units_Language_1__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Primary translated version of Units__c. This value is printed in Units_Translated__c when USER_LANGUAGE_CODE = 1.</description>
+    <externalId>false</externalId>
+    <label>Units Language 1</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

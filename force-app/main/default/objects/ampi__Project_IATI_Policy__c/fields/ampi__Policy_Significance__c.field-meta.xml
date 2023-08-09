@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Policy_Significance__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to rate the significance of a policy toward a project.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Rate the significance of a policy towards the related project</inlineHelpText>
+    <label>Policy Significance</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not targeted</fullName>
+                <default>false</default>
+                <label>Not targeted</label>
+            </value>
+            <value>
+                <fullName>Significant objective</fullName>
+                <default>false</default>
+                <label>Significant objective</label>
+            </value>
+            <value>
+                <fullName>Principal objective</fullName>
+                <default>false</default>
+                <label>Principal objective</label>
+            </value>
+            <value>
+                <fullName>Principal objective AND in support of an action programme</fullName>
+                <default>false</default>
+                <label>Principal objective AND in support of an action programme</label>
+            </value>
+            <value>
+                <fullName>Explicit primary objective</fullName>
+                <default>false</default>
+                <label>Explicit primary objective</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

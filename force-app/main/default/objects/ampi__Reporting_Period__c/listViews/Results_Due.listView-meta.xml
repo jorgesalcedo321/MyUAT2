@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Results_Due</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ampi__Result_Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted_Custom,Submitted Custom</value>
+    </filters>
+    <label>Results Due</label>
+</ListView>

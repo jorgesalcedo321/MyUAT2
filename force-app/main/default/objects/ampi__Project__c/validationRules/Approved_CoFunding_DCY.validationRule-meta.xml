@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_CoFunding_DCY</fullName>
+    <active>true</active>
+    <description>Approved Co-Funding (DCY) must be less than (Approved Total Project Budget (DCY)-Grant Amount Approved by Donor (DCY))</description>
+    <errorConditionFormula>Approved_Co_Funding_Share__c&gt;(Approved_Total_Project_Budget_DCY__c-Grant_Amount_Approved_By_Donor__c)</errorConditionFormula>
+    <errorDisplayField>Approved_Co_Funding_Share__c</errorDisplayField>
+    <errorMessage>Approved Co-Funding (DCY) must be less than (Approved Total Project Budget (DCY)-Grant Amount Approved by Donor (DCY))</errorMessage>
+</ValidationRule>

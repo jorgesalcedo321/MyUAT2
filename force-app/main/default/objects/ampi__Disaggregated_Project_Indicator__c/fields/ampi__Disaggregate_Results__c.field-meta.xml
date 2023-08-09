@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Disaggregate_Results__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field indicates whether to disaggerate results for this Project Indicator. The value in this field affects the display of the Project Indicator on AddResults.</description>
+    <externalId>false</externalId>
+    <label>Disaggregate Results</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

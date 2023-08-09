@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_ID_raw__c</fullName>
+    <description>Raw string version of Project_ID__c, used for SharePoint integration.</description>
+    <externalId>false</externalId>
+    <formula>CASE(RecordType.Name,
+&quot;Standard&quot;, &quot;S&quot;,
+&quot;Emergency Response&quot;, &quot;E&quot;,
+&quot;Funding Opportunity&quot;, &quot;F&quot;,
+&quot;Humanitarian Appeal&quot;, &quot;H&quot;,
+&quot;Grant&quot;, &quot;G&quot;,
+&quot;Legacy&quot;, &quot;L&quot;,
+&quot;Transition&quot;, &quot;T&quot;,
+&quot;End of Involvement&quot;, &quot;X&quot;,
+&quot;&quot;)
+&amp; IF(DATEVALUE(CreatedDate) &gt; DATEVALUE(&quot;2019-12-31&quot;),
+RIGHT(TEXT(YEAR(DATEVALUE(CreatedDate))), 2),
+IF(RecordType.Name = &quot;Grant&quot;,
+RIGHT(TEXT(YEAR(Start_Identification__c)), 2),
+RIGHT(TEXT(YEAR(DATEVALUE(CreatedDate))), 2)
+)
+)
+&amp; &quot;-&quot;
+&amp; Project_Autonumber__c</formula>
+    <inlineHelpText>Raw string version of Project_ID__c, used for SharePoint integration.</inlineHelpText>
+    <label>Funding Opportunity ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

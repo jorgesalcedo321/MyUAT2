@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Disable_Geographic_Area_Hierarchy__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When checked, the geographic area hierarchy will no longer display in the dropdown picklist on Set Targets. All geographic areas in the project will display in alphabetically ascending order by Name.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked, the geographic area hierarchy will no longer display in the dropdown picklist on Set Targets. All geographic areas in the project will display in alphabetically ascending order by Name.</inlineHelpText>
+    <label>Disable Geographic Area Hierarchy</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

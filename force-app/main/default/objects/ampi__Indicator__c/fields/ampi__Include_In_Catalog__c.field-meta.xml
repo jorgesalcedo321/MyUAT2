@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Include_In_Catalog__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to include an indicator in the indicator catalog for all projects</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this field if this project indicator should be available in the Indicator Catalog which is visible for all Projects. This field is checked by default when creating a new project indicator.</inlineHelpText>
+    <label>Include In Catalog?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

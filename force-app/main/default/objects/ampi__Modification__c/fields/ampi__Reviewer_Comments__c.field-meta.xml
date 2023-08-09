@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Reviewer_Comments__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Rich text area to capture any notes by the reviewer to explain why they may approve or reject a modification request.</description>
+    <externalId>false</externalId>
+    <label>Reviewer Comments</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

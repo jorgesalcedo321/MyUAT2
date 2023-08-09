@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IOR_PSA_Approval_InProgress_Mandatory</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName == &apos;Standard&apos; &amp;&amp; TEXT(Approval_Status__c) == &apos;Approval in Progress&apos; &amp;&amp; (ISBLANK( IOR_Approver__c) || ISBLANK(PSA_Reviewer__c))</errorConditionFormula>
+    <errorMessage>IOR Approver and PSA Reviewer are mandatory on &quot;Approval in Progress&quot; Approval Status</errorMessage>
+</ValidationRule>

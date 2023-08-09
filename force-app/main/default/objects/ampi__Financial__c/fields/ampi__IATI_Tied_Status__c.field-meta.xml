@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Tied_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist to specify Tied Status as based on IATI code list (http://reference.iatistandard.org/203/codelists/TiedStatus/). The code list sits in the API Name/value of the picklist value, while the Label is the human-readable name of the Tied Status. The selected value is printed into the transaction/tied-status/@code attribute in the IATI Activity XML.</description>
+    <externalId>false</externalId>
+    <label>IATI Tied Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ampi__IATI_Tied_Status</valueSetName>
+    </valueSet>
+</CustomField>

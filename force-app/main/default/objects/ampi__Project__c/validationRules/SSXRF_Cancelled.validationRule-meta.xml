@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSXRF_Cancelled</fullName>
+    <active>true</active>
+    <description>Prevents users from selecting status &quot;Cancelled&quot; if required fields are left empty for Standard or End of Involvement projects.</description>
+    <errorConditionFormula>NOT($Permission.Manage_Restrictions) &amp;&amp; (
+RecordType.DeveloperName=&quot;Standard&quot;||
+RecordType.DeveloperName=&quot;End_of_Involvement&quot;
+)
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;Cancelled&quot;)
+&amp;&amp;
+(
+ISBLANK( Reason_for_Cancellation__c )
+)</errorConditionFormula>
+    <errorMessage>Please fill in mandatory fields for Status &quot;Cancelled&quot;: Reason for Cancellation</errorMessage>
+</ValidationRule>

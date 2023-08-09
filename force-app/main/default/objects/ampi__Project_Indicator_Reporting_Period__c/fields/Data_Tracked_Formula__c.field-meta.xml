@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Tracked_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+NOT(ISPICKVAL(ampi__Project_Indicator__r.ampi__Target_Frequency__c, &quot;&quot;)) &amp;&amp; NOT(ISPICKVAL(ampi__Project_Indicator__r.ampi__Reporting_Frequency__c, &quot;&quot;)), &quot;Both&quot;, 
+IF(
+ISPICKVAL(ampi__Project_Indicator__r.ampi__Target_Frequency__c, &quot;&quot;) &amp;&amp; NOT(ISPICKVAL(ampi__Project_Indicator__r.ampi__Reporting_Frequency__c, &quot;&quot;)), &quot;Result&quot;,
+IF( 
+NOT(ISPICKVAL(ampi__Project_Indicator__r.ampi__Target_Frequency__c, &quot;&quot;)) &amp;&amp; ISPICKVAL(ampi__Project_Indicator__r.ampi__Reporting_Frequency__c, &quot;&quot;), &quot;Target&quot;, &quot;&quot;)))</formula>
+    <label>Data Tracked (Formula)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

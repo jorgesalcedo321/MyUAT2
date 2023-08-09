@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This picklist field is for categorizing Financial records based on their purpose. This field is unrestricted and can be modified by subscribers.</description>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Result based</fullName>
+                <default>false</default>
+                <label>Result based</label>
+            </value>
+            <value>
+                <fullName>9 PSCI</fullName>
+                <default>false</default>
+                <label>9 PSCI</label>
+            </value>
+            <value>
+                <fullName>Overarching</fullName>
+                <default>false</default>
+                <label>Overarching</label>
+            </value>
+            <value>
+                <fullName>Construction</fullName>
+                <default>false</default>
+                <label>Construction</label>
+            </value>
+            <value>
+                <fullName>ADV</fullName>
+                <default>false</default>
+                <label>ADV</label>
+            </value>
+            <value>
+                <fullName>SIL</fullName>
+                <default>false</default>
+                <label>SIL</label>
+            </value>
+            <value>
+                <fullName>FLC</fullName>
+                <default>false</default>
+                <label>FLC</label>
+            </value>
+            <value>
+                <fullName>DFE</fullName>
+                <default>false</default>
+                <label>DFE</label>
+            </value>
+            <value>
+                <fullName>CFE</fullName>
+                <default>false</default>
+                <label>CFE</label>
+            </value>
+            <value>
+                <fullName>CPT</fullName>
+                <default>false</default>
+                <label>CPT</label>
+            </value>
+            <value>
+                <fullName>HA</fullName>
+                <default>false</default>
+                <label>HA</label>
+            </value>
+            <value>
+                <fullName>CT</fullName>
+                <default>false</default>
+                <label>CT</label>
+            </value>
+            <value>
+                <fullName>ECD</fullName>
+                <default>false</default>
+                <label>ECD</label>
+            </value>
+            <value>
+                <fullName>EDU</fullName>
+                <default>false</default>
+                <label>EDU</label>
+            </value>
+            <value>
+                <fullName>EET</fullName>
+                <default>false</default>
+                <label>EET</label>
+            </value>
+            <value>
+                <fullName>ER</fullName>
+                <default>false</default>
+                <label>ER</label>
+            </value>
+            <value>
+                <fullName>FFC</fullName>
+                <default>false</default>
+                <label>FFC</label>
+            </value>
+            <value>
+                <fullName>FS</fullName>
+                <default>false</default>
+                <label>FS</label>
+            </value>
+            <value>
+                <fullName>HPP</fullName>
+                <default>false</default>
+                <label>HPP</label>
+            </value>
+            <value>
+                <fullName>MED</fullName>
+                <default>false</default>
+                <label>MED</label>
+            </value>
+            <value>
+                <fullName>OA</fullName>
+                <default>false</default>
+                <label>OA</label>
+            </value>
+            <value>
+                <fullName>OAC</fullName>
+                <default>false</default>
+                <label>OAC</label>
+            </value>
+            <value>
+                <fullName>SGH</fullName>
+                <default>false</default>
+                <label>SGH</label>
+            </value>
+            <value>
+                <fullName>SFC</fullName>
+                <default>false</default>
+                <label>SFC</label>
+            </value>
+            <value>
+                <fullName>YC</fullName>
+                <default>false</default>
+                <label>YC</label>
+            </value>
+            <value>
+                <fullName>3 CMG CI</fullName>
+                <default>false</default>
+                <label>3 CMG CI</label>
+            </value>
+            <value>
+                <fullName>3 FD CI</fullName>
+                <default>false</default>
+                <label>3 FD CI</label>
+            </value>
+            <value>
+                <fullName>2 IF4C COR</fullName>
+                <default>false</default>
+                <label>2 IF4C COR</label>
+            </value>
+            <value>
+                <fullName>2 IF4C D2D</fullName>
+                <default>false</default>
+                <label>2 IF4C D2D</label>
+            </value>
+            <value>
+                <fullName>2 IF4C DB</fullName>
+                <default>false</default>
+                <label>2 IF4C DB</label>
+            </value>
+            <value>
+                <fullName>2 IF4C DIG</fullName>
+                <default>false</default>
+                <label>2 IF4C DIG</label>
+            </value>
+            <value>
+                <fullName>2 IF4C F2A</fullName>
+                <default>false</default>
+                <label>2 IF4C F2A</label>
+            </value>
+            <value>
+                <fullName>2 IF4C F2I</fullName>
+                <default>false</default>
+                <label>2 IF4C F2I</label>
+            </value>
+            <value>
+                <fullName>2 IF4C HR</fullName>
+                <default>false</default>
+                <label>2 IF4C HR</label>
+            </value>
+            <value>
+                <fullName>2 IF4C IND</fullName>
+                <default>false</default>
+                <label>2 IF4C IND</label>
+            </value>
+            <value>
+                <fullName>2 IF4C LOY</fullName>
+                <default>false</default>
+                <label>2 IF4C LOY</label>
+            </value>
+            <value>
+                <fullName>2 IF4C MD</fullName>
+                <default>false</default>
+                <label>2 IF4C MD</label>
+            </value>
+            <value>
+                <fullName>2 IF4C SMS</fullName>
+                <default>false</default>
+                <label>2 IF4C SMS</label>
+            </value>
+            <value>
+                <fullName>2 IF4C TMK</fullName>
+                <default>false</default>
+                <label>2 IF4C TMK</label>
+            </value>
+            <value>
+                <fullName>3 IF4C</fullName>
+                <default>false</default>
+                <label>3 IF4C</label>
+            </value>
+            <value>
+                <fullName>1 NA GSC</fullName>
+                <default>false</default>
+                <label>1 NA GSC</label>
+            </value>
+            <value>
+                <fullName>1 NA ADMIN</fullName>
+                <default>false</default>
+                <label>1 NA ADMIN</label>
+            </value>
+            <value>
+                <fullName>1 P ADV</fullName>
+                <default>false</default>
+                <label>1 P ADV</label>
+            </value>
+            <value>
+                <fullName>NB</fullName>
+                <default>false</default>
+                <label>NB</label>
+            </value>
+            <value>
+                <fullName>NO</fullName>
+                <default>false</default>
+                <label>NO</label>
+            </value>
+            <value>
+                <fullName>2 IF4C C2C</fullName>
+                <default>false</default>
+                <label>2 IF4C C2C</label>
+            </value>
+            <value>
+                <fullName>2 IF4C REIN</fullName>
+                <default>false</default>
+                <label>2 IF4C REIN</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Cumulative__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If TRUE, indicates that the data is collected cumulatively, i.e. the results to date and targets to date for the project indicator are reported from the most recent reporting period, instead of summed across all reporting periods.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If this field is checked, it indicates that data is reported cumulatively for this Project Indicator so the last reported data is the accumulated target or result to date, covering all time periods.</inlineHelpText>
+    <label>Cumulative?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

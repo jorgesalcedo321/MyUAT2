@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Implementation_Plan__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup field to associate an Activity with an Implementation Plan. This field must be populated for an Activity record to display on the ActivityChart Lightning Component.</description>
+    <externalId>false</externalId>
+    <label>Implementation Plan</label>
+    <referenceTo>ampi__Implementation_Plan__c</referenceTo>
+    <relationshipLabel>Activities</relationshipLabel>
+    <relationshipName>Activities</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

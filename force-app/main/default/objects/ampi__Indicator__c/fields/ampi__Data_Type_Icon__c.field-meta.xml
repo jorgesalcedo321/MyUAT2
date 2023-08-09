@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Data_Type_Icon__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field provides the class name of the icon which will be displayed as well as the label of the icon when the user is hovering over the icon.</description>
+    <externalId>false</externalId>
+    <formula>IF( TEXT( ampi__Data_Type__c ) = &apos;Number&apos;, &apos;vi-number-value&apos; , IF( TEXT( ampi__Data_Type__c ) = &apos;Currency&apos; , &apos;vi-money&apos;, IF( TEXT( ampi__Data_Type__c ) = &apos;Percent&apos; , &apos;vi-percentage-value&apos; , IF( TEXT( ampi__Data_Type__c ) = &apos;Qualitative&apos; ,&apos;vi-file-text-o&apos; , IF( TEXT( ampi__Data_Type__c ) = &apos;Milestone&apos; , &apos;vi-map-signs&apos; , &apos;&apos; )))))&amp;&quot;#&quot;&amp;text(ampi__Data_Type__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Data Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

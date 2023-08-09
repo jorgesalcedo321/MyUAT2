@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exchange_Rate_LCY_to_DCY_Actuals__c</fullName>
+    <description>Indicate how many units of donor currency (DCY) you need for one of local currency (LCY).</description>
+    <externalId>false</externalId>
+    <label>Exchange Rate LCY To DCY (Actual)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

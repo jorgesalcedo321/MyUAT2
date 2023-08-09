@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Target_Internal_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>[NOT IN USE] Internal code for target results</description>
+    <externalId>false</externalId>
+    <label>Target Internal Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Flow_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to choose the type of default flow per the IATI Activity standard.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of Classification; Whether the activity is funded by Official Development Assistance (ODA), Other Official Flows (OOF), etc</inlineHelpText>
+    <label>IATI Flow Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ODA</fullName>
+                <default>false</default>
+                <label>ODA</label>
+            </value>
+            <value>
+                <fullName>OOF</fullName>
+                <default>false</default>
+                <label>OOF</label>
+            </value>
+            <value>
+                <fullName>Non-export credit OOF</fullName>
+                <default>false</default>
+                <label>Non-export credit OOF</label>
+            </value>
+            <value>
+                <fullName>Officially supported export credits</fullName>
+                <default>false</default>
+                <label>Officially supported export credits</label>
+            </value>
+            <value>
+                <fullName>Private grants</fullName>
+                <default>false</default>
+                <label>Private grants</label>
+            </value>
+            <value>
+                <fullName>Private market</fullName>
+                <default>false</default>
+                <label>Private market</label>
+            </value>
+            <value>
+                <fullName>Other Private flows at market terms</fullName>
+                <default>false</default>
+                <label>Other Private flows at market terms</label>
+            </value>
+            <value>
+                <fullName>Non flow</fullName>
+                <default>false</default>
+                <label>Non flow</label>
+            </value>
+            <value>
+                <fullName>Other flows</fullName>
+                <default>false</default>
+                <label>Other flows</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

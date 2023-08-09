@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Location_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text area field to capture the description that qualifies the location for an IATI Activity.</description>
+    <externalId>false</externalId>
+    <label>Location Description</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

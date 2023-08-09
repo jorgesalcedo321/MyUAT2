@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Response_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The value selected in this picklist field determines the display of this Question record in the Lightning component for Submission responses. The value selected in this field also determines which fields are editable in the SubmissionTemplateBuilder component.</description>
+    <externalId>false</externalId>
+    <label>Response Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Qualitative</fullName>
+                <default>false</default>
+                <label>Qualitative</label>
+            </value>
+            <value>
+                <fullName>Picklist</fullName>
+                <default>false</default>
+                <label>Picklist</label>
+            </value>
+            <value>
+                <fullName>Number</fullName>
+                <default>false</default>
+                <label>Number</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

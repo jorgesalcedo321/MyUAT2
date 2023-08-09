@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Vocabulary_URI__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The URI where this vocabulary is defined. If the vocabulary is 99 or 98 (reporting organisation), the URI where this internal vocabulary is defined. While this is an optional field it is STRONGLY RECOMMENDED that all publishers use it to ensure that the meaning of their codes are fully understood by data users. This value must be of type xsd:anyURI.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This link will be published in the IATI Activity file and must be publicly accessible.</inlineHelpText>
+    <label>Vocabulary URI</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

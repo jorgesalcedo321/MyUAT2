@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSAM_Concept_in_Pipeline</fullName>
+    <active>true</active>
+    <description>Validation to guide users to correct next Project Status from &quot;Concept In Pipeline&quot; for Standard Projects</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+$Profile.Name &lt;&gt; &quot;Project Owner&quot;
+&amp;&amp;
+$Profile.Name &lt;&gt; &quot;Super User&quot;
+&amp;&amp;
+RecordType.DeveloperName = &quot;Standard&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Concept in Pipeline&quot;)
+&amp;&amp;
+CASE( ampi__Project_Status__c ,
+&quot;In Formulation&quot;, 1,
+&quot;Funding Approved&quot;, 1,
+&quot;Cancelled&quot;, 1,
+0) = 0</errorConditionFormula>
+    <errorMessage>Please set Project Status to an allowed Project Status: &quot;Concept in Pipeline&quot;, &quot;In Formulation&quot;, &quot;Funding Approved&quot;, or &quot;Cancelled&quot;.</errorMessage>
+</ValidationRule>

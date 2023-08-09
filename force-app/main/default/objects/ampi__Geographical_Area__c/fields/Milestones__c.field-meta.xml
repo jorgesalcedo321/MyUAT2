@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestones__c</fullName>
+    <externalId>false</externalId>
+    <label>Milestones</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>5-Programme Idea approved</fullName>
+                <default>false</default>
+                <label>5-Programme Idea approved</label>
+            </value>
+            <value>
+                <fullName>10-Feasibility study summary available</fullName>
+                <default>false</default>
+                <label>10-Feasibility study summary available</label>
+            </value>
+            <value>
+                <fullName>20-Programme concept approved</fullName>
+                <default>false</default>
+                <label>20-Programme concept approved</label>
+            </value>
+            <value>
+                <fullName>30-Programme proposal approved</fullName>
+                <default>false</default>
+                <label>30-Programme proposal approved</label>
+            </value>
+            <value>
+                <fullName>200-Start of construction</fullName>
+                <default>false</default>
+                <label>200-Start of construction</label>
+            </value>
+            <value>
+                <fullName>310-End of construction</fullName>
+                <default>false</default>
+                <label>310-End of construction</label>
+            </value>
+            <value>
+                <fullName>320-Audit completed</fullName>
+                <default>false</default>
+                <label>320-Audit completed</label>
+            </value>
+            <value>
+                <fullName>350-Start of Set-up</fullName>
+                <default>false</default>
+                <label>350-Start of Set-up</label>
+            </value>
+            <value>
+                <fullName>510-Inauguration</fullName>
+                <default>false</default>
+                <label>510-Inauguration</label>
+            </value>
+            <value>
+                <fullName>910-Start running costs</fullName>
+                <default>false</default>
+                <label>910-Start running costs</label>
+            </value>
+            <value>
+                <fullName>915-Start of operation</fullName>
+                <default>false</default>
+                <label>915-Start of operation</label>
+            </value>
+            <value>
+                <fullName>920-End of running costs</fullName>
+                <default>false</default>
+                <label>920-End of running costs</label>
+            </value>
+            <value>
+                <fullName>925-End of operation</fullName>
+                <default>false</default>
+                <label>925-End of operation</label>
+            </value>
+            <value>
+                <fullName>960-End of SOS involvement</fullName>
+                <default>false</default>
+                <label>960-End of SOS involvement</label>
+            </value>
+            <value>
+                <fullName>990-Created by mistake</fullName>
+                <default>false</default>
+                <label>990-Created by mistake</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

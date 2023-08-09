@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Vocabulary__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The vocabulary field tracks what is the source of sector classification code / vocabulary used.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the source of this sector.</inlineHelpText>
+    <label>Vocabulary</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OECD DAC CRS Purpose Codes (5 digit)</fullName>
+                <default>false</default>
+                <label>OECD DAC CRS Purpose Codes (5 digit)</label>
+            </value>
+            <value>
+                <fullName>OECD DAC CRS Purpose Codes (3 digit)</fullName>
+                <default>false</default>
+                <label>OECD DAC CRS Purpose Codes (3 digit)</label>
+            </value>
+            <value>
+                <fullName>Classification of the Functions of Government (UN)</fullName>
+                <default>false</default>
+                <label>Classification of the Functions of Government (UN)</label>
+            </value>
+            <value>
+                <fullName>Statistical classification of economic activities in the European Community</fullName>
+                <default>false</default>
+                <label>Statistical classification of economic activities in the European Community</label>
+            </value>
+            <value>
+                <fullName>National Taxonomy for Exempt Entities (USA)</fullName>
+                <default>false</default>
+                <label>National Taxonomy for Exempt Entities (USA)</label>
+            </value>
+            <value>
+                <fullName>AidData</fullName>
+                <default>false</default>
+                <label>AidData</label>
+            </value>
+            <value>
+                <fullName>SDG Goal</fullName>
+                <default>false</default>
+                <label>SDG Goal</label>
+            </value>
+            <value>
+                <fullName>SDG Target</fullName>
+                <default>false</default>
+                <label>SDG Target</label>
+            </value>
+            <value>
+                <fullName>SDG Indicator</fullName>
+                <default>false</default>
+                <label>SDG Indicator</label>
+            </value>
+            <value>
+                <fullName>Humanitarian Global Clusters (Inter-Agency Standing Committee)</fullName>
+                <default>false</default>
+                <label>Humanitarian Global Clusters (Inter-Agency Standing Committee)</label>
+            </value>
+            <value>
+                <fullName>Reporting Organization</fullName>
+                <default>false</default>
+                <label>Reporting Organization</label>
+            </value>
+            <value>
+                <fullName>Reporting Organization 2</fullName>
+                <default>false</default>
+                <label>Reporting Organization 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

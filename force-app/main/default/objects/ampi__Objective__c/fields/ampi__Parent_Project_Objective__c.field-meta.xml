@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Parent_Project_Objective__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Self-lookup to create a hierarchy between objectives within a project, as displayed on ManageLogframes</description>
+    <externalId>false</externalId>
+    <label>Parent Framework Objective</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Value does not exist or does not match filter criteria.</errorMessage>
+        <filterItems>
+            <field>$Source.ampi__Project__c</field>
+            <operation>equals</operation>
+            <valueField>ampi__Objective__c.ampi__Project__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ampi__Objective__c</referenceTo>
+    <relationshipLabel>Child Project Objectives</relationshipLabel>
+    <relationshipName>Child_Project_Objectives</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X004_All_Grant_Multicountry_Projects</fullName>
+    <columns>Project_ID__c</columns>
+    <columns>NAME</columns>
+    <columns>Legal_Applicant__c</columns>
+    <columns>ampi__Project_Status__c</columns>
+    <columns>Start_Identification__c</columns>
+    <columns>Applicant_Accountable_Organisation__c</columns>
+    <columns>SOS_Implementing_Organisation__c</columns>
+    <columns>External_Donor__c</columns>
+    <columns>SOS_Region__c</columns>
+    <columns>Phase__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>ampi__Project__c.Grant</value>
+    </filters>
+    <filters>
+        <field>Is_this_an_Umbrella_Project__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>ampi__Project_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Cancelled</value>
+    </filters>
+    <filters>
+        <field>Sub_Grant__c</field>
+        <operation>equals</operation>
+        <value>No</value>
+    </filters>
+    <label>009 - All IPD Multicountry Projects</label>
+</ListView>

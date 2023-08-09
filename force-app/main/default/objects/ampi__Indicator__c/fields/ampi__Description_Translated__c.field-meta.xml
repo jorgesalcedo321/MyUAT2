@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Description_Translated__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field to return a translated version of Description__c if user is using Salesforce in a different language. Depending on user’s language locale, can return Description__c, Description_Language_1__c, Description_Language_2__c, or Description_Language_3__c. Displayed in ManageIndicators, SetTargets, and AddResults.</description>
+    <externalId>false</externalId>
+    <formula>CASE($Label.ampi__USER_LANGUAGE_CODE,
+    &apos;1&apos;, BLANKVALUE(ampi__Description_Language_1__c, ampi__Description__c),
+    &apos;2&apos;, BLANKVALUE(ampi__Description_Language_2__c, ampi__Description__c),
+    &apos;3&apos;, BLANKVALUE(ampi__Description_Language_3__c, ampi__Description__c),
+    ampi__Description__c
+)</formula>
+    <label>Indicator Definition Translated</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

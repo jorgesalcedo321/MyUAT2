@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Round_Off_Digits_For_Large_Numbers__c</fullName>
+    <defaultValue>2</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field controls the number of digits a large number (1 million and above) is round off to, and displayed on the Set Targets table.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this field to define the round-off digits to be displayed for large numbers (&gt; 1 million) in the view-only mode (e.g. submitted targets, viewing targets in view-only mode etc.) on the Set Targets page. Please assign a value from 0 to 5 only.</inlineHelpText>
+    <label>Round Off Digits For Large Numbers</label>
+    <precision>1</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

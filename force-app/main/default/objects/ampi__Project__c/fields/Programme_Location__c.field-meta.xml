@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Programme_Location__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Specify the programme location for your project.</inlineHelpText>
+    <label>Programme Location</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Please make sure to select a Programme for this field, not a Programme Unit, Country or Region.</errorMessage>
+        <filterItems>
+            <field>ampi__Geographical_Area__c.ampi__Type__c</field>
+            <operation>equals</operation>
+            <value>Programme</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ampi__Geographical_Area__c</referenceTo>
+    <relationshipLabel>Projects in this Programme Location</relationshipLabel>
+    <relationshipName>Projects1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

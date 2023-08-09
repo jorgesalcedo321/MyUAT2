@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Due_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date field to define when a particular report is due. This field may be used to schedule notifications to reporters when the due date is nearing.</description>
+    <externalId>false</externalId>
+    <label>Due Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

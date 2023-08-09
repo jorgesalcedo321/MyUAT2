@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Not_changing_code_programmes</fullName>
+    <active>true</active>
+    <errorConditionFormula>region_code_registered__c == true &amp;&amp; TEXT(ampi__Type__c) == &apos;Programme&apos; &amp;&amp; (TEXT(Program_Type__c) == &apos;Programme&apos; || TEXT(Program_Type__c) == &apos;National Office Programme&apos;) &amp;&amp; ISCHANGED(Code__c)</errorConditionFormula>
+    <errorMessage>Not possible to change the code for Programmes or National Office Programme</errorMessage>
+</ValidationRule>

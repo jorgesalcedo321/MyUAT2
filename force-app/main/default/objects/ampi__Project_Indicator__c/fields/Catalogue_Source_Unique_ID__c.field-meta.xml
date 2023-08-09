@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Catalogue_Source_Unique_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Contains a unique ID made up of the Project ID and related Catalog Indicator ID. This is populated by Flow when adding an Indicator from the Catalogue (via the &quot;Create Project indicator flow), ensuring that there are no duplicate Project Indicators,</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Contains a unique ID made up of the Project ID and related Catalog Indicator ID. This is populated by Flow when adding an Indicator from the Catalogue (via the &quot;Create Project indicator flow), ensuring that there are no duplicate Project Indicators,</inlineHelpText>
+    <label>Catalogue Source Unique ID</label>
+    <length>250</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

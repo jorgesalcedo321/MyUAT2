@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Selected_Rep_Period_Outside_Project</fullName>
+    <active>true</active>
+    <description>Only those Reporting Periods which look up to same Project that parent Risk&apos;s parent Risk Register looks up to can be selected</description>
+    <errorConditionFormula>AND(
+ampi__Risk__r.ampi__Risk_Register__r.ampi__Project__c  &lt;&gt;  ampi__Reporting_Period__r.ampi__Project__c,
+NOT(ISBLANK(ampi__Reporting_Period__c))
+)</errorConditionFormula>
+    <errorDisplayField>ampi__Reporting_Period__c</errorDisplayField>
+    <errorMessage>Incorrect Reporting Period selected: Only those Reporting Period in the same Project as this Risk Assessment can be selected.</errorMessage>
+</ValidationRule>

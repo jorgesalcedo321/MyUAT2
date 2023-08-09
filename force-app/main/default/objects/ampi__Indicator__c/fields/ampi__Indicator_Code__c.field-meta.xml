@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Indicator_Code__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>Text field to store the unique code of an indicator used internally by an organization</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the unique ID your organization uses internally for this indicator.</inlineHelpText>
+    <label>Indicator Code</label>
+    <length>20</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

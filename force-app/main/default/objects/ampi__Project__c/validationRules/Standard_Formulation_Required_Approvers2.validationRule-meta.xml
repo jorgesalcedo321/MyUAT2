@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_Formulation_Required_Approvers2</fullName>
+    <active>true</active>
+    <description>Please assign NA Approver: If International Funding Required = Yes or No, an Approver must be selected.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;Standard&quot;
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;Concept Submitted&quot;)
+&amp;&amp;
+OR(
+TEXT(International_Funding_Required_for_Imp__c) = &quot;Yes&quot;,
+TEXT(International_Funding_Required_for_Imp__c) = &quot;No&quot;
+)
+&amp;&amp;
+OR(
+ISBLANK(NA_Approver__c)
+)</errorConditionFormula>
+    <errorMessage>Please assign NA Approver: If International Funding Required = Yes or No, an Approver must be selected.</errorMessage>
+</ValidationRule>

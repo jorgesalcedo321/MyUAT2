@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Project_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to choose the lifecycle status of the activity from pipeline to completion</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Choose the lifecycle status of the activity from pipeline to completion</inlineHelpText>
+    <label>IATI Project Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pipeline/identification</fullName>
+                <default>false</default>
+                <label>Pipeline/identification</label>
+            </value>
+            <value>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+                <label>Implementation</label>
+            </value>
+            <value>
+                <fullName>Completion</fullName>
+                <default>false</default>
+                <label>Completion</label>
+            </value>
+            <value>
+                <fullName>Post-completion</fullName>
+                <default>false</default>
+                <label>Post-completion</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Suspended</fullName>
+                <default>false</default>
+                <label>Suspended</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

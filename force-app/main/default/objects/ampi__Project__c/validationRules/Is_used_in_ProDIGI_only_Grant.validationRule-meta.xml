@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_used_in_ProDIGI_only_Grant</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Grant&quot; &amp;&amp;
+ISCHANGED(Is_used_in_ProDIGI_only__c) &amp;&amp;
+(CASE( Phase__c,
+&quot;Implementation&quot;, 1,
+&quot;Closure&quot;, 1,
+0) = 1 || (ISPICKVAL(ampi__Project_Status__c,&quot;Application Approved&quot;)))</errorConditionFormula>
+    <errorMessage>Datafield &quot;Is used in ProDIGI only&quot; can&apos;t be changed on Implementation or Closure phase or &quot;Application Approved&quot; project status</errorMessage>
+</ValidationRule>

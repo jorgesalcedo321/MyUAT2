@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Active__c</fullName>
+    <defaultValue>true</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to activate / deactivate a Project Indicator record in a Project. If marked as TRUE, the Project Indicator record will display in the Selected Indicators table on ManageIndicators. If marked as FALSE, the Project Indicator record will display in the Deactivated Indicators table on ManageIndicators, and future Project Indicator Reporting Period records are deleted.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is checked by default to indicate the Project Indicator is active. To deactivate and no longer track data for this Project Indicator, uncheck the box.</inlineHelpText>
+    <label>Active?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Percentage_Only_Country_Level</fullName>
+    <active>true</active>
+    <description>IATI Percentage should only be filled when Project Geographic Area is of country type</description>
+    <errorConditionFormula>AND( ampi__Type__c  &lt;&gt; &quot;Country&quot;, NOT(ISBLANK(ampi__IATI_Percentage__c )))</errorConditionFormula>
+    <errorDisplayField>ampi__IATI_Percentage__c</errorDisplayField>
+    <errorMessage>IATI Percentage should only be filled when Project Geographic Area is of country type</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGRF_Final_Report_Submitted</fullName>
+    <active>false</active>
+    <description>Prevents users from selecting status &quot;Final Report Submitted&quot; if required field is left empty.</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Grant&quot; 
+&amp;&amp;
+ISPICKVAL( ampi__Project_Status__c , &quot;Final Report Submitted&quot;)
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Exit in Progress&quot;)
+&amp;&amp;
+(
+ISBLANK(  Actuals_Total_Project_Expenditures_LC__c )
+)</errorConditionFormula>
+    <errorMessage>Mandatory fields are missing for Status &quot;Final Report Submitted&quot;: Actuals Total Project Expenditures (LCY)</errorMessage>
+</ValidationRule>

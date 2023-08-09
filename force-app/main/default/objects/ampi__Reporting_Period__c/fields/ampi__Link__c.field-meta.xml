@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Link__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This formula field stores the hyperlinked Label to reporting period record. This field does not work in Communities, due to the special URLs used there.</description>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/&quot; &amp; Id, ampi__Label_Translated__c)</formula>
+    <label>Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Values_For_PUs_NMUs</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(ISNEW(), 
+				(TEXT(ampi__Type__c) == &apos;Programme Unit&apos; || 
+     TEXT(ampi__Type__c) == &apos;National Management Unit&apos;),
+				OR(TEXT(ampi__Type__c) = &apos;&apos;, 
+			    TEXT(Active__c) = &apos;&apos;, 
+			    ISBLANK(ampi__Parent_Geographical_Area__c),
+			    TEXT(Program_Unit_Type__c) = &apos;&apos;,
+			    ISBLANK(Thematic_Area__c),
+			    ISBLANK(Parent_MA__c)))</errorConditionFormula>
+    <errorMessage>Programme Units and National Management Units have mandatory fields: Type, Active, Parent Geographical Area, Programme Unit Type, Service Type and Parent MA</errorMessage>
+</ValidationRule>

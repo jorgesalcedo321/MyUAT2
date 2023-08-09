@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Sector_Percentage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Track the focus of a project on a specific sector as a percent.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Track the focus of a project on a specific sector as a percent.</inlineHelpText>
+    <label>Sector Percentage</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

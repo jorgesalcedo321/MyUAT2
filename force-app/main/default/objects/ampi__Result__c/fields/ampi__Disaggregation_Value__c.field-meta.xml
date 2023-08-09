@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Disaggregation_Value__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This lookup field specifies the disaggregation value this result maps to</description>
+    <externalId>false</externalId>
+    <label>Disaggregation Value</label>
+    <referenceTo>ampi__Disaggregation_Value__c</referenceTo>
+    <relationshipLabel>Results (Disaggregation Value Level 2)</relationshipLabel>
+    <relationshipName>Results1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

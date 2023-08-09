@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Activities</fullName>
+    <columns>NAME</columns>
+    <columns>Activity_ID__c</columns>
+    <columns>ampi__Type__c</columns>
+    <columns>Unique_Name__c</columns>
+    <columns>ampi__Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Unique_Name__c</field>
+        <operation>contains</operation>
+        <value>S22-036515</value>
+    </filters>
+    <label>All Activities</label>
+</ListView>

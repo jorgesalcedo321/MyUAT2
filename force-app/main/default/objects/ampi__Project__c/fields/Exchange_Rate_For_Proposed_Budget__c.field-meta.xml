@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exchange_Rate_For_Proposed_Budget__c</fullName>
+    <defaultValue>1</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Mandatory for status &quot;concept/application submitted&quot;. Indicate how many units of donor currency (DCY) you need for 1 Euro (EUR), Example: &quot;1 EUR = 1,09 USD&quot;. Default value is set to 1, please use the InforEuro exchange rate from the date of submission.</inlineHelpText>
+    <label>Exchange Rate EUR to DCY (Planned)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

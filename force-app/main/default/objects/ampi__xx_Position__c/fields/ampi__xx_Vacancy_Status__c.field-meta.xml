@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Vacancy_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to set the vacancy status of a position</description>
+    <externalId>false</externalId>
+    <inlineHelpText>By default, the status is &apos;Vacant&apos;</inlineHelpText>
+    <label>Vacancy Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vacant</fullName>
+                <default>true</default>
+                <label>Vacant</label>
+            </value>
+            <value>
+                <fullName>Recruiting</fullName>
+                <default>false</default>
+                <label>Recruiting</label>
+            </value>
+            <value>
+                <fullName>Filled</fullName>
+                <default>false</default>
+                <label>Filled</label>
+            </value>
+            <value>
+                <fullName>Discontinued</fullName>
+                <default>false</default>
+                <label>Discontinued</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

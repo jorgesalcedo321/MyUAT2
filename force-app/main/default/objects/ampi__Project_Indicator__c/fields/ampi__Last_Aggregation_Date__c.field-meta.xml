@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Last_Aggregation_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date/Time field to store the date and time of when the last aggregation batch for this Project Indicator was successfully run. This field is populated by the aggregation batch.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date and time when the last aggregation batch was successfully run for this Project Indicator</inlineHelpText>
+    <label>Last Aggregation Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

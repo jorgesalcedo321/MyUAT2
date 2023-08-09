@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Calculation_Formula_HTML__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Long text area field to store the HTML version of the calculation formula that is displayed in the Edit Calculation Formula popup. This is populated by the Calculation Formula popup.</description>
+    <externalId>false</externalId>
+    <label>Calculation Formula HTML</label>
+    <length>8000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

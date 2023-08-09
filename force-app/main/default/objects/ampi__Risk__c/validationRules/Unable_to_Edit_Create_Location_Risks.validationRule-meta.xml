@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unable_to_Edit_Create_Location_Risks</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.Manage_Programme_Risks) &amp;&amp; RecordType.Name = &quot;Programme Location Risk&quot; &amp;&amp; NOT(TEXT(Catalogue_Type__c) = &apos;Safety and Security Risks&apos;)</errorConditionFormula>
+    <errorMessage>You do not have permission to edit Programme Location Risks. Please contact an Admin if you think that you should have the necessary permissions.</errorMessage>
+</ValidationRule>

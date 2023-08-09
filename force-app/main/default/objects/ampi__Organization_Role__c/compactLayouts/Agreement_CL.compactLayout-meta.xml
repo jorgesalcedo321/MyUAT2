@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_CL</fullName>
+    <fields>Name</fields>
+    <fields>Status__c</fields>
+    <fields>ampi__Project__c</fields>
+    <fields>Funder_Info__c</fields>
+    <fields>ampi__IATI_Providing_Project__c</fields>
+    <fields>Funding_Amount__c</fields>
+    <label>Agreement CL</label>
+</CompactLayout>

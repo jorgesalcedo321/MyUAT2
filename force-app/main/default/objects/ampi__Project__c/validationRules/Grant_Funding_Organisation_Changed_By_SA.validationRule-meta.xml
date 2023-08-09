@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Funding_Organisation_Changed_By_SA</fullName>
+    <active>true</active>
+    <description>AMIMSP-1829 ticket requested to update grant funding organisation field only for System admins</description>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Grant&apos; &amp;&amp;
+ISCHANGED(Funding_organisation__c) &amp;&amp;
+OR (NOT ($Profile.Name = &quot;System Administrator&quot;),
+NOT ($Permission.Funding_Organisation_Grant_Editable))</errorConditionFormula>
+    <errorMessage>Funding Organisation datafield can be changed only for System Admins on Grant projects</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Data_Type_Icon__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is used to pull the Font Awesome icon associated with a given data type.</description>
+    <externalId>false</externalId>
+    <formula>IF( ampi__Data_Type__c  = &apos;Number&apos;, &apos;vi-number-value&apos; , IF(  ampi__Data_Type__c  = &apos;Currency&apos; , &apos;vi-money&apos;, IF( ampi__Data_Type__c  = &apos;Percent&apos; , &apos;vi-percentage-value&apos; , IF( ampi__Data_Type__c  = &apos;Qualitative&apos; ,&apos;vi-file-text-o&apos; , IF( ampi__Data_Type__c  = &apos;Milestone&apos; , &apos;vi-map-signs&apos; ,&apos;&apos; )))))&amp;&quot;#&quot;&amp;ampi__Data_Type__c</formula>
+    <label>Data Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

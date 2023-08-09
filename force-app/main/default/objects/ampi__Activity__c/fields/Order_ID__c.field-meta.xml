@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_ID__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(ampi__Type__c) = &quot;Overarching&quot;,
+			IF(NOT(ISBLANK(ampi__Parent_Activity__c)), ampi__Parent_Activity__r.Activity_ID__c &amp; &quot;.&quot;, &quot;&quot;) &amp; Activity_ID__c,
+			ampi__Project_Objective__r.Order_ID__c &amp; &quot;.&quot; &amp; IF(NOT(ISBLANK(ampi__Parent_Activity__c)), ampi__Parent_Activity__r.Activity_ID__c &amp; &quot;.&quot;, &quot;&quot;) &amp; Activity_ID__c
+)</formula>
+    <label>Order ID</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

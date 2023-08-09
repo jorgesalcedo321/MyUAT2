@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Submission</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>ampi__Submission_Compact_Layout</compactLayoutAssignment>
+    <description>Submission created from a master Template to be filled out and reviewed</description>
+    <label>Submission</label>
+    <picklistValues>
+        <picklist>ampi__Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reviewed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Tied_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to choose whether the aid is untied, tied, or partially tied. This element specifies a default for all the activity&apos;s financial transactions; it can be overridden at the individual transaction level. If an activity is partially tied it is recommended that tied and untied commitments are reported as separate transactions and that transaction/tied-status is used to classify them.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of Classification; Whether the aid is untied, tied, or partially tied. This element specifies a default for all the activity&apos;s financial transactions; it can be overridden at the individual transaction level.</inlineHelpText>
+    <label>IATI Tied Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Partially tied</fullName>
+                <default>false</default>
+                <label>Partially tied</label>
+            </value>
+            <value>
+                <fullName>Tied</fullName>
+                <default>false</default>
+                <label>Tied</label>
+            </value>
+            <value>
+                <fullName>Untied</fullName>
+                <default>false</default>
+                <label>Untied</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

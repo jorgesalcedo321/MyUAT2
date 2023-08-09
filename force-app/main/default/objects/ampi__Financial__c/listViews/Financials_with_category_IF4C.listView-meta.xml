@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financials_with_category_IF4C</fullName>
+    <columns>NAME</columns>
+    <columns>ampi__Budget__c</columns>
+    <columns>ampi__Activity__c</columns>
+    <columns>ampi__Category__c</columns>
+    <columns>ampi__Description__c</columns>
+    <columns>ampi__Type__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>Unique_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ampi__Category__c</field>
+        <operation>equals</operation>
+        <value>2 IF4C COR,2 IF4C D2D,2 IF4C DB,2 IF4C DIG,2 IF4C F2A,2 IF4C F2I,2 IF4C HR,2 IF4C IND,2 IF4C LOY,2 IF4C MD,2 IF4C SMS,2 IF4C TMK,3 IF4C</value>
+    </filters>
+    <label>004 - Financials with category IF4C</label>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Geographic_Area__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup field to specify parent geographic area. This value is populated by the trigger on Project Geographic Area. This field determines what gets concatenated the Geographic Area field on the parent Project Indicator record.</description>
+    <externalId>false</externalId>
+    <label>Geographic Area</label>
+    <referenceTo>ampi__Geographical_Area__c</referenceTo>
+    <relationshipLabel>Project Indicator Geographic Areas</relationshipLabel>
+    <relationshipName>Project_Indicator_Geographic_Areas</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

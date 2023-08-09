@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cant_Create_Constructi_Project_On_Portal</fullName>
+    <active>true</active>
+    <description>You do not have permissions to create Construction Projects. Project Contributor, National PM/Director, or Project Manager cannot create new records.</description>
+    <errorConditionFormula>AND (
+ISNEW(),
+RecordType.DeveloperName = &quot;Construction&quot;,
+OR(
+$Profile.Name = &quot;Project Contributor&quot;,
+$Profile.Name = &quot;National PM/Director&quot;,
+$Profile.Name = &quot;Project Manager&quot;
+))</errorConditionFormula>
+    <errorMessage>You do not have permissions to create Construction Projects. Project Contributor, National PM/Director, or Project Manager cannot create new records.</errorMessage>
+</ValidationRule>

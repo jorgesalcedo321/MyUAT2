@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Total_Result__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Calculates the total result value from a single Result record (i.e. aggregates disaggregated result values).</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        TEXT(ampi__Project_Indicator__r.ampi__Type_of_Results__c) = &quot;Input&quot;,
+        OR(
+            ampi__Project_Indicator__r.ampi__Data_Type__c = &quot;Currency&quot;,
+            ampi__Project_Indicator__r.ampi__Data_Type__c = &quot;Number&quot;
+        )
+    ),
+    IF(
+        ampi__Project_Indicator__r.ampi__Cross_Disaggregation_by_Sex__c,
+        IF(
+            AND(
+                ISNULL(ampi__Female_Result__c),
+                ISNULL(ampi__Male_Result__c),
+                ISNULL(ampi__Unknown_Result__c)
+            ),
+            null,
+            NULLVALUE(ampi__Female_Result__c, 0.00) + NULLVALUE(ampi__Male_Result__c, 0.00) + NULLVALUE(ampi__Unknown_Result__c, 0.00)
+        ),
+        ampi__Result_Value__c
+    ),
+    IF(
+        OR(
+            ampi__Project_Indicator__r.ampi__Data_Type__c = &quot;Percent&quot;,
+            TEXT(ampi__Project_Indicator__r.ampi__Type_of_Results__c) &lt;&gt; &quot;Input&quot;
+        ),
+        ampi__Result_Value__c,
+        null
+    )
+)</formula>
+    <inlineHelpText>Calculates the total result value from a single Result record (i.e. sums result values that are disaggregated by sex).</inlineHelpText>
+    <label>Total Result</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

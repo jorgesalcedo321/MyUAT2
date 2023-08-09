@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unique_Name__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ampi__Project__c &lt;&gt; &apos;&apos;, ampi__Project__r.Project_Number_ID__c + &apos;_&apos; + LPAD(TRIM(Order_Financial__c), 2, &apos;0&apos;) + &apos;_B&apos; + LPAD(TEXT(Order_Project__c), 2, &apos;0&apos;), &apos;&apos;)</formula>
+    <label>Unique Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

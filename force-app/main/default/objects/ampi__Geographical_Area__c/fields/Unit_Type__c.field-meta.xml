@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Unit Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0-Construction Project</fullName>
+                <default>false</default>
+                <label>0-Construction Project</label>
+            </value>
+            <value>
+                <fullName>1-Alternative Care</fullName>
+                <default>false</default>
+                <label>1-Alternative Care</label>
+            </value>
+            <value>
+                <fullName>2-Family Strengthening</fullName>
+                <default>false</default>
+                <label>2-Family Strengthening</label>
+            </value>
+            <value>
+                <fullName>3-Education</fullName>
+                <default>false</default>
+                <label>3-Education</label>
+            </value>
+            <value>
+                <fullName>4-Health</fullName>
+                <default>false</default>
+                <label>4-Health</label>
+            </value>
+            <value>
+                <fullName>5-Emergency Response</fullName>
+                <default>false</default>
+                <label>5-Emergency Response</label>
+            </value>
+            <value>
+                <fullName>6-Other Activites</fullName>
+                <default>false</default>
+                <label>6-Other Activites</label>
+            </value>
+            <value>
+                <fullName>10-SOS Children&apos;s Village</fullName>
+                <default>false</default>
+                <label>10-SOS Children&apos;s Village</label>
+            </value>
+            <value>
+                <fullName>20-SOS Youth Facility</fullName>
+                <default>false</default>
+                <label>20-SOS Youth Facility</label>
+            </value>
+            <value>
+                <fullName>30-SOS Kindergarten</fullName>
+                <default>false</default>
+                <label>30-SOS Kindergarten</label>
+            </value>
+            <value>
+                <fullName>40-SOS Hermann Gmeiner School</fullName>
+                <default>false</default>
+                <label>40-SOS Hermann Gmeiner School</label>
+            </value>
+            <value>
+                <fullName>50-SOS Vocational Training Centre</fullName>
+                <default>false</default>
+                <label>50-SOS Vocational Training Centre</label>
+            </value>
+            <value>
+                <fullName>60-SOS Social Centre</fullName>
+                <default>false</default>
+                <label>60-SOS Social Centre</label>
+            </value>
+            <value>
+                <fullName>70-SOS Medical Centre</fullName>
+                <default>false</default>
+                <label>70-SOS Medical Centre</label>
+            </value>
+            <value>
+                <fullName>80-SOS Emergency Relief Programme</fullName>
+                <default>false</default>
+                <label>80-SOS Emergency Relief Programme</label>
+            </value>
+            <value>
+                <fullName>91-International Office Region</fullName>
+                <default>false</default>
+                <label>91-International Office Region</label>
+            </value>
+            <value>
+                <fullName>93-Inactive Continental Office</fullName>
+                <default>false</default>
+                <label>93-Inactive Continental Office</label>
+            </value>
+            <value>
+                <fullName>94-International Office</fullName>
+                <default>false</default>
+                <label>94-International Office</label>
+            </value>
+            <value>
+                <fullName>95-National Legal Entity</fullName>
+                <default>false</default>
+                <label>95-National Legal Entity</label>
+            </value>
+            <value>
+                <fullName>96-National Office</fullName>
+                <default>false</default>
+                <label>96-National Office</label>
+            </value>
+            <value>
+                <fullName>99-Hermann Gmeiner Academy</fullName>
+                <default>false</default>
+                <label>99-Hermann Gmeiner Academy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

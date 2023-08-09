@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Project_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist to determine status of project and to be used in Path display on Lightning record page.</description>
+    <externalId>false</externalId>
+    <label>Project Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Phase__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>In Identification</fullName>
+                <default>false</default>
+                <label>In Identification</label>
+            </value>
+            <value>
+                <fullName>Principle GO</fullName>
+                <default>false</default>
+                <label>Principle GO</label>
+            </value>
+            <value>
+                <fullName>Idea Submitted</fullName>
+                <default>false</default>
+                <label>Idea Submitted</label>
+            </value>
+            <value>
+                <fullName>Idea Validated</fullName>
+                <default>false</default>
+                <label>Idea Validated</label>
+            </value>
+            <value>
+                <fullName>Idea In Pipeline</fullName>
+                <default>false</default>
+                <label>Idea In Pipeline</label>
+            </value>
+            <value>
+                <fullName>Interest to Fund</fullName>
+                <default>false</default>
+                <label>Interest to Fund</label>
+            </value>
+            <value>
+                <fullName>Needs Assessment Started</fullName>
+                <default>false</default>
+                <label>Needs Assessment Started</label>
+            </value>
+            <value>
+                <fullName>Needs Assessment Submitted</fullName>
+                <default>false</default>
+                <label>Needs Assessment Submitted</label>
+            </value>
+            <value>
+                <fullName>In Formulation</fullName>
+                <default>false</default>
+                <label>In Formulation</label>
+            </value>
+            <value>
+                <fullName>HA Submitted</fullName>
+                <default>false</default>
+                <label>HA Submitted</label>
+            </value>
+            <value>
+                <fullName>Formal GO</fullName>
+                <default>false</default>
+                <label>Formal GO</label>
+            </value>
+            <value>
+                <fullName>Commit Funding</fullName>
+                <default>false</default>
+                <label>Commit Funding</label>
+            </value>
+            <value>
+                <fullName>Plan Submitted</fullName>
+                <default>false</default>
+                <label>Plan Submitted</label>
+            </value>
+            <value>
+                <fullName>Partnership Agreement Signed</fullName>
+                <default>false</default>
+                <label>Partnership Agreement Signed</label>
+            </value>
+            <value>
+                <fullName>Concept in Formulation</fullName>
+                <default>false</default>
+                <label>Concept in Formulation</label>
+            </value>
+            <value>
+                <fullName>Concept Submitted</fullName>
+                <default>false</default>
+                <label>Concept Submitted</label>
+            </value>
+            <value>
+                <fullName>Concept Validated</fullName>
+                <default>false</default>
+                <label>Concept Validated</label>
+            </value>
+            <value>
+                <fullName>Concept in Pipeline</fullName>
+                <default>false</default>
+                <label>Concept in Pipeline</label>
+            </value>
+            <value>
+                <fullName>Concept Rejected</fullName>
+                <default>false</default>
+                <label>Concept Rejected</label>
+            </value>
+            <value>
+                <fullName>Funding Approved</fullName>
+                <default>false</default>
+                <label>Funding Approved</label>
+            </value>
+            <value>
+                <fullName>Application in Formulation</fullName>
+                <default>false</default>
+                <label>Application in Formulation</label>
+            </value>
+            <value>
+                <fullName>Application Submitted</fullName>
+                <default>false</default>
+                <label>Application Submitted</label>
+            </value>
+            <value>
+                <fullName>Application Approved</fullName>
+                <default>false</default>
+                <label>Application Approved</label>
+            </value>
+            <value>
+                <fullName>Application Rejected</fullName>
+                <default>false</default>
+                <label>Application Rejected</label>
+            </value>
+            <value>
+                <fullName>In Implementation</fullName>
+                <default>false</default>
+                <label>In Implementation</label>
+            </value>
+            <value>
+                <fullName>Project on Hold</fullName>
+                <default>false</default>
+                <label>Project on Hold</label>
+            </value>
+            <value>
+                <fullName>Exit Submitted</fullName>
+                <default>false</default>
+                <label>Exit Submitted</label>
+            </value>
+            <value>
+                <fullName>Exit Validated</fullName>
+                <default>false</default>
+                <label>Exit Validated</label>
+            </value>
+            <value>
+                <fullName>Exit Funding Approved</fullName>
+                <default>false</default>
+                <label>Exit Funding Approved</label>
+            </value>
+            <value>
+                <fullName>Exit in Progress</fullName>
+                <default>false</default>
+                <label>Exit in Progress</label>
+            </value>
+            <value>
+                <fullName>Final Report Submitted</fullName>
+                <default>false</default>
+                <label>Final Report Submitted</label>
+            </value>
+            <value>
+                <fullName>In Setup</fullName>
+                <default>false</default>
+                <label>In Setup</label>
+            </value>
+            <value>
+                <fullName>In Tendering</fullName>
+                <default>false</default>
+                <label>In Tendering</label>
+            </value>
+            <value>
+                <fullName>In Construction</fullName>
+                <default>false</default>
+                <label>In Construction</label>
+            </value>
+            <value>
+                <fullName>In Closure</fullName>
+                <default>false</default>
+                <label>In Closure</label>
+            </value>
+            <value>
+                <fullName>Audit</fullName>
+                <default>false</default>
+                <label>Audit</label>
+            </value>
+            <value>
+                <fullName>Project Closed</fullName>
+                <default>false</default>
+                <label>Project Closed</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Closure</fullName>
+                <default>false</default>
+                <label>Closure</label>
+            </value>
+            <value>
+                <fullName>Formulation</fullName>
+                <default>false</default>
+                <label>Formulation</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Project Cancelled</fullName>
+                <default>false</default>
+                <label>Project Cancelled</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>New</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>In Identification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Principle GO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Idea Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Idea In Pipeline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Interest to Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Needs Assessment Started</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Needs Assessment Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>In Formulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Concept in Formulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Application in Formulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>In Setup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>HA Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Formal GO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Commit Funding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Plan Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Partnership Agreement Signed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Concept Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Concept in Pipeline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Concept Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Funding Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Application Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Application Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Application Rejected</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <controllingFieldValue>Implementation</controllingFieldValue>
+            <valueName>In Implementation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <controllingFieldValue>In Setup</controllingFieldValue>
+            <valueName>In Tendering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <controllingFieldValue>Implementation</controllingFieldValue>
+            <controllingFieldValue>In Tendering</controllingFieldValue>
+            <valueName>In Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Formulation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Formulation</controllingFieldValue>
+            <valueName>Project Cancelled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Implementation</controllingFieldValue>
+            <valueName>Project on Hold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Implementation</controllingFieldValue>
+            <valueName>Exit Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Implementation</controllingFieldValue>
+            <valueName>Exit Funding Approved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Implementation</controllingFieldValue>
+            <controllingFieldValue>Closure</controllingFieldValue>
+            <valueName>Exit in Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Implementation</controllingFieldValue>
+            <controllingFieldValue>Closure</controllingFieldValue>
+            <valueName>In Closure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Implementation</controllingFieldValue>
+            <controllingFieldValue>Closure</controllingFieldValue>
+            <controllingFieldValue>In Construction</controllingFieldValue>
+            <valueName>Closure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closure</controllingFieldValue>
+            <valueName>Final Report Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closure</controllingFieldValue>
+            <valueName>Audit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closure</controllingFieldValue>
+            <controllingFieldValue>In Setup</controllingFieldValue>
+            <controllingFieldValue>In Tendering</controllingFieldValue>
+            <controllingFieldValue>In Construction</controllingFieldValue>
+            <valueName>Project Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Closure</controllingFieldValue>
+            <valueName>Closed</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

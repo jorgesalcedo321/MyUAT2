@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SXRF_Project_Closed</fullName>
+    <active>false</active>
+    <description>Prevents users from selecting status &quot;Project Closed&quot; if required fields are left empty for EoI projects. [DEP] December 2020 with deployment of Standard Approvals.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;End_of_Involvement&quot;
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;Project Closed&quot;)
+&amp;&amp;
+(
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Exit in Progress&quot;)
+&amp;&amp;
+(
+ISBLANK( Actual_Exit_End_Date__c )
+)
+)</errorConditionFormula>
+    <errorMessage>Please fill in mandatory fields for Status &quot;Project Closed&quot;: Actual Exit End Date</errorMessage>
+</ValidationRule>

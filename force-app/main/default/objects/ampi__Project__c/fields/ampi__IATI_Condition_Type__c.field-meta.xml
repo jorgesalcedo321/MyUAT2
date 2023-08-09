@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Condition_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to indicate the condition type, per the IATI Activity standard.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use the picklist to indicate the condition type</inlineHelpText>
+    <label>IATI Condition Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Policy</fullName>
+                <default>false</default>
+                <label>Policy</label>
+            </value>
+            <value>
+                <fullName>Performance</fullName>
+                <default>false</default>
+                <label>Performance</label>
+            </value>
+            <value>
+                <fullName>Fiduciary</fullName>
+                <default>false</default>
+                <label>Fiduciary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Only applicable for multistage applications. Mandatory for status &quot;application in formulation&quot;. Date when concept note was approved by the donor.</inlineHelpText>
+    <label>Concept Note Approval Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

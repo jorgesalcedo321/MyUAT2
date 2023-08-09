@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Percent_Complete__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Percent Complete field contains the current status of a task, expressed as the percentage of the task&apos;s duration that has been completed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Percentage of work that has been completed for an Activity</inlineHelpText>
+    <label>Percent Complete</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

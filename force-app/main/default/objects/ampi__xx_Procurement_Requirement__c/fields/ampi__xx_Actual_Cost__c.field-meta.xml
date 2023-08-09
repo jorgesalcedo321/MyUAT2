@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Actual_Cost__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that calculates the actual cost of related good or service for the related activity.</description>
+    <externalId>false</externalId>
+    <formula>ampi__xx_Number_of_Units_Needed__c * ampi__xx_Actual_Unit_Cost__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This formula will calculate the actual cost of procuring the good or service (It is calculated by multiplying the number of units needed by the actual unit cost of good or service).</inlineHelpText>
+    <label>Actual Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

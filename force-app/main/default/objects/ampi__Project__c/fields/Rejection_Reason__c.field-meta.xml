@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejection_Reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please indicate here the reason for canceling an application process (e.g. deadline could not be met) or the reason why the donor/potential funder rejected an application.</inlineHelpText>
+    <label>Rejection/Cancellation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

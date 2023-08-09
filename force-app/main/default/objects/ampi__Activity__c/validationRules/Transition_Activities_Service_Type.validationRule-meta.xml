@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transition_Activities_Service_Type</fullName>
+    <active>false</active>
+    <description>When the project is in the &quot;Implementation&quot; or &quot;Closure&quot; phase, the Service type cannot be changed or deleted.</description>
+    <errorConditionFormula>AND(
+    OR(
+				ISCHANGED(Thematic_Area__c),
+    ISBLANK(Thematic_Area__c) 
+    ),
+    Project__r.RecordType.DeveloperName = &apos;Transition&apos;,
+				OR(
+    ISPICKVAL(Project__r.Phase__c , &apos;Implementation&apos;),
+    ISPICKVAL(Project__r.Phase__c , &apos;Closure&apos;) 
+    )
+)</errorConditionFormula>
+    <errorMessage>The Service type cannot be modified or deleted if the project is in the phase &quot;Implementation&quot; or &quot;Closure&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_RiskRegister_NA_Director_Reviewer</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISBLANK(ampi__Risk_Register__c) == false, 
+OR(TEXT(ampi__Risk_Register__r.Status__c) = &apos;Approved&apos;,
+TEXT(ampi__Risk_Register__r.Status__c) = &apos;Declined&apos;,
+ISCHANGED(Impact_Value__c),
+ISCHANGED(Probability_Value__c),
+ISCHANGED(Risk_Value__c)),
+NOT(OR(ampi__Risk_Register__r.Programme__r.Parent_MA__r.NA_Risk_Reviewer__r.Email = $User.Email, ampi__Risk_Register__r.Programme__r.Parent_MA__r.NA_Director__r.Email = $User.Email)))</errorConditionFormula>
+    <errorMessage>Only NA Director or Risk Reviewer are allowed to edit a risk register that is related to this NA on status &quot;Draft&quot; or &quot;Pending Revise&quot;</errorMessage>
+</ValidationRule>

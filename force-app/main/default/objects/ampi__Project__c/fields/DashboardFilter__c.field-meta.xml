@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DashboardFilter__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF($User.AccountID__c =  ampi__Account__r.Id , TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DashboardFilter</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

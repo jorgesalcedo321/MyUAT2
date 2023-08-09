@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Parent_Submission__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This lookup field tracks the parent Submission Template for a response Submission</description>
+    <externalId>false</externalId>
+    <label>Initially Copied From</label>
+    <referenceTo>ampi__Submission__c</referenceTo>
+    <relationshipLabel>Assigned Submissions</relationshipLabel>
+    <relationshipName>Child_Submissions</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

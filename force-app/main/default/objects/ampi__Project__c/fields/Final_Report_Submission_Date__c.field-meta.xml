@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Report_Submission_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Date when final report is submitted to donor.</inlineHelpText>
+    <label>Final Report Submission Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

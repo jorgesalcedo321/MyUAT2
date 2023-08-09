@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Risk_Register__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to the Risk Register which contains this Risk.</description>
+    <externalId>false</externalId>
+    <label>Risk Register</label>
+    <referenceTo>ampi__Risk_Register__c</referenceTo>
+    <relationshipLabel>Risks</relationshipLabel>
+    <relationshipName>Risks</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

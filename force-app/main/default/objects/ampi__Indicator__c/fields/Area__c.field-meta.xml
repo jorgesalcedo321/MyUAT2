@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alternative Care</fullName>
+                <default>false</default>
+                <label>Alternative Care</label>
+            </value>
+            <value>
+                <fullName>Family Strengthening</fullName>
+                <default>false</default>
+                <label>Family Strengthening</label>
+            </value>
+            <value>
+                <fullName>Humanitarian Action</fullName>
+                <default>false</default>
+                <label>Humanitarian Action</label>
+            </value>
+            <value>
+                <fullName>Other Activities</fullName>
+                <default>false</default>
+                <label>Other Activities</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Advocacy</fullName>
+                <default>false</default>
+                <label>Advocacy</label>
+            </value>
+            <value>
+                <fullName>Accommodation</fullName>
+                <default>false</default>
+                <label>Accommodation</label>
+            </value>
+            <value>
+                <fullName>Care</fullName>
+                <default>false</default>
+                <label>Care</label>
+            </value>
+            <value>
+                <fullName>Family of Origin</fullName>
+                <default>false</default>
+                <label>Family of Origin</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Livelihood</fullName>
+                <default>false</default>
+                <label>Livelihood</label>
+            </value>
+            <value>
+                <fullName>Protection and Social Inclusion</fullName>
+                <default>false</default>
+                <label>Protection and Social Inclusion</label>
+            </value>
+            <value>
+                <fullName>Wellbeing</fullName>
+                <default>false</default>
+                <label>Wellbeing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

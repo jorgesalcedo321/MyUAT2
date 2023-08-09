@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Description_of_Event__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Track how an actual risk event that occurred was responded to, see how it aligned with the set plan and use that information for future mitigation strategies</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide a description of the event(s) or activities that happened when the risk occurred. Explain how it happened, when it happened, where it happened and what happened.</inlineHelpText>
+    <label>Description of Event</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

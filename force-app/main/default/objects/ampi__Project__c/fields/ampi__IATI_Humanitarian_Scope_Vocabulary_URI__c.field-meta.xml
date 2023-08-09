@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Humanitarian_Scope_Vocabulary_URI__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Text field to store the URI source of the vocabulary being used for humanitarian scope classification for IATI reporting.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This link will be published in the IATI Activity file and must be publicly accessible.</inlineHelpText>
+    <label>IATI Humanitarian Scope Vocabulary URI</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

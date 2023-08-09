@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSAM_Idea_Submitted</fullName>
+    <active>true</active>
+    <description>Validation to guide users to correct next Project Status from &quot;Idea Submitted&quot;</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Idea Submitted&quot;)
+&amp;&amp;
+CASE( ampi__Project_Status__c ,
+&quot;Idea Validated&quot;, 1,
+&quot;Cancelled&quot;, 1,
+0) = 0</errorConditionFormula>
+    <errorMessage>Please set Project Status to an allowed Project Status: &quot;Idea Validated&quot; or &quot;Cancelled&quot;.</errorMessage>
+</ValidationRule>

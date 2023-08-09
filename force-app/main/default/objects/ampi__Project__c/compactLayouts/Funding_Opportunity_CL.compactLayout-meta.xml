@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Opportunity_CL</fullName>
+    <fields>RecordTypeId</fields>
+    <fields>Name</fields>
+    <fields>Applicant_Accountable_Organisation__c</fields>
+    <fields>Project_ID_raw__c</fields>
+    <label>Funding Opportunity CL</label>
+</CompactLayout>

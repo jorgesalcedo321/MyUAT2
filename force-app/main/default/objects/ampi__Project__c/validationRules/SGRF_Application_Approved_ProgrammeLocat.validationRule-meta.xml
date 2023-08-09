@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGRF_Application_Approved_ProgrammeLocat</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.Manage_Restrictions) &amp;&amp; (RecordType.DeveloperName = &quot;Grant&quot; &amp;&amp;
+Is_this_an_Umbrella_Project__c == false &amp;&amp;
+OR(
+ISPICKVAL(ampi__Project_Status__c , &apos;Application Approved&apos;),
+ISPICKVAL(ampi__Project_Status__c , &apos;Application Rejected&apos;),
+ISPICKVAL(ampi__Project_Status__c , &apos;In Implementation&apos;),
+ISPICKVAL(Phase__c , &apos;Implementation&apos;),
+ISPICKVAL(Phase__c , &apos;Closure&apos;)
+) &amp;&amp;
+ISBLANK(Programme_Location__c))</errorConditionFormula>
+    <errorMessage>&quot;Programme location is mandatory for grant projects in status Application Approved&quot;.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>(Exact list of statuses to be confirmed)</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Formulation</fullName>
+                <default>true</default>
+                <label>In Formulation</label>
+            </value>
+            <value>
+                <fullName>Application Submitted</fullName>
+                <default>false</default>
+                <label>Application Submitted</label>
+            </value>
+            <value>
+                <fullName>Under Review</fullName>
+                <default>false</default>
+                <label>Under Review</label>
+            </value>
+            <value>
+                <fullName>Request for Revision Submitted</fullName>
+                <default>false</default>
+                <label>Request for Revision Submitted</label>
+            </value>
+            <value>
+                <fullName>Decision in Progress</fullName>
+                <default>false</default>
+                <label>Decision in Progress</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Archived</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Archived</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Implementation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Implementation</label>
+            </value>
+            <value>
+                <fullName>Suspended</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Suspended</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

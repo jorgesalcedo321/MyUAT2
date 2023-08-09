@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Planned_End_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field tracks the planned end date of an activity. If populated, it will display in the Gantt chart on the ActivityChart Lightning Component.</description>
+    <externalId>false</externalId>
+    <label>Planned End Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

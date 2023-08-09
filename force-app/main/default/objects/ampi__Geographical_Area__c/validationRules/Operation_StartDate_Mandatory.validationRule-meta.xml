@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operation_StartDate_Mandatory</fullName>
+    <active>true</active>
+    <description>Operational Start Date is mandatory for Programmes and National Office Programmes</description>
+    <errorConditionFormula>(Date_Founded__c == NULL || ISBLANK(Date_Founded__c)) &amp;&amp; Text(Active__c) = &apos;Yes&apos; &amp;&amp; RecordType.Name = &apos;Programme&apos; || (RecordType.Name = &apos;Organisational Unit&apos; &amp;&amp;  (TEXT(Program_Type__c) == &apos;National Office Programme&apos;))</errorConditionFormula>
+    <errorMessage>&quot;Operational Start Date&quot; is mandatory for Programmes and National Office Programmes</errorMessage>
+</ValidationRule>

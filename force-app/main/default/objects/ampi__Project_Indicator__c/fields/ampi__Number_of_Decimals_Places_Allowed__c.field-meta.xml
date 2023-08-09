@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Number_of_Decimals_Places_Allowed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to determine the number of decimals displayed on STAR pages.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the number of decimals data is displayed with on the Set Targets and Add Results pages.</inlineHelpText>
+    <label>Number of Decimal Places Allowed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0</fullName>
+                <default>true</default>
+                <label>0</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

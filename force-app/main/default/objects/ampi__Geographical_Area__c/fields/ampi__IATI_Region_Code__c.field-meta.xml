@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Region_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that associates a code with value selected in picklist ampi__IATI_region__c.</description>
+    <externalId>false</externalId>
+    <formula>CASE(ampi__IATI_Region__c,
+&quot;States Ex-Yugoslavia unspecified&quot;,88,
+&quot;Europe, regional&quot;,89,
+&quot;North of Sahara, regional&quot;,189,
+&quot;South of Sahara, regional&quot;,289,
+&quot;Africa, regional&quot;,298,
+&quot;West Indies, regional&quot;,380,
+&quot;North &amp; Central America, regional&quot;,389,
+&quot;South America, regional&quot;,489,
+&quot;America, regional&quot;,498,
+&quot;Middle East, regional&quot;,589,
+&quot;Central Asia, regional&quot;,619,
+&quot;South Asia, regional&quot;,679,
+&quot;South &amp; Central Asia, regional&quot;,689,
+&quot;Far East Asia, regional&quot;,789,
+&quot;Asia, regional&quot;,798,
+&quot;Oceania, regional&quot;,889,
+&quot;Developing countries, unspecified&quot;,998,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Code corresponding to IATI region</inlineHelpText>
+    <label>IATI Region Code</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

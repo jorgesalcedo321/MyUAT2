@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Transaction_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>[Candidate for Deprecation] Picklist to specify Transaction Type as based on IATI code list. The code list sits in the API Name/value of the picklist value, while the Label is the human-readable name of the Transaction Type. This does not get printed into the IATI Activity XML.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The type of the transaction (e.g. commitment, disbursement, expenditure, etc.) tracked for IATI</inlineHelpText>
+    <label>IATI Transaction Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incoming Funds</fullName>
+                <default>false</default>
+                <label>Incoming Funds</label>
+            </value>
+            <value>
+                <fullName>Outgoing Commitment</fullName>
+                <default>false</default>
+                <label>Outgoing Commitment</label>
+            </value>
+            <value>
+                <fullName>Disbursement</fullName>
+                <default>false</default>
+                <label>Disbursement</label>
+            </value>
+            <value>
+                <fullName>Expenditure</fullName>
+                <default>false</default>
+                <label>Expenditure</label>
+            </value>
+            <value>
+                <fullName>Interest Payment</fullName>
+                <default>false</default>
+                <label>Interest Payment</label>
+            </value>
+            <value>
+                <fullName>Loan Repayment</fullName>
+                <default>false</default>
+                <label>Loan Repayment</label>
+            </value>
+            <value>
+                <fullName>Reimbursement</fullName>
+                <default>false</default>
+                <label>Reimbursement</label>
+            </value>
+            <value>
+                <fullName>Purchase of Equity</fullName>
+                <default>false</default>
+                <label>Purchase of Equity</label>
+            </value>
+            <value>
+                <fullName>Sale of Equity</fullName>
+                <default>false</default>
+                <label>Sale of Equity</label>
+            </value>
+            <value>
+                <fullName>Credit Guarantee</fullName>
+                <default>false</default>
+                <label>Credit Guarantee</label>
+            </value>
+            <value>
+                <fullName>Incoming Commitment</fullName>
+                <default>false</default>
+                <label>Incoming Commitment</label>
+            </value>
+            <value>
+                <fullName>Outgoing Pledge</fullName>
+                <default>false</default>
+                <label>Outgoing Pledge</label>
+            </value>
+            <value>
+                <fullName>Incoming Pledge</fullName>
+                <default>false</default>
+                <label>Incoming Pledge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

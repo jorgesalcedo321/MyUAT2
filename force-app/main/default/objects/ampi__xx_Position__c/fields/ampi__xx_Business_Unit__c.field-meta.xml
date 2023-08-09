@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Business_Unit__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup field to capture the business unit associated with a position</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Only Accounts with Type as &apos;Business Unit&apos; can be saved here</inlineHelpText>
+    <label>Business Unit</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Positions</relationshipLabel>
+    <relationshipName>Positions1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

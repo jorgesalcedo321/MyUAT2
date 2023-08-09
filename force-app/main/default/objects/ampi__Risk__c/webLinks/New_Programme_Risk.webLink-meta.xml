@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Programme_Risk</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>New Programme Risk</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/lightning/o/ampi__Risk__c/new?defaultFieldValues=RecordTypeId=&quot;0121i000000cF3lAAE&quot;,Programme_Location__c={!ampi__Geographical_Area__c.Id}</url>
+</WebLink>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Risk_Level_Icon__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that displays a color icon based on the picklist value selected in ampi__xx_Risk_Level__c.</description>
+    <externalId>false</externalId>
+    <formula>CASE(ampi__xx_Risk_Level__c,
+&quot;Low Risk&quot;,IMAGE(LEFT($Api.Partner_Server_URL_500, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_500)) &amp; &quot;resource/ampi__Risk/R1green.png&quot;,&quot;Low&quot;,20,20),
+&quot;Medium Low Risk&quot;,IMAGE(LEFT($Api.Partner_Server_URL_500, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_500)) &amp; &quot;resource/ampi__Risk/R2green.png&quot;,&quot;Medium Low&quot;,20,20),
+&quot;Medium Risk&quot;,IMAGE(LEFT($Api.Partner_Server_URL_500, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_500)) &amp; &quot;resource/ampi__Risk/R3yellow.png&quot;,&quot;Medium&quot;,20,20),
+&quot;Medium High Risk&quot;,IMAGE(LEFT($Api.Partner_Server_URL_500, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_500)) &amp; &quot;resource/ampi__Risk/R4orange.png&quot;,&quot;Medium High&quot;,20,20),
+&quot;High Risk&quot;,IMAGE(LEFT($Api.Partner_Server_URL_500, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_500)) &amp; &quot;resource/ampi__Risk/R5red.png&quot;,&quot;High&quot;,20,20),&quot;&quot;)&amp; &quot; &quot; &amp; text(ampi__xx_Risk_Level__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Risk Level</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

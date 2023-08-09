@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Finance_Type_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field that associates a code with amp__IATI_Finance_Type__c</description>
+    <externalId>false</externalId>
+    <formula>CASE(ampi__IATI_Finance_Type__c,
+&quot;Standard grant&quot;,110,
+&quot;Subsidies to national private investors&quot;,111,
+&quot;Interest subsidy&quot;,210,
+&quot;Interest subsidy to national private exporters&quot;,211,
+&quot;Capital subscription on deposit basis&quot;,310,
+&quot;Capital subscription on encashment basis&quot;,311,
+&quot;Aid loan excluding debt reorganization&quot;,410,
+&quot;Investment-related loan to developing countries&quot;,411,
+&quot;Loan in a joint venture with the recipient&quot;,412,
+&quot;Loan to national private investor&quot;,413,
+&quot;Loan to national private exporter&quot;,414,
+&quot;Standard loan&quot;,421,
+&quot;Reimbursable grant&quot;,422,
+&quot;Bonds&quot;,423,
+&quot;Asset-backed securities&quot;,424,
+&quot;Other debt securities&quot;,425,
+&quot;Subordinated loan&quot;,431,
+&quot;Preferred equity&quot;,432,
+&quot;Other hybrid instruments&quot;,433,
+&quot;Non-banks guaranteed export credits&quot;,451,
+&quot;Non-banks non-guaranteed portions of guaranteed export credits&quot;,452,
+&quot;Bank export credits&quot;,453,
+&quot;Common equity&quot;,510,
+&quot;Acquisition of equity not part of joint venture in developing countries&quot;,511,
+&quot;Other acquisition of equity&quot;,512,
+&quot;Shares in collective investment vehicles&quot;,520,
+&quot;Reinvested earnings&quot;,530,
+&quot;Debt forgiveness/conversion: ODA claims (P)&quot;,610,
+&quot;Debt forgiveness/conversion: ODA claims (I)&quot;,611,
+&quot;Debt forgiveness/conversion: OOF claims (P)&quot;,612,
+&quot;Debt forgiveness/conversion: OOF claims (I)&quot;,613,
+&quot;Debt forgiveness/conversion: Private claims (P)&quot;,614,
+&quot;Debt forgiveness/conversion: Private claims (I)&quot;,615,
+&quot;Debt forgiveness: OOF claims (DSR)&quot;,616,
+&quot;Debt forgiveness: Private claims (DSR)&quot;,617,
+&quot;Debt forgiveness: Other&quot;,618,
+&quot;Debt rescheduling: ODA claims (P)&quot;,620,
+&quot;Debt rescheduling: ODA claims (I)&quot;,621,
+&quot;Debt rescheduling: OOF claims (P)&quot;,622,
+&quot;Debt rescheduling: OOF claims (I)&quot;,623,
+&quot;Debt rescheduling: Private claims (P)&quot;,624,
+&quot;Debt rescheduling: Private claims (I)&quot;,625,
+&quot;Debt rescheduling: OOF claims (DSR)&quot;,626,
+&quot;Debt rescheduling: Private claims (DSR)&quot;,627,
+&quot;Debt rescheduling: OOF claim (DSR - original loan principal)&quot;,630,
+&quot;Debt rescheduling: OOF claim (DSR - original loan interest)&quot;,631,
+&quot;Debt rescheduling: Private claim (DSR - original loan principal)&quot;,632,
+&quot;Debt forgiveness/conversion: export credit claims (P)&quot;,633,
+&quot;Debt forgiveness/conversion: export credit claims (I)&quot;,634,
+&quot;Debt forgiveness: export credit claims (DSR)&quot;,635,
+&quot;Debt rescheduling: export credit claims (P)&quot;,636,
+&quot;Debt rescheduling: export credit claims (I)&quot;,637,
+&quot;Debt rescheduling: export credit claims (DSR)&quot;,638,
+&quot;Debt rescheduling: export credit claim (DSR - original loan principal)&quot;,639,
+&quot;Foreign direct investment&quot;,710,
+&quot;Other foreign direct investment, including reinvested earnings&quot;,711,
+&quot;Bank bonds&quot;,810,
+&quot;Non-bank bonds&quot;,811,
+&quot;Other bank securities/claims&quot;,910,
+&quot;Other non-bank securities/claims&quot;,911,
+&quot;Securities and other instruments issued by multilateral agencies&quot;,912,
+&quot;Guarantees/insurance&quot;,1100,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Code corresponding to the IATI Finance Type</inlineHelpText>
+    <label>IATI Finance Type Code</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

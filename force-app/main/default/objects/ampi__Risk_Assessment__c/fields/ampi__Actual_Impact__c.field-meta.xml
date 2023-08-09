@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Actual_Impact__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Track the severity of the actual risk that occurred in terms of impact it had on our project&apos;s achievement of goals (i.e. high, med/high, med, med/low, low)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate the consequence of the risk occurring. Compare this to the &apos;potential impact&apos; value assigned to this risk</inlineHelpText>
+    <label>Actual Impact</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <label>Low</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <label>Medium</label>
+            </value>
+            <value>
+                <fullName>High</fullName>
+                <default>false</default>
+                <label>High</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

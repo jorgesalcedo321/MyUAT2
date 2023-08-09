@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Parent_Ids__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This formula field contains the record IDs of all the parent activites separated by # and ordered by hierarchy. This field is used by the ActivityChart Lightning Component to correctly display Activities within the hierarchy.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  ISBLANK(ampi__Parent_Activity__c),
+  null,
+  IF(
+      ISBLANK(ampi__Parent_Activity__r.ampi__Parent_Activity__c),
+      ampi__Parent_Activity__c,
+      IF(
+      ISBLANK(ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c),
+      ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__c,
+      IF(
+        ISBLANK(ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c),
+        ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__c,
+        IF(
+          ISBLANK(ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c),
+          ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__c,
+          IF(
+            ISBLANK(ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c),
+            ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__c,
+            IF(
+              ISBLANK(ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c),
+              ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__c,
+              IF(
+                ISBLANK(ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c),
+                ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__r.ampi__Parent_Activity__c + &quot;#&quot; + ampi__Parent_Activity__c,
+                null                    
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )</formula>
+    <label>Parent Ids</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

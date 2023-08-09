@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Is_Scored__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to track whether or not a Section record should be scored when its parent Submission is reviewed. If marked as TRUE, then the Section is displayed with an input field for a score in the SubmissionResponseScoring component.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Use this checkbox to enable or prevent reviewers from assigning a score to this section. If unchecked, users will not be able to score the section and it will not display in the radar charts.</inlineHelpText>
+    <label>Is Scored</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

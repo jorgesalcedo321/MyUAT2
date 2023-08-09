@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSRF_Exit_in_Progress</fullName>
+    <active>true</active>
+    <description>Prevents users from selecting status &quot;Exit in Progress&quot; if required fields are left empty for Standard projects.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;Standard&quot;
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;Exit in Progress&quot;)
+&amp;&amp;
+(
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;In Implementation&quot;)
+&amp;&amp;
+NOT(ISPICKVAL(Add_funding_required_for_exit__c,&quot;No&quot;))
+)</errorConditionFormula>
+    <errorMessage>Please fill in mandatory fields for Status &quot;Exit in Progress&quot;: Add. Int. Funding Required for Exit = No. If additional international funding is required, please change the Status to &quot;Exit Submitted&quot;.</errorMessage>
+</ValidationRule>

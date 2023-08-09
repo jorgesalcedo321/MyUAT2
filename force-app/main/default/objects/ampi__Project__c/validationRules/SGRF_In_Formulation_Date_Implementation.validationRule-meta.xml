@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGRF_In_Formulation_Date_Implementation</fullName>
+    <active>true</active>
+    <description>Prevents users from selecting status &quot;In Formulation&quot; if required field is left empty.</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &apos;System Administrator&apos;
+&amp;&amp;
+RecordType.DeveloperName = &quot;Grant&quot; 
+&amp;&amp;
+(ISPICKVAL( Multistage_application__c, &quot;Yes&quot;))
+&amp;&amp;
+ISPICKVAL( ampi__Project_Status__c , &quot;In formulation&quot;)
+&amp;&amp;
+(ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Concept In Formulation&quot;) || ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Application In Formulation&quot;))
+&amp;&amp;
+(
+ISBLANK( Start_Implementation__c )
+)</errorConditionFormula>
+    <errorMessage>One or more mandatory fields are missing for Status &quot;In Formulation&quot;: Start Implementation Date​.</errorMessage>
+</ValidationRule>

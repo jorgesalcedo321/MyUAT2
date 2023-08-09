@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGRF_Application_Rejected</fullName>
+    <active>true</active>
+    <description>Prevents users from selecting status &quot;Application Rejected&quot; if required fields are left empty.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;Grant&quot;
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;Application Rejected&quot;)
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Application Submitted&quot;)
+&amp;&amp;
+(
+ISBLANK( Rejection_Reason__c )||
+ISBLANK(  Full_Application_Rejection_Date__c  )
+)</errorConditionFormula>
+    <errorMessage>Please fill in mandatory fields for Status &quot;Application Rejected&quot;. These are: Rejection Reason and Full Application Rejection Date.</errorMessage>
+</ValidationRule>

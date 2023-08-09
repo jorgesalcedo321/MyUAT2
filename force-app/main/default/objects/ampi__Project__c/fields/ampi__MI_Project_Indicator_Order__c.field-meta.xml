@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__MI_Project_Indicator_Order__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist of all fields on Project Indicator to set the default order of the Selected Indicators and Deactivated Indicators tables on ManageIndicators. If left NULL, the tables will sort by alphabetically ascending Definition.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select a field from Project Indicator to alphabetically order the Selected Indicators table on ManageIndicators. If no field is selected, the table will by default be ordered alphabetically by Indicator Definition.</inlineHelpText>
+    <label>Selected Indicators Table Order</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ampi__Indicator_Fields</valueSetName>
+    </valueSet>
+</CustomField>

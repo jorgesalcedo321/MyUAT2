@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsible_Person__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Include the employee responsible for tracking this indicator (does not have to be a ProDIGI user).</inlineHelpText>
+    <label>Responsible Person</label>
+    <length>250</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

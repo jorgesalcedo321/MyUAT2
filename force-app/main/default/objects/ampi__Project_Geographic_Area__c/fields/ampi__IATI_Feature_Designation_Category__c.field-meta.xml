@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Feature_Designation_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist on IATI Location Type Categories to filter down the values in the ampi__Feature_Designation__c picklist: http://reference.iatistandard.org/203/codelists/LocationType-category/</description>
+    <externalId>false</externalId>
+    <label>IATI Feature Designation Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>Administrative Region</label>
+            </value>
+            <value>
+                <fullName>H</fullName>
+                <default>false</default>
+                <label>Hydrographic</label>
+            </value>
+            <value>
+                <fullName>L</fullName>
+                <default>false</default>
+                <label>Area</label>
+            </value>
+            <value>
+                <fullName>P</fullName>
+                <default>false</default>
+                <label>Populated Place</label>
+            </value>
+            <value>
+                <fullName>R</fullName>
+                <default>false</default>
+                <label>Streets/Highways/Roads</label>
+            </value>
+            <value>
+                <fullName>S</fullName>
+                <default>false</default>
+                <label>Spot Features</label>
+            </value>
+            <value>
+                <fullName>T</fullName>
+                <default>false</default>
+                <label>Hypsographic</label>
+            </value>
+            <value>
+                <fullName>U</fullName>
+                <default>false</default>
+                <label>Undersea</label>
+            </value>
+            <value>
+                <fullName>V</fullName>
+                <default>false</default>
+                <label>Vegetation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

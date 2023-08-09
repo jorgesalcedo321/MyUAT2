@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Duration__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This formula field calculates the difference between the actual end date and the actual start date of an activity.</description>
+    <externalId>false</externalId>
+    <formula>IF (
+    OR(
+        ISNULL(ampi__Actual_Start_Date__c),
+        ISNULL(ampi__Actual_End_Date__c)
+    ),
+    0,
+    IF (
+        AND(
+            NOT(ISNULL(ampi__Actual_Start_Date__c)),
+            NOT(ISNULL(ampi__Actual_End_Date__c))
+        ),
+        IF (
+            ampi__Actual_Start_Date__c == ampi__Actual_End_Date__c,
+            1,
+            (ampi__Actual_End_Date__c - ampi__Actual_Start_Date__c) + 1
+        ),
+        null
+    )
+)</formula>
+    <label>Duration</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

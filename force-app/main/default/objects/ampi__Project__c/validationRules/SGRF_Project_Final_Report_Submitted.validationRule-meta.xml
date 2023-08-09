@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGRF_Project_Final_Report_Submitted</fullName>
+    <active>true</active>
+    <description>&quot;Actual Indirect Beneficiaries&quot; mandatory for &quot;Final Report Submitted&quot; status.</description>
+    <errorConditionFormula>NOT($Permission.Manage_Restrictions) &amp;&amp; (RecordType.DeveloperName = &quot;Grant&quot;
+&amp;&amp;
+ISPICKVAL(   ampi__Project_Status__c , &quot;Final Report Submitted&quot;)
+&amp;&amp;
+ISBLANK( Actual_Indirect_Beneficiaries__c ))</errorConditionFormula>
+    <errorMessage>&quot;Actual Indirect Beneficiaries&quot; is mandatory for &quot;Final Report Submitted&quot; status.</errorMessage>
+</ValidationRule>

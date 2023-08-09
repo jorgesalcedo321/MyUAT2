@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Parent_Geo_Area_Programme_type</fullName>
+    <active>true</active>
+    <description>Validates if PU Parent Geographical area selected is of type Programme.</description>
+    <errorConditionFormula>AND (ISPICKVAL(ampi__Type__c,&quot;Programme Unit&quot;),
+NOT(ISPICKVAL(ampi__Parent_Geographical_Area__r.Program_Type__c,&quot;Programme&quot;)))</errorConditionFormula>
+    <errorDisplayField>ampi__Parent_Geographical_Area__c</errorDisplayField>
+    <errorMessage>Please enter valid Programme</errorMessage>
+</ValidationRule>

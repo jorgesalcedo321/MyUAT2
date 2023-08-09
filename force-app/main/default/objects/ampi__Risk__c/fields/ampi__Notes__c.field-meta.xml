@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Notes__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Include any additional notes that are pertinent to the risk and strategy</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Provide any additional information here that may be relevant to evaluating, monitoring, and assessing this risk</inlineHelpText>
+    <label>Notes</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

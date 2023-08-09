@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Mandatory_Fields</fullName>
+    <active>false</active>
+    <description>Before moving to Project Status &quot;Application Approved&quot; the following mandatory fields must be filled: Name, Contract Eligibility Start Date, SOS Lead Organization.</description>
+    <errorConditionFormula>AND(
+				OR(
+    ISBLANK(Name),
+				ISBLANK(Contract_Eligibility_Start_Date__c),  
+    ISBLANK(Applicant_Accountable_Organisation__c)
+    ),
+				RecordType.DeveloperName = &apos;Grant&apos;,
+				
+    OR(
+        ISPICKVAL(ampi__Project_Status__c , &apos;Application Approved&apos;),
+        ISPICKVAL(ampi__Project_Status__c , &apos;Application Rejected&apos;),
+        ISPICKVAL(ampi__Project_Status__c , &apos;In Implementation&apos;),
+        ISPICKVAL(ampi__Project_Status__c , &apos;Cancelled&apos;),
+        ISPICKVAL(Phase__c , &apos;Implementation&apos;),
+        ISPICKVAL(Phase__c , &apos;Closure&apos;)
+    )
+)</errorConditionFormula>
+    <errorMessage>Mandatory fields missing before moving to Project Status &quot;Application Approved&quot;, &quot;Application Rejected&quot;, &quot;In Implementation&quot; or &quot;Cancelled&quot;: ​Name, Contract Eligibility Start Date, SOS Lead Organisation.</errorMessage>
+</ValidationRule>

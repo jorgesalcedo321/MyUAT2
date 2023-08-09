@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Opportunity_Type__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Depending on the Fund Type, different Fund Statuses apply.</inlineHelpText>
+    <label>Funding Opportunity Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Funding Opportunity</fullName>
+                <default>false</default>
+                <label>Funding Opportunity</label>
+            </value>
+            <value>
+                <fullName>Humanitarian Appeal</fullName>
+                <default>false</default>
+                <label>Humanitarian Appeal</label>
+            </value>
+            <value>
+                <fullName>HGFD</fullName>
+                <default>false</default>
+                <label>HGFD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

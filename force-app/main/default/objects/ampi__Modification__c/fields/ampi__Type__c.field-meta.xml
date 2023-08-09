@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist to define the type of modification. Picklist values for this field can be modified to reflect the types of modifications an organization wishes to support.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No-Cost Extension</fullName>
+                <default>false</default>
+                <label>No-Cost Extension</label>
+            </value>
+            <value>
+                <fullName>Costed Extension</fullName>
+                <default>false</default>
+                <label>Costed Extension</label>
+            </value>
+            <value>
+                <fullName>Reallocation of Funds</fullName>
+                <default>false</default>
+                <label>Reallocation of Funds</label>
+            </value>
+            <value>
+                <fullName>Revision of Indicators</fullName>
+                <default>false</default>
+                <label>Revision of Indicators</label>
+            </value>
+            <value>
+                <fullName>Revision of Targets</fullName>
+                <default>false</default>
+                <label>Revision of Targets</label>
+            </value>
+            <value>
+                <fullName>Other Modification</fullName>
+                <default>false</default>
+                <label>Other Modification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

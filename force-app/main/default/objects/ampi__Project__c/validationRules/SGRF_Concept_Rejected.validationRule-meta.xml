@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGRF_Concept_Rejected</fullName>
+    <active>true</active>
+    <description>Prevents users from selecting status &quot;Concept Rejected&quot; if required fields are left empty.</description>
+    <errorConditionFormula>RecordType.DeveloperName=&quot;Grant&quot;
+&amp;&amp;
+ISPICKVAL(ampi__Project_Status__c, &quot;Concept Rejected&quot;)
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;Concept Submitted&quot;)
+&amp;&amp;
+ISPICKVAL( Multistage_application__c , &quot;Yes&quot;)
+&amp;&amp;
+(
+ISBLANK( Rejection_Reason__c )||
+ISBLANK( Rejection_Date__c )
+)</errorConditionFormula>
+    <errorMessage>Please fill in mandatory fields for Status &quot;Concept Rejected&quot;. These are: Rejection Reason and Concept Note Rejection Date.</errorMessage>
+</ValidationRule>

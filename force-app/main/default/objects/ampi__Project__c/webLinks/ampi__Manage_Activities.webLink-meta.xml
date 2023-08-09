@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Manage_Activities</fullName>
+    <availability>online</availability>
+    <description>Opens ActivityTracking Visualforce page directly from the Project detali page</description>
+    <displayType>button</displayType>
+    <linkType>page</linkType>
+    <masterLabel>Manage Activities</masterLabel>
+    <openType>replace</openType>
+    <page>ampi__ActivityTracking</page>
+    <protected>false</protected>
+</WebLink>

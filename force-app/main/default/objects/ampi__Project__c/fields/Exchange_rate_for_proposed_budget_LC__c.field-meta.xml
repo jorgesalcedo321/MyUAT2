@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exchange_rate_for_proposed_budget_LC__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate how many units of local currency you need for 1 unit of donor currency. Example 1 USD= 35,16 UAH</inlineHelpText>
+    <label>Exchange Rate DCY To LCY (Planned)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

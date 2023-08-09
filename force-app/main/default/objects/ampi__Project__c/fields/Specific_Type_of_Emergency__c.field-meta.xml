@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specific_Type_of_Emergency__c</fullName>
+    <externalId>false</externalId>
+    <label>Specific Type of Emergency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Armed Conflict</fullName>
+                <default>false</default>
+                <label>Armed Conflict</label>
+            </value>
+            <value>
+                <fullName>Hurricane/Cyclone</fullName>
+                <default>false</default>
+                <label>Hurricane/Cyclone</label>
+            </value>
+            <value>
+                <fullName>Drought</fullName>
+                <default>false</default>
+                <label>Drought</label>
+            </value>
+            <value>
+                <fullName>Epidemic</fullName>
+                <default>false</default>
+                <label>Epidemic</label>
+            </value>
+            <value>
+                <fullName>Earthquake</fullName>
+                <default>false</default>
+                <label>Earthquake</label>
+            </value>
+            <value>
+                <fullName>Protracted Crisis</fullName>
+                <default>false</default>
+                <label>Protracted Crisis</label>
+            </value>
+            <value>
+                <fullName>Political Crisis</fullName>
+                <default>false</default>
+                <label>Political Crisis</label>
+            </value>
+            <value>
+                <fullName>Floods</fullName>
+                <default>false</default>
+                <label>Floods</label>
+            </value>
+            <value>
+                <fullName>Landslides</fullName>
+                <default>false</default>
+                <label>Landslides</label>
+            </value>
+            <value>
+                <fullName>Migration</fullName>
+                <default>false</default>
+                <label>Migration</label>
+            </value>
+            <value>
+                <fullName>Complex Crisis</fullName>
+                <default>false</default>
+                <label>Complex Crisis</label>
+            </value>
+            <value>
+                <fullName>Cyclone</fullName>
+                <default>false</default>
+                <label>Cyclone</label>
+            </value>
+            <value>
+                <fullName>Electoral violence</fullName>
+                <default>false</default>
+                <label>Electoral violence</label>
+            </value>
+            <value>
+                <fullName>Frozen Conflict</fullName>
+                <default>false</default>
+                <label>Frozen Conflict</label>
+            </value>
+            <value>
+                <fullName>Hurricane</fullName>
+                <default>false</default>
+                <label>Hurricane</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

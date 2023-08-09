@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>P_PU__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to enable feature compatibility on P&amp;PU object.</description>
+    <externalId>false</externalId>
+    <label>P&amp;PU</label>
+    <referenceTo>ampi__Geographical_Area__c</referenceTo>
+    <relationshipLabel>Projects (P&amp;PU)</relationshipLabel>
+    <relationshipName>Projects</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

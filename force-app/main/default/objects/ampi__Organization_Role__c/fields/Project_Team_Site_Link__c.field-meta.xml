@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Team_Site_Link__c</fullName>
+    <externalId>false</externalId>
+    <formula>ampi__IATI_Providing_Project__r.SharePoint_Team_Site_URL__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Link to Sharepoint Team Site of the Recipient Project</inlineHelpText>
+    <label>Project Team Site Link</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

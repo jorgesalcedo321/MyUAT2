@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X099_My_projects</fullName>
+    <columns>Project_ID_Text__c</columns>
+    <columns>NAME</columns>
+    <columns>Phase__c</columns>
+    <columns>ampi__Project_Status__c</columns>
+    <columns>SOS_Implementing_Organisation__c</columns>
+    <columns>Contract_Eligibility_Start_Date__c</columns>
+    <columns>Contract_Eligibility_End_Date__c</columns>
+    <columns>ampi__Start_Date__c</columns>
+    <columns>ampi__End_Date__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>ampi__Project__c.Shadow_Project</value>
+    </filters>
+    <label>099 - My projects</label>
+</ListView>

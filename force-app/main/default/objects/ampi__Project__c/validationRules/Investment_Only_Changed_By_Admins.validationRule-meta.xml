@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Investment_Only_Changed_By_Admins</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(
+    OR(
+        $Profile.Name = &quot;System Administrator&quot;, 
+        $Profile.Name = &quot;Super User&quot;,
+        $Profile.Name = &quot;Project Owner&quot;, 
+        $Profile.Name = &quot;Project Manager&quot;
+    )
+),  ISCHANGED( Investment_only_project__c))</errorConditionFormula>
+    <errorMessage>For Super users and admins the field &quot;Investment Only Project&quot; can be changed in any time</errorMessage>
+</ValidationRule>

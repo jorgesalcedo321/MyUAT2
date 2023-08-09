@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Humanitarian__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Checkbox field to indicate whether transaction was partially or entirely humanitarian aid. If left unchecked, that means this transaction was not related to humanitarian aid. The boolean value of this is printed into the transaction/@humanitarian attribute in the IATI Activity XML.</description>
+    <externalId>false</externalId>
+    <label>IATI Humanitarian</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Risk_Cause_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field that specifies the category of a Risk Cause.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Internal risks arise within an organization during the normal operation of the organization. External risks arise from events that are external to an organization.</inlineHelpText>
+    <label>Risk Cause Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+            <value>
+                <fullName>External</fullName>
+                <default>false</default>
+                <label>External</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

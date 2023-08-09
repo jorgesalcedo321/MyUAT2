@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Yellow_Green_Threshold__c</fullName>
+    <defaultValue>1.0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>A default value for this field can be set by the organisation via Process Builder and the help text can be updated accordingly. The value in this field determines when the Yellow stoplight turns to Green on AddResults.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The percent of this indicator&apos;s target value that the result value must meet or surpass in order for the stoplight to turn from yellow to green.</inlineHelpText>
+    <label>% Threshold Between Yellow and Green</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

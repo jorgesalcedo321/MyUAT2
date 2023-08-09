@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_NationalSecur_Edited_By_Risk_Review</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Programme_Risk_Reviewer__c) &amp;&amp;
+NOT($Profile.Name == &apos;System Administrator&apos; || 
+$User.Email == Parent_MA__r.NA_Director__r.Email)</errorConditionFormula>
+    <errorMessage>Only Programme Risk Reviewer must be edited By Security Leader or System Administrator</errorMessage>
+</ValidationRule>

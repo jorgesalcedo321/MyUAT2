@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Monitoring_Periods</fullName>
+    <columns>NAME</columns>
+    <columns>ampi__Label__c</columns>
+    <columns>ampi__Project_Indicator_Count__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ampi__Report_Type__c</field>
+        <operation>equals</operation>
+        <value>Annual</value>
+    </filters>
+    <label>Annual Monitoring Periods</label>
+</ListView>

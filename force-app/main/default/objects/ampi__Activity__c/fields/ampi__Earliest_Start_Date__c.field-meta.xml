@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Earliest_Start_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula field to return the earliest date value between Planned Start Date and Actual Start Date.</description>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(ampi__xx_Activity_Type__c) ==  $Label.ampi__ACTIVITY_TYPE_TASK,
+    IF(
+        AND(
+            ISBLANK(ampi__Planned_Start_Date__c),
+            ISBLANK(ampi__Actual_Start_Date__c)
+        ),
+        NULL,
+        IF(
+            AND(
+                NOT(ISBLANK(ampi__Planned_Start_Date__c)),
+                NOT(ISBLANK(ampi__Actual_Start_Date__c))
+            ),
+            ampi__Actual_Start_Date__c,
+            BLANKVALUE(ampi__Actual_Start_Date__c, ampi__Planned_Start_Date__c)
+        )
+    ),
+    ampi__xx_Due_Date__c
+)</formula>
+    <label>Earliest Start Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

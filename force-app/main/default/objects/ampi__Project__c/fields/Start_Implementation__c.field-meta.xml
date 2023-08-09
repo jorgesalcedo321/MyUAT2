@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Implementation__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Mandatory for status &quot;in implementation&quot;. 
+Actual date when project starts. Please note that this date can be later than the eligibility start date as in the contract (if e.g. start is postponed for whatever reason).</inlineHelpText>
+    <label>Start Implementation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

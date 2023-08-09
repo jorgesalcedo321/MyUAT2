@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Organization_Role_Not_In_Current_Project</fullName>
+    <active>true</active>
+    <description>Validation rule to ensure that selected Organization Role looks up to same the Project that the current Disbursement looks up to</description>
+    <errorConditionFormula>AND(AND(
+(ampi__IATI_Organization_Role__r.ampi__IATI_Providing_Project__c &lt;&gt;ampi__Project__c),NOT(ISBLANK(ampi__IATI_Organization_Role__c))
+),
+AND(
+( ampi__IATI_Organization_Role__r.ampi__Project__c &lt;&gt;ampi__Project__c),NOT(ISBLANK(ampi__IATI_Organization_Role__c))
+))</errorConditionFormula>
+    <errorDisplayField>ampi__IATI_Organization_Role__c</errorDisplayField>
+    <errorMessage>Invalid Organization Role Selected: the selected organization role should relate to same project as the current disbursement.</errorMessage>
+</ValidationRule>

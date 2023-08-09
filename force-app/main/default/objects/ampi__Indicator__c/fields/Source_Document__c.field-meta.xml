@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_Document__c</fullName>
+    <externalId>false</externalId>
+    <label>Source Document</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Statistics Handbook V3</fullName>
+                <default>true</default>
+                <label>Statistics Handbook V3</label>
+            </value>
+            <value>
+                <fullName>2030 Measures Project</fullName>
+                <default>false</default>
+                <label>2030 Measures Project</label>
+            </value>
+            <value>
+                <fullName>Calculated</fullName>
+                <default>false</default>
+                <label>Calculated</label>
+            </value>
+            <value>
+                <fullName>Case Management and SDGs Indicators Monitored in PDB2</fullName>
+                <default>false</default>
+                <label>Case Management and SDGs Indicators Monitored in PDB2</label>
+            </value>
+            <value>
+                <fullName>SOS Care Promise Indicators Booklet</fullName>
+                <default>false</default>
+                <label>SOS Care Promise Indicators Booklet</label>
+            </value>
+            <value>
+                <fullName>Case Management and SDGs Indicators Monitored in PDB3</fullName>
+                <default>false</default>
+                <label>Case Management and SDGs Indicators Monitored in PDB3</label>
+            </value>
+            <value>
+                <fullName>Statistics Handbook Version Nov 2017</fullName>
+                <default>false</default>
+                <label>Statistics Handbook Version Nov 2017</label>
+            </value>
+            <value>
+                <fullName>Statistics Handbook Version 3 2022</fullName>
+                <default>false</default>
+                <label>Statistics Handbook Version 3 2022</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__NonNumeric_Aggregated_Indicator_Datatype</fullName>
+    <active>true</active>
+    <description>Throw an error if a non-numeric data type is selected for an aggregated indicator</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL( ampi__Type_of_Results__c , &quot;Aggregated&quot;),
+   OR(
+     ISPICKVAL( ampi__Data_Type__c ,&quot;Qualitative&quot;),
+     ISPICKVAL( ampi__Data_Type__c , &quot;Milestone&quot;)  
+   )
+)</errorConditionFormula>
+    <errorDisplayField>ampi__Data_Type__c</errorDisplayField>
+    <errorMessage>Invalid Indicator Data Type selected: the non-numeric data types &apos;Qualitative&apos; and &apos;Milestone&apos; cannot be selected for an aggregated indicator.</errorMessage>
+</ValidationRule>

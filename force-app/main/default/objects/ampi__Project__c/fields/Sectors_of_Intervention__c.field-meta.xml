@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sectors_of_Intervention__c</fullName>
+    <externalId>false</externalId>
+    <label>Sectors of Intervention</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Camp Coordination and Management</fullName>
+                <default>false</default>
+                <label>Camp Coordination and Management</label>
+            </value>
+            <value>
+                <fullName>Early Recovery</fullName>
+                <default>false</default>
+                <label>Early Recovery</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Emergency Telecomunications</fullName>
+                <default>false</default>
+                <label>Emergency Telecomunications</label>
+            </value>
+            <value>
+                <fullName>Food Security</fullName>
+                <default>false</default>
+                <label>Food Security</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Logistics</fullName>
+                <default>false</default>
+                <label>Logistics</label>
+            </value>
+            <value>
+                <fullName>Nutrition</fullName>
+                <default>false</default>
+                <label>Nutrition</label>
+            </value>
+            <value>
+                <fullName>Protection</fullName>
+                <default>false</default>
+                <label>Protection</label>
+            </value>
+            <value>
+                <fullName>Shelter</fullName>
+                <default>false</default>
+                <label>Shelter</label>
+            </value>
+            <value>
+                <fullName>WASH</fullName>
+                <default>false</default>
+                <label>WASH</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

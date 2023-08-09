@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Sector__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is the secondary master-detail relationship on Project IATI Sector.</description>
+    <externalId>false</externalId>
+    <label>IATI Sector</label>
+    <referenceTo>ampi__IATI_Sector__c</referenceTo>
+    <relationshipLabel>Project IATI Sectors</relationshipLabel>
+    <relationshipName>Project_IATI_Sectors</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_Framework</fullName>
+    <active>false</active>
+    <errorConditionFormula>ampi__xx_Framework__r.ampi__xx_Framework_Locked__c = TRUE</errorConditionFormula>
+    <errorMessage>The framework you have chosen may not be edited</errorMessage>
+</ValidationRule>

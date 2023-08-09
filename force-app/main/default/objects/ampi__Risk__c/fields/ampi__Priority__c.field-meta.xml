@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Priority__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Assign a priority level for each risk	to contextualize the necessary planning</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Evaluate the importance of this risk and the attention that should be given to it</inlineHelpText>
+    <label>Priority</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <label>Low</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <label>Medium</label>
+            </value>
+            <value>
+                <fullName>High</fullName>
+                <default>false</default>
+                <label>High</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

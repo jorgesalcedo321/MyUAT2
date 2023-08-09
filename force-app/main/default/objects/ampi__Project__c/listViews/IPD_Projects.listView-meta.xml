@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IPD_Projects</fullName>
+    <columns>Project_ID__c</columns>
+    <columns>NAME</columns>
+    <columns>ampi__Parent_Project__c</columns>
+    <columns>ampi__Project_Status__c</columns>
+    <columns>Start_Identification__c</columns>
+    <columns>Start_Formulation__c</columns>
+    <columns>Start_Implementation__c</columns>
+    <columns>Approved_Total_Projec_Budget_Eur__c</columns>
+    <columns>Applicant_Accountable_Organisation__c</columns>
+    <columns>SOS_Implementing_Organisation__c</columns>
+    <columns>External_Donor__c</columns>
+    <columns>IO_Coordinator__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>SharePoint_Team_Site_URL__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>ampi__Project__c.Grant</value>
+    </filters>
+    <filters>
+        <field>ampi__Project_Status__c</field>
+        <operation>notEqual</operation>
+        <value>Concept Rejected,Application Rejected,Project Closed,Cancelled</value>
+    </filters>
+    <filters>
+        <field>OWNER.LAST_NAME</field>
+        <operation>equals</operation>
+        <value>NAHAYO</value>
+    </filters>
+    <label>IPD Projects</label>
+    <sharedTo>
+        <group>IPD_IO</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Applicant__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicate which (SOS or external) organisation will be the legal contract holder. Copy SOS Lead Organisation in case legal applicant is the same.</inlineHelpText>
+    <label>Legal Applicant</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

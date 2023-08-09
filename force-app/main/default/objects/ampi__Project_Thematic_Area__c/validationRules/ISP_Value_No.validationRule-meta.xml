@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISP_Value_No</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(ISP_Available__c) &amp;&amp; TEXT(ampi__Project__r.ISP_Available__c) == &apos;Temporarily closed for international sponsorship&apos; &amp;&amp; (TEXT(ISP_Available__c) == &apos;Yes&apos; || TEXT(ISP_Available__c) == &apos;Only existing&apos;)</errorConditionFormula>
+    <errorMessage>ISP Available on any service type of the project cannot be set to “Yes” or “Only existing” when ISP Available on the project is “Temporarily closed for international sponsorship”</errorMessage>
+</ValidationRule>

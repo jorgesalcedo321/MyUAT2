@@ -26,6 +26,14 @@
     </types>
     <types>
         <members>*</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>NotificationTypeConfig</name>
     </types>
     <types>
@@ -106,15 +114,98 @@
     </types>
     <types>
         <members>*</members>
+        <name>RecordType</name>
+      </types>
+    <types>
+        <members>*</members>
         <name>StaticResource</name>
     </types>
     <types>
         <members>*</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>*</members>
+        <members>ampi__Project__c</members>
+        <members>ampi__Activities__c</members>
+        <members>ampi__Activity__c</members>
+        <members>ampi__AddResults__c</members>
+        <members>ampi__Allocation__c</members>
+        <members>ampi__Amp_Impact_Setup__c</members>
+        <members>ampi__Budget__c</members>
+        <members>ampi__Catalog_Objective__c</members>
+        <members>ampi__Disaggregated_Indicator__c</members>
+        <members>ampi__Disaggregated_Project_Indicator__c</members>
+        <members>ampi__Disaggregation_Group__c</members>
+        <members>ampi__Disaggregation_Value__c</members>
+        <members>ampi__Disbursement__c</members>
+        <members>ampi__Dynamic_Loader__c</members>
+        <members>ampi__Dynamic_Relationship__c</members>
+        <members>ampi__Financial__c</members>
+        <members>ampi__Geographical_Area__c</members>
+        <members>ampi__IATI_Default_Contact__c</members>
+        <members>ampi__IATI_Default_Reporting_Org__c</members>
+        <members>ampi__IATI_Policy__c</members>
+        <members>ampi__IATI_Sector__c</members>
+        <members>ampi__Implementation_Plan__c</members>
+        <members>ampi__Indicator__c</members>
+        <members>ampi__Indicator_Thematic_Area__c</members>
+        <members>ampi__ManageDisbursements__c</members>
+        <members>ampi__ManageIndicators__c</members>
+        <members>ampi__ManageLogframes__c</members>
+        <members>ampi__Modification__c</members>
+        <members>ampi__Nav_Bar__c</members>
+        <members>ampi__Nav_Bar_Access__c</members>
+        <members>ampi__Objective__c</members>
+        <members>ampi__Object_Lookup_Label_Mapping__c</members>
+        <members>ampi__Organization_Role__c</members>
+        <members>ampi__Project__c</members>
+        <members>ampi__Project_Geographic_Area__c</members>
+        <members>ampi__Project_IATI_Policy__c</members>
+        <members>ampi__Project_IATI_Sector__c</members>
+        <members>ampi__Project_Indicator__c</members>
+        <members>ampi__Project_Indicator_Geographic_Area__c</members>
+        <members>ampi__Project_Indicator_Objective__c</members>
+        <members>ampi__Project_Indicator_Reporting_Period__c</members>
+        <members>ampi__Project_Indicator_Thematic_Area__c</members>
+        <members>ampi__Project_Role__c</members>
+        <members>ampi__Project_Thematic_Area__c</members>
+        <members>ampi__Question__c</members>
+        <members>ampi__Reporting_Period__c</members>
+        <members>ampi__Result__c</members>
+        <members>ampi__Risk__c</members>
+        <members>ampi__Risk_Assessment__c</members>
+        <members>ampi__Risk_Register__c</members>
+        <members>ampi__Risk_Setting__c</members>
+        <members>ampi__Section__c</members>
+        <members>ampi__SetTargets__c</members>
+        <members>ampi__Submission__c</members>
+        <members>ampi__Submission_Relationship__c</members>
+        <members>ampi__Thematic_Area__c</members>
+        <members>ampi__Transaction_Project_IATI_Sector__c</members>
+        <members>ampi__Visualforce_Update__c</members>
+        <members>ampi__xx_Activity_Dependency__c</members>
+        <members>ampi__xx_Assignment__c</members>
+        <members>ampi__xx_Dynamic_Relationship__c</members>
+        <members>ampi__xx_Framework__c</members>
+        <members>ampi__xx_Fund__c</members>
+        <members>ampi__xx_Good_Service__c</members>
+        <members>ampi__xx_Position__c</members>
+        <members>ampi__xx_Procurement_Requirement__c</members>
+        <members>ampi__xx_Risk_Action__c</members>
+        <members>ampi__xx_Risk_Cause__c</members>
+        <members>ampi__xx_Risk_Relationship__c</members>
+        <members>ampi__xx_Role__c</members>
+        <members>ampi__xx_Story__c</members>
         <name>CustomObject</name>
     </types>
     <types>
         <members>*</members>
         <name>Profile</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>Group</name>
     </types>
     <types>
         <members>*</members>
@@ -136,5 +227,9 @@
         <members>*</members>
         <name>Layout</name>
    </types>
+   <types>
+        <members>*</members>
+        <name>InstalledPackage</name>
+    </types>   
     <version>56.0</version>
 </Package>

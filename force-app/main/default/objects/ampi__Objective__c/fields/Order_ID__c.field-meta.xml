@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_ID__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(ampi__Level__c) = &apos;Output&apos;, (TEXT(ampi__Parent_Project_Objective__r.Order_Number__c) &amp; &quot;.&quot; &amp; TEXT(Order_Number__c)), TEXT(Order_Number__c))</formula>
+    <label>Order ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

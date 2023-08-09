@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X007</fullName>
+    <columns>NAME</columns>
+    <columns>Project_ID_Text__c</columns>
+    <columns>Geographic_Area__c</columns>
+    <columns>Programme_Location__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>ampi__Project_Status__c</columns>
+    <columns>Transition_Project_Type__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>PU_Count__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Account_Teams__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>ampi__Project__c.Transition</value>
+    </filters>
+    <filters>
+        <field>SOS_Implementing_Organisation__c</field>
+        <operation>equals</operation>
+        <value>NA Armenia</value>
+    </filters>
+    <label>007 - Transition Projects</label>
+</ListView>

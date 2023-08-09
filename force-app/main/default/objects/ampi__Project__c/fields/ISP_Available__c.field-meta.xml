@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISP_Available__c</fullName>
+    <defaultValue>&quot;No&quot;</defaultValue>
+    <description>is in international sponsorship programme (ISP)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>International Sponsorship Available</inlineHelpText>
+    <label>Project ISP Available</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>true</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>Temporarily closed for international sponsorship</fullName>
+                <default>false</default>
+                <label>Temporarily closed for international sponsorship</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SGAM_In_Identification</fullName>
+    <active>true</active>
+    <description>Validation to guide users to correct next Project Status from &quot;In Identification&quot; for Grant Projects</description>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &quot;System Administrator&quot;
+&amp;&amp;
+RecordType.DeveloperName = &quot;Grant&quot;
+&amp;&amp;
+ISCHANGED( ampi__Project_Status__c )
+&amp;&amp;
+ISPICKVAL(PRIORVALUE( ampi__Project_Status__c ),&quot;In Identification&quot;)
+&amp;&amp;
+IF(TEXT(Multistage_application__c)=&quot;Yes&quot;,
+CASE( ampi__Project_Status__c ,
+&quot;Concept in Formulation&quot;, 1,
+&quot;Cancelled&quot;, 1,
+0) = 0,
+CASE( ampi__Project_Status__c ,
+&quot;Application in Formulation&quot;, 1,
+&quot;Cancelled&quot;, 1,
+0) = 0
+)</errorConditionFormula>
+    <errorMessage>Allowed Project Status: &quot;Concept In Formulation&quot; for Multistage Application = Yes, or if No, &quot;Application in Formulation&quot;, or &quot;Cancelled&quot;.</errorMessage>
+</ValidationRule>

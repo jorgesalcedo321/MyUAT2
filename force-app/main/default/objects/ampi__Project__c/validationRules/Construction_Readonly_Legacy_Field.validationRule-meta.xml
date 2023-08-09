@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Construction_Readonly_Legacy_Field</fullName>
+    <active>true</active>
+    <description>Legacy ID in readonly for construction projects</description>
+    <errorConditionFormula>AND(
+				ISCHANGED(Legacy_ID__c),
+    RecordType.DeveloperName = &apos;Construction&apos;
+)</errorConditionFormula>
+    <errorMessage>Legacy ID in readonly for construction projects.</errorMessage>
+</ValidationRule>

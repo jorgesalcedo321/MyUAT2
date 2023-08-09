@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__xx_Risk_Level__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field compares the value of the ampi__xx_Overall_Score__c field to the thresholds defined in the ampi__Risk_Setting__mdt custom metadata type. It is auto-populated by the ampi__Populate_Risk_Level Process Builder based on the threshold the value falls within.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Summary level of Risk based on the Probability and Impact.</inlineHelpText>
+    <label>Risk Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High Risk</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>High Risk</label>
+            </value>
+            <value>
+                <fullName>Medium High Risk</fullName>
+                <color>#FF9900</color>
+                <default>false</default>
+                <label>Medium High Risk</label>
+            </value>
+            <value>
+                <fullName>Medium Risk</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Medium Risk</label>
+            </value>
+            <value>
+                <fullName>Medium Low Risk</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Medium Low Risk</label>
+            </value>
+            <value>
+                <fullName>Low Risk</fullName>
+                <color>#419249</color>
+                <default>false</default>
+                <label>Low Risk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Hide_Display_Critical_Path_Button__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Control visibility of Display Critical Path Button on the Activity Lightning Web Component</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Control visibility of Display Critical Path Button on the Activity Lightning Web Component</inlineHelpText>
+    <label>Hide Display Critical Path Button</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

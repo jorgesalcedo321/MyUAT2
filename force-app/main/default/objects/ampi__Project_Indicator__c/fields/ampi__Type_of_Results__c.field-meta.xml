@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Type_of_Results__c</fullName>
+    <defaultValue>&quot;Input&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Picklist field to select whether the results for this project indicator should be input manually, calculated from the results of other project indicators, or aggregated from individual-level data. The value in this field determines whether results are displayed as input or output text on AddResults and whether the user can access the popups for either the Aggregation Criteria or the Calculation Formula.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select whether the results for this Project Indicator should be input manually, calculated from the results of other indicators, or aggregated from individual-level data.</inlineHelpText>
+    <label>Type of Results</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Input</fullName>
+                <default>false</default>
+                <label>Input</label>
+            </value>
+            <value>
+                <fullName>Aggregated</fullName>
+                <default>false</default>
+                <label>Aggregated</label>
+            </value>
+            <value>
+                <fullName>Calculated</fullName>
+                <default>false</default>
+                <label>Calculated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

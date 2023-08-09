@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Record__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+NOT(ISBLANK(ampi__Project_Objective__c)), HYPERLINK(&quot;/&quot; &amp; ampi__Project_Objective__c,  ampi__Project_Objective__r.ampi__Label__c),
+IF(
+NOT(ISBLANK(ampi__Parent_Activity__c)), HYPERLINK(&quot;/&quot; &amp; ampi__Parent_Activity__c, &quot;Activity &quot; &amp; ampi__Parent_Activity__r.Name),
+&quot;N/A&quot;)
+)</formula>
+    <inlineHelpText>For sub-activities, please select the related main activities (needs to be entered before). For main activities, please select &quot;none / main activity..</inlineHelpText>
+    <label>Parent Record</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

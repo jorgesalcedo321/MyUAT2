@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Documents_Required_for_RP__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Rich text area field to store the list of documents required for submitting results on this reporting period. This is displayed in the Document Upload popup on AddResults.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>List of documents that are required for submission this reporting period</inlineHelpText>
+    <label>Required Documents</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Aid_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist field to choose the type of aid being supplied (project-type intervention, budget support, debt relief, etc.).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of Classification; The type of aid being supplied (project-type intervention, budget support, debt relief, etc.). This element specifies a default for all the activity&apos;s financial transactions; it can be overridden at the individual transaction level</inlineHelpText>
+    <label>IATI Aid Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General budget support</fullName>
+                <default>false</default>
+                <label>General budget support</label>
+            </value>
+            <value>
+                <fullName>Sector budget support</fullName>
+                <default>false</default>
+                <label>Sector budget support</label>
+            </value>
+            <value>
+                <fullName>Core support to NGOs, other private bodies, PPPs and research institutes</fullName>
+                <default>false</default>
+                <label>Core support to NGOs, other private bodies, PPPs and research institutes</label>
+            </value>
+            <value>
+                <fullName>Core contributions to multilateral institutions</fullName>
+                <default>false</default>
+                <label>Core contributions to multilateral institutions</label>
+            </value>
+            <value>
+                <fullName>Contributions to specific-purpose programmes and funds managed by international organisations (multilateral, INGO)</fullName>
+                <default>false</default>
+                <label>Contributions to specific-purpose programmes and funds managed by international organisations (multilateral, INGO)</label>
+            </value>
+            <value>
+                <fullName>Basket funds/pooled funding</fullName>
+                <default>false</default>
+                <label>Basket funds/pooled funding</label>
+            </value>
+            <value>
+                <fullName>Project-type interventions</fullName>
+                <default>false</default>
+                <label>Project-type interventions</label>
+            </value>
+            <value>
+                <fullName>Donor country personnel</fullName>
+                <default>false</default>
+                <label>Donor country personnel</label>
+            </value>
+            <value>
+                <fullName>Other technical assistance</fullName>
+                <default>false</default>
+                <label>Other technical assistance</label>
+            </value>
+            <value>
+                <fullName>Scholarships/training in donor country</fullName>
+                <default>false</default>
+                <label>Scholarships/training in donor country</label>
+            </value>
+            <value>
+                <fullName>Imputed student costs</fullName>
+                <default>false</default>
+                <label>Imputed student costs</label>
+            </value>
+            <value>
+                <fullName>Debt relief</fullName>
+                <default>false</default>
+                <label>Debt relief</label>
+            </value>
+            <value>
+                <fullName>Administrative costs not included elsewhere</fullName>
+                <default>false</default>
+                <label>Administrative costs not included elsewhere</label>
+            </value>
+            <value>
+                <fullName>Development awareness</fullName>
+                <default>false</default>
+                <label>Development awareness</label>
+            </value>
+            <value>
+                <fullName>Refugees in donor countries</fullName>
+                <default>false</default>
+                <label>Refugees in donor countries</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

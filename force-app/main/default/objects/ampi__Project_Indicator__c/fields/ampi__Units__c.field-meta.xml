@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Units__c</fullName>
+    <deprecated>false</deprecated>
+    <description>If a numeric project indicator has units of measurement, this text field can capture them (e.g. if project indicator is Amount of CO2, the units could be metric tons)</description>
+    <externalId>false</externalId>
+    <label>Units</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

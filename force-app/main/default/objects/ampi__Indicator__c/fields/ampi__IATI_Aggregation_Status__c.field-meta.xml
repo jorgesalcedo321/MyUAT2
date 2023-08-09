@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__IATI_Aggregation_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Boolean flag indicating whether the data in the result set are suitable for aggregation.</description>
+    <externalId>false</externalId>
+    <formula>IF (AND ((ampi__Cumulative__c = FALSE), OR ((TEXT(ampi__Data_Type__c) = &quot;Number&quot;), (TEXT(ampi__Data_Type__c) = &quot;Currency&quot;))),TRUE, FALSE)</formula>
+    <inlineHelpText>Boolean flag indicating whether the data in the result set are suitable for aggregation.</inlineHelpText>
+    <label>IATI Aggregation Status</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

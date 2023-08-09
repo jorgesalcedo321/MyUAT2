@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Teams__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The Organisation record which is populated here will be used as the basis for sharing this Project record with external users in the MA Portal. For Projects (Grants, Standard, Emergency) this should be the shadow Organisation record named like &quot;{Project ID} - External Project Team&quot;. For Programmes or NMUs, this should be the NA that they fall underneath.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Organisation record which is populated here will be used as the basis for sharing this Project record with external users in the MA Portal. For Projects (Grants, Standard, Emergency) this should be the shadow Organisation record named like &quot;{Project ID} - External Project Team&quot;. For Programmes or NMUs, this should be the NA that they fall underneath.</inlineHelpText>
+    <label>External Project Team</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Projects (Account Team)</relationshipLabel>
+    <relationshipName>Projects5</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

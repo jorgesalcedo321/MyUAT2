@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Rationale__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Rich Text Area to capture the rationale or reasoning behind a particular request for a project modification.</description>
+    <externalId>false</externalId>
+    <label>Rationale</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

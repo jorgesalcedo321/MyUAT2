@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YouthCan_Not_Edit_Name_Portal</fullName>
+    <active>true</active>
+    <description>You do not have permissions to update the YouthCan! Project Name. Only Project Owners, Super Users, or System Admins can update this field.</description>
+    <errorConditionFormula>AND (RecordType.DeveloperName=&quot;Sos_YouthCan_Project&quot;,
+ISCHANGED(Name),
+OR (
+$Profile.Name = &quot;YouthCan Project Coordinator Plus&quot;,
+$Profile.Name = &quot;YouthCan Partner Plus&quot;,
+$Profile.Name = &quot;YouthCan Project Coordinator&quot;,
+$Profile.Name = &quot;YouthCan Partner&quot;
+))</errorConditionFormula>
+    <errorMessage>You do not have permissions to update the YouthCan! Project Name. Only Project Owners, Super Users, or System Admins can update this field.</errorMessage>
+</ValidationRule>

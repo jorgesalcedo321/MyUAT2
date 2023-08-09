@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YouthCan_Project_Result_Statement</fullName>
+    <active>true</active>
+    <label>YouthCan! Project Result Statement</label>
+    <picklistValues>
+        <picklist>ampi__IATI_Vocabulary__c</picklist>
+        <values>
+            <fullName>99</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ampi__Level__c</picklist>
+        <values>
+            <fullName>Impact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outcome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Output</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

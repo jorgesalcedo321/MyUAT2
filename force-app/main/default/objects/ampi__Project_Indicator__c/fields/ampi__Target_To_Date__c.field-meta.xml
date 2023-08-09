@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Target_To_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is populated with either the sum of all targets on all result records or the sum of all targets on result records from the most recent Reporting Period, depending on the value in the Cumulative field. This field is populated/updated by the triggers on Result.</description>
+    <externalId>false</externalId>
+    <label>Total Target</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

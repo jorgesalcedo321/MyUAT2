@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ampi__Apex_Job_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Text field to store the apex job id of the Aggregation or Calculation batch. This field determines the display of the refresh icon on ManageIndicators.</description>
+    <externalId>false</externalId>
+    <label>Apex Job Id</label>
+    <length>64</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
