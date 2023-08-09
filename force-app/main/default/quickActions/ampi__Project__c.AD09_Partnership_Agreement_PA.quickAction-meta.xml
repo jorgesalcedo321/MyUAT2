@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a Partnership Agreement (PA) deliverable</description>
+    <fieldOverrides>
+        <field>Description__c</field>
+        <formula>&quot;PRAG_T27_Internal Partnership Agreement template. The Partnership Agreement (PA) is ideally an amendment to the Memorandum of Understanding (MoU) [when a MoU is available] and clearly defines the roles and responsibilities of stakeholders during the implementation phase. The PA also provides a clear overview of the reporting mechanism as well as a communication protocol describing the communication flow and main deadlines. The PA should be signed by the Applicant and the Implementing Partner(s), followed by International Director of the relevant Region(s).&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Link_To_Deliverable_Template__c</field>
+        <formula>&quot;https://soscv.sharepoint.com/:w:/s/WS_000037/EbO6Es30S3pOithdo2W2uD4BlrGOjuByeVJf2hnIupEx8w?e=qnu7dm&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>&quot;Partnership Agreement (PA)&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Phase__c</field>
+        <literalValue>Formulation</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Project__c</field>
+        <formula>ampi__Project__c.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Responsible_Person__c</field>
+        <formula>ampi__Project__c.Owner:User.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>Not Done</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type__c</field>
+        <literalValue>Agreement</literalValue>
+    </fieldOverrides>
+    <label>AD09: Partnership Agreement (PA)</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Deliverable__c</targetObject>
+    <targetParentField>Project__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

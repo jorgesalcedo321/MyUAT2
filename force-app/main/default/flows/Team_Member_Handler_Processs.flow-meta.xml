@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>ActionCallType</name>
+            <value>
+                <stringValue>flow</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>flowSelection</name>
+            <value>
+                <stringValue>Flow_Create EntitySubscription</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>Subscribe Team Member to Project</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>Flow_Create_EntitySubscription</actionName>
+        <actionType>flow</actionType>
+        <connector>
+            <targetReference>myDecision2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>sObj_teammember</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue>Team_Member__c</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>SObject</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>sObj_teammember</name>
+            <value>
+                <elementReference>myVariable_current</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <processMetadataValues>
+            <name>apexSelection</name>
+            <value>
+                <stringValue>Create Team members</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_3_A1</name>
+        <label>Create Team Members</label>
+        <locationX>300</locationX>
+        <locationY>200</locationY>
+        <actionName>createTeamMemberProject</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>myDecision4</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>projectId</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>projectId</name>
+            <value>
+                <elementReference>myVariable_current.Project__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>ID</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>userId</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>userId</name>
+            <value>
+                <elementReference>myVariable_current.User__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>String</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>role</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>maxOccurs</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>objectType</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Reference</stringValue>
+                </value>
+            </processMetadataValues>
+            <name>role</name>
+            <value>
+                <elementReference>myVariable_current.Role__c</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision</name>
+        <label>myDecision</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
+            <label>New Internal Team Member?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision2</name>
+        <label>myDecision2</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_3_A1</targetReference>
+            </connector>
+            <label>External Project Contributor?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision4</name>
+        <label>myDecision4</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision6</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_pmetdec</targetReference>
+            </connector>
+            <label>Member is Active?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <processMetadataValues>
+            <name>index</name>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </processMetadataValues>
+        <name>myDecision6</name>
+        <label>myDecision6</label>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_pmetdec</targetReference>
+            </connector>
+            <label>Member is Inactive?</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_5_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>500</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_5_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_5_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_5_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_5_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_5_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision6</targetReference>
+            </connector>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>myRule_7_pmetdec</name>
+        <label>Previously Met Decision</label>
+        <locationX>700</locationX>
+        <locationY>100</locationY>
+        <defaultConnector>
+            <targetReference>myRule_7_A1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Previously Met</defaultConnectorLabel>
+        <rules>
+            <name>myRule_7_pmetnullrule</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myRule_7_A1</targetReference>
+            </connector>
+            <label>Previously Met - Null</label>
+        </rules>
+        <rules>
+            <name>myRule_7_pmetrule</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formula_myRule_7_pmetrule</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Previously Met - Prev</label>
+        </rules>
+    </decisions>
+    <description>Updated Ext Proj Contributor formula to incl YC Roles / Master handler for all Team Member object processes</description>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND(
+ISNEW(),
+[Team_Member__c].RecordType.DeveloperName = &quot;Project_Team_Member&quot;,
+TEXT([Team_Member__c].User__r.UserType) = &quot;Standard&quot;,
+[Team_Member__c].User__r.IsActive = TRUE,
+[Team_Member__c].Active__c = TRUE)
+
+</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_1</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+ISNEW(),
+{!myVariable_current.RecordType.DeveloperName} = &quot;Project_Team_Member&quot;,
+TEXT({!myVariable_current.User__r.UserType}) = &quot;Standard&quot;,
+{!myVariable_current.User__r.IsActive} = TRUE,
+{!myVariable_current.Active__c} = TRUE)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>ISNEW() 
+&amp;&amp;
+OR(ISPICKVAL([Team_Member__c].Role__c,  &apos;Project Contributor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Partner&apos;)
+)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_3</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW() 
+&amp;&amp;
+OR(ISPICKVAL({!myVariable_current.Role__c},  &apos;Project Contributor&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Partner&apos;)
+)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND([Team_Member__c].RecordType.DeveloperName = &apos;Project_Team_Member&apos;, OR(ISPICKVAL([Team_Member__c].Role__c,  &apos;Project Contributor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Partner&apos;)
+), 
+[Team_Member__c].Active__c = true, PRIORVALUE([Team_Member__c].Active__c) = false)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5</name>
+        <dataType>Boolean</dataType>
+        <expression>AND({!myVariable_current.RecordType.DeveloperName} = &apos;Project_Team_Member&apos;, OR(ISPICKVAL({!myVariable_current.Role__c},  &apos;Project Contributor&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Partner&apos;)
+), 
+{!myVariable_current.Active__c} = true, PRIORVALUE({!myVariable_current.Active__c}) = false)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND([Team_Member__c].RecordType.DeveloperName = &apos;Project_Team_Member&apos;, OR(ISPICKVAL([Team_Member__c].Role__c,  &apos;Project Contributor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Partner&apos;)
+), 
+[Team_Member__c].Active__c = true, PRIORVALUE([Team_Member__c].Active__c) = false)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_5_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>AND({!myVariable_old.RecordType.DeveloperName} = &apos;Project_Team_Member&apos;, OR(ISPICKVAL({!myVariable_old.Role__c},  &apos;Project Contributor&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Partner&apos;)
+), 
+{!myVariable_old.Active__c} = true, PRIORVALUE({!myVariable_old.Active__c}) = false)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND([Team_Member__c].RecordType.DeveloperName = &apos;Project_Team_Member&apos;, 
+OR(ISPICKVAL([Team_Member__c].Role__c,  &apos;Project Contributor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Partner&apos;)),
+[Team_Member__c].Active__c = false, PRIORVALUE([Team_Member__c].Active__c) = true)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7</name>
+        <dataType>Boolean</dataType>
+        <expression>AND({!myVariable_current.RecordType.DeveloperName} = &apos;Project_Team_Member&apos;, 
+OR(ISPICKVAL({!myVariable_current.Role__c},  &apos;Project Contributor&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL({!myVariable_current.Role__c},  &apos;YouthCan! Partner&apos;)),
+{!myVariable_current.Active__c} = false, PRIORVALUE({!myVariable_current.Active__c}) = true)</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>AND([Team_Member__c].RecordType.DeveloperName = &apos;Project_Team_Member&apos;, 
+OR(ISPICKVAL([Team_Member__c].Role__c,  &apos;Project Contributor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL([Team_Member__c].Role__c,  &apos;YouthCan! Partner&apos;)),
+[Team_Member__c].Active__c = false, PRIORVALUE([Team_Member__c].Active__c) = true)</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_myRule_7_pmetrule</name>
+        <dataType>Boolean</dataType>
+        <expression>AND({!myVariable_old.RecordType.DeveloperName} = &apos;Project_Team_Member&apos;, 
+OR(ISPICKVAL({!myVariable_old.Role__c},  &apos;Project Contributor&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Global MEL Advisor&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Global Project Manager&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Key Account Manager&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Regional Coordinator&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Coordinator&apos;),
+ISPICKVAL({!myVariable_old.Role__c},  &apos;YouthCan! Partner&apos;)),
+{!myVariable_old.Active__c} = false, PRIORVALUE({!myVariable_old.Active__c}) = true)</expression>
+    </formulas>
+    <interviewLabel>Team_Member_Handler_Processs-8_InterviewLabel</interviewLabel>
+    <label>Team Member - Handler Processs</label>
+    <processMetadataValues>
+        <name>ObjectType</name>
+        <value>
+            <stringValue>Team_Member__c</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>ObjectVariable</name>
+        <value>
+            <elementReference>myVariable_current</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OldObjectVariable</name>
+        <value>
+            <elementReference>myVariable_old</elementReference>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>TriggerType</name>
+        <value>
+            <stringValue>onAllChanges</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Workflow</processType>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Team_Member__c].Project.Account Team.AccountContactRelations</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_5_A1</name>
+        <label>Activate ACR</label>
+        <locationX>500</locationX>
+        <locationY>200</locationY>
+        <connector>
+            <targetReference>myDecision6</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Project__r.Account_Teams__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Active</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>IsActive</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>AccountContactRelation</object>
+    </recordUpdates>
+    <recordUpdates>
+        <processMetadataValues>
+            <name>evaluationType</name>
+            <value>
+                <stringValue>always</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>isChildRelationship</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>reference</name>
+            <value>
+                <stringValue>[Team_Member__c].Project.Account Team.AccountContactRelations</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
+        </processMetadataValues>
+        <name>myRule_7_A1</name>
+        <label>Deactivate ACR</label>
+        <locationX>700</locationX>
+        <locationY>200</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <processMetadataValues>
+                <name>implicit</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </processMetadataValues>
+            <field>AccountId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>myVariable_current.Project__r.Account_Teams__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Active</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Boolean</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>IsActive</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>AccountContactRelation</object>
+    </recordUpdates>
+    <startElementReference>myDecision</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>myVariable_current</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Team_Member__c</objectType>
+    </variables>
+    <variables>
+        <name>myVariable_old</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Team_Member__c</objectType>
+    </variables>
+</Flow>

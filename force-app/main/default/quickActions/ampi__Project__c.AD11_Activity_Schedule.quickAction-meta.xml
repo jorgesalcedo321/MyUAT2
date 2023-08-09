@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates an Activity Schedule deliverable</description>
+    <fieldOverrides>
+        <field>Description__c</field>
+        <formula>&quot;PRAG_T24_Activity Schedule Template. This tool outlines the process for completion of the activity table, which is a step within the Logical Framework Approach, following completion of the Logframe matrix. This sample activity schedule template assists with analysing the timing, resources and person in charge of project activities.&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Link_To_Deliverable_Template__c</field>
+        <formula>&quot;https://soscv.sharepoint.com/:w:/s/WS_000037/Eb6YHg2z-yJCriTYR9hGOtsBMCLBJcjZz_MfoYprHGM_7g?e=cXi3as&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>&quot;Activity Schedule&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Phase__c</field>
+        <literalValue>Formulation</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Project__c</field>
+        <formula>ampi__Project__c.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Responsible_Person__c</field>
+        <formula>ampi__Project__c.Owner:User.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>Not Done</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type__c</field>
+        <literalValue>Plan</literalValue>
+    </fieldOverrides>
+    <label>AD11: Activity Schedule</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Deliverable__c</targetObject>
+    <targetParentField>Project__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

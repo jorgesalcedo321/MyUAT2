@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Access_Token_Authorization_URL</fullName>
+        <categories>SOS Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Access Token Authorization URL</shortDescription>
+        <value>https://login.microsoftonline.com/soscv.onmicrosoft.com/oauth2/token</value>
+    </labels>
+    <labels>
+        <fullName>Catalogue_Risk_RecordTypeID</fullName>
+        <categories>RecordTypes, Risk</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Catalogue_Risk_RecordTypeID</shortDescription>
+        <value>0121i000000cF3kAAE</value>
+    </labels>
+    <labels>
+        <fullName>Chatter</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Chatter</shortDescription>
+        <value>Chatter</value>
+    </labels>
+    <labels>
+        <fullName>Create_Workspace_Request_Error_Message</fullName>
+        <categories>UserMessage, CreateWorkspace</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Workspace Request Error Message</shortDescription>
+        <value>Authentication failed. Please contact your system administrator.</value>
+    </labels>
+    <labels>
+        <fullName>Create_Workspace_Request_Success_Message</fullName>
+        <categories>UserMessage, CreateWorkspace</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Workspace Request Success Message</shortDescription>
+        <value>Workspace creation initiated successfully!</value>
+    </labels>
+    <labels>
+        <fullName>Create_Workspace_Title</fullName>
+        <categories>Sharepoint Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Workspace Title</shortDescription>
+        <value>Create Team Site</value>
+    </labels>
+    <labels>
+        <fullName>Default_Risk_Review_Template_ID</fullName>
+        <categories>Risk, Submissions, Risk Review</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Risk Review Template ID</shortDescription>
+        <value>a0p3N000000pnZYQAY</value>
+    </labels>
+    <labels>
+        <fullName>EMPTY_FILE</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CSV file is empty.</shortDescription>
+        <value>CSV file is empty.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_JSON_BAD_FORMAT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The provided Json String was badly formatted.</shortDescription>
+        <value>The provided Json String was badly formatted.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_JSON_EMPTY</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No field values were found in the Json String.</shortDescription>
+        <value>No field values were found in the Json String.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_OP_FAILED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Operation failed, please check messages!</shortDescription>
+        <value>Operation failed, please check messages!</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_REQUEST_FAILED_NO_ERROR</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request failed with no specified error.</shortDescription>
+        <value>Request failed with no specified error.</value>
+    </labels>
+    <labels>
+        <fullName>ERROR_UNAUTHORIZED_ENDPOINT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unauthorized endpoint, please check Setup</shortDescription>
+        <value>Unauthorized endpoint, please check Setup</value>
+    </labels>
+    <labels>
+        <fullName>FILE_MISSING</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please provide a comma separated file.</shortDescription>
+        <value>Please provide a comma separated file.</value>
+    </labels>
+    <labels>
+        <fullName>INVALID_FILE_ROW_SIZE_DOESNT_MATCH</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The number of field values does not match the number of header fields on line</shortDescription>
+        <value>The number of field values does not match the number of header fields on line</value>
+    </labels>
+    <labels>
+        <fullName>LBL_CATEGORY</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_CATEGORY</shortDescription>
+        <value>Category</value>
+    </labels>
+    <labels>
+        <fullName>LBL_DELETE</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_DELETE</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>LBL_DESCRIPTION</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_DESCRIPTION</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>LBL_EDIT</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_EDIT</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>LBL_NEW</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_NEW</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>LBL_RISKS</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_RISKS</shortDescription>
+        <value>Risks</value>
+    </labels>
+    <labels>
+        <fullName>LBL_RISK_IMPACT</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_RISK_IMPACT</shortDescription>
+        <value>Impact</value>
+    </labels>
+    <labels>
+        <fullName>LBL_RISK_NAME</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_RISK_NAME</shortDescription>
+        <value>Risk Name</value>
+    </labels>
+    <labels>
+        <fullName>LBL_RISK_PROBABILITY</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_RISK_PROBABILITY</shortDescription>
+        <value>Probability</value>
+    </labels>
+    <labels>
+        <fullName>LBL_RISK_VALUE</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_RISK_VALUE</shortDescription>
+        <value>Risk Value</value>
+    </labels>
+    <labels>
+        <fullName>LBL_SAFETY_SECURITY_RISK</fullName>
+        <categories>Label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LBL_SAFETY_SECURITY_RISK</shortDescription>
+        <value>Safety &amp; Security Risk</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_COMMENTS</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_COMMENTS</shortDescription>
+        <value>Comments</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_CONFLICT</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_CONFLICT</shortDescription>
+        <value>Conflict</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_CRIME_SECURITY</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_CRIME__SECURITY</shortDescription>
+        <value>Crime &amp; Security</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_ERROR_MESSAGE</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_ERROR_MESSAGE</shortDescription>
+        <value>Something went wrong…</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_HUMANITARIAN_SPACE</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_HUMANITARIAN_SPACE</shortDescription>
+        <value>Humanitarian Space</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_INFRASTRUCTURE</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_INFRASTRUCTURE</shortDescription>
+        <value>Infrastructure</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_KIDNAP</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_KIDNAP</shortDescription>
+        <value>Kidnap</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_SOCIAL_POLITICAL</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_SOCIAL__POLITICAL</shortDescription>
+        <value>Social &amp; Political</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_SUCCESS_MESSAGE</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_SUCCESS_MESSAGE</shortDescription>
+        <value>Risk Assessment updated successfully !!</value>
+    </labels>
+    <labels>
+        <fullName>LRP_RISK_TERRORISM</fullName>
+        <categories>Risks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_RISK_TERRORISM</shortDescription>
+        <value>Terrorism</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_ACCOUNT_SKF_CONTRIBUTORS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_ACCOUNT_SKF_CONTRIBUTORS</shortDescription>
+        <value>SKF Contributors</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_ACTIVITIES</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_ACTIVITIES</shortDescription>
+        <value>Activities</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_ACTIVITY</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_ACTIVITY</shortDescription>
+        <value>Activity</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_ACTIVITY_SCHEDULE_BUILDER</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_ACTIVITY_SCHEDULE_BUILDER</shortDescription>
+        <value>Activity Schedule Builder</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_ACTIVITY_SCHEDULE_REPORT</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_ACTIVITY_SCHEDULE_REPORT</shortDescription>
+        <value>Activity Schedule Report</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_ACTUALS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_ACTUALS</shortDescription>
+        <value>Actuals</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_ADD_FROM_CATALOGUE</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_ADD_FROM_CATALOGUE</shortDescription>
+        <value>Add From Catalogue</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_AGREEMENTS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_AGREEMENTS</shortDescription>
+        <value>Agreements</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_AGREEMENT_HISTORY</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_AGREEMENT_HISTORY</shortDescription>
+        <value>Agreement History</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_APPROVALS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_APPROVALS</shortDescription>
+        <value>Approvals</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_CHATTER</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_CHATTER</shortDescription>
+        <value>Chatter</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_COLLABORATE</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_COLLABORATE</shortDescription>
+        <value>Collaborate</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_CONTACTS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_CONTACTS</shortDescription>
+        <value>Contacts</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_COUNTRIES</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_COUNTRIES</shortDescription>
+        <value>Countries</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_DATES</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_DATES</shortDescription>
+        <value>Dates</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_DELIVERABLES</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_DELIVERABLES</shortDescription>
+        <value>Deliverables</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_DETAILS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_DETAILS</shortDescription>
+        <value>Details</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_DISTRIBUTION_LISTS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_DISTRIBUTION_LISTS</shortDescription>
+        <value>Distribution Lists</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_FILE_AND_NOTES</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_FILE_AND_NOTES</shortDescription>
+        <value>File &amp; Notes</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_FINANCIALS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Financials</shortDescription>
+        <value>Financials</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_HISTORY</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_HISTORY</shortDescription>
+        <value>History</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_INFORMATION</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_INFORMATION</shortDescription>
+        <value>Information</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_LESSONS_LEARNED</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_LESSONS_LEARNED</shortDescription>
+        <value>Lessons Learned</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_LIFECYCLE</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_LIFECYCLE</shortDescription>
+        <value>Lifecycle</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_MANAGEMENT_AND_REVIEW</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_MANAGEMENT_AND_REVIEW</shortDescription>
+        <value>Management &amp; Review</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_MONITORING</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_MONITORING</shortDescription>
+        <value>Monitoring</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_MONITORING_PLAN</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_MONITORING_PLAN</shortDescription>
+        <value>Monitoring Plan</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_NMU</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_NMU</shortDescription>
+        <value>NMUs</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_PERFORMANCE</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_PERFORMANCE</shortDescription>
+        <value>Performance</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_PERFORMANCE_GRAPHS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_PERFORMANCE_GRAPHS</shortDescription>
+        <value>Performance Graphs</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_PROGRAMMES</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_PROGRAMMES</shortDescription>
+        <value>Programmes</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_PROGRAMME_RISKS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_PROGRAMME_RISKS</shortDescription>
+        <value>Programme Risks</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_PROGRAMME_UNITS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_PROGRAMME_UNITS</shortDescription>
+        <value>Programme Units</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_PROJECTS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_PROJECTS</shortDescription>
+        <value>Projects</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_PROJECT_DETAILS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_PROJECT_DETAILS</shortDescription>
+        <value>Project Details</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_PROJECT_RISKS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_PROJECT_RISKS</shortDescription>
+        <value>Project Risks</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_PROJECT_TEAM</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_PROJECT_TEAM</shortDescription>
+        <value>Project Team</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_RECORD_HISTORY</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_RECORD_HISTORY</shortDescription>
+        <value>Record History</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_RELATED</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_RELATED</shortDescription>
+        <value>Related</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_RESULTS_FRAMEWORK</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_RESULTS_FRAMEWORK</shortDescription>
+        <value>Results Framework</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_RISKS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_RISKS</shortDescription>
+        <value>Risks</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_RISK_MATRIX</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_RISK_MATRIX</shortDescription>
+        <value>Risk Matrix</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_SECURITY</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_SECURITY</shortDescription>
+        <value>Security</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_SETUP</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_SETUP</shortDescription>
+        <value>Setup</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_SKF_INDICATORS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_SKF_INDICATORS</shortDescription>
+        <value>SKF Indicators</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_SOS_ORGANISATIONS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_SOS_ORGANISATIONS</shortDescription>
+        <value>SOS Organisations</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_STATUS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_STATUS</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_TARGETS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_TARGETS</shortDescription>
+        <value>Targets</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_TASKS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_TASKS</shortDescription>
+        <value>Tasks</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_TEMPLATE_BUILDER</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Template builder</shortDescription>
+        <value>Template builder</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_TEST</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tabtest</shortDescription>
+        <value>Tab test</value>
+    </labels>
+    <labels>
+        <fullName>LRP_TAB_VALIDATIONS</fullName>
+        <categories>Lightning Record Page Tab Translation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LRP_TAB_VALIDATIONS</shortDescription>
+        <value>Validations</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CHECK_API_NAMES</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the Api names!</shortDescription>
+        <value>Please check the Api names!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_EXISTS</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make sure Custom Setting and Custom Metadata Types exists in the org!</shortDescription>
+        <value>Make sure Custom Setting and Custom Metadata Types exists in the org!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_FIELD_NAME_FORMAT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the format, Custom Setting.field and Custom Metadata Types.field</shortDescription>
+        <value>Please check the format, Custom Setting.field and Custom Metadata Types.field</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_FIELD_NAME_REQ</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Setting Name/Field Name and CMT/Field Name names are required!</shortDescription>
+        <value>Custom Setting Name/Field Name and CMT/Field Name names are required!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_MAPPING_REQ</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Setting Name, Custom Metadata Types and Json Mapping names are required!</shortDescription>
+        <value>Custom Setting Name, Custom Metadata Types and Json Mapping names are required!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CS_MDT_REQ</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Setting Api Name and Custom Metadata Types Api names are required!</shortDescription>
+        <value>Custom Setting Api Name and Custom Metadata Types Api names are required!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_CUSTOM_SETTINGS_EXISTS</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make sure Custom Setting exists in the org!</shortDescription>
+        <value>Make sure Custom Setting exists in the org!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_JSON_API_NAMES</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the Api names in Json!</shortDescription>
+        <value>Please check the Api names in Json!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_JSON_FORMAT</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please check the Json format!</shortDescription>
+        <value>Please check the Json format!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_MDT_END</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Metadata Types name should end with</shortDescription>
+        <value>Custom Metadata Types name should end with</value>
+    </labels>
+    <labels>
+        <fullName>MSG_MIGRATION_COMPLETED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Migration Completed!</shortDescription>
+        <value>Migration Completed!</value>
+    </labels>
+    <labels>
+        <fullName>MSG_MIGRATION_IN_PROGRESS</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Migration In Progress, check status under Deploy -&gt; Deployment Status, Job Id:</shortDescription>
+        <value>Migration In Progress, check status under Deploy -&gt; Deployment Status, Job Id:</value>
+    </labels>
+    <labels>
+        <fullName>MSG_NOT_SUPPORTED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Not Supported!!!</shortDescription>
+        <value>Not Supported!!!</value>
+    </labels>
+    <labels>
+        <fullName>Organisation_RecordTypeID_Organisation</fullName>
+        <categories>RecordType</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Organisation_RecordTypeID_Organisation</shortDescription>
+        <value>0121i0000008W2BAAU</value>
+    </labels>
+    <labels>
+        <fullName>Project_RT_Grant</fullName>
+        <categories>RecordTypes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project_RT_Grant</shortDescription>
+        <value>0121i000000cDnnAAE</value>
+    </labels>
+    <labels>
+        <fullName>Project_RecordType_Shadow_Programme</fullName>
+        <categories>Project, RecordType, SKF, Do Not Translate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project_RecordType_Shadow_Programme</shortDescription>
+        <value>Programme</value>
+    </labels>
+    <labels>
+        <fullName>Project_Risk_Record_Type_ID</fullName>
+        <categories>Risk, RecordTypes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Risk Record Type ID</shortDescription>
+        <value>0121i000000cF3mAAE</value>
+    </labels>
+    <labels>
+        <fullName>SOS_Header_Origin_URL</fullName>
+        <categories>SOS Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOS Header Origin URL</shortDescription>
+        <value>https://soscv.sharepoint.com</value>
+    </labels>
+    <labels>
+        <fullName>SOS_Integration_API_URL</fullName>
+        <categories>SOS Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SOS Integration API URL</shortDescription>
+        <value>https://soscv-api.sos-kd.org/api/ProDIGI/Create/Async</value>
+    </labels>
+    <labels>
+        <fullName>Sharepoint_Integration_Error_Message</fullName>
+        <categories>Sharepoint Integration, Validation Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint Integration Error Message</shortDescription>
+        <value>You have already requested to create a workspace.</value>
+    </labels>
+    <labels>
+        <fullName>Sharepoint_Integration_Prompt_Cancel_Button</fullName>
+        <categories>Sharepoint Integration, Confirmation Popup</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint Integration Prompt Cancel Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Sharepoint_Integration_Prompt_Confirm_Button</fullName>
+        <categories>Sharepoint Integration, Confirmation Popup</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint Integration Prompt Confirm Button</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>Sharepoint_Integration_Prompt_Message</fullName>
+        <categories>Sharepoint Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint_Integration_Prompt_Message</shortDescription>
+        <value>You are about to create a new Team Site in SharePoint Online for this Project. Are you sure you want to Proceed?
+
+You will receive an Outlook confirmation once the Team Site is created (may take some time).</value>
+    </labels>
+    <labels>
+        <fullName>Sharepoint_Test_User_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sharepoint_Test_User_Email</shortDescription>
+        <value>jonathan.skillen@sos-kd.org</value>
+    </labels>
+    <labels>
+        <fullName>Submission_RecordTypeID_Submission</fullName>
+        <categories>Submissions, RecordTypeID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Submission_RecordTypeID_Submission</shortDescription>
+        <value>0121i000000cB13AAE</value>
+    </labels>
+    <labels>
+        <fullName>Submission_Template_RecordTypeID</fullName>
+        <categories>DO NOT TRANSLATE, Submissions, RecordTypeID</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Submission_Template_RecordTypeID</shortDescription>
+        <value>0121i000000cB14AAE</value>
+    </labels>
+    <labels>
+        <fullName>System_Administrator_Profile_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System_Administrator_Profile_ID</shortDescription>
+        <value>00e1i000000HqH5</value>
+    </labels>
+    <labels>
+        <fullName>TYPE_OPTION_NOT_SELECTED</fullName>
+        <categories>CMT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please choose a valid custom metadata type.</shortDescription>
+        <value>Please choose a valid custom metadata type.</value>
+    </labels>
+    <labels>
+        <fullName>Team_Member_RT_Distribution_List_Member</fullName>
+        <categories>RecordTypes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Team_Member_RT_Distribution_List_Member</shortDescription>
+        <value>0121i000000cDnfAAE</value>
+    </labels>
+    <labels>
+        <fullName>Team_Member_RT_Project_Team_Member</fullName>
+        <categories>RecordTypes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Team_Member_RT_Project_Team_Member</shortDescription>
+        <value>0121i000000cDngAAE</value>
+    </labels>
+    <labels>
+        <fullName>Translation_Test</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Translation Test</shortDescription>
+        <value>Hello</value>
+    </labels>
+    <labels>
+        <fullName>Type_Application_JSON</fullName>
+        <categories>SOS Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Type Application JSON</shortDescription>
+        <value>application/json</value>
+    </labels>
+</CustomLabels>

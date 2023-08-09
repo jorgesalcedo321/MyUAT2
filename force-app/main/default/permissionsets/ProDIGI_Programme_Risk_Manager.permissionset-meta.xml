@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Manage_Programme_Risks</name>
+    </customPermissions>
+    <description>Allows users to manage the programme risk register for any programme</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ProDIGI Programme Risk Manager</label>
+    <recordTypeVisibilities>
+        <recordType>ampi__Risk__c.Programme_Location_Risk</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>ampi__Risk__c.Project_Risk</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

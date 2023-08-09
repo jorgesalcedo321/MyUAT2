@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Conflict 3</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Conflict</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">3.- There may be border disputes or intermittent insurgency operating in the country; there is significant risk of conflict escalation. There may be an indirect threat to INGO staff from localised conflicts.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">3.- Il peut y avoir des différends frontaliers ou une insurrection intermittente opérant dans le pays; Le risque d&apos;escalade des conflits est important. Il peut y avoir une menace indirecte pour le personnel de l&apos;INGO de conflits localisés.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">3. - могут быть пограничные споры или прерывистые повстанцы, работающие в стране; Существует значительный риск эскалации конфликта. Там может быть косвенная угроза инго сотрудникам Ingo от локализованных конфликтов.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">3.- Pueden existir disputas fronterizas o insurgencia intermitente operando en el país; Existe un riesgo significativo de escalada del conflicto. Puede haber una amenaza indirecta para el personal de las ONG internacionales debido a conflictos localizados.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+</CustomMetadata>

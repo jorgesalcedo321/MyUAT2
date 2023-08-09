@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Search_Name__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>This is the name shortened, is a legacy field and could probably be removed in the future</description>
+    <externalId>false</externalId>
+    <label>Search Name</label>
+    <length>45</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

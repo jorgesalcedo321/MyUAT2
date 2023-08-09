@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Manage_Catalogue_Risks</name>
+    </customPermissions>
+    <description>Grants users access to the Catalogue Risk record type on the Risk object.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ProDIGI Risk Catalogue Manager</label>
+    <recordTypeVisibilities>
+        <recordType>ampi__Risk__c.Catalogue_Risk</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

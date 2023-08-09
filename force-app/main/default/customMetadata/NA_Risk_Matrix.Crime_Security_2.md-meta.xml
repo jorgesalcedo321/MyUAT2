@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Crime &amp; Security 2</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Crime &amp; Security</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">2.- There are low levels of violent crime but there is wide spread petty crime in specific areas. Organised crime groups (Such as Cartel or &quot;Mafia&quot;) are present but are generally controlled by authorities. The local security forces are professional but there may be low levels of corruption</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">2.- Il y a de faibles niveaux de criminalité violente, mais il y a une large répression dans des domaines spécifiques. Les groupes de crimes organisés (tels que le cartel ou la &quot;mafia&quot;) sont présents mais sont généralement contrôlés par les autorités. Les forces de sécurité locales sont professionnelles, mais il peut y avoir de faibles niveaux de corruption</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">2. - Есть низкие уровни насильственного преступления, но широко распространено мелкое преступление в определенных районах. Организованные криминальные группы (такие как картель или «мафия») присутствуют, но обычно контролируются властями. Местные силы безопасности являются профессиональными, но могут быть низкие уровни коррупции</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">2.- Hay bajos niveles de delitos violentos, pero existe una amplia crimen de mezquino en áreas específicas. Los grupos de delitos organizados (como el cartel o la &quot;mafia&quot;) están presentes, pero generalmente son controlados por las autoridades. Las fuerzas de seguridad locales son profesionales, pero puede haber niveles bajos de corrupción.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+</CustomMetadata>

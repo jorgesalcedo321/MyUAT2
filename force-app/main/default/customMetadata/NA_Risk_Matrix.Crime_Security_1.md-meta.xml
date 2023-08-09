@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Crime &amp; Security 1</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Crime &amp; Security</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">1.- There are low levels of violent crime but there may be varying levels of petty crime in urban or isolated areas.  Local secuirty forces are professional, effectively prevent and detect crime and are generally free from corruption</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">1.- Il existe de faibles niveaux de crime violent, mais il peut y avoir des niveaux variables de petite criminalité dans des zones urbaines ou isolées. Les forces de seconde seconde locales sont professionnelles, prévenus et détectent efficacement la criminalité et sont généralement exemptes de corruption</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">1. - Есть низкие уровни насильственного преступления, но могут быть различные уровни мелкого преступления в городских или изолированных районах. Местные целевые силы специалистальны, эффективно предотвращают и выявляют преступление и, как правило, свободно от коррупции</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">1.- Hay bajos niveles de delitos violentos, pero puede haber niveles variables de pequeños crimen en áreas urbanas o aisladas. Las fuerzas secundarias locales son profesionales, previenen y detectan de manera efectiva la delincuencia y generalmente están libres de corrupción.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+</CustomMetadata>

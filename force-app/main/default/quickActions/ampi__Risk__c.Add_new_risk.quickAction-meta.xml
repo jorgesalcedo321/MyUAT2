@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowDefinition>Flow_Bulk_Choices_For_Add_Catalogue_Risk_Or_Custom_Risk_From_List</flowDefinition>
+    <label>Add_new_risk</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

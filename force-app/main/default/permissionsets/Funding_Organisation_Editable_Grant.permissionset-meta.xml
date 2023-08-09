@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Funding_Organisation_Grant_Editable</name>
+    </customPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Funding Organisation Editable Grant</label>
+</PermissionSet>

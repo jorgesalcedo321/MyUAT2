@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Set to done once the deliverable is available and passed applicable validation cycle. Add link to the Sharepoint where the deliverable is stored.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Done</fullName>
+                <default>true</default>
+                <label>Not Done</label>
+            </value>
+            <value>
+                <fullName>Done</fullName>
+                <default>false</default>
+                <label>Done</label>
+            </value>
+            <value>
+                <fullName>Agreement in progress</fullName>
+                <default>false</default>
+                <label>Agreement in progress</label>
+            </value>
+            <value>
+                <fullName>In development</fullName>
+                <default>false</default>
+                <label>In development</label>
+            </value>
+            <value>
+                <fullName>Agreement signed</fullName>
+                <default>false</default>
+                <label>Agreement signed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

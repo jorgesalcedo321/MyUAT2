@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Task_Record_Page2</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Task</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Task_Record_Page2</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Task</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Reporting_Period_Record_Page3</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>ampi__Reporting_Period__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Reporting_Period_Record_Page3</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>ampi__Reporting_Period__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contact_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Contact</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>YouthCanLogo250x170_11</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>SOS YouthCan! App</label>
+    <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Login User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Login User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Plus User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Plus User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>National PM/Director</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>National PM/Director</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Project Contributor</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Project Contributor</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Project Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Project Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Service Account</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Service Account</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Service Account - Tosca</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Service Account - Tosca</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>SOS API User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>SOS API User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>SOS API Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>SOS API Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Standard</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Standard</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan PM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan PM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan! Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_GSC_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organisation_GSC_Office</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan! Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Login User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Login User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Plus User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Plus User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>National PM/Director</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>National PM/Director</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Project Contributor</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Project Contributor</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Project Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Project Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Service Account</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Service Account</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Service Account - Tosca</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Service Account - Tosca</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>SOS API Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>SOS API Read Only</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>SOS API User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>SOS API User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan PM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan PM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan! Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Organisation_MA_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.SOS_Organisation_MA</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan! Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Login User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Login User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Plus User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community Plus User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>National PM/Director</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Customer Community User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>National PM/Director</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Project Contributor</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Project Contributor</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Project Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Project Manager</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan PM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan PM</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan! Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan! Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>SOS_Youth_Can_Project_Lightning_Page1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>ampi__Project__c</pageOrSobjectType>
+        <recordType>ampi__Project__c.Sos_YouthCan_Project</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organization</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organization</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organization</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organization</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organization</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Organization</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>Super User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Project Coordinator Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner Plus</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>YouthCan Partner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Organisation_Record_Page7</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Youth_Can_Partner</recordType>
+        <type>Flexipage</type>
+        <profile>Project Owner</profile>
+    </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>ampi__Project__c</tabs>
+    <tabs>standard-Task</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>SOS_YouthCan_App_UtilityBar2</utilityBar>
+</CustomApplication>

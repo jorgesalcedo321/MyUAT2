@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a Matching Budget deliverable</description>
+    <fieldOverrides>
+        <field>Description__c</field>
+        <formula>&quot;PRAG_T30_Matching budget codes sample. Institutional donors often request the submission of budgets and financial reports in a specific format, which is usually directly provided by the donor. Ideally, the original project budget is first prepared in Navision and then “translated” into the donor specific format according to the given budget lines. If this is not possible, for one or the other reason, the donor budget codes will have to be linked subsequently with the Navision budget codes. Either way it is important to have a sheet which clearly shows how the budget lines between the Navision and the donor budget formats are matched and to follow this matching also throughout the financial reporting. T30 provides a sample to show how the matching of budget codes can be clearly presented.&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Link_To_Deliverable_Template__c</field>
+        <formula>&quot;https://soscv.sharepoint.com/:x:/s/WS_000037/EQuxup0hmpFFldy_7-lRvScBO_we0zlm9WtDUMsq-lL60g?e=k3Q62Y&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>&quot;Matching Budget&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Phase__c</field>
+        <literalValue>Formulation</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Project__c</field>
+        <formula>ampi__Project__c.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Responsible_Person__c</field>
+        <formula>ampi__Project__c.Owner:User.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>Not Done</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type__c</field>
+        <literalValue>Plan</literalValue>
+    </fieldOverrides>
+    <label>AD10: Matching Budget</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Deliverable__c</targetObject>
+    <targetParentField>Project__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

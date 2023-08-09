@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Launches the &quot;Create Monitoring Periods&quot; Flow which les the user bulk create ampi__Reporting_Period__c records based off a Catalogue of records stored in the Custom Metadata Type object, Catalogue_Reporting_Period__mdt</description>
+    <flowDefinition>Create_Monitoring_Periods_Flow</flowDefinition>
+    <label>Create Monitoring Periods</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

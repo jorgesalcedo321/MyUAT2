@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Conflict 4</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Conflict</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">4.- A localised internal or cross border conflict may be in progress. There may be guerrilla or insurgent groups in control of specific areas of the country; these groups pose a serious threat to the stability of the country. Some actors in the conflict may see INGOs as legitimate targets.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">4.- Un conflit interne ou transfrontalier localisé peut être en cours. Il peut y avoir des groupes de guérilla ou d&apos;insurgés pour contrôler des zones spécifiques du pays; Ces groupes constituent une menace sérieuse pour la stabilité du pays. Certains acteurs du conflit peuvent voir les Ingos comme cibles légitimes.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">4. - Прогресс может быть проведен локализованный внутренний или трансграничный конфликт. Там могут быть партизанские или повстанческие группы в контроле о конкретных областях страны; Эти группы представляют серьезную угрозу устойчивости страны. Некоторые актеры в конфликте могут видеть Ingos как законные цели.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">4.- Puede estar en curso un conflicto localizado interno o transfronterizo. Puede haber guerrilla o grupos insurgentes en control de áreas específicas del país; estos grupos representan una seria amenaza para la estabilidad del país. Algunos actores del conflicto pueden ver a las ONGI como objetivos legítimos.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+</CustomMetadata>

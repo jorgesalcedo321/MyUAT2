@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Data__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;Region: &quot; &amp;  Project__r.SOS_Region__c &amp; &quot; | SOS Impl Org: &quot;&amp;   Project__r.SOS_Implementing_Organisation__r.Name  &amp; &quot; | Status: &quot; &amp;  TEXT(Project__r.ampi__Project_Status__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Project Data</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

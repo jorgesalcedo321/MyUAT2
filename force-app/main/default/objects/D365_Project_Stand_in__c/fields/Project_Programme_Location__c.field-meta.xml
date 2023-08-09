@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Programme_Location__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Programme Location</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>ampi__Geographical_Area__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Programme</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ampi__Geographical_Area__c</referenceTo>
+    <relationshipLabel>D365 Project Stand-ins (Project Programme Location)</relationshipLabel>
+    <relationshipName>D365_Project_Stand_ins1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Crime &amp; Security 3</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Crime &amp; Security</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">3.- There are high levels of violent crime that impact foreigners and the local population. Organised criminal groups are very active and control a number of geographical areas. Intimidation and threat are reported regularly. The local security forces are generally inadequate and may suffer from systematic corruption.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">3.- Il existe des niveaux élevés de criminalité violente qui ont une incidence sur les étrangers et la population locale. Les groupes criminels organisés sont très actifs et contrôlent un certain nombre de zones géographiques. L&apos;intimidation et la menace sont signalées régulièrement. Les forces de sécurité locales sont généralement inadéquates et peuvent souffrir de corruption systématique.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">3. - Есть высокий уровень насильственных преступлений, которые влияют иностранцы и местное население. Организованные преступные группы очень активны и контролируют ряд географических районов. Пугация и угроза регулярно сообщаются. Местные силы безопасности, как правило, неадекватны и могут страдать от систематической коррупции.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">3.- Hay altos niveles de delitos violentos que afectan a los extranjeros y la población local. Los grupos criminales organizados son muy activos y controlan una serie de áreas geográficas. La intimidación y la amenaza se reportan regularmente. Las fuerzas de seguridad locales generalmente son inadecuadas y pueden sufrir corrupción sistemática.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+</CustomMetadata>

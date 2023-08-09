@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notification_of_Added_Team_Member</fullName>
+        <description>Notification of Added Team Member</description>
+        <protected>false</protected>
+        <recipients>
+            <field>User_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>welkins_table__Flow_Data_Table_Email_Templates/Notification_of_Added_Team_Member</template>
+    </alerts>
+</Workflow>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a Monitoring Plan deliverable</description>
+    <fieldOverrides>
+        <field>Description__c</field>
+        <formula>&quot;PRAG_T33_Monitoring framework tool compilation. The monitoring framework is developed at the project kick-off meeting (T31). A monitoring framework is necessary for assessing whether project results are achieved. The Monitoring Framework tool compilation contains: an explanation of what monitoring is, guidelines on how to develop a monitoring framework, a checklist with quality assessment criteria to be followed during implementation, and a monitoring matrix template. For the monitoring progress report, a separate tool (T32) is available. For more resources on Monitoring and Evaluation, see the Other Resources section of the PRAG.&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Link_To_Deliverable_Template__c</field>
+        <formula>&quot;https://soscv.sharepoint.com/:w:/r/sites/WS_000037/_layouts/15/Doc.aspx?sourcedoc=%7B77E8C8B9-5BB4-4AAB-AA01-9A5D6C13E7B6%7D&amp;file=T33_Monitoring%20framework%20tool%20compilation.docx&amp;action=default&amp;mobileredirect=true&amp;cid=db418b95-9baf-4764-926f-da518ed586db&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>&quot;Monitoring Plan&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Phase__c</field>
+        <literalValue>Formulation</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Project__c</field>
+        <formula>ampi__Project__c.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Responsible_Person__c</field>
+        <formula>ampi__Project__c.Owner:User.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>Not Done</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type__c</field>
+        <literalValue>Plan</literalValue>
+    </fieldOverrides>
+    <label>AD13: Monitoring Plan</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Deliverable__c</targetObject>
+    <targetParentField>Project__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

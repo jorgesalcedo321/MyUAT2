@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOS_Deliverables</fullName>
+    <columns>Project__c</columns>
+    <columns>NAME</columns>
+    <columns>Type__c</columns>
+    <columns>Description__c</columns>
+    <columns>Status__c</columns>
+    <columns>Deadline__c</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Responsible_Person__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Responsible_Person__c</field>
+        <operation>contains</operation>
+        <value>Daum</value>
+    </filters>
+    <label>SOS Deliverables</label>
+</ListView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Social &amp; Political 3</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Social &amp; Political</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">3.- Locations that experience periodic political &amp; economic instability and civil unrest; there are significant weaknesses in Government systems and capacity. There may be a number of incidents involving religious, community, social (alcohol, drugs and or sexual violence), sectarian, racial/tribal and political violence and the situation can be very volatile.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">3.- Les emplacements qui subissent une instabilité politique et économique périodique et des troubles civils; Il existe des faiblesses importantes dans les systèmes et les capacités gouvernementaux. Il peut y avoir un certain nombre d&apos;incidents impliquant des religieux, communautaires, sociaux (alcools, drogues et violences sexuelles), sectaires, raciaux / tribaux et politiques et la situation peut être très volatile.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">3. - Местоположение, которые испытывают периодическую политическую и экономическую нестабильность и гражданские беспорядки; Существуют значительные недостатки в государственных системах и потенциалах. Там может быть ряд инцидентов, связанных с религиозным, сообществом, социальным (алкоголем, наркотиками и сексуальным насилием), сектант, расовая / племенное и политическое насилие, и ситуация может быть очень волатильной.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">3.- Ubicaciones que experimentan inestabilidad política y económica periódica y disturbios civiles; Hay debilidades significativas en los sistemas y la capacidad del gobierno. Puede haber una serie de incidentes que involucran religiosos, comunitarios, sociales (alcohol, drogas y violencia sexual), violencia sectaria, racial / tribal y política y la situación puede ser muy volátil.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+</CustomMetadata>

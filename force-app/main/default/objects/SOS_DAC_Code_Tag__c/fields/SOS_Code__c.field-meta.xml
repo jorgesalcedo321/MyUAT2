@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOS_Code__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>SOS Code</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>You need to select an SOS Code</errorMessage>
+        <filterItems>
+            <field>SOS_DAC_Codes__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>SOS Code</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>SOS_DAC_Codes__c</referenceTo>
+    <relationshipLabel>Projects</relationshipLabel>
+    <relationshipName>SOS_Code_Tags</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

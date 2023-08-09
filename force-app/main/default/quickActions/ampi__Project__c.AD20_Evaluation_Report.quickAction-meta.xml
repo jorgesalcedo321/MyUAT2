@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates an Evaluation Report deliverable</description>
+    <fieldOverrides>
+        <field>Description__c</field>
+        <formula>&quot;PRAG_T39_Evaluation methodology guidelines. This tool provides definitions and explanations for the project evaluation phase. In addition tool 39a provides ToR for the launch of an evaluation study which will have to be adjusted in accordance with the specificities of the project and the nature of the contract. Tool 39b offers a management response and action plan template to be guide discussion and an adequate response by the responsible management representatives once the evaluation study has been finalised and issued.&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Link_To_Deliverable_Template__c</field>
+        <formula>&quot;https://soscv.sharepoint.com/:w:/r/sites/WS_000037/_layouts/15/Doc.aspx?sourcedoc=%7B890F064F-4DBD-4DBA-9619-97F7C99FFC8D%7D&amp;file=T39_Evaluation%20methodology%20guidelines.docx&amp;action=default&amp;mobileredirect=true&amp;cid=8f324f9b-3b38-4565-afab-df1369731cc5&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>&quot;Evaluation Report&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Phase__c</field>
+        <literalValue>Implemention</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Project__c</field>
+        <formula>ampi__Project__c.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Responsible_Person__c</field>
+        <formula>ampi__Project__c.Owner:User.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>Not Done</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type__c</field>
+        <literalValue>Evaluation</literalValue>
+    </fieldOverrides>
+    <label>AD20: Evaluation Report</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Deliverable__c</targetObject>
+    <targetParentField>Project__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

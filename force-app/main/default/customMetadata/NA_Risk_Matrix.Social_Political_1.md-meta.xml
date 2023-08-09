@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Social &amp; Political 1</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Social &amp; Political</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">1.- Location is stable and free of political, economic and civil unrest. There is negligible religious, community, sectarian, racial/tribal and political violence</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">1.- L&apos;emplacement est stable et exempt de troubles politiques, économiques et civils. Il y a des violences religieuses, communautaires, sectaires, raciales / tribales et politiques négligeables</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">1. Местоположение стабильно и свободен от политических, экономических и гражданских беспорядков. Существует незначительное религиозное, сообщество, сектантское, расовое / племенное и политическое насилие</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">1.- La ubicación es estable y libre de disturbios políticos, económicos y civiles. Hay violencia despreciable religiosa, comunitaria, sectaria, racial / tribal y política.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">1.0</value>
+    </values>
+</CustomMetadata>

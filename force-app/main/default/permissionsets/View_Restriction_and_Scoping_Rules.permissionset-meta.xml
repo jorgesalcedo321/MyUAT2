@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allow to the user to create Restriction and Scoping Rule</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>View Restriction and Scoping Rules</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ViewRestrictionAndScopingRules</name>
+    </userPermissions>
+</PermissionSet>

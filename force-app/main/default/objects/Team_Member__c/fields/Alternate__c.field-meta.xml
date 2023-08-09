@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alternate__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Please select who the alternate is in case the team member is not available.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please select who the alternate is in case the team member is not available.</inlineHelpText>
+    <label>Alternate</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Alternates</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

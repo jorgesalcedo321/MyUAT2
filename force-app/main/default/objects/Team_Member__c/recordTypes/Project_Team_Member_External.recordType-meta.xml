@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Team_Member_External</fullName>
+    <active>true</active>
+    <description>Clone for Project Team Member with only &quot;Project Contributor&quot; as Role</description>
+    <label>Project Team Member External</label>
+    <picklistValues>
+        <picklist>Role__c</picklist>
+        <values>
+            <fullName>CVI Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GER Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global MEL Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Global Project Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO Financial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO IPD Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO PPC Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR Financial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR IPD Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR PPC Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA Financial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA IPD Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSA representative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Contributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sos Youth Can Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Global MEL Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Global Project Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Key Account Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Regional Coordinator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Grant Distribution List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Distribution List</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

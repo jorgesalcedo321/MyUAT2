@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Distribution_List_Member</fullName>
+    <active>true</active>
+    <description>Someone who is associated with this Organisation and should therefore be added to all Projects that are run in collaboration with this Organisation.</description>
+    <label>Distribution List Member</label>
+    <picklistValues>
+        <picklist>Role__c</picklist>
+        <values>
+            <fullName>CVI Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GER Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO Financial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO IPD Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO PPC Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR Financial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR IPD Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR PPC Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA Financial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA IPD Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSA representative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Contributor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Grant Distribution List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Distribution List</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a Concept Note deliverable</description>
+    <fieldOverrides>
+        <field>Description__c</field>
+        <formula>&quot;PRAG_T09_Concept note template. The concept note template presented here is used in cases where the institutional donor does not have its own template. Otherwise, donor templates for concept notes should be used.  However, the Scope Definition Table (see Annex 1) has to be completed separately in any case, in order to allow data to be entered into the SOS Programme Planning database. The purpose of a concept note, from the institutional donor’s point of view, is to help applicants develop more competitive proposals and to save time by eliminating proposals that are not likely to be funded. Therefore, it is essential to use the concept note tp capture the interest of the institutional donor and demonstrate that the proposed idea is worthy of further consideration. Therefore, the first sentences of a concept note are critical, as you want the evaluators to continue reading!&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Link_To_Deliverable_Template__c</field>
+        <formula>&apos;https://soscv.sharepoint.com/:w:/s/WS_000067/EVo2Xxe3-YhHsHnxCqKsWDYBAMpvopimzgJQTQMkHWmIKw?e=4mfbpQ&apos;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>&quot;Concept Note&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Phase__c</field>
+        <literalValue>Identification</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Project__c</field>
+        <formula>ampi__Project__c.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Responsible_Person__c</field>
+        <formula>ampi__Project__c.Owner:User.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>Not Done</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type__c</field>
+        <literalValue>Plan</literalValue>
+    </fieldOverrides>
+    <label>AD06: Concept Note</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Deliverable__c</targetObject>
+    <targetParentField>Project__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

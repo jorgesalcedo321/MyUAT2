@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Risk Review Default</audienceName>
+    <container>SOS Member Association Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>$ampi__Risk_Assessment__c.Status__c</entityField>
+                <entityType>ampi__Risk_Assessment__c</entityType>
+                <fieldValue>Draft</fieldValue>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>$ampi__Risk_Assessment__c.Status__c</entityField>
+                <entityType>ampi__Risk_Assessment__c</entityType>
+                <fieldValue>Waiting for approval</fieldValue>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>$ampi__Risk_Assessment__c.Status__c</entityField>
+                <entityType>ampi__Risk_Assessment__c</entityType>
+                <fieldValue>Revision needed</fieldValue>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>12c4d03a-2caa-4d78-bc58-1e360392fc11</groupName>
+            <priority>3</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Risk_Review_National_Security_Context_Detail_Risk_Review_National_Security_Context_Detail_Page</targetValue>
+        </target>
+    </targets>
+</Audience>

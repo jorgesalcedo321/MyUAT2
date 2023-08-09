@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Pamir</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Pamir portal into ProDIGI for PSA application /agreement management</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Pamir User</label>
+    <license>Salesforce Platform</license>
+</PermissionSet>

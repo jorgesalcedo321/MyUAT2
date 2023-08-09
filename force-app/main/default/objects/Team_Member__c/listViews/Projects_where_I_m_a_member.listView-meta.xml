@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Projects_where_I_m_a_member</fullName>
+    <columns>Project__c</columns>
+    <columns>Role__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Runnng_User__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Projects Where I&apos;m a Member</label>
+</ListView>

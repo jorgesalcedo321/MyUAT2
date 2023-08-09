@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Humanitarian Space 2</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Humanitarian Space</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">2.- Humanitarian organsiations can generally operate freely and deliver a wide range of programs with some restrictions from the host Governement and other actors.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">2.- Les organsations humanitaires peuvent généralement fonctionner librement et fournir un large éventail de programmes avec certaines restrictions du gouvernement hôte et d&apos;autres acteurs.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">2.- Гуманитарные органции, как правило, могут вообще действовать свободно и предоставлять широкий спектр программ с некоторыми ограничениями со стороны руководства и других субъектов.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">2.- Las órganas humanitarias generalmente pueden operar libremente y ofrecer una amplia gama de programas con algunas restricciones del gobierno anfitrión y otros actores.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+</CustomMetadata>

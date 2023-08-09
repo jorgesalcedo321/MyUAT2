@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>User is able to edit the field ISP on P&amp;PU, Project Service Type and Project</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ampi__Geographical_Area__c.ISP_Available__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ampi__Project_Thematic_Area__c.ISP_Available__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ampi__Project__c.ISP_Available__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage International Sponsorship</label>
+</PermissionSet>

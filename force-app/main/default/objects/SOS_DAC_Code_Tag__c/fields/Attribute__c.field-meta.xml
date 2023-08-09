@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attribute__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+NOT(ISBLANK( DAC_Code__c )),
+DAC_Code__r.Attribute__c ,
+SOS_Code__r.Attribute__c 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Attribute</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Crime &amp; Security 5</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Crime &amp; Security</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">5.- There are extreme levels of violent crime that impact foreigners and the local populations. Organised criminal groups are dominant and control local populations and are in open conflict with the Government forces for control. The local security forces are minimal or non-existent and the Government has no control of law and order.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">5.- Il existe des niveaux extrêmes de criminalité violente qui ont une incidence sur les étrangers et les populations locales. Les groupes criminels organisés sont dominants et contrôlent les populations locales et sont en conflit ouvert avec les forces gouvernementales pour le contrôle. Les forces de sécurité locales sont minimes ou inexistantes et le gouvernement n&apos;a aucun contrôle de la loi et de l&apos;ordre.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">5. - Есть экстремальные уровни насильственных преступлений, которые влияют иностранцы и местные группы населения. Организованные преступные группы являются доминирующими и контролирующими местные группы населения и находятся в открытом конфликте с правительственными силами для контроля. Местные силы безопасности минимальны или не существуют, и правительство не контролирует право и порядок.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">5.- Hay niveles extremos de delitos violentos que afectan a los extranjeros y las poblaciones locales. Los grupos criminales organizados son dominantes y controlan las poblaciones locales y están en conflicto abierto con las fuerzas gubernamentales para el control. Las fuerzas de seguridad locales son mínimas o inexistentes y el gobierno no tiene control de la ley y el orden.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">5.0</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Conflict 5</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Conflict</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">5.- The country or location is in a state of open war. Guerrilla or insurgent groups in control of significant areas of the country and these groups pose a serious threat to the stability of the country. The conflict is indiscriminate and the threat to INGOs is critcal.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">5.- Le pays ou l&apos;emplacement est dans un état de guerre d&apos;ouverture. Des groupes de guérilla ou d&apos;insurgés en matière de contrôle des zones importantes du pays et de ces groupes constituent une menace sérieuse pour la stabilité du pays. Le conflit est indiscriminé et la menace d&apos;INGOS est Critcal.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">5. - Страна или местонахождение находится в состоянии открытой войны. Герризальские или повстанческие группы в контроле значительных областей страны и эти группы представляют серьезную угрозу стабильности страны. Конфликт неизбирался, и угроза ингос является критем.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">5.- El país o localidad se encuentra en estado de guerra abierta. Los grupos guerrilleros o insurgentes que controlan áreas importantes del país y estos grupos representan una seria amenaza para la estabilidad del país. El conflicto es indiscriminado y la amenaza a las ONG internacionales es crítica.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">5.0</value>
+    </values>
+</CustomMetadata>

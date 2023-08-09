@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proposed_SOS_CV_PU_Types__c</fullName>
+    <externalId>false</externalId>
+    <label>Proposed SOS CV PU Types</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&quot;Other</fullName>
+                <default>false</default>
+                <label>&quot;Other</label>
+            </value>
+            <value>
+                <fullName>YC-Youth Care-140</fullName>
+                <default>false</default>
+                <label>YC-Youth Care-140</label>
+            </value>
+            <value>
+                <fullName>OAC-Other Alternative Care-150</fullName>
+                <default>false</default>
+                <label>OAC-Other Alternative Care-150</label>
+            </value>
+            <value>
+                <fullName>SFC-SOS Family Care-160</fullName>
+                <default>false</default>
+                <label>SFC-SOS Family Care-160</label>
+            </value>
+            <value>
+                <fullName>FFC-Foster Family Care-170</fullName>
+                <default>false</default>
+                <label>FFC-Foster Family Care-170</label>
+            </value>
+            <value>
+                <fullName>SGH-Small Group Homes-180</fullName>
+                <default>false</default>
+                <label>SGH-Small Group Homes-180</label>
+            </value>
+            <value>
+                <fullName>FS-Family Strengthening-210</fullName>
+                <default>false</default>
+                <label>FS-Family Strengthening-210</label>
+            </value>
+            <value>
+                <fullName>EDU-Primary &amp; Secondary Education-310</fullName>
+                <default>false</default>
+                <label>EDU-Primary &amp; Secondary Education-310</label>
+            </value>
+            <value>
+                <fullName>CT-Care Training-320</fullName>
+                <default>false</default>
+                <label>CT-Care Training-320</label>
+            </value>
+            <value>
+                <fullName>ECD-Early Childhood Care &amp; Development-330</fullName>
+                <default>false</default>
+                <label>ECD-Early Childhood Care &amp; Development-330</label>
+            </value>
+            <value>
+                <fullName>EET-Employment &amp; Entrepreneurship Training-340</fullName>
+                <default>false</default>
+                <label>EET-Employment &amp; Entrepreneurship Training-340</label>
+            </value>
+            <value>
+                <fullName>HPP-Health Promotion &amp; Prevention-410</fullName>
+                <default>false</default>
+                <label>HPP-Health Promotion &amp; Prevention-410</label>
+            </value>
+            <value>
+                <fullName>MED-Medical Care-420</fullName>
+                <default>false</default>
+                <label>MED-Medical Care-420</label>
+            </value>
+            <value>
+                <fullName>ER-Emergency Response-510</fullName>
+                <default>false</default>
+                <label>ER-Emergency Response-510</label>
+            </value>
+            <value>
+                <fullName>OA-Other Activities-610</fullName>
+                <default>false</default>
+                <label>OA-Other Activities-610</label>
+            </value>
+            <value>
+                <fullName>IOR-International Office Region-910</fullName>
+                <default>false</default>
+                <label>IOR-International Office Region-910</label>
+            </value>
+            <value>
+                <fullName>IB-International Branch Office-911</fullName>
+                <default>false</default>
+                <label>IB-International Branch Office-911</label>
+            </value>
+            <value>
+                <fullName>IORC-International Office Region Cost Centre-919</fullName>
+                <default>false</default>
+                <label>IORC-International Office Region Cost Centre-919</label>
+            </value>
+            <value>
+                <fullName>IO-International Office-940</fullName>
+                <default>false</default>
+                <label>IO-International Office-940</label>
+            </value>
+            <value>
+                <fullName>IOC-International Office Cost Centre-949</fullName>
+                <default>false</default>
+                <label>IOC-International Office Cost Centre-949</label>
+            </value>
+            <value>
+                <fullName>NA-National Judicial Entity-950</fullName>
+                <default>false</default>
+                <label>NA-National Judicial Entity-950</label>
+            </value>
+            <value>
+                <fullName>NO-National Office-960</fullName>
+                <default>false</default>
+                <label>NO-National Office-960</label>
+            </value>
+            <value>
+                <fullName>NB-National Branch Office-961</fullName>
+                <default>false</default>
+                <label>NB-National Branch Office-961</label>
+            </value>
+            <value>
+                <fullName>NBFR-National Branch O. FR-962</fullName>
+                <default>false</default>
+                <label>NBFR-National Branch O. FR-962</label>
+            </value>
+            <value>
+                <fullName>NBAD-Advocacy-963</fullName>
+                <default>false</default>
+                <label>NBAD-Advocacy-963</label>
+            </value>
+            <value>
+                <fullName>NBFE-National Branch O. FE-964</fullName>
+                <default>false</default>
+                <label>NBFE-National Branch O. FE-964</label>
+            </value>
+            <value>
+                <fullName>PA-Promoting Association-970</fullName>
+                <default>false</default>
+                <label>PA-Promoting Association-970</label>
+            </value>
+            <value>
+                <fullName>SA-Supporting Association-980</fullName>
+                <default>false</default>
+                <label>SA-Supporting Association-980</label>
+            </value>
+            <value>
+                <fullName>HGA-Hermann Gmeiner Academy-990&quot;</fullName>
+                <default>false</default>
+                <label>HGA-Hermann Gmeiner Academy-990&quot;</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

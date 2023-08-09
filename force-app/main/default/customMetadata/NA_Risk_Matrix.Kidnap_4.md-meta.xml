@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Kidnap 4</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Kidnap</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">4.- There is a very high risk of kidnapping or hostage taking throughout the country and security forces may be complicit or directly involved</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">4.- Il existe un risque très élevé d&apos;enlèvement ou de prise d&apos;otage dans tout le pays et les forces de sécurité peuvent être complices ou directement impliqués</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">4.- Существует очень высокий риск похищения или заложника, принимая по всей стране, а силы безопасности могут быть замешаны или непосредственно вовлечены</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">4.- Existe un riesgo muy alto de secuestro o toma de rehenes en todo el país y las fuerzas de seguridad pueden ser complicadas o directamente involucradas</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+</CustomMetadata>

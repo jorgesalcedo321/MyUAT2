@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Humanitarian Space 3</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Humanitarian Space</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">3.- Humanitarian organisations are restricted in specific geographical and programatic areas and there may be resistance to their presence from sections of the community. The host Governement or other key actors may be obstructive to the operations of INGOs from certain nationalities</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">3.- Les organisations humanitaires sont limitées dans des domaines géographiques et programmatiques spécifiques et il peut y avoir une résistance à leur présence des sections de la Communauté. Le gouvernement hôte ou d&apos;autres acteurs clés peut être obstructif aux opérations d&apos;OING de certaines nationalités</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">3. Гуманитарные организации ограничены в конкретных географических и программических областях, и может быть устойчивость к их присутствию от разделов сообщества. Учреждение хоста или другие ключевые актеры могут быть обструктивными к операциям Инго от определенных национальностей</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">3.- Las organizaciones humanitarias están restringidas en áreas geográficas y programáticas específicas y puede haber resistencia a su presencia de secciones de la comunidad. El gobierno anfitrión u otros actores clave pueden ser obstructivos para las operaciones de las OPERIORES de ciertas nacionalidades.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Social &amp; Political 4</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Social &amp; Political</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">4.- Locations that expereince regular political &amp; economic instability and civil unrest. The political systems are inherently unstable and may collapse at any time.  Incidents involving religious, community, sectarian,racial/tribal and political violence and extremism are common an may directly target foreigners on occassions</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">4.- Sites présentant une instabilité politique et économique régulière et des troubles civils. Les systèmes politiques sont intrinsèquement instables et peuvent s&apos;effondrer à tout moment. Les incidents impliquant des violences religieuses, communautaires, sectaires, raciales / tribales et politiques sont communs, une puissance commune peut directement cibler les étrangers à des occasions</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">4. - Места, которые эксплуатируют регулярную политическую и экономическую нестабильность и гражданские беспорядки. Политические системы по своей природе нестабильны и могут рухнуть в любое время. Инциденты, связанные с религиозным, сообществом, сектантскими, расовыми / племенными и политическими насилиями и экстремизмом, являются общими могут напрямую целеваться иностранцами на случайных отношениях</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">4.- Ubicaciones que expiden la inestabilidad política y económica regular y el disturbio civil. Los sistemas políticos son inherentemente inestables y pueden colapsarse en cualquier momento. Los incidentes relacionados con la violencia religiosa, comunitaria, sectaria, racial / tribal y política y extremismo son comunes y pueden dirigir directamente a los extranjeros en ocasiones</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+</CustomMetadata>

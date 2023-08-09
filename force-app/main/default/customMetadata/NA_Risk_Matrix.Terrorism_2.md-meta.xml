@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Terrorism 2</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Terrorism</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">2.- There may be terrorist groups present but they have limited operational capabilities and acts of terrorism are extremely rare</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">2.- Il peut y avoir des groupes terroristes présents, mais ils ont des capacités opérationnelles limitées et des actes de terrorisme sont extrêmement rares</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">2.- Там могут быть террористические группы, но они имеют ограниченные оперативные возможности, а акты терроризма чрезвычайно редки</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">2.- Puede haber grupos terroristas presentes, pero tienen capacidades operativas limitadas y los actos de terrorismo son extremadamente raros.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+</CustomMetadata>

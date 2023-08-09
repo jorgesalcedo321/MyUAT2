@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Social &amp; Political 5</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Social &amp; Political</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">5.- Locations where local/government institutions have failed; political &amp; economic institutions have collapsed. Religious, community, sectarian, racial and political violence is widespread and affects all levels of society and directly targets foreigners.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">5.- Sites où les institutions locales / gouvernementales ont échoué; Les institutions politiques et économiques se sont effondrées. La violence religieuse, communautaire, sectaire, raciale et politique est répandue et affecte tous les niveaux de la société et cible directement les étrangers.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">5.- Местоположение, где местные / государственные учреждения потерпели неудачу; Политические и экономические учреждения рухнули. Религиозное, сообщество, сектантское, расовое и политическое насилие широко распространено и влияет на все уровни общества и непосредственно ориентированы на иностранцев.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">5.- Ubicaciones donde las instituciones locales / gubernamentales han fallado; Las instituciones políticas y económicas se han derrumbado. La violencia religiosa, comunitaria, sectaria, racial y política está muy extendida y afecta a todos los niveles de la sociedad y dirige directamente a los extranjeros.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">5.0</value>
+    </values>
+</CustomMetadata>

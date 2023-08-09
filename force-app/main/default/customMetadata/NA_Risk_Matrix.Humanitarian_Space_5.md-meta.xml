@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Humanitarian Space 5</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Humanitarian Space</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">5.- Humanitarian organisations cannot operate safely in the environment and operations are generally untenable. There is direct targeting of INGO by actors in the locations. The host Government or other actors are hostile to INGOs and have expelled them from operational areas</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">5.- Les organisations humanitaires ne peuvent pas fonctionner en toute sécurité dans l&apos;environnement et les opérations sont généralement intenables. Il y a un ciblage direct de l&apos;INGO par acteurs dans les emplacements. Le gouvernement hôte ou d&apos;autres acteurs sont hostiles aux OING et les ont expulsés des zones opérationnelles</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">5. Гуманитарные организации не могут безопасно действовать в окружающей среде, а операции, как правило, несоответствуют. В местах в местах есть прямое нацеливание инго. Хозяева или другие актеры являются враждебными для Ingos и изгнали их из оперативных районов</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">5.- Las organizaciones humanitarias no pueden operar de manera segura en el medio ambiente y las operaciones son generalmente insostenibles. Hay focalización directa de INGO por actores en las ubicaciones. El gobierno anfitrión u otros actores son hostiles a los ingos y los han expulsado de áreas operativas.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">5.0</value>
+    </values>
+</CustomMetadata>

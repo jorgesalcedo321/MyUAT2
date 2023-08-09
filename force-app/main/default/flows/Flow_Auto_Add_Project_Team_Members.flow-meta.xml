@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Adds a record to sCol_Project_Team</description>
+        <name>Add_Record_to_sCol_Project_Team_1</name>
+        <label>Add Record to sCol_Project_Team 1</label>
+        <locationX>846</locationX>
+        <locationY>32</locationY>
+        <assignmentItems>
+            <assignToReference>sCol_Project_Team</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>sObj_New_Team_Member</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_User_ID_to_Project_Team_Control_Variable_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds a record to sCol_Project_Team</description>
+        <name>Add_Record_to_sCol_Project_Team_2</name>
+        <label>Add Record to sCol_Project_Team 2</label>
+        <locationX>928</locationX>
+        <locationY>308</locationY>
+        <assignmentItems>
+            <assignToReference>sCol_Project_Team</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>sObj_New_Team_Member</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_User_ID_to_Project_Team_Control_Variable_2</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds a record to sCol_Project_Team</description>
+        <name>Add_Record_to_sCol_Project_Team_3</name>
+        <label>Add Record to sCol_Project_Team 3</label>
+        <locationX>1144</locationX>
+        <locationY>583</locationY>
+        <assignmentItems>
+            <assignToReference>sCol_Project_Team</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>sObj_New_Team_Member</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_User_ID_to_Project_Team_Control_Variable_3</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds a record to sCol_Project_Team</description>
+        <name>Add_Record_to_sCol_Project_Team_4</name>
+        <label>Add Record to sCol_Project_Team 4</label>
+        <locationX>1428</locationX>
+        <locationY>828</locationY>
+        <assignmentItems>
+            <assignToReference>sCol_Project_Team</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>sObj_New_Team_Member</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_User_ID_to_Project_Team_Control_Variable_4</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds the User ID to sCol_Control_Project_Team_Users</description>
+        <name>Add_User_ID_to_Project_Team_Control_Variable_1</name>
+        <label>Add User ID to Project Team Control Variable 1</label>
+        <locationX>846</locationX>
+        <locationY>164</locationY>
+        <assignmentItems>
+            <assignToReference>sCol_Control_Project_Team_Users</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>User_ID_in_Control_Collection_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds the User ID to the Project Team Control Variable</description>
+        <name>Add_User_ID_to_Project_Team_Control_Variable_2</name>
+        <label>Add User ID to Project Team Control Variable 2</label>
+        <locationX>927</locationX>
+        <locationY>433</locationY>
+        <assignmentItems>
+            <assignToReference>sCol_Control_Project_Team_Users</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>User_ID_in_Control_Collection_2</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds the User ID to the Project Team Control Variable list</description>
+        <name>Add_User_ID_to_Project_Team_Control_Variable_3</name>
+        <label>Add User ID to Project Team Control Variable 3</label>
+        <locationX>1144</locationX>
+        <locationY>709</locationY>
+        <assignmentItems>
+            <assignToReference>sCol_Control_Project_Team_Users</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>User_ID_in_Control_Collection_3</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Adds the User ID to the Project Control Variable list</description>
+        <name>Add_User_ID_to_Project_Team_Control_Variable_4</name>
+        <label>Add User ID to Project Team Control Variable 4</label>
+        <locationX>1428</locationX>
+        <locationY>988</locationY>
+        <assignmentItems>
+            <assignToReference>sCol_Control_Project_Team_Users</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>User_ID_in_Control_Collection_4</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning User ID, Record Type, and Project ID to the Team Member that will be created in the Create Record resource</description>
+        <name>Assign_Fields_to_New_Project_Team_Member_1</name>
+        <label>Assign Fields to New Project Team Member 1</label>
+        <locationX>644</locationX>
+        <locationY>32</locationY>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.User__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_TeamMemberRT_ProjectTeamMembers</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.Project__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sObj_Project.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Record_to_sCol_Project_Team_1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning User ID, Record Type, and Project ID to the Team Member that will be created in the Create Record resource</description>
+        <name>Assign_Fields_to_New_Project_Team_Member_2</name>
+        <label>Assign Fields to New Project Team Member 2</label>
+        <locationX>753</locationX>
+        <locationY>308</locationY>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.User__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_TeamMemberRT_ProjectTeamMembers</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.Project__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sObj_Project.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Record_to_sCol_Project_Team_2</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning User ID, Record Type, and Project ID to the Team Member that will be created in the Create Record resource</description>
+        <name>Assign_Fields_to_New_Project_Team_Member_3</name>
+        <label>Assign Fields to New Project Team Member 3</label>
+        <locationX>1010</locationX>
+        <locationY>583</locationY>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.User__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_TeamMemberRT_ProjectTeamMembers</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.Project__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sObj_Project.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Record_to_sCol_Project_Team_3</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigning User ID, Record Type, and Project ID to the Team Member that will be created in the Create Record resource</description>
+        <name>Assign_Fields_to_New_Project_Team_Member_4</name>
+        <label>Assign Fields to New Project Team Member 4</label>
+        <locationX>1283</locationX>
+        <locationY>828</locationY>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.User__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObj_Loop_Team_Member.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fx_TeamMemberRT_ProjectTeamMembers</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>sObj_New_Team_Member.Project__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>sObj_Project.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Record_to_sCol_Project_Team_4</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>What is the Record Type of the Project?</description>
+        <name>Project_Record_Type</name>
+        <label>Project Record Type?</label>
+        <locationX>208</locationX>
+        <locationY>623</locationY>
+        <defaultConnector>
+            <targetReference>Create_Team_Member_Records</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>RT&lt;&gt;=Grant</defaultConnectorLabel>
+        <rules>
+            <name>RT_Grant</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>sObj_Project.RecordTypeId</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>fx_ProjectRT_Grant</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lookup_Team_Members_from_SOS_Applicant_Organisation</targetReference>
+            </connector>
+            <label>RT=Grant</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the User ID already exists in the control collection</description>
+        <name>User_ID_in_Control_Collection_1</name>
+        <label>User ID in Control Collection 1?</label>
+        <locationX>276</locationX>
+        <locationY>42</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Fields_to_New_Project_Team_Member_1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>New User</defaultConnectorLabel>
+        <rules>
+            <name>Existing_User_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>sCol_Control_Project_Team_Users</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_sCol_Region_List</targetReference>
+            </connector>
+            <label>Existing User 1</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the User ID exists in the Control Collection</description>
+        <name>User_ID_in_Control_Collection_2</name>
+        <label>User ID in Control Collection 2?</label>
+        <locationX>494</locationX>
+        <locationY>318</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Fields_to_New_Project_Team_Member_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>New User</defaultConnectorLabel>
+        <rules>
+            <name>Existing_User_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>sCol_Control_Project_Team_Users</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_sCol_Impl_Org_List</targetReference>
+            </connector>
+            <label>Existing User 2</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the User ID exists in the Project Team Control Collection</description>
+        <name>User_ID_in_Control_Collection_3</name>
+        <label>User ID in Control Collection 3?</label>
+        <locationX>731</locationX>
+        <locationY>593</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Fields_to_New_Project_Team_Member_3</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>New User</defaultConnectorLabel>
+        <rules>
+            <name>Existing_User_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>sCol_Control_Project_Team_Users</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_sCol_App_Org_List</targetReference>
+            </connector>
+            <label>Existing User 3</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks if the User ID is already in the Control Collection</description>
+        <name>User_ID_in_Control_Collection_4</name>
+        <label>User ID in Control Collection 4?</label>
+        <locationX>958</locationX>
+        <locationY>834</locationY>
+        <defaultConnector>
+            <targetReference>Assign_Fields_to_New_Project_Team_Member_4</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>New User</defaultConnectorLabel>
+        <rules>
+            <name>Existing_User_4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>sCol_Control_Project_Team_Users</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>sObj_Loop_Team_Member.User__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Loop_sCol_Donor_Org_List</targetReference>
+            </connector>
+            <label>Existing User 4</label>
+        </rules>
+    </decisions>
+    <description>Automatically adds project team members to a Project based on distribution lists from associated organisations.</description>
+    <formulas>
+        <description>Record type ID for Grant Record Type on Projects</description>
+        <name>fx_ProjectRT_Grant</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.Project_RT_Grant}</expression>
+    </formulas>
+    <formulas>
+        <description>Refers to the custom label for Distribution List Member Record Type ID</description>
+        <name>fx_TeamMemberRT_DistributionListMembers</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.Team_Member_RT_Distribution_List_Member}</expression>
+    </formulas>
+    <formulas>
+        <description>Refers to the custom label for Project Team Member Record Type ID</description>
+        <name>fx_TeamMemberRT_ProjectTeamMembers</name>
+        <dataType>String</dataType>
+        <expression>{!$Label.Team_Member_RT_Project_Team_Member}</expression>
+    </formulas>
+    <formulas>
+        <description>Formula that calculates the Type field on Team Member based on the Record Type of the Project with which the Team Member will be associated</description>
+        <name>fx_TeamMemberTypeFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+{!sObj_Project.RecordTypeId}={!$Label.Project_RT_Grant},
+&quot;Grant Distribution List&quot;,
+&quot;Standard Distribution List&quot;)</expression>
+    </formulas>
+    <interviewLabel>Flow_Auto Add Project Team Members {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Flow_Auto Add Project Team Members</label>
+    <loops>
+        <description>Loops through the sCol_Region_List of Team Members where RT=Distribution List Member, Type=Type on Project RT, and SOS Applicant Organisation</description>
+        <name>Loop_sCol_App_Org_List</name>
+        <label>Loop sCol_App_Org_List</label>
+        <locationX>739</locationX>
+        <locationY>763</locationY>
+        <assignNextValueToReference>sObj_Loop_Team_Member</assignNextValueToReference>
+        <collectionReference>sCol_App_Org_List</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>User_ID_in_Control_Collection_3</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Lookup_Team_Members_from_SOS_External_Donor_Organisation</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loops through the sCol_Region_List of Team Members where RT=Distribution List Member, Type=Type on Project RT, and SOS External Donor Organisation</description>
+        <name>Loop_sCol_Donor_Org_List</name>
+        <label>Loop sCol_Donor_Org_List</label>
+        <locationX>962</locationX>
+        <locationY>1058</locationY>
+        <assignNextValueToReference>sObj_Loop_Team_Member</assignNextValueToReference>
+        <collectionReference>sCol_Donor_Org_List</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>User_ID_in_Control_Collection_4</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Create_Team_Member_Records</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loops through the sCol_Region_List of Team Members where RT=Distribution List Member, Type=Type on Project RT, and SOS Implementing Organisation</description>
+        <name>Loop_sCol_Impl_Org_List</name>
+        <label>Loop sCol_Impl_Org_List</label>
+        <locationX>495</locationX>
+        <locationY>544</locationY>
+        <assignNextValueToReference>sObj_Loop_Team_Member</assignNextValueToReference>
+        <collectionReference>sCol_Impl_Org_List</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>User_ID_in_Control_Collection_2</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Project_Record_Type</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <description>Loops through the sCol_Region_List of Team Members where RT=Distribution List Member, Type=Type on Project RT, and SOS Region</description>
+        <name>Loop_sCol_Region_List</name>
+        <label>Loop_sCol_Region_List</label>
+        <locationX>284</locationX>
+        <locationY>251</locationY>
+        <assignNextValueToReference>sObj_Loop_Team_Member</assignNextValueToReference>
+        <collectionReference>sCol_Region_List</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>User_ID_in_Control_Collection_1</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Lookup_Team_Members_from_SOS_Implementation_Org</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Create Team Member Records based on sCol_Project_Team</description>
+        <name>Create_Team_Member_Records</name>
+        <label>Create Team Member Records</label>
+        <locationX>217</locationX>
+        <locationY>1208</locationY>
+        <inputReference>sCol_Project_Team</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>Lookup Project based on Input Variable from Process Builder</description>
+        <name>Lookup_Project</name>
+        <label>Lookup Project</label>
+        <locationX>50</locationX>
+        <locationY>155</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Lookup_Team_Members_from_SOS_Region</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_ProjectId</elementReference>
+            </value>
+        </filters>
+        <object>ampi__Project__c</object>
+        <outputReference>sObj_Project</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>RecordTypeId</queriedFields>
+        <queriedFields>SOS_Implementing_Organisation__c</queriedFields>
+        <queriedFields>Applicant_Accountable_Organisation__c</queriedFields>
+        <queriedFields>External_Donor__c</queriedFields>
+        <queriedFields>SOS_Region_ID__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Lookup Team Members from Distribution Lists on SOS Applicant Organisation</description>
+        <name>Lookup_Team_Members_from_SOS_Applicant_Organisation</name>
+        <label>Lookup Team Members from SOS Applicant Organisation</label>
+        <locationX>515</locationX>
+        <locationY>763</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_sCol_App_Org_List</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Organisation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>sObj_Project.Applicant_Accountable_Organisation__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>fx_TeamMemberRT_DistributionListMembers</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>fx_TeamMemberTypeFormula</elementReference>
+            </value>
+        </filters>
+        <object>Team_Member__c</object>
+        <outputReference>sCol_App_Org_List</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>User__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <name>Lookup_Team_Members_from_SOS_External_Donor_Organisation</name>
+        <label>Lookup Team Members from SOS External Donor Organisation</label>
+        <locationX>738</locationX>
+        <locationY>975</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_sCol_Donor_Org_List</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Organisation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>sObj_Project.External_Donor__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>fx_TeamMemberRT_DistributionListMembers</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>fx_TeamMemberTypeFormula</elementReference>
+            </value>
+        </filters>
+        <object>Team_Member__c</object>
+        <outputReference>sCol_Donor_Org_List</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>User__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Lookup Team Members from Distribution Lists on SOS Implementation Org</description>
+        <name>Lookup_Team_Members_from_SOS_Implementation_Org</name>
+        <label>Lookup Team Members from SOS Implementation Org</label>
+        <locationX>252</locationX>
+        <locationY>465</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_sCol_Impl_Org_List</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Organisation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>sObj_Project.SOS_Implementing_Organisation__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>fx_TeamMemberRT_DistributionListMembers</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>fx_TeamMemberTypeFormula</elementReference>
+            </value>
+        </filters>
+        <object>Team_Member__c</object>
+        <outputReference>sCol_Impl_Org_List</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>User__c</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Lookup Team Members from Distribution Lists on SOS Region</description>
+        <name>Lookup_Team_Members_from_SOS_Region</name>
+        <label>Lookup Team Members from SOS Region</label>
+        <locationX>50</locationX>
+        <locationY>306</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_sCol_Region_List</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Organisation__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>sObj_Project.SOS_Region_ID__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121i000000cDnfAAE</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>fx_TeamMemberTypeFormula</elementReference>
+            </value>
+        </filters>
+        <object>Team_Member__c</object>
+        <outputReference>sCol_Region_List</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>User__c</queriedFields>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Lookup_Project</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Collection of Distribution List Members in an SOS Application Organisation</description>
+        <name>sCol_App_Org_List</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Team_Member__c</objectType>
+    </variables>
+    <variables>
+        <description>Used for de-duplicating existing users</description>
+        <name>sCol_Control_Project_Team_Users</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Collection of Distribution List Members in an SOS External Donor Organisation</description>
+        <name>sCol_Donor_Org_List</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Team_Member__c</objectType>
+    </variables>
+    <variables>
+        <description>Collection of Distribution List Members in an SOS Implementing Organisation</description>
+        <name>sCol_Impl_Org_List</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Team_Member__c</objectType>
+    </variables>
+    <variables>
+        <description>Collection of Project Team Records</description>
+        <name>sCol_Project_Team</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Team_Member__c</objectType>
+    </variables>
+    <variables>
+        <description>Collection of Distribution List Members in an SOS Region</description>
+        <name>sCol_Region_List</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Team_Member__c</objectType>
+    </variables>
+    <variables>
+        <description>Team Member Record from Distribution List</description>
+        <name>sObj_Loop_Team_Member</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Team_Member__c</objectType>
+    </variables>
+    <variables>
+        <description>New team member record based on information from the Loop Team Member variable</description>
+        <name>sObj_New_Team_Member</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Team_Member__c</objectType>
+    </variables>
+    <variables>
+        <description>Project record from Project Record Id in Process Builder that users will be subscribed to</description>
+        <name>sObj_Project</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ampi__Project__c</objectType>
+    </variables>
+    <variables>
+        <description>Gets the Project ID from the Process Builder</description>
+        <name>var_ProjectId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Infrastructure 4</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Infrastructure</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">4.- Transport, communications, healthcare and essential services are poorly resourced, and disrupted and failure is common. Safety and reliability standards are absent or not managed.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">4.- Les transports, les communications, les services de santé et les services essentiels sont mal des ressources et perturbés et les échecs sont courants. Les normes de sécurité et de fiabilité sont absentes ou non gérées.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">4.- Транспорт, коммуникации, здравоохранение и необходимые услуги плохо ресурсы, и нарушены и неудача распространена. Стандарты безопасности и надежности отсутствуют или не управляются.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">4.- Transporte, comunicaciones, atención médica y servicios esenciales son de mala calidad, y los interruptores y el fracaso son comunes. Los estándares de seguridad y confiabilidad están ausentes o no se gestionan.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+</CustomMetadata>

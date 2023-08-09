@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Risk Register On Draft</audienceName>
+    <container>SOS Member Association Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>$ampi__Risk_Register__c.Status__c</entityField>
+                <entityType>ampi__Risk_Register__c</entityType>
+                <fieldValue>Draft</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <entityField>$ampi__Risk_Register__c.InsertedByBulk__c</entityField>
+                <entityType>ampi__Risk_Register__c</entityType>
+                <fieldValue>false</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>4b48470b-89a8-4d69-8070-0338ff21741d</groupName>
+            <priority>2</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Location_Security_Risk_Assessment_Detail_Risk_Register_Detail_Draft_Page</targetValue>
+        </target>
+    </targets>
+</Audience>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Terrorism 5</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Terrorism</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">5.- Terrorist groups have strong presence, capabilities and operational reach; Attacks are targeted, with significant success and are in control of large areas of the country and Government Security Forces are unable to contain the situation.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">5.- Les groupes terroristes ont une forte présence, des capacités et une portée opérationnelle; Les attaques sont ciblées, avec un succès important et contrôlent de vastes zones du pays et des forces de sécurité gouvernementales sont incapables de contenir la situation.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">5. - террористические группы имеют сильное присутствие, возможности и оперативные досягаемости; Атаки нацелены со значительным успехом и контролируют большие районы страны страны, а силы государственной безопасности не могут содержать ситуацию.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">5.- Los grupos terroristas tienen fuertes presencia, capacidades y alcance operacional; Los ataques están dirigidos, con un éxito significativo y están en control de grandes áreas del país y las fuerzas de seguridad del gobierno no pueden contener la situación.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">5.0</value>
+    </values>
+</CustomMetadata>

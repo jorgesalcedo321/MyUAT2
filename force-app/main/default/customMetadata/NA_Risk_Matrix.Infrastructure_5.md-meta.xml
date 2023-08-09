@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Infrastructure 5</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Infrastructure</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">5.- Transport, communications, healthcare and essential services are severely degraded or non-existent. Infrastructures have generally collapsed or have been destroyed.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">5.- Les transports, les communications, les services de santé et les services essentiels sont gravement dégradés ou inexistants. Les infrastructures se sont généralement effondrées ou ont été détruites.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">5. - Транспорт, коммуникации, здравоохранение и необходимые услуги серьезно ухудшаются или не существуют. Инфраструктуры обычно рухнули или были разрушены.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">5.- El transporte, las comunicaciones, la atención médica y los servicios esenciales se degradan o inexistentes. Las infraestructuras generalmente se han derrumbado o han sido destruidas.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">5.0</value>
+    </values>
+</CustomMetadata>

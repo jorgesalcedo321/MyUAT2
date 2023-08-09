@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Different to MAs or GSC</audienceName>
+    <container>SOS Member Association Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>RecordType.DeveloperName</entityField>
+                <entityType>Account</entityType>
+                <fieldValue>SOS_Organisation_MA</fieldValue>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>FieldBased</type>
+        </criterion>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>RecordType.DeveloperName</entityField>
+                <entityType>Account</entityType>
+                <fieldValue>Organisation_GSC_Office</fieldValue>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>f01c04ac-6533-4ecf-9b89-861d2ac7bca0</groupName>
+            <priority>2</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Organisation_Detail_Organisation_Not_MAs_Page</targetValue>
+        </target>
+    </targets>
+</Audience>

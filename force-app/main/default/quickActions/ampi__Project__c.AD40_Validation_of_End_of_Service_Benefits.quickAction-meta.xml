@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creates a Validation of End of Service Benefits deliverable</description>
+    <fieldOverrides>
+        <field>Link_To_Deliverable_Template__c</field>
+        <formula>&quot;Exit strategy: https://soscv.sharepoint.com/sites/WS_000067/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FWS%5F000067%2FShared%20Documents%2F4%2DUse%2Dresults%2Dto%2Dmanage%2FT15%2DExit%2Dstrategy&amp;viewid=236b231a%2D3df5%2D4d07%2D9dbd%2Dbbcf86137ab8&quot;
+&amp; BR() &amp; BR() &amp;
+&quot;Estimation Excel: https://soscv.sharepoint.com/sites/WS_000067/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FWS%5F000067%2FShared%20Documents%2F1%2DPlan%2Dfor%2Dresults%2FPP%2DAttachment%2DEstimations%2Dexcel&amp;viewid=236b231a%2D3df5%2D4d07%2D9dbd%2Dbbcf86137ab8&quot;
+&amp; BR() &amp; BR() &amp;
+&quot;Validation of EoI: No template&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>&quot;Validation of End of Service Benefits&quot;</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Phase__c</field>
+        <literalValue>Closure</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Project__c</field>
+        <formula>ampi__Project__c.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Responsible_Person__c</field>
+        <formula>ampi__Project__c.Owner:User.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status__c</field>
+        <literalValue>Not Done</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Type__c</field>
+        <literalValue>Validation</literalValue>
+    </fieldOverrides>
+    <label>AD40: Validation of End of Service Benefits</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Name</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Deliverable__c</targetObject>
+    <targetParentField>Project__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

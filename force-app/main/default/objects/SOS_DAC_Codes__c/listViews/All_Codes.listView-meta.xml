@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Codes</fullName>
+    <columns>NAME</columns>
+    <columns>Attribute__c</columns>
+    <columns>Definition__c</columns>
+    <columns>Proposed_SOS_CV_PU_Types__c</columns>
+    <columns>Corresponding_Previous_SOS_Attribute__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Codes</label>
+</ListView>

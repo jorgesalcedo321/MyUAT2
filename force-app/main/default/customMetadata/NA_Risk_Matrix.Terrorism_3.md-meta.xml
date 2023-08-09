@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Terrorism 3</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Terrorism</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">3.- There are terrosist groups with significant operational capabilities and the country is prone to sporadic acts of  non targeted ( wrong place wrong time) terrorism occuring</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">3.- Il existe des groupes terroristes ayant des capacités opérationnelles importantes et que le pays est sujet aux actes sporadiques de terrorisme non ciblé (mauvais endroit incorrect).</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">3. - Есть туросистские группы со значительными эксплуатационными возможностями, и страна подвержена спорадическим актам нецелесообразных (неправильное место неправильного времени) терроризм, возникающий</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">3.- Hay grupos terrosistas con capacidades operativas significativas y el país es propenso a los actos esporádicos de un terrorismo no dirigido (lugar incorrecto).</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">3.0</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Terrorism 4</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Terrorism</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">4.- Terrorist groups have strong presence, capabilities and operational reach; Attacks are targeted, with significant success.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">4.- Les groupes terroristes ont une forte présence, des capacités et une portée opérationnelle; Les attaques sont ciblées, avec un succès important.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">4.- Террористические группы имеют сильное присутствие, возможности и оперативный доход; Атаки нацелены со значительным успехом.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">4.- Los grupos terroristas tienen fuertes presencia, capacidades y alcance operacional; Los ataques están dirigidos, con un éxito significativo.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+</CustomMetadata>

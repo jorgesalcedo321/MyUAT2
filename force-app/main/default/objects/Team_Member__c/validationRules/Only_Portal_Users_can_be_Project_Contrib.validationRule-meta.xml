@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_Portal_Users_can_be_Project_Contrib</fullName>
+    <active>true</active>
+    <description>Ensures that Users can only add Team Members with Role = Project Contributor if the User being added is a Portal user.</description>
+    <errorConditionFormula>OR(TEXT(Role__c) = &quot;Project Contributor&quot;,
+TEXT(Role__c) =&quot;&apos;YouthCan! Global MEL Advisor&quot;,
+TEXT(Role__c) =&quot;&apos;YouthCan! Global Project Manager&quot;,
+TEXT(Role__c) =&quot;&apos;YouthCan! Key Account Manager&quot;,
+TEXT(Role__c) =&quot;&apos;YouthCan! Regional Coordinator&quot;,
+TEXT(Role__c) =&quot;&apos;YouthCan! Coordinator&quot;,
+TEXT(Role__c) =&quot;&apos;YouthCan! Partner&quot;
+) &amp;&amp; ISBLANK(User__r.ContactId)</errorConditionFormula>
+    <errorDisplayField>Role__c</errorDisplayField>
+    <errorMessage>Only MA Portal Users can be Project Contributors. Please choose a different Role for this User OR ensure that the User has been enabled as a Portal User before trying to add them as a Team Member with this role.</errorMessage>
+</ValidationRule>

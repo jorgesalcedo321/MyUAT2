@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DAC_Code</fullName>
+    <active>true</active>
+    <label>DAC Code</label>
+    <picklistValues>
+        <picklist>Proposed_SOS_CV_PU_Types__c</picklist>
+        <values>
+            <fullName>%22Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT-Care Training-320</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ECD-Early Childhood Care %26 Development-330</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDU-Primary %26 Secondary Education-310</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EET-Employment %26 Entrepreneurship Training-340</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ER-Emergency Response-510</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FFC-Foster Family Care-170</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FS-Family Strengthening-210</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HGA-Hermann Gmeiner Academy-990%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HPP-Health Promotion %26 Prevention-410</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IB-International Branch Office-911</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO-International Office-940</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOC-International Office Cost Centre-949</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR-International Office Region-910</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IORC-International Office Region Cost Centre-919</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MED-Medical Care-420</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA-National Judicial Entity-950</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NB-National Branch Office-961</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBAD-Advocacy-963</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBFE-National Branch O%2E FE-964</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NBFR-National Branch O%2E FR-962</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO-National Office-960</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OA-Other Activities-610</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OAC-Other Alternative Care-150</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA-Promoting Association-970</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SA-Supporting Association-980</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SFC-SOS Family Care-160</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SGH-Small Group Homes-180</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YC-Youth Care-140</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users with this Custom Permission get to bypass the Validation rule on Risks where RT = &quot;Catalogue Risk&quot;, so that they can edit them</description>
+    <isLicensed>false</isLicensed>
+    <label>Manage Catalogue Risks</label>
+</CustomPermission>

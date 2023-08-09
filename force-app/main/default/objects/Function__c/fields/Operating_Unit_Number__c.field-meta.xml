@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_Unit_Number__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>This is the coded acronym</description>
+    <externalId>false</externalId>
+    <label>Operating Unit Number</label>
+    <length>15</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

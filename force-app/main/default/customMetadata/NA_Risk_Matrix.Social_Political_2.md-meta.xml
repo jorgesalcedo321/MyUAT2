@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Social &amp; Political 2</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Social &amp; Political</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">2.- Locations are generally stable but there may be times of political &amp; economic instability and civil unrest. There may be isolated instances of religious, community, sectarian, racial/tribal and political violence.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">2.-- Les emplacements sont généralement stables, mais il peut y avoir des moments d&apos;instabilité politique et économique et des troubles civils. Il peut y avoir des cas isolés de violences religieuses, communautaires, sectaires, raciales / tribales et politiques.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">2. Местоположение, как правило, стабильны, но могут быть времена политической и экономической нестабильности и гражданских беспорядков. Там могут быть изолированные экземпляры религиозных, сообществ, сектантских, расовых / племенных и политических насилия.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">2.- Las ubicaciones son generalmente estables, pero puede haber momentos de inestabilidad política y económica y disturbios civiles. Puede haber casos aislados de violencia religiosa, comunitaria, sectaria, racial / tribal y política.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+</CustomMetadata>

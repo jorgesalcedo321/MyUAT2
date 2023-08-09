@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Humanitarian Space 4</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Humanitarian Space</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">4.- Humanitarian operations are severely restricted and there is open hostility to the presence of INGOs. There may be direct targeting of INGOs by militant groups.  The host Government or other actors may actively obstruct INGO operations and threaten expulsion.</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">4.- Les opérations humanitaires sont sévèrement restreintes et une hostilité ouverte est une hostilité ouverte à la présence d&apos;INGOS. Il peut y avoir un ciblage direct des OING par des groupes militants. Le gouvernement hôte ou d&apos;autres acteurs peut obstruer activement les opérations d&apos;Ingo et menacer l&apos;expulsion.</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">4. Гуманитарная деятельность серьезно ограничена, и есть открытая враждебность к наличию инго. Там может быть прямой нацеливание инго в боевых группах. Хозяева или другие субъекты могут активно препятствовать операциям Ingo и угрожают изгнанию.</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">4.- Las operaciones humanitarias están severamente restringidas y hay hostilidad abierta a la presencia de ingos. Puede haber focalización directa de los ingos por grupos militantes. El gobierno anfitrión u otros actores pueden obstruir activamente las operaciones de Ingo y amenazar la expulsión.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+</CustomMetadata>

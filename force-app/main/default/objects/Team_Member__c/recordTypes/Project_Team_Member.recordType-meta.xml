@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Team_Member</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Project_Team_Member_Compact_Layout</compactLayoutAssignment>
+    <description>Someone who is Associated with this Organisation via a Project. DO NOT use this Record Type from an Organisation record - ONLY from a Project record</description>
+    <label>Project Team Member</label>
+    <picklistValues>
+        <picklist>Role__c</picklist>
+        <values>
+            <fullName>CVI Rep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GER Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO Financial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO IPD Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO PPC Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR Financial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR IPD Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IOR PPC Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA Financial Controller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA IPD Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PSA representative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Programme Planning Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Contributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sustainable Construction Solution Project Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Coordinator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Global MEL Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Global Project Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Key Account Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YouthCan%21 Regional Coordinator</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Grant Distribution List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard Distribution List</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

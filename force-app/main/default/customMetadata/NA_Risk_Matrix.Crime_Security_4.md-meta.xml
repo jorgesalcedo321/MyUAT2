@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Crime &amp; Security 4</label>
+    <protected>false</protected>
+    <values>
+        <field>Category__c</field>
+        <value xsi:type="xsd:string">Crime &amp; Security</value>
+    </values>
+    <values>
+        <field>Description_English__c</field>
+        <value xsi:type="xsd:string">4.- There are very high levels of violent crime that impact foreigners and the local population. Organised criminal groups are very strong and can operate freely. The level of violent acts is very high. The local security forces are inadequate and there are regular abuses of the legal process due to widespread corruption</value>
+    </values>
+    <values>
+        <field>Description_French__c</field>
+        <value xsi:type="xsd:string">4.- Il existe des niveaux très élevés de criminalité violente qui ont une incidence sur les étrangers et la population locale. Les groupes criminels organisés sont très forts et peuvent fonctionner librement. Le niveau d&apos;actes violents est très élevé. Les forces de sécurité locales sont insuffisantes et il y a des abus réguliers du processus juridique en raison de la corruption généralisée</value>
+    </values>
+    <values>
+        <field>Description_Russian__c</field>
+        <value xsi:type="xsd:string">4. - Есть очень высокие уровни насильственных преступлений, которые влияют иностранцы и местное население. Организованные преступные группы очень сильны и могут работать свободно. Уровень насильственных действий очень высок. Местные силы безопасности неадекватны, и существуют регулярные нарушения правового процесса из-за распространенного коррупции</value>
+    </values>
+    <values>
+        <field>Description_Spanish__c</field>
+        <value xsi:type="xsd:string">4.- Hay niveles muy altos de delitos violentos que afectan a los extranjeros y la población local. Los grupos criminales organizados son muy fuertes y pueden operar libremente. El nivel de los actos violentos es muy alta. Las fuerzas de seguridad locales son inadecuadas y hay abusos regulares del proceso legal debido a la corrupción generalizada.</value>
+    </values>
+    <values>
+        <field>Score__c</field>
+        <value xsi:type="xsd:double">4.0</value>
+    </values>
+</CustomMetadata>

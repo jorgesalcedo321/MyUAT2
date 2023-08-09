@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Application_Package__c</fullName>
+    <externalId>false</externalId>
+    <formula>(TEXT(Type__c) == &apos;Budget&apos; &amp;&amp; TEXT(Phase__c) == &apos;Formulation&apos;) || (TEXT(Type__c) == &apos;Agreement&apos;) || (TEXT(Type__c) == &apos;Concept note&apos;) || (TEXT(Type__c) == &apos;Framework&apos;)</formula>
+    <label>Is_Application_Package</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

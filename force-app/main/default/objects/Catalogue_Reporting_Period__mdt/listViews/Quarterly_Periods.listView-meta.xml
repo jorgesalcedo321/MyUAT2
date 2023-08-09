@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quarterly_Periods</fullName>
+    <columns>MasterLabel</columns>
+    <columns>DeveloperName</columns>
+    <columns>Report_Type__c</columns>
+    <columns>Reporting_Period_End_Date__c</columns>
+    <columns>Reporting_Period_Start_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Report_Type__c</field>
+        <operation>equals</operation>
+        <value>Quarterly</value>
+    </filters>
+    <label>Quarterly Periods</label>
+    <language>en_US</language>
+</ListView>

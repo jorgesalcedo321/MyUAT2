@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Service_Type__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup field to specify the parent project service type</description>
+    <externalId>false</externalId>
+    <label>Project Service Type</label>
+    <referenceTo>ampi__Project_Thematic_Area__c</referenceTo>
+    <relationshipLabel>Project Indicator Service Types</relationshipLabel>
+    <relationshipName>Project_Indicator_Service_Types</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

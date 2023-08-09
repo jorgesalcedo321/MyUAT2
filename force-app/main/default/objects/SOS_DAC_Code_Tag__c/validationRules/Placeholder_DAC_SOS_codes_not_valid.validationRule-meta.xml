@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Placeholder_DAC_SOS_codes_not_valid</fullName>
+    <active>true</active>
+    <description>Placeholder DAC SOS codes were used for data migration but should no longer be selectable.</description>
+    <errorConditionFormula>OR(DAC_Code__r.Name = &quot;Placeholder DAC Code&quot;, SOS_Code__r.Name = &quot;Placeholder SOS Code&quot;)</errorConditionFormula>
+    <errorMessage>Placeholder DAC/SOS are no longer valid and cannot be selected. Please select a valid DAC or SOS code.</errorMessage>
+</ValidationRule>

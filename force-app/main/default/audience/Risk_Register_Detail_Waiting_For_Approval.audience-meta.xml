@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Risk Register Detail Waiting For Approval</audienceName>
+    <container>SOS Member Association Portal</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>$ampi__Risk_Register__c.Status__c</entityField>
+                <entityType>ampi__Risk_Register__c</entityType>
+                <fieldValue>Waiting for approval</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>4b48470b-89a8-4d69-8070-0338ff21741d</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Location_Security_Risk_Assessment_Detail_Risk_Register_Detail_Waiting_fo_Approval_Page</targetValue>
+        </target>
+    </targets>
+</Audience>
