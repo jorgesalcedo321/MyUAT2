@@ -1,0 +1,145 @@
+<template>
+	<lightning-spinner if:true={isLoading} alternative-text="loading..." variant="brand" size="small">
+	</lightning-spinner>
+	<div class={sectionClass}>
+		<h3 class="slds-section__title" if:true={showContentInSection}>
+			<button class="slds-button slds-section__title-action" onclick={handleClick}>
+                <lightning-icon
+                    icon-name="utility:switch"
+                    class="slds-button__icon slds-button__icon_left slds-section__title-action-icon"
+                    size="x-small"
+                ></lightning-icon>
+                <span class="slds-truncate" title={sectionLabel}>{sectionLabel}</span>
+            </button>
+		</h3>
+		<div class="slds-section__content" style="margin-top: -10px">
+			<slot>
+				<lightning-record-view-form record-id={recordId} object-api-name={objectApiName} onerror={handleError}
+					if:false={editFormVisible}>
+					<div class={ClassForm}>
+						<lightning-layout multiple-rows="true" style="width: 100%">
+							<template for:each={allDataContainer} for:item="info">
+								<template if:true={info.isColorComponent}>
+									<lightning-layout-item key={info.index} size="6" padding="around-small"
+										class="styleClass">
+										<!-- <div class="slds-col slds-size_1-of-2 coloring-component" key={info.index}> -->
+										<c-coloring-combobox key={info.index} is-in-form="true" record-id={recordId}
+											object-name={objectApiName} picklist-datafield={info.name}
+											color-codes={info.colors} oncolorvalue={handleColorValueChange} onclick={showEditForm}>
+										</c-coloring-combobox>
+										<!-- <lightning-button-icon class="slds-float_right margin-top" icon-name="utility:edit" variant="bare" onclick={showEditForm} alternative-text="Edit">
+                            </lightning-button-icon> -->
+										<!-- </div> -->
+									</lightning-layout-item>
+								</template>
+								<template if:false={info.isColorComponent}>
+									<lightning-layout-item key={info.index} size="6" padding="around-small"
+										class="styleClass">
+										<!-- <div class="slds-col slds-size_1-of-2 common-component" key={info.index}> -->
+										<lightning-output-field key={info.index} field-name={info.name}
+											field-class={info.className}>
+                                            <span if:true={info.avatar} style="background-color: #65CAE4; float:left" class="record-avatar-container slds-avatar slds-avatar_x-small slds-avatar--circle icon slds-m-right_xx-small slds-avatar_profile-image-small">
+                                            </span>
+											<!-- <lightning-formatted-date-time if:true={info.showDateField} value={info.dateField} year="numeric" month="2-digit" day="2-digit" hour="2-digit"
+                                        		minute="2-digit" hour12="false"></lightning-formatted-date-time> -->
+											<lightning-formatted-date-time if:true={info.showDateField} value={info.dateField} year="numeric" month="2-digit" day="2-digit" hour="2-digit"
+                                        		minute="2-digit" hour12="false"></lightning-formatted-date-time>
+											<lightning-button-icon if:false={info.readonly} class="slds-float_right"
+												icon-name="utility:edit" variant="bare" onclick={showEditForm}
+												alternative-text="Edit">
+											</lightning-button-icon>
+										</lightning-output-field>
+										<!-- </div> -->
+									</lightning-layout-item>
+								</template>
+							</template>
+						</lightning-layout>
+					</div>
+				</lightning-record-view-form>
+				<lightning-record-edit-form record-id={recordId} object-api-name={objectApiName}
+					onsuccess={handleSuccess} onerror={handleError} onsubmit={handleSubmit} if:true={editFormVisible}>
+					<lightning-messages> </lightning-messages>
+					<div class={ClassForm}>
+						<lightning-layout multiple-rows="true" style="width: 100%">
+							<template for:each={allDataContainer} for:item="info">
+								<template if:true={info.isColorComponent}>
+									<!-- <div class="slds-col slds-size_1-of-2 coloring-component" key={info.index}> -->
+									<lightning-layout-item key={info.index} size="6" padding="around-small"
+										class="styleClass">
+										<c-coloring-combobox edit-mode={editFormVisible} key={info.index}
+											is-in-form="true" record-id={recordId} object-name={objectApiName}
+											picklist-datafield={info.name} color-codes={info.colors}
+											oncolorvalue={handleColorValueChange}>
+										</c-coloring-combobox>
+										<!-- </div> -->
+									</lightning-layout-item>
+								</template>
+								<template if:false={info.isColorComponent}>
+									<!-- <div class="slds-col slds-size_1-of-2 common-component" key={info.index}> -->
+									<lightning-layout-item key={info.index} size="6" padding="around-small"
+										class="styleClass">
+                                        <template if:false={info.isRelatedComponent}>
+											<lightning-input-field key={info.index} field-name={info.name}
+												required={info.required} if:false={info.readonly}></lightning-input-field>
+											<lightning-output-field key={info.index} field-name={info.name}
+												field-class="slds-size_4-of-5" if:true={info.readonly}></lightning-output-field>
+                                        </template>
+										<template if:true={info.isRelatedComponent}>
+											<lightning-input-field key={info.index} field-name={info.name}
+												required={info.required} if:false={info.readonly} value={relatedId}></lightning-input-field>
+											<lightning-output-field key={info.index} field-name={info.name}
+												field-class="slds-size_4-of-5" if:true={info.readonly} value={relatedId}></lightning-output-field>
+										</template>
+									</lightning-layout-item>
+									<!-- </div> -->
+								</template>
+							</template>
+							<div class="slds-grid quickActionFooter" if:true={isQuickAction}>
+									<lightning-button data-id="Save_Button" variant="brand" label="Save" title="Save" type="submit"
+										class="slds-m-left_x-small"></lightning-button>
+							</div>
+						</lightning-layout>
+						<div class="slds-col slds-size_1-of-1 slds-docked-form-footer" if:false={isQuickAction}>
+							<button class="slds-button slds-button_icon slds-button_icon slds-button_icon-error" title="We hit a snag" if:true={errorExist}>
+                        <svg focusable="false" data-key="error" aria-hidden="true" viewBox="0 0 52 52" class="slds-icon slds-icon-text-error slds-icon_small"><g><path d="M26 2C12.8 2 2 12.8 2 26s10.8 24 24 24 24-10.8 24-24S39.2 2 26 2zM8 26c0-9.9 8.1-18 18-18 3.9 0 7.5 1.2 10.4 3.3L11.3 36.4C9.2 33.5 8 29.9 8 26zm18 18c-3.9 0-7.5-1.2-10.4-3.3l25.1-25.1C42.8 18.5 44 22.1 44 26c0 9.9-8.1 18-18 18z"></path></g></svg>
+                        <span class="slds-assistive-text">We hit a snag.</span>
+                    </button>
+							<lightning-button variant="neutral" label="Cancel" title="Cancel" onclick={refreshComponent}
+								class="slds-m-left_x-small"></lightning-button>
+							<lightning-button variant="brand" data-id="Save_Button" label="Save" title="Save" type="submit"
+								class="slds-m-left_x-small"></lightning-button>
+							<section aria-describedby="dialog-body-id-5" aria-labelledby="dialog-heading-id-2"
+								class="slds-popover slds-popover_error slds-nubbin_bottom-left" role="dialog"
+								style="position:absolute;bottom:56px;left:50%;margin-left:62px;transform:translateX(-50%)"
+								if:true={errorExist}>
+								<button type="button" class="slds-button slds-button_icon slds-button_icon-small slds-float_right slds-popover__close slds-button_icon-inverse" title="Close dialog">
+                        <svg focusable="false" data-key="close" aria-hidden="true" viewBox="0 0 52 52" class="slds-button__icon slds-button__icon_small slds-button_icon-inverse"><g><path d="M31 25.4l13-13.1c.6-.6.6-1.5 0-2.1l-2-2.1c-.6-.6-1.5-.6-2.1 0L26.8 21.2c-.4.4-1 .4-1.4 0L12.3 8c-.6-.6-1.5-.6-2.1 0l-2.1 2.1c-.6.6-.6 1.5 0 2.1l13.1 13.1c.4.4.4 1 0 1.4L8 39.9c-.6.6-.6 1.5 0 2.1l2.1 2.1c.6.6 1.5.6 2.1 0L25.3 31c.4-.4 1-.4 1.4 0l13.1 13.1c.6.6 1.5.6 2.1 0L44 42c.6-.6.6-1.5 0-2.1L31 26.8c-.4-.4-.4-1 0-1.4z"></path></g></svg>
+                        <span class="slds-assistive-text">Close dialog</span>
+                        </button>
+								<header class="slds-popover__header">
+									<div class="slds-media slds-media_center slds-has-flexi-truncate ">
+										<div class="slds-media__figure">
+											<span class="slds-icon_container slds-icon-utility-error">
+                                <svg focusable="false" data-key="error" aria-hidden="true" viewBox="0 0 52 52" class="slds-icon slds-icon_x-small"><g><path d="M26 2C12.8 2 2 12.8 2 26s10.8 24 24 24 24-10.8 24-24S39.2 2 26 2zM8 26c0-9.9 8.1-18 18-18 3.9 0 7.5 1.2 10.4 3.3L11.3 36.4C9.2 33.5 8 29.9 8 26zm18 18c-3.9 0-7.5-1.2-10.4-3.3l25.1-25.1C42.8 18.5 44 22.1 44 26c0 9.9-8.1 18-18 18z"></path></g></svg>
+                            </span>
+										</div>
+										<div class="slds-media__body">
+											<h2 class="slds-truncate slds-text-heading_medium" id="dialog-heading-id-2"
+												title="We hit a snag.">
+												We hit a snag.</h2>
+										</div>
+									</div>
+								</header>
+								<div class="slds-popover__body" id="dialog-body-id-5">
+									<p>
+										{errorText}
+									</p>
+								</div>
+							</section>
+						</div>
+					</div>
+				</lightning-record-edit-form>
+			</slot>
+		</div>
+	</div>
+</template>

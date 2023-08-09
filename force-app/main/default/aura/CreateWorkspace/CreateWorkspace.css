@@ -1,0 +1,7 @@
+.THIS.slds-spinner_container {
+    z-index: 10000;
+    position: absolute;
+    top: 40%;
+    bottom: 40%;
+    background-color: transparent !important;
+}

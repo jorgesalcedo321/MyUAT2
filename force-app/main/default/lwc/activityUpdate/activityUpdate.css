@@ -1,0 +1,22 @@
+.coloring-picklist {
+    border-radius:2%;
+    border-color:lightgray;
+}
+
+.space-left {
+     margin-left: 25px;
+}
+
+.warning {
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.description {
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.hideComponent {
+    display:none;
+}

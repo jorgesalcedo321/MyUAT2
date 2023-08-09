@@ -1,0 +1,141 @@
+/*style*/
+.customSettings {
+    border: solid 1px lightgray; 
+    display: inline-block; 
+    width: 100%; 
+    margin-top:20px
+}
+.icon-risk-register {
+    /*--sds-c-icon-color-foreground: orange;*/
+    --sds-c-icon-color-background: #F2CF5B;
+}
+.lgc-bg {
+    background-color: rgb(242, 242, 242);
+}
+
+.lgc-bg-inverse {
+    background-color: rgb(22, 50, 92);
+}
+
+.cssBlack a:link {
+    color: black !important;
+}
+
+.cssBlack a:active {   color: black !important;}
+/*a:link {color: lightblue;}
+a:visited {color: #060235}
+a:hover {color: #FCFC0C}
+*/
+
+.autoHeight {
+    max-height: 300px;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.customHeight {
+    height: 55px;
+}
+
+.border-gray {
+    border: 1px solid #CCC;
+}
+
+.space-bottom {
+    margin-bottom: 15px
+}
+
+.height-min {
+    height: 20px;
+}
+
+.slds-m-bottom_x-large, .slds-m-bottom--x-large {
+    margin-bottom:0px !important;
+}
+
+[aria-current="page"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+
+.navStyle {
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+a.navStyle:link
+a.navStyle:visited
+a.navStyle:hover
+a.navStyle:active
+{
+    color: black !important;
+}
+/*MOVED TO WRAPPER STYLESHEET ON STATIC RESOURCES*/
+
+.color_impact_1 {
+		border-radius: 50%;
+    color: #009900;
+    background-color: #009900;
+		width: 16px;
+    height: 16px;
+    margin: 5px;
+    display: block;
+}
+
+.color_impact_2 {
+		border-radius: 50%;
+    color: #33cc00;
+    background-color: #33cc00;
+		width: 16px;
+    height: 16px;
+    margin: 5px;
+    display: block;
+}
+
+.color_impact_3 {
+		border-radius: 50%;
+    color: #ffcc66;
+    background-color: #ffcc66;
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    display: block;
+}
+
+.color_impact_4 {
+		border-radius: 50%;
+    color: #ff9900;
+    background-color: #ff9900;
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    display: block;
+}
+
+.color_impact_5 {
+    border-radius: 50%;
+    color: #ff0000;
+    background-color: #ff0000;
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    display: block;
+}
+
+.color_impact_none {
+    border-radius: 50%;
+    color: white;
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    display: block;
+}
+
+.verticalTopAlign {
+    vertical-align: top;
+}
+/*MOVED TO WRAPPER STYLESHEET ON STATIC RESOURCES*/

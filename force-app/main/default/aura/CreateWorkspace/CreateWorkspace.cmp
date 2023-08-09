@@ -1,0 +1,56 @@
+<!--*************************************************************************************
+* Class: CreateWorkspace
+* Created By: Ajinkya Hingne
+****************************************************************************************
+* Description: Component to call SPO system for workspace creation
+****************************************************************************************
+* Version History:
+* VERSION     DEVELOPER NAME       DATE            DETAIL FEATURES
+https://vera.my.salesforce.com/
+  1.0         Ajinkya Hingne       24/10/2019      Initial Development
+*************************************************************************************-->
+<aura:component controller='CreateWorkspace_Ctrl' implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+
+    <aura:attribute name="recordId" type="Id" access="public" />
+
+    <aura:attribute name="message" type="Object" access="private" />
+    <aura:attribute name="showConfirmationPopup" type="Boolean" default="true" access="private" />
+    <aura:attribute name="isSuccess" type="Boolean" default="true" access="private" />
+
+    <div aura:id="spinner" class="slds-hide slds-spinner_container">
+        <div class="slds-spinner--brand slds-spinner slds-spinner--large slds-is-relative" role="alert">
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+
+    <div class="slds-grid slds-grid_align-center slds-text-heading_large slds-var-m-around_medium">
+            <lightning:formattedText value="{!$Label.c.Create_Workspace_Title}" />
+    </div>
+    <aura:if isTrue="{!v.showConfirmationPopup}">
+        <div class="slds-grid slds-m-bottom_large slds-p-top_medium">
+            <lightning:formattedText value="{!$Label.c.Sharepoint_Integration_Prompt_Message}" />
+        </div>
+        <div class="slds-grid slds-grid_align-end slds-p-top_x-large">
+            <lightning:button label="{!$Label.c.Sharepoint_Integration_Prompt_Cancel_Button}" title="{!$Label.c.Sharepoint_Integration_Prompt_Cancel_Button}" onclick="{!c.handleCloseWindow}" />
+            <lightning:button label="{!$Label.c.Sharepoint_Integration_Prompt_Confirm_Button}" title="{!$Label.c.Sharepoint_Integration_Prompt_Confirm_Button}" onclick="{!c.handleCreateWorkspace}" />
+        </div>
+        <aura:set attribute="else">
+            <aura:if isTrue="{!!v.isSuccess}">
+                <div id="error-alert" class="slds-m-bottom_large">
+                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+                        <span class="slds-assistive-text">error</span>
+                        <span class="slds-icon_container slds-icon-utility-error slds-m-right_x-small">
+                            <lightning:icon iconName="utility:error" alternativeText="Error!" variant="inverse" size="x-small"/>
+                        </span>
+                        <h2 id="theMessage"><lightning:formattedText value="{!v.message}" /></h2>
+                    </div>
+                </div>
+                <div class="slds-grid slds-grid_align-end slds-p-top_xx-large">
+                    <lightning:button label="{!$Label.c.Sharepoint_Integration_Prompt_Cancel_Button}" title="{!$Label.c.Sharepoint_Integration_Prompt_Cancel_Button}" onclick="{!c.handleCloseWindow}" />
+                </div>
+            </aura:if>
+        </aura:set>
+    </aura:if>
+
+</aura:component>

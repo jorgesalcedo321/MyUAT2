@@ -1,0 +1,34 @@
+<template>
+    <div class="spinner">
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+            </lightning-spinner>
+        </template>
+    </div>
+    <div class={coloringClass}>
+        <div class={coloringContainer}>
+            <p class="field-title" title={labelDatafield}>
+                <span class="slds-form-element__label">{labelDatafield}</span>
+                <lightning-helptext class="slds-p-left_xxx_small slds-p-top_xxx_small" if:true={showHelpText} content={helpTextDescription}></lightning-helptext>
+            </p>
+            <div style="padding-right: 5px;">
+                <p if:false={picklistVisible} class={selectedOptionColor}>
+                    {selectedOptionValue}
+                    <lightning-button-icon class="slds-float_right" icon-name="utility:edit" variant="bare" onclick={showPicklist} alternative-text="Edit"></lightning-button-icon>
+                </p>
+                <!-- <select if:true={picklistVisible} id="select-picklist" class={picklistClass} name="optionSelect" onchange={changeHandler} style={selectedOptionColor} disabled={userCannotEditField}> -->
+                <select class="coloring-picklist" multiple if:true={picklistVisible} id="select-picklist" style="height: 150px; width: 100%" name="optionSelect" onchange={changeHandler} disabled={userCannotEditField}>
+                    <template for:each={statusOptions} for:item="status">
+                            <!--style={status.colorstyle}-->
+                            <option key={status.value} value={status.value} class={status.colorstyle} selected={status.checked}>{status.label}</option>                        
+                    </template>
+                </select>
+            </div>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-p-top_small" if:true={changesOnPicklist}>
+            <lightning-button variant="neutral" label="Cancel" title="Cancel" onclick={refreshComponent} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="neutral" label="Save" title="Save" type="submit" onclick={updateRisk} class="slds-m-left_x-small"></lightning-button>
+            <!--<lightning-button icon-name="utility:refresh" onclick={refreshComponent} class="slds-m-left_x-small"></lightning-button>-->
+        </div>
+    </div>
+</template>

@@ -1,0 +1,32 @@
+<aura:component controller="RiskQuickActionController" implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" access="global" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="recordTypeId" type="String" />
+    <aura:attribute name="projectId" type="String" />
+    <aura:attribute name="objectLabel" type="String" default="Risk"/>
+	<aura:attribute name="objectApiName" type="String" default="ampi__Risk__c"/>
+	<aura:attribute name="jsonStructure" type="String" default='{"datafields": [      {"name": "Name", "type": "standard", "required": true}, {"name": "ampi__Description__c", "type": "standard", "colors": "", "required": true},  {"name": "ampi__Category__c", "type": "standard", "required": true}, {"name": "RecordTypeId", "type": "standard", "readonly": true},  {"name": "Project__c", "type": "related"}, {"name": "Programme_Location__c", "type": "standard"},     {"name": "ampi__Probability__c", "type": "coloringComponent", "colors": "#009900,#33cc00,#ffcc66,#ff9900,#ff0000"},     {"name": "ampi__Potential_Impact__c", "type": "coloringComponent", "colors": "#009900,#33cc00,#ffcc66,#ff9900,#ff0000"}    ]}'/>
+    <aura:attribute name="readonlyFieldsInEdit" type="String" default='Name, ampi__Description__c, ampi__Category__c, Project__c, Programme_Location__c'/>
+	<!--[      {"name": "Name", "type": "standard", "required": true}, {"name": "ampi__Description__c", "type": "standard", "colors": "", "required": true},   {"name": "Catalogue_Type__c", "type": "standard"},  {"name": "RecordTypeId", "type": "standard", "readonly": true},  {"name": "Programme_Location__c", "type": "standard"}, {"name": "ampi__Identification_Date__c", "type": "standard"},     {"name": "ampi__Probability__c", "type": "coloringComponent", "colors": "#009900,#33cc00,#ffcc66,#ff9900,#ff0000"},     {"name": "ampi__Potential_Impact__c", "type": "coloringComponent", "colors": "#009900,#33cc00,#ffcc66,#ff9900,#ff0000"}    ]-->
+	<aura:attribute name="sectionLabel" type="String" />
+	<aura:attribute name="removeMarginTop" type="Boolean" default="true" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+     <div aura:id="editDialog" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container" style="width: 100%; max-width: none; display: block;">
+                <div class="slds-modal__header">
+                    <h2 class="slds-text-heading--medium">{!v.title}</h2>                    
+                    <p>Record Type: {!v.recordTypeId}</p>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap" style="justify-content: center;">
+                <c:customFormContainer onvaluechange="{!c.getSaveStatusFromLwc}" aura:id="customFormContainer" relatedId="{!v.projectId}" recordId="{!v.recordId}" objectLabel="{!v.objectLabel}" objectApiName="{!v.objectApiName}" readonlyFieldsInEdit="{!v.readonlyFieldsInEdit}" jsonStructure="{!v.jsonStructure}" sectionLabel="{!v.sectionLabel}" removeMarginTop="{!v.removeMarginTop}" isQuickAction="true"/>
+            </div>
+            <!--https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.events_sending_to_aura_components-->
+            <div class="slds-modal__footer slds-text-align_center">                
+                <lightning:button variant="neutral" label="Cancel" onclick="{!c.cancelDialog}"/>
+                <lightning:button variant="brand" label="Save" onclick="{!c.saveRecord}" />
+            </div>
+        </div>
+    </div>
+    <div aura:id="overlay" class="slds-backdrop slds-backdrop--open"></div>	
+</aura:component>

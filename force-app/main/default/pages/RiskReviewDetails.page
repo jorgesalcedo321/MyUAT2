@@ -1,0 +1,153 @@
+<apex:page standardController="ampi__Risk_Assessment__c" extensions="RisReviewDetailsController" lightningStylesheets="true" tabStyle="ampi__Risk_Assessment__c" sidebar="false" showheader="false">
+<apex:slds rendered="{!$User.UIThemeDisplayed == 'Theme4d'}"/>
+<div class="slds-scope">
+        <!-- comment for testing CSS -->
+        <style > 
+            .pbSubheader{
+                display: none;
+            }
+            .bPageBlock{
+                border-top: 0px !important;
+                background-color: #ffffff !important;
+            }
+            .slds-button{
+                color: white !important;
+            }
+            .slds-scope th{
+                border-bottom: 1px solid #CCC !important;
+            }
+            .slds-scope td{
+                border-bottom: 1px solid #CCC !important;   
+                margin-right: 20px;
+            }
+            .labelToLeft {
+                text-align: left !important;
+            }
+            
+</style>
+    <!--<apex:pageblock title="{!$ObjectType.ampi__Risk_Assessment__c.fields.Description__c.Label}">
+        <apex:pageblocksection id="theblockRisk" showheader="false" columns="2">
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Description__c.Label}" />
+                <apex:outputtext value="{!description_Translated}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+        </apex:pageblocksection>
+    </apex:pageblock>-->
+    <apex:pageblock title="{!$Label.LRP_RISK_SOCIAL_POLITICAL}">
+        <apex:pageblocksection id="theblockRisk" showheader="false" columns="2">
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Social_Political_Response__c.Label}" />
+                <apex:outputtext value="{!social_Political_Response_Translated}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <!--<apex:outputlabel value="{!$Label.LRP_RISK_CONFLICT}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__label', '')}" />-->
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Social_Political_Comments__c.Label}" />
+                <apex:outputtext value="{!riskReview.Social_Political_Comments__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Social_Political_Score__c.Label}" />
+                <apex:outputtext value="{!riskReview.Social_Political_Score__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+        </apex:pageblocksection>
+    </apex:pageblock>
+    <apex:pageblock title="{!$Label.LRP_RISK_CRIME_SECURITY}">
+        <apex:pageblocksection id="theblockRisk" showheader="false" columns="2">
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Crime_Security_Response__c.Label}" />
+                <apex:outputtext value="{!Crime_Security_Response_Translated}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <!--<apex:outputlabel value="{!$Label.LRP_RISK_CONFLICT}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__label', '')}" />-->
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Crime_Security_Comments__c.Label}" />
+                <apex:outputtext value="{!riskReview.Crime_Security_Comments__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Crime_Security_Score__c.Label}" />
+                <apex:outputtext value="{!riskReview.Crime_Security_Score__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+        </apex:pageblocksection>
+    </apex:pageblock>
+    <apex:pageblock title="{!$Label.LRP_RISK_CONFLICT}">
+        <apex:pageblocksection id="theblockRisk" showheader="false" columns="2">
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Conflict_Response__c.Label}" />
+                <apex:outputtext value="{!Conflict_Response_Translated}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <!--<apex:outputlabel value="{!$Label.LRP_RISK_CONFLICT}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__label', '')}" />-->
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Conflict_Comments__c.Label}" />
+                <apex:outputtext value="{!riskReview.Conflict_Comments__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Conflict_Score__c.Label}" />
+                <apex:outputtext value="{!riskReview.Conflict_Score__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+        </apex:pageblocksection>
+    </apex:pageblock>
+    <apex:pageblock title="{!$Label.LRP_RISK_TERRORISM}">
+        <apex:pageblocksection id="theblockRisk" showheader="false" columns="2">
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Terrorism_Response__c.Label}" />
+                <apex:outputtext value="{!terrorism_Response_Translated}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <!--<apex:outputlabel value="{!$Label.LRP_RISK_CONFLICT}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__label', '')}" />-->
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Terrorism_Comments__c.Label}" />
+                <apex:outputtext value="{!riskReview.Terrorism_Comments__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Terrorism_Score__c.Label}" />
+                <apex:outputtext value="{!riskReview.Terrorism_Score__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+        </apex:pageblocksection>
+    </apex:pageblock>
+    <apex:pageblock title="{!$Label.LRP_RISK_KIDNAP}">
+        <apex:pageblocksection id="theblockRisk" showheader="false" columns="2">
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Kidnap_Response__c.Label}" />
+                <apex:outputtext value="{!kidnap_Response_Translated}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Kidnap_Comments__c.Label}" />
+                <apex:outputtext value="{!riskReview.Kidnap_Comments__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Kidnap_Score__c.Label}" />
+                <apex:outputtext value="{!riskReview.Kidnap_Score__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+        </apex:pageblocksection>
+    </apex:pageblock>
+    <apex:pageblock title="{!$Label.LRP_RISK_HUMANITARIAN_SPACE}">
+        <apex:pageblocksection id="theblockRisk" showheader="false" columns="2">
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Humanitarian_Space_Response__c.Label}" />
+                <apex:outputtext value="{!humanitarian_Space_Response_Translated}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Humanitarian_Space_Comments__c.Label}" />
+                <apex:outputtext value="{!riskReview.Humanitarian_Space_Comments__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Humanitarian_Space_Score__c.Label}" />
+                <apex:outputtext value="{!riskReview.Humanitarian_Space_Score__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+        </apex:pageblocksection>
+    </apex:pageblock>
+    <apex:pageblock title="{!$Label.LRP_RISK_INFRASTRUCTURE}">
+        <apex:pageblocksection id="theblockRisk" showheader="false" columns="2">
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Infrastructure_Response__c.Label}" />
+                <apex:outputtext value="{!infrastructure_Response_Translated}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Infrastructure_Comments__c.Label}" />
+                <apex:outputtext value="{!riskReview.Infrastructure_Comments__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+            <apex:pageblocksectionitem labelstyleclass="{!if($User.UIThemeDisplayed == 'Theme4d','labelToLeft', '')}">
+                <apex:outputLabel value="{!$ObjectType.ampi__Risk_Assessment__c.fields.Infrastructure_Score__c.Label}" />
+                <apex:outputtext value="{!riskReview.Infrastructure_Score__c}" styleclass="{!if($User.UIThemeDisplayed == 'Theme4d','slds-form-element__control', '')}" />
+            </apex:pageblocksectionitem>
+        </apex:pageblocksection>
+    </apex:pageblock>
+</div>
+</apex:page>

@@ -1,0 +1,203 @@
+<template>
+	<!-- HelloWorld addressRecordId:{addressRecordId} {sectionClass} {isViewEditForm} -->
+	<!-- <p>test</p> -->
+	<lightning-spinner if:true={isLoading} alternative-text="loading..." variant="brand" size="small">
+	</lightning-spinner>
+	<div>
+		<!-- objectType: {objectType}
+		showContentInSection: {showContentInSection}
+		isAdditional: {isAdditional}
+		sectionLabel: {sectionLabel} -->
+		<h3 class="slds-section__title" if:true={showContentInSection}>
+			<button class="slds-button slds-section__title-action" onclick={handleSectionClick}>
+                <lightning-icon icon-name="utility:switch" class="slds-button__icon slds-button__icon_left slds-section__title-action-icon" size="x-small"></lightning-icon>
+                <span class="slds-truncate" title={sectionLabel} if:true={showContentInSection}>{sectionLabel}</span>
+            </button>
+		</h3>
+		<div if:true={openSection}>
+			<!-- 
+			viewEditFormVisible: {viewEditFormVisible}
+			viewCreateFormVisible: {viewCreateFormVisible}
+			createFormVisible: {createFormVisible}
+			editFormVisible: {editFormVisible}
+			isNew: {isNew} 
+			-->
+			<slot>
+				<!--Create Button enabled-->
+				<div class="slds-form-element slds-form-element_horizontal header-map" if:true={viewCreateFormVisible}>
+					<span class={labelClass} >{newLabel}</span>
+					<div class="slds-form-element__control">
+						<span class="slds-size_1-of-2 slds-form-element__static editSize">
+							<p if:false={isReadonly}>
+								<lightning-button-icon class="slds-float_right"
+													   icon-name="utility:edit" variant="bare" onclick={showEditForm}
+													   alternative-text="Edit" if:true={hasPermissionsToCreate}>
+								</lightning-button-icon>
+							</p>
+						</span>
+					</div>
+				</div>
+				<!--Edit Button enabled-->
+				<lightning-record-view-form record-id={currentRecord.Id} object-api-name={addressObjectName}
+					if:true={viewEditFormVisible} onerror={handleError}>
+					<div class={ClassForm}>
+						<!--Nested Layout
+							https://developer.salesforce.com/docs/component-library/bundle/lightning-layout/example-->
+						<lightning-layout multiple-rows="true" style="width: 98%">
+							<template for:each={allDataContainer} for:item="info">
+								<lightning-layout-item key={info.id} size="6" padding="around-small"
+									class="styleClass header mapsContainer" if:true={info.isMapped}>
+									<!--MAP-->
+									<div class="slds-form-element slds-form-element_horizontal header-map">
+										<span class="slds-form-element__label">{objectLabel}:</span>
+										<div class="slds-form-element__control">
+											<span class="slds-size_1-of-2 slds-form-element__static editSize" if:true={info.hasLink}>
+													<p>
+														<a href={info.link} target="_blank">{currentRecord.Street_House_Number__c}</a>
+														<lightning-button-icon if:false={info.readonly} class="slds-float_right"
+															icon-name="utility:edit" variant="bare" onclick={showEditForm}
+															alternative-text="Edit">
+														</lightning-button-icon>
+													</p>
+													<p><a href={info.link} target="_blank">{currentRecord.District__c}</a></p>
+													<p><a href={info.link} target="_blank">{countryName}</a></p>
+													<lightning-map map-markers={mapMarkers} zoom-level=15 if:true={mapMarkersAvailable} class="maps"></lightning-map>
+													<lightning-helptext class="slds-p-left_xxx_small slds-p-top_xxx_small helpTextMaps" if:true={mapMarkersAvailable} content={mapMessage}></lightning-helptext>
+												</span>
+											<span class="slds-size_1-of-2 slds-form-element__static editSize" if:false={info.hasLink}>
+													<p>
+														{currentRecord.Street_House_Number__c}
+														<lightning-button-icon if:false={info.readonly} class="slds-float_right"
+															icon-name="utility:edit" variant="bare" onclick={showEditForm}
+															alternative-text="Edit">
+														</lightning-button-icon>
+													</p>
+													<p>{currentRecord.District__c}</p>
+													<p>{countryName}</p>
+												</span>
+										</div>
+									</div>
+								</lightning-layout-item>
+								<lightning-layout-item key={info.id} size="6" padding="around-small"
+									class="styleClass header-content leftSpace" if:true={info.sectionLeft}>
+									<lightning-layout>
+										<!--REST LAYOUT-->
+										<lightning-layout-item class={info.extraClass}>
+											<lightning-output-field key={info.index} field-name={info.name}
+												field-class={info.className} if:false={info.isMapped}>
+												<span if:true={info.avatar} class="record-avatar-container slds-avatar slds-avatar_x-small slds-avatar--circle icon slds-m-right_xx-small slds-avatar_profile-image-small avatarBackground"></span>
+												<lightning-formatted-date-time if:true={info.showDateField}
+													value={info.dateField} year="numeric" month="2-digit" day="2-digit"
+													hour="2-digit" minute="2-digit" hour12="false">
+												</lightning-formatted-date-time>
+												<lightning-button-icon if:false={info.readonly} class="slds-float_right"
+													icon-name="utility:edit" variant="bare" onclick={showEditForm}
+													alternative-text="Edit"></lightning-button-icon>
+											</lightning-output-field>
+										</lightning-layout-item>
+									</lightning-layout>
+								</lightning-layout-item>
+							</template>
+						</lightning-layout>
+						<lightning-layout multiple-rows="true" class="leftSide">
+							<template for:each={allDataContainer} for:item="info">
+								<lightning-layout-item key={info.id} size="6" padding="around-small"
+									class="styleClass footer bottomSide" if:true={info.sectionRight}>
+									<!--REST LAYOUT-->
+									<lightning-output-field key={info.index} field-name={info.name}
+										field-class={info.className} class={info.extraClass} >
+										<span if:true={info.avatar} class="record-avatar-container slds-avatar slds-avatar_x-small slds-avatar--circle icon slds-m-right_xx-small slds-avatar_profile-image-small avatarBackground"></span>
+										<lightning-formatted-date-time if:true={info.showDateField}
+											value={info.dateField} year="numeric" month="2-digit" day="2-digit"
+											hour="2-digit" minute="2-digit" hour12="false">
+										</lightning-formatted-date-time>
+										<lightning-button-icon if:false={info.readonly} class="slds-float_right"
+											icon-name="utility:edit" variant="bare" onclick={showEditForm}
+											alternative-text="Edit"></lightning-button-icon>
+									</lightning-output-field>
+								</lightning-layout-item>
+							</template>
+						</lightning-layout>
+					</div>
+				</lightning-record-view-form>
+				<!--Edit Form enabled-->
+				<lightning-record-edit-form record-id={currentRecord.Id} object-api-name={addressObjectName}
+					if:true={editFormVisible} onsubmit={handleSubmit} onerror={handleError}>
+					<lightning-messages> </lightning-messages>
+					<div class={ClassForm}>
+						<lightning-layout multiple-rows="true">
+							<template for:each={allDataContainer} for:item="info">
+								<div class={datafieldClass} key={info.index}
+									if:false={info.isId}>
+									<lightning-layout-item key={info.index} size="6" padding="around-small"
+										class="styleClass">
+										<span if:false={info.readonly}>
+											<lightning-input-field key={info.index} field-name={info.name}
+												required={info.required} onkeydown={enforceFormat} onkeyup={formatToPhone} if:true={info.isPhone}></lightning-input-field>
+											<lightning-input-field key={info.index} field-name={info.name}
+												required={info.required} if:false={info.isPhone}></lightning-input-field>
+										</span>
+										<!-- <lightning-input key={info.index} field-name={info.name}
+											required={info.required} if:false={info.readonly} pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" ></lightning-input> -->
+										<lightning-output-field key={info.index} field-name={info.name}
+											field-class="slds-size_4-of-5" if:true={info.readonly}>
+										</lightning-output-field>
+									</lightning-layout-item>
+								</div>
+							</template>
+							<div class="slds-grid quickActionFooter" if:true={isQuickAction}>
+								<lightning-button data-id="Save_Button" variant="brand" label="Save" title="Save"
+									type="submit" class="slds-m-left_x-small"></lightning-button>
+							</div>
+						</lightning-layout>
+						<div class="slds-col slds-size_1-of-1 slds-docked-form-footer" if:false={isQuickAction}>
+							<button class="slds-button slds-button_icon slds-button_icon slds-button_icon-error" title="We hit a snag" if:true={errorExist}>
+						    	<svg focusable="false" data-key="error" aria-hidden="true" viewBox="0 0 52 52" class="slds-icon slds-icon-text-error slds-icon_small"><g><path d="M26 2C12.8 2 2 12.8 2 26s10.8 24 24 24 24-10.8 24-24S39.2 2 26 2zM8 26c0-9.9 8.1-18 18-18 3.9 0 7.5 1.2 10.4 3.3L11.3 36.4C9.2 33.5 8 29.9 8 26zm18 18c-3.9 0-7.5-1.2-10.4-3.3l25.1-25.1C42.8 18.5 44 22.1 44 26c0 9.9-8.1 18-18 18z"></path></g></svg>
+						        <span class="slds-assistive-text">We hit a snag.</span>
+							</button>
+							<lightning-button variant="neutral" label="Cancel" title="Cancel" onclick={refreshComponent} class="slds-m-left_x-small" if:false={isLoading}></lightning-button>
+							<lightning-button variant="brand" data-id="Save_Button" label="Save" title="Save" type="submit" class="slds-m-left_x-small" if:false={isLoading}></lightning-button>
+						</div>
+					</div>
+				</lightning-record-edit-form>
+				<!--Create Form enabled-->
+				<lightning-record-edit-form object-api-name={addressObjectName} 
+					if:true={createFormVisible} onerror={handleError} onsubmit={handleSubmit}>
+					<lightning-messages> </lightning-messages>
+					<div class={ClassForm}>
+						<lightning-layout multiple-rows="true">
+							<template for:each={allDataContainer} for:item="info">
+								<div class={datafieldClass} key={info.index}
+									if:false={info.isId}>
+									<lightning-layout-item key={info.index} size="6" padding="around-small"
+										class="styleClass">
+										<span if:false={info.readonly}>
+											<lightning-input-field key={info.index} field-name={info.name}
+												required={info.required} onkeydown={enforceFormat} onkeyup={formatToPhone} if:true={info.isPhone}></lightning-input-field>
+											<lightning-input-field key={info.index} field-name={info.name}
+												required={info.required} if:false={info.isPhone}></lightning-input-field>
+										</span>
+										<lightning-output-field key={info.index} field-name={info.name}
+											field-class="slds-size_4-of-5" if:true={info.readonly}>
+										</lightning-output-field>
+									</lightning-layout-item>
+								</div>
+							</template>
+							<div class="slds-grid quickActionFooter" if:true={isQuickAction}>
+								<lightning-button data-id="Save_Button" variant="brand" label="Save" title="Save" type="submit" class="slds-m-left_x-small"></lightning-button>
+							</div>
+						</lightning-layout>
+						<div class="slds-col slds-size_1-of-1 slds-docked-form-footer" if:false={isQuickAction}>
+							<button class="slds-button slds-button_icon slds-button_icon slds-button_icon-error" title="We hit a snag" if:true={errorExist}>
+								<svg focusable="false" data-key="error" aria-hidden="true" viewBox="0 0 52 52" class="slds-icon slds-icon-text-error slds-icon_small"><g><path d="M26 2C12.8 2 2 12.8 2 26s10.8 24 24 24 24-10.8 24-24S39.2 2 26 2zM8 26c0-9.9 8.1-18 18-18 3.9 0 7.5 1.2 10.4 3.3L11.3 36.4C9.2 33.5 8 29.9 8 26zm18 18c-3.9 0-7.5-1.2-10.4-3.3l25.1-25.1C42.8 18.5 44 22.1 44 26c0 9.9-8.1 18-18 18z"></path></g></svg>
+								<span class="slds-assistive-text">We hit a snag.</span>
+							</button>
+							<lightning-button variant="neutral" label="Cancel" title="Cancel" onclick={refreshComponent} class="slds-m-left_x-small" if:false={isLoading}></lightning-button>
+							<lightning-button variant="brand" data-id="Save_Button" label="Save" title="Save" type="submit" class="slds-m-left_x-small" if:false={isLoading}></lightning-button>
+						</div>
+					</div>
+				</lightning-record-edit-form>
+			</slot>
+		</div>
+	</div>
+</template>

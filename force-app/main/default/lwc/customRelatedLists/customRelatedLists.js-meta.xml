@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="customRelatedLists">
+	<apiVersion>52.0</apiVersion>
+	<isExposed>true</isExposed>
+	<targets>
+		<target>lightning__AppPage</target>
+		<target>lightning__RecordPage</target>
+		<target>lightning__HomePage</target>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+			<property label="Title" name="title" type="String" default="Programmes and Programme Units"/>
+			<property label="Custom Object Pic" name="customObjectNamePic" type="String" datasource="ampi__Project_Geographic_Area__c,ampi__Geographical_Area__c,ampi__Project__c,ampi__Risk__c,ampi__Risk_Register__c,ampi__Risk_Assessment__c" default="ampi__Project_Geographic_Area__c"/>
+			<!--<property label="Custom Object Name" name="customObjectName" type="String" default="ampi__Project_Geographic_Area__c"/>
+			<property label="Custom Object" name="customObject" type="String" default="ampi__Project_Geographic_Area__c"/>-->
+			<property label="Show Number Of Records" name="showNumberOfRecords" type="Boolean" default="true"/>
+			<property label="Show Row Number" name="showRowNumber" type="Boolean" default="true"/>
+			<property label="Enable Links" name="showLinks" type="Boolean" default="true"/>			
+			<property label="Show Parent Path" name="showParentPath" type="Boolean" default="false"/>
+			<property label="Show New Row Action" name="showNewRowAction" type="Boolean" default="false"/>
+			<property label="Edit Button Enabled" name="editButtonEnabled" type="Boolean" default="true"/>
+			<property label="Delete Button Enabled" name="deleteButtonEnabled" type="Boolean" default="false"/>
+			<property label="Filter" name="filter" type="String" description="Filters for showProgrammes and showProgrammeUnits for the moment" default="%5B%7B%20%22showProgrammes%22:%20%22true%22%20%7D,%7B%20%2222showProgrammeUnits%22:%20%22true%22%20%7D,%7B%20%includeCatalogueRiskIn%22:%20%22true%22%20%7D,%7B%20%showNationalManagementUnits%22:%20%22true%22%20%7D,%5D"/>
+			<property label="Record ID" name="recordId" type="String" default="{!recordId}" description="The value should be {!recordId}."/>
+			<!--Pass Json arrays-->
+			<!--https://developer.salesforce.com/forums/?id=9062I000000IJvFQAW-->
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

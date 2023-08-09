@@ -1,0 +1,23 @@
+<template>
+	<div style="margin-top: -10px">
+		<!-- <lightning-record-form if:true={showFields} record-id={relatedRecordId}
+                               object-api-name={objectName}
+                               fields={fields}
+                               columns="2">
+        </lightning-record-form> -->
+		<lightning-record-view-form record-id={relatedRecordId} object-api-name={objectName}>
+			<div style="border-bottom: 1px solid #c9c9c9;">
+				<lightning-layout multiple-rows="true">
+					<lightning-layout-item key={info.index} size="6" style="padding: 0px">
+						<!-- <lightning-input-field field-name='Status__c' required='true'></lightning-input-field> -->
+						<!-- <lightning-output-field field-name='Status__c' style="width: 96%;"></lightning-output-field> -->
+                        <div class="slds-form-element slds-form-element_horizontal" style="width: 96%;">
+                            <label class="slds-form-element__label" for="form-element-01">Agreement Status</label> 
+                            <lightning-output-field variant="label-hidden" field-name="Status__c"></lightning-output-field>
+                        </div>
+					</lightning-layout-item>
+				</lightning-layout>
+			</div>
+		</lightning-record-view-form>
+	</div>
+</template>

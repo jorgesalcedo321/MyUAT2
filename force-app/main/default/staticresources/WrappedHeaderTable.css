@@ -1,0 +1,208 @@
+//https://www.forcetrails.com/2021/03/datatable-header-wrapping-lwc.html
+
+.wrapped-header-datatable .slds-table_header-fixed_container {
+    border: 1px solid #CCC;
+}
+
+.wrapped-header-datatable .slds-table .slds-th__action .slds-truncate{
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: unset;
+    white-space: pre-line;
+    /* word-wrap: break-word; */
+}
+
+.wrapped-header-datatable .slds-table .slds-th__action-button {
+    display: none;
+}
+
+
+.color_impact_1, color_impact_1:hover {
+    border-radius: 50%;
+    color: transparent !important;
+    background-color: #009900 !important;
+    width: 18px;
+    height: 18px;
+    margin: 10px 5px;
+    display: block;
+}
+.color_impact_2, color_impact_2:hover {
+    border-radius: 50%;
+    color: transparent !important;
+    background-color: #33cc00 !important;
+    width: 18px;
+    height: 18px;
+    margin: 10px 5px;
+    display: block;
+}
+
+.color_impact_3, color_impact_3:hover {
+    border-radius: 50%;
+    color: transparent !important;
+    background-color: #ffcc66 !important;
+    width: 18px;
+    height: 18px;
+    margin: 10px 5px;
+    display: block;
+}
+
+.color_impact_4, color_impact_4:hover {
+    border-radius: 50%;
+    color: transparent !important;
+    background-color: #ff9900 !important;
+    width: 18px;
+    height: 18px;
+    margin: 10px 5px;
+    display: block;
+}
+
+.color_impact_5, color_impact_5:hover {
+    border-radius: 50%;
+    color: transparent !important;
+    background-color: #ff0000 !important;
+    width: 18px;
+    height: 18px;
+    margin: 10px 5px;
+    display: block;
+}
+
+.color_impact_none {
+    border-radius: 50%;
+    color: white !important;
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    margin: 10px 5px;
+    display: block;
+}
+
+    
+
+ .color_image_none:hover,
+ .color_image_1:hover,
+ .color_image_2:hover,
+ .color_image_3:hover,
+ .color_image_4:hover,
+ .color_image_5:hover  {
+    background-color: rgb(243, 243, 243);
+}
+
+
+.color_image_none {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -115px;
+}
+
+.color_image_1 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: 2px;
+}
+
+.color_image_2 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -24px;
+}
+
+.color_image_3 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -46px;
+}
+
+.color_image_4 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -71px;
+}
+
+.color_image_5 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -96px;
+}
+
+
+.color_image_test_none {
+    height: 25px;
+    background-image: url('/resource/color_none');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 20px;
+    background-position-y: 5px;
+    color: transparent !important;
+}
+
+.color_image_test_1 {
+    height: 25px;
+    background-image: url('/resource/color_1');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 20px;
+    background-position-y: 5px;
+    color: transparent !important;
+}
+
+.color_image_test_2 {
+    height: 25px;
+    background-image: url('/resource/color_2');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 20px;
+    background-position-y: 5px;
+    color: transparent !important;
+}
+
+.color_image_test_3 {
+    height: 25px;
+    background-image: url('/resource/color_3');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 20px;
+    background-position-y: 5px;
+    color: transparent !important;
+}
+
+.color_image_test_4 {
+    height: 25px;
+    background-image: url('/resource/color_4');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 20px;
+    background-position-y: 5px;
+    color: transparent !important;
+}
+
+.color_image_test_5 {
+    height: 25px;
+    background-image: url('/resource/color_5');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 20px;
+    background-position-y: 5px;
+    color: transparent !important;
+}
+
+.verticalTopAlign {
+    vertical-align: top;
+}

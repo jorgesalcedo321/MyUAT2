@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="customFormContainer">
+	<apiVersion>52.0</apiVersion>
+	<isExposed>true</isExposed>
+	<targets>
+		<target>lightning__AppPage</target>
+		<target>lightning__RecordPage</target>
+		<target>lightning__HomePage</target>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+			<property
+				name="relatedId"
+				type="String"
+				description="Related Object Id"
+				label="Related Object Id"
+				default="" />
+			<property
+				name="objectLabel"
+				type="String"
+				description="Object Label used for messages"
+				label="New Object Label"
+				default="" />
+			<property
+				name="objectApiName"
+				type="String"
+				label="Object Name"
+				description="Automatically bind the page's object name to the component variable"
+				default="{!objectApiName}" />
+			<property 
+				name="jsonStructure" 
+				type="String" 
+				description="Add datafields values on Json structure by datafields main name and properties name, type and color"
+				default="" />
+			<property 
+				name="readonlyFieldsInEdit" 
+				type="String" 
+				description="Set a list of readonly fields on edit view separated with commas"
+				default="" />
+			<property
+				name="sectionLabel"
+				type="String"
+				label="section Label"
+				description="Set component in a section"
+				default="" />
+			<property
+				name="isQuickAction"
+				type="Boolean"
+				label="is Quick Action"
+				description="Set component in a modal"
+				default="false" />
+			<property
+				name="removeMarginTop"
+				type="Boolean"
+				label="Remove Margin Top"
+				description="Remove Margin in top"
+				default="false" />
+			<property label="Record ID" name="recordId" type="String" description="The value should be {!recordId}."/>			
+			<!--{"datafields": [      {"name": "Name", "type": "standard", "colors": ""}, {"name": "ampi__Description__c", "type": "standard", "colors": ""},  {"name": "ampi__Identification_Date__c", "type": "standard", "colors": ""},     {"name": "ampi__Category__c", "type": "coloringComponent", "colors": "#009900,#33cc00,#ffcc66,#ff9900,#ff0000"}    ]}-->
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

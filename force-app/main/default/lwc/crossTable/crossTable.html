@@ -1,0 +1,164 @@
+<template>
+    <template if:false={loaded}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            <p>Please wait, it's loading...</p>
+    </template>
+    <!-- <input data-id="wildcard" name="wildcard" value="" style="width:0px; border:0; height:0px"/> -->
+    <p><span class="note">Note:</span> For staff indicators, please use comma as decimal separator</p>
+    <div style="display: flex;flex-direction: row;">
+        <c-csv-downloader info-to-export={pageDetailsData} column-header={titleToDownload} style="flex: 1; margin: 20px 0px;"></c-csv-downloader>
+        <c-csv-uploader style="flex: 4"></c-csv-uploader>
+    </div>
+
+    <div class="slds-wrap" if:true={showComponent}>
+        <!-- <p>new 11</p> -->
+        <div class="slds-size_1-of-5 slds-float_left" if:true={loaded}>
+            <div class="slds-box slds-box_x-small space-right min-height">
+                    <p class="field-title" title={monitoringPeriodLabel}>
+                        <span class="slds-form-element__label" style="color: #54698d;">{monitoringPeriodLabel}</span>
+                    </p>
+                    <select id="select-monitoring-period-picklist" class="select-size gray-border" name="optionMonitoringPeriodSelect" onchange={changeMonitoringPeriodHandler}>
+                        <template for:each={mps} for:item="mp">
+                            <option key={mp.value} value={mp.value} selected={mp.checked}>{mp.label}</option>                        
+                        </template>
+                    </select>
+            </div>            
+            <!-- <div class="slds-box  slds-box_x-small space-right min-height">
+            </div>                                   -->
+        </div>
+        <div class="slds-size_1-of-5 slds-float_left" if:true={isNotTransitionProject}>            
+            <div class="slds-box  slds-box_x-small space-right min-height">
+                    <p class="field-title" title={serviceTypeLabel}>
+                        <span class="slds-form-element__label" style="color: #54698d;">{serviceTypeLabel}</span>
+                    </p>
+                    <select id="select-service-type-picklist" class="select-size gray-border" name="optionServiceTypeSelect" onchange={changeServiceTypeHandler}>
+                        <template for:each={serviceTypeOptions} for:item="mp">
+                            <option key={mp.value} value={mp.value} selected={mp.checked}>{mp.label}</option>                        
+                        </template>
+                    </select>
+            </div>
+        </div>
+        <div class="slds-size_1-of-5 slds-float_left" if:true={loaded}>
+            <div class="slds-box  slds-box_x-small space-right min-height">
+                    <p class="field-title" title={sourceDocumentLabel}>
+                        <span class="slds-form-element__label" style="color: #54698d;">{sourceDocumentLabel}</span>
+                    </p>
+                    <select id="select-source-document-picklist" class="slds-select select-size gray-border" name="optionSourceDocumentSelect" onchange={changeSourceDocumentHandler}>
+                        <template for:each={sourceDocumentOptions} for:item="mp">
+                            <option key={mp.value} value={mp.value} selected={mp.checked}>{mp.label}</option>                        
+                        </template>
+                    </select>
+            </div>
+            <!-- <div class="slds-box  slds-box_x-small space-right min-height">
+            </div> -->
+        </div>
+        <!-- <div class="slds-size_1-of-6 slds-float_left" if:true={loaded}>
+            <div class="slds-box  slds-box_x-small space-right min-height">
+                    <p class="field-title" title={indicatorLabel}>
+                        <span class="slds-form-element__label" style="color: #54698d;">{indicatorLabel}</span>
+                    </p> -->
+                    <!--<select id="select-indicator-picklist" class="select-size gray-border" name="optionIndicatorSelect" onchange={changeIndicatorHandler}>
+                        <template for:each={indicatorOptions} for:item="mp">
+                            <option key={mp.value} value={mp.value} selected={mp.checked}>{mp.label}</option>                        
+                        </template>
+                    </select>-->
+                    <!-- <input size="20" value={indicatorValueSearch} onchange={handleIndicatorValueSearchChanged} class="select-size gray-border" />                                
+            </div>
+        </div> -->
+        <div class="slds-size_1-of-5 slds-float_left" if:true={showPUFilter}>
+            <div class="slds-box slds-box_x-small space-right min-height">
+                    <p class="field-title" title={geographicAreaLabel}>
+                        <span class="slds-form-element__label" style="color: #54698d;">{geographicAreaLabel}</span>
+                    </p>
+                    <select id="select-geographic-area-picklist" class="select-size gray-border" name="optionGeographicAreaSelect" onchange={changeGeographicAreaHandler}>
+                        <template for:each={geographicAreaOptions} for:item="ga">
+                            <option key={ga.value} value={ga.value} selected={ga.checked}>{ga.label}</option>                        
+                        </template>
+                    </select>
+            </div>            
+        </div>
+        <div class={personalizeClass} if:true={loaded}>
+            <div class="slds-box  slds-box_x-small space-right min-height">
+                <p class="field-title" title={filterLabel} style="width: 95%">
+                    <span class="slds-form-element__label" style="color: #54698d;">{filterLabel}</span>
+                </p>
+                <div class="select-size" style="display: contents;">
+                    <lightning-button variant="brand" label="Reset" title="Reset" onclick={handleClearChangesClick} class="slds-m-top_x-small select-size gray-border" style="float: left; width: 70px"></lightning-button>
+                    <lightning-button variant="brand" label="Search" title="Search" onclick={handleSearchClick} class="slds-m-right_x-small slds-m-top_x-small select-size gray-border" style="float: left; width: 70px; margin-left: 4px;"></lightning-button>                
+                    <lightning-button variant="brand" label="Save" title="Save" if:true={saveManual} onclick={handleSaveClick} class="slds-m-top_x-small select-size gray-border" style="float: left; width: 70px; margin-left: 8px;"></lightning-button>
+                    <!-- <lightning-input type="checkbox" label="Save Manual" style={checkboxStyle} onchange={handleCheckboxChange}></lightning-input> -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="slds-size_2-of-6 slds-float_left" if:true={loaded}>
+            <div class="slds-box  slds-box_x-small buttonAlignment">
+                <lightning-button variant="brand" label="Reset" title="Reset" onclick={handleClearChangesClick} class="slds-m-top_x-small select-size gray-border"></lightning-button>
+                <lightning-button variant="brand" label="Search" title="Search" onclick={handleSearchClick} class="slds-m-right_x-small slds-m-top_x-small select-size gray-border"></lightning-button>
+            </div>
+        </div> -->
+        <!-- <div class="slds-box  slds-box_x-small space-right min-height">
+            </div>                                   -->
+        <!-- <div class="buttonAlignment" if:true={loaded}>
+            <p>&nbsp;</p>
+            <lightning-button variant="brand" label="Clear Changes" title="Clear Changes" onclick={handleClearChangesClick} class="slds-m-top_x-small select-size gray-border"></lightning-button>
+            <lightning-button variant="brand" label="Search" title="Search" onclick={handleSearchClick} class="slds-m-right_x-small slds-m-top_x-small select-size gray-border"></lightning-button>
+            <lightning-button variant="brand" label="Save Data" title="Save Data" if:true={saveManual} onclick={handleSaveClick} class="slds-m-top_x-small select-size gray-border"></lightning-button>
+        </div> -->
+    </div>
+    <div class="slds-wrap" if:true={showComponent}>
+        <div class="slds-size_1-of-1" if:false={noIndicatorsAvailable}>
+            <!-- <c-cross-custom-table pageheadersjson={pageHeadersJSON} pagedetailsjson={pageDetailsJSON}>
+            </c-cross-custom-table> -->
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered gray-border show-scroll">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <template for:each={pageHeadersData} for:item="pageHeader">
+                            <th scope="col" key={pageHeader} class="clean_header">{pageHeader}</th>
+                        </template>
+                    </tr>
+                </thead>  
+                <tbody>
+                    <template for:each={pageDetailsData} for:item="pageDetails">
+                        <template for:each={pageDetails.Value} for:item="dataValue">
+                            <tr class="slds-hint-parent" key={dataValue.Id}> 
+                                <td key={pageDetails.Name} class="indicator-title">
+                                    <div class="slds-truncate indicator-text">{pageDetails.Name}</div>
+                                </td>
+                                <template for:each={dataValue.Details} for:item="dataValueDetails">
+                                    <td key={dataValueDetails.Random} class="indicator-value">
+                                        <!-- <div class={pointerEventsEnabled}> -->
+                                        <div class='slds-truncate'>
+                                            <c-input-with-params id={dataValueDetails.Id} 
+                                                                 category={dataValueDetails.Category} 
+                                                                 piga={dataValueDetails.PIGA} 
+                                                                 pirp={dataValueDetails.PIRP} 
+                                                                 pi={dataValueDetails.PI} 
+                                                                 type={dataValueDetails.Type} 
+                                                                 value={dataValueDetails.Value} 
+                                                                 endperioddate={dataValueDetails.EndPeriodDate} 
+                                                                 tracked={dataValueDetails.DataTracked} 
+                                                                 decimalnumber={dataValueDetails.DecimalNumber}
+                                                                 oninputchanged={handleInputValueChange}>
+                                            </c-input-with-params>
+                                        </div>
+                                    </td>
+                                </template>                                
+                            </tr>
+                        </template>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="slds-wrap" if:true={showComponent}> 
+        <div if:true={noIndicatorsAvailable} class="slds-size_1-of-1">
+            <p class="warning-message">No indicators available for the selected filters</p>
+        </div>
+    </div>
+    <div class="slds-wrap" if:false={showComponent}> 
+        <div class="slds-size_1-of-1">
+            <p class="warning-message">This component is not available for this type of project</p>
+        </div>
+    </div>
+</template>

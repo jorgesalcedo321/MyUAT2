@@ -1,0 +1,32 @@
+<template>
+	<lightning-spinner if:true={isLoading} alternative-text="loading..." variant="brand" size="small">
+	</lightning-spinner>
+	<h3 class="slds-section__title">
+		<button class="slds-button slds-section__title-action" onclick={handleSectionClick}>
+                <lightning-icon icon-name="utility:switch" class="slds-button__icon slds-button__icon_left slds-section__title-action-icon" size="x-small"></lightning-icon>
+                <span class="slds-truncate" title={sectionLabel}>{sectionLabel}</span>
+            </button>
+	</h3>
+	<div if:true={openSection}>
+		<c-address-form record-id={recordId} object-name={objectApiName} object-type='PUs' is-additional={noAdditional}
+			show-content-in-section={notShowSection}>
+		</c-address-form>
+		<lightning-record-edit-form record-id={recordId} object-api-name={objectApiName} onerror={handleError}
+			onsuccess={handleSuccess}>
+			<lightning-layout multiple-rows="true" style="width: 98%; display:contents; height: 50px;">
+				<lightning-layout-item key={picklistDatafield} padding="around-small">
+					<lightning-layout>
+						<lightning-layout-item style="width:100%; padding-left: 10px">
+							<lightning-input-field key={picklistDatafield}
+								field-name='Corresponding_address_different__c' onchange={correspondingAddressChanged}>
+							</lightning-input-field>
+						</lightning-layout-item>
+					</lightning-layout>
+				</lightning-layout-item>
+			</lightning-layout>
+		</lightning-record-edit-form>
+		<c-address-form record-id={recordId} object-name={objectApiName} object-type='PUs' is-additional={additional}
+			if:true={correspondingAddressChecked} show-content-in-section={notShowSection}>
+		</c-address-form>
+	</div>
+</template>

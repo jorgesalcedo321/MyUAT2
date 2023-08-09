@@ -1,0 +1,79 @@
+/*style*/
+.coloring-style {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: -15px;
+}
+
+.coloring-in-form-style {
+    background-color: white;
+    padding-top: 15px;
+}
+
+ .color_image_none:hover,
+ .color_image_1:hover,
+ .color_image_2:hover,
+ .color_image_3:hover,
+ .color_image_4:hover,
+ .color_image_5:hover  {
+    background-color: rgb(243, 243, 243);
+}
+
+.color_image_none {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -115px;
+}
+
+.color_image_1 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: 2px;
+}
+
+.color_image_2 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -24px;
+}
+
+.color_image_3 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -46px;
+}
+
+.color_image_4 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -71px;
+}
+
+.color_image_5 {
+    height: 25px;
+    background-image: url('/resource/Colors');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-size: 20px 140px;
+    background-position-y: -96px;
+}
+
+.coloring-picklist {
+    border-radius:2%;
+    border-color:lightgray;
+}

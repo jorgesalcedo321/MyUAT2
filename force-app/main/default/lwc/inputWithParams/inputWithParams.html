@@ -1,0 +1,9 @@
+<template>
+    <label if:true={isLabel} class="input-number label-number">{value}</label>
+    <input if:true={notShowdecimals} type="number" size="6" min="0" value={value} onchange={handleValueChanged} class="input-number"/>
+    <!-- <input if:true={showdecimals} type="number" size="6" min="0" value={value} onchange={handleValueChanged} oninput={limitDecimalPlaces} class="input-number" step="0.01"/> -->
+    <input if:true={showdecimals} size="6" min="0" value={value} onchange={handleValueChanged} oninput={limitDecimalPlaces} class="input-number" step="0.01" pattern="[0-9]"/>
+    
+    <!-- <span class="space-right" if:true={isPercentage}> %</span> -->
+    <!-- <span if:true={isNumber}>Nº</span> -->
+</template>

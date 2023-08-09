@@ -1,0 +1,90 @@
+<template>
+    <div class="customSettings">
+        <div class="slds-m-top_medium slds-m-bottom_x-large slds-m-top_none">
+            <template if:true={showParentPath}>
+                <template if:true={showLinks}>
+                    <lightning-breadcrumbs>
+                        <lightning-breadcrumb label={customObjectName} href={CustomObjectUrlLink}>
+                        </lightning-breadcrumb>
+                        <lightning-breadcrumb label={parentMAName} href={parentMAUrl}>
+                        </lightning-breadcrumb>
+                    </lightning-breadcrumbs>
+                </template>
+                <template if:false={showLinks}>
+                    <lightning-breadcrumbs>
+                        <lightning-breadcrumb label={customObjectName}>
+                        </lightning-breadcrumb>
+                        <lightning-breadcrumb label={parentMAName}>
+                        </lightning-breadcrumb>
+                    </lightning-breadcrumbs>
+                </template>
+            </template>
+            <!-- START PAGE HEADER -->
+            <article class="slds-card">
+                <div class="slds-page-header">
+                    <div class="slds-page-header__row">
+                        <div class="slds-page-header__col-title">
+                            <div class="slds-media">
+                                <div class="slds-media__body">
+                                    <div class="slds-page-header__name">
+                                        <div class="slds-page-header__name-title">
+                                            <template if:true={showLinks}>
+                                                <lightning-tile label={titleToShow} type="media" href={url} class="cssBlack navStyle">
+                                                    <!--https://www.lightningdesignsystem.com/icons/#standard-->
+                                                    <lightning-icon slot="media" icon-name={icon} size="small" class={iconBackground}></lightning-icon>
+                                                </lightning-tile>
+                                            </template>
+                                            <template if:false={showLinks}>
+                                                <lightning-tile label={titleToShow} type="media" aria-current="page" class="cssBlack navStyle">
+                                                    <!--https://www.lightningdesignsystem.com/icons/#standard-->
+                                                    <lightning-icon slot="media" icon-name={icon} size="small" class={iconBackground}></lightning-icon>
+                                                </lightning-tile>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-page-header__col-actions" if:true={showNewRowActionAfterEvaluation}>
+                            <div class="slds-page-header__controls">
+                                <div class="slds-page-header__control">
+                                    <ul class="slds-button-group-list">
+                                        <li>
+                                            <button class="slds-button slds-button_neutral" onclick={newRow}>{label.LBL_NEW}</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- END PAGE HEADER -->
+
+        </div>
+        <template if:true={showDatatable}>
+            <div class="slds-box" style="height: 200px; padding: 0px;">
+                <lightning-datatable key-field="id"
+                                     data={data}
+                                     columns={columns}
+                                     hide-checkbox-column="true"
+                                     onrowaction={handleRowAction}
+                                     enable-infinite-loading
+                                     load-more-offset="20"
+                                     onloadmore={handleLoadMore}
+									 hide-default-actions=true
+                                     sorted-by={sortBy}
+                                     sorted-direction={sortDirection}
+                                     onsort={doSorting}
+                                     show-row-number-column>
+                </lightning-datatable>
+            </div>
+            <div class="slds-p-around_medium lgc-bg" style="height:50px">
+                <div class="slds-float_left" title={textCountRecords}>{textCountRecords}</div>
+                <span class="slds-float_right" title={textDisplayedRecords}>{textDisplayedRecords}</span>
+            </div>
+            <!--show-row-number-column-->
+            <!-- {loadMoreStatus} -->
+        </template>
+    </div>
+</template>

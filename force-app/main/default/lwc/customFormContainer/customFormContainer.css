@@ -1,0 +1,67 @@
+/*style*/
+.coloring-form-style {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.community-site-form {
+    border: 0px !important;
+    padding: 0px 10px;
+}
+
+option:hover {
+    background-color: lightgray;
+}
+
+.quickActionFooter {
+    visibility: hidden;
+}
+
+.space-sections {
+    margin-top:-15px;
+}
+
+.space-minor-sections {
+    margin-top:-5px;
+}
+.border-dashed {
+    /*width: 90% !important;*/
+    border-bottom: 1px #CCC dashed !important;
+    width: 48%;
+    margin-right: 2%;
+}
+
+:host(.customize-width) {
+    width: 90%;
+}
+
+.customize-width {
+    width: 90%;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.coloring-component {
+    margin: 0px 15px;
+    margin-bottom: 10px;
+    width: 47%;
+    border-bottom: 1px dashed lightgray; 
+}
+
+.common-component {
+    margin: 5px 15px;
+    width: 47%; 
+    border-bottom: 1px dashed lightgray;
+}
+
+.styleClass {
+    border-bottom: 1px dashed lightgray;
+    margin-left: 15px;
+    padding: 0px;
+    width: 45% !important;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50</apiVersion>
+	<isExposed>true</isExposed>
+	<description>Description for coloringCombobox</description>
+    <masterLabel>coloringCombobox</masterLabel>
+	<targets>
+		<target>lightning__RecordPage</target>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__RecordPage,lightningCommunity__Default">
+			<property name="recordId" type="String" default="" description="The value should be {!recordId}."></property>
+			<property name="objectName" type="String" default="ampi__risk__c" description="Add a custom object api name"></property>
+			<property name="picklistDatafield" type="String" default="ampi__Potential_Impact__c"  description="Add a picklist api name"></property>
+			<property name="colorCodes" type="String"  description="Values should be separated by commas" default="#009900,#33cc00,#ffcc66,#ff9900,#ff0000"></property>
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

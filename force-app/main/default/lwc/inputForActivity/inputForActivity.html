@@ -1,0 +1,10 @@
+<template>
+	<label if:true={islabel}>{value}</label>
+	<input if:true={ischeckbox} id={id} type="checkbox" onchange={checkChangeHandler} class="input-number"/>
+	<select if:true={islistbox} id={id} style="height: 30px; width: 100%" name={id} onchange={statusChangeHandler}>
+        <template for:each={statusOptions} for:item="status">
+            <option if:true={status.checked} key={status.value} value={status.value} selected>{status.label}</option>                        
+            <option if:false={status.checked} key={status.value} value={status.value}>{status.label}</option>                        
+        </template>
+    </select>
+</template>

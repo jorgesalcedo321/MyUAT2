@@ -1,0 +1,102 @@
+<template>
+	<!-- lightning button for open modal window -->
+	<!-- <lightning-button variant="brand" label="Update Activities" title="Update Activities" onclick={openModal} class="slds-m-left_x-small"></lightning-button> -->
+	<lightning-button variant="brand" label={buttonName} title={buttonName} onclick={showModalPopup}
+		class={buttonClass}></lightning-button>
+	<!--Use template if:true to display/hide popup based on isModalOpen value-->
+	<!-- <p>HEY!!!! YOU TOO!!! NOT SHOWN! CLOSE ENOUGH!</p> -->
+	<c-util-modal show-modal={showModal} show-positive={showPositiveButton} positive-button-label={positiveButtonLabel}
+		show-negative={showNegativeButton} onpositive={closeModal} onclose={closeModal}>
+		<div slot="header">
+			<h2 slot="header" id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{headerTitle}</h2>
+		</div>
+		<div slot="body">
+			<p><span class="warning">{noteWarning}</span>{noteTitle}</p>
+			<!-- <p class="description">{noteDescription}</p> -->
+			<div class="spinner">
+				<template if:true={isLoading}>
+					<lightning-spinner alternative-text="Loading" variant="brand" size="large">
+					</lightning-spinner>
+				</template>
+			</div>
+			<div class="slds-grid slds-wrap coloring-in-form-style">
+				<!-- <div class="slds-col">
+					<p class="field-title" title={labelResult}>
+						<span class="slds-form-element__label">{labelResult}</span>
+					</p>
+					<div style="padding-right: 5px;">
+						<select class="coloring-picklist" id="result-picklist" style="height: 30px; width: 100%" name="resultSelect" onchange={resultChangeHandler}>
+                        	<template for:each={resultOptions} for:item="result">
+                            	<option key={result.value} value={result.value} selected={result.checked}>{result.label}</option>                        
+                        	</template>
+                        </select>
+					</div>
+				</div> -->
+				<div class="slds-col">
+					<p class="field-title" title={labelYear}>
+						<span class="slds-form-element__label">{labelYear}</span>
+					</p>
+					<div style="padding-right: 5px;">
+						<select class="coloring-picklist" id="year-picklist" style="height: 30px; width: 100%" name="yearSelect" onchange={yearChangeHandler}>
+							<template for:each={yearOptions} for:item="year">
+                            	<option key={year.value} value={year.value} selected={year.checked}>{year.label}</option>                        
+                            </template>
+                        </select>
+					</div>
+				</div>
+			</div>
+			<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-p-top_small">
+				<lightning-button variant="brand" label={searchButton} title={searchButton} type="submit"
+					onclick={searchActivities} class="slds-button slds-button_brand"></lightning-button>
+			</div>
+
+			<div class="slds-wrap" style="margin-top: 10px">
+				<div class="slds-size_1-of-1" if:false={noActivitiesAvailable}>
+					<!-- <c-cross-custom-table pageheadersjson={pageHeadersJSON} pagedetailsjson={pageDetailsJSON}>
+                            </c-cross-custom-table> -->
+					<table class="slds-table slds-table_cell-buffer slds-table_bordered gray-border show-scroll">
+						<thead>
+							<tr class="slds-line-height_reset">
+								<template for:each={pageHeadersData} for:item="pageHeader">
+									<th scope="col" key={pageHeader.label} class="clean_header"
+										if:false={pageHeader.check}>{pageHeader.label}</th>
+									<th scope="col" key={pageHeader.label} class="clean_header"
+										if:true={pageHeader.check}>
+										<input type="checkbox" onclick={markAllActivities}></label>
+									</th>
+								</template>
+							</tr>
+						</thead>
+						<tbody>
+							<template for:each={pageDetailsData} for:item="pageDetails">
+								<tr class="slds-hint-parent" key={pageDetails.name}>
+									<template for:each={pageDetails.Value} for:item="dataValue">
+										<td key={dataValue.name} class="indicator-title">
+											<!-- <div class="slds-truncate indicator-text">{pageDetails.Name}</div> -->
+											<div class='slds-truncate'>
+												<c-input-for-activity id={dataValue.id} islabel={dataValue.islabel}
+													ischeckbox={dataValue.ischeckbox} islistbox={dataValue.islistbox}
+													value={dataValue.value} status={jsonstatus}
+													oninputchanged={handleInputValueChange}
+													onlistboxchanged={handleListBoxValueChange}>
+												</c-input-for-activity>
+											</div>
+										</td>
+									</template>
+								</tr>
+							</template>
+						</tbody>
+					</table>
+				</div>
+				<div if:true={noActivitiesAvailable} class="slds-size_1-of-1">
+					<p class="warning-message">No New Main Activities available for the selected filters</p>
+				</div>
+			</div>
+			<div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-p-top_small"
+				if:false={noActivitiesAvailable}>
+				<lightning-button variant="brand" label={saveButton} title={saveButton} type="submit" onclick={saveActivities}
+					class="slds-button slds-button_brand" if:false={noActivitiesAvailable}></lightning-button>
+			</div>
+		</div>
+	</c-util-modal>
+</template>
