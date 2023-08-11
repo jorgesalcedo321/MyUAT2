@@ -8,6 +8,10 @@
         <label>Fields</label>
         <layoutColumns>
             <layoutItems>
+                <behavior>Required</behavior>
+                <field>International_Funding_Required_for_Imp__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Project_ID__c</field>
             </layoutItems>
@@ -91,6 +95,9 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <miniLayout>
+        <fields>International_Funding_Required_for_Imp__c</fields>
+    </miniLayout>
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>

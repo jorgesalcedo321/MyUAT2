@@ -232,8 +232,11 @@ public class ActivityTriggerHandler {
     private void beforeInsertCheckActivitiesDuplicatedByUniqueNameAndProjectId(ampi__activity__c newActivity, List<ampi__activity__c> activitiesSameProject) {
         for(ampi__activity__c act : activitiesSameProject) {
             if (newActivity.project__c == act.project__c) {
-                if (newActivity.Unique_Name__c == act.Unique_Name__c) {
-            		act.addError('Duplicate Activity ID field with the activity name:"' + act.Name + '"');        
+                if (newActivity.Unique_Name__c == act.Unique_Name__c) {                    
+                    // System.debug('#### beforeUpdateCheckActivityDuplicity 1 : ' + newActivity.Order_ID__c);
+                    // System.debug('#### beforeUpdateCheckActivityDuplicity 1 : ' + newActivity.Unique_Name__c);
+                    // System.debug('#### beforeUpdateCheckActivityDuplicity 1 : ' + newActivity.ampi__Type__c);                    
+            		newActivity.addError('Duplicate Activity ID field with the activity name:"' + act.Name + '"');        
                 }        
             }
         }
@@ -248,11 +251,14 @@ public class ActivityTriggerHandler {
     private void beforeInsertActivityRestrictionByParentActivityFromSameType(ampi__Activity__c updateActivity) {
             String activityType = updateActivity.ampi__Type__c;
             String currentParentActivity = updateActivity.ampi__Parent_Activity__c;
-            Integer existsByConditions = [SELECT Count() FROM ampi__activity__c WHERE Id =: currentParentActivity AND project__c =: updateActivity.project__c AND ampi__Type__c =: activityType AND ampi__Parent_Activity__c = NULL];
 
-            if (existsByConditions == 0) {
-                updateActivity.addError('Cannot update Parent Activity from different activity type than ' + activityType);
-                return;
+            if (currentParentActivity <> NULL && currentParentActivity <> '') {
+                Integer existsByConditions = [SELECT Count() FROM ampi__activity__c WHERE Id =: currentParentActivity AND project__c =: updateActivity.project__c AND ampi__Type__c =: activityType AND ampi__Parent_Activity__c = NULL];
+
+                if (existsByConditions == 0) {
+                    updateActivity.addError('Cannot update Parent Activity from different activity type than ' + activityType);
+                    return;
+                }
             }
     }
 
@@ -303,7 +309,7 @@ public class ActivityTriggerHandler {
                                 String ActivityName = '';
                                 
                                 //List<ampi__activity__c> activitiesSameActivityId = [SELECT Id, Name, Unique_Name__c, project__c FROM ampi__activity__c WHERE project__c =: taskUpdated.Project__c AND Id <>: taskUpdated.Id && Unique_Name__c =: taskUpdated.Unique_Name__c];		
-								
+								System.debug('#### beforeUpdateCheckActivityDuplicity 1 : ' + updateActivity.Unique_Name__c);
                                 for (ampi__activity__c currentActivity : [SELECT Id, Name, Unique_Name__c, project__c FROM ampi__activity__c WHERE project__c =: updateActivity.Project__c AND Id !=: updateActivity.Id AND Unique_Name__c =: updateActivity.Unique_Name__c]) {
                                     //if (currentActivity.project__c == taskUpdated.Project__c) {
                                     //    if (currentActivity.Id <> taskUpdated.Id && currentActivity.Unique_Name__c == taskUpdated.Unique_Name__c) {

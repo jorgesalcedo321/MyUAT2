@@ -132,7 +132,7 @@
                 <field>Early_PSA_Feedback_Desired__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>International_Funding_Required_for_Imp__c</field>
             </layoutItems>
         </layoutColumns>

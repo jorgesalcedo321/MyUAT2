@@ -5597,11 +5597,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>ampi__Project__c.International_Funding_Required_for_Imp__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>ampi__Project__c.Investment_only_project__c</field>
         <readable>false</readable>
     </fieldPermissions>

@@ -38,7 +38,17 @@
     </availableFields>
     <description>This field set controls which fields are visible and editable to users in the Edit Activity Pop-up in the Activity Lightning Component.</description>
     <displayedFields>
+        <field>ampi__Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>true</isRequired>
+    </displayedFields>
+    <displayedFields>
         <field>ampi__Parent_Activity__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>ampi__Project_Objective__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
@@ -53,12 +63,12 @@
         <isRequired>true</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>ampi__Type__c</field>
+        <field>ampi__Description__c</field>
         <isFieldManaged>false</isFieldManaged>
-        <isRequired>true</isRequired>
+        <isRequired>false</isRequired>
     </displayedFields>
     <displayedFields>
-        <field>ampi__Description__c</field>
+        <field>Thematic_Area__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
@@ -86,16 +96,6 @@
         <field>ampi__Status__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>true</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>ampi__Project_Objective__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>Thematic_Area__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
     </displayedFields>
     <label>EDIT_ACTIVITY_POPUP</label>
 </FieldSet>

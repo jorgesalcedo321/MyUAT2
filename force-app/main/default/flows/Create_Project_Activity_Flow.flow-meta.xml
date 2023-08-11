@@ -41,10 +41,26 @@
         </connector>
     </assignments>
     <assignments>
+        <name>Error_Message_RB</name>
+        <label>Error Message RB</label>
+        <locationX>662</locationX>
+        <locationY>469</locationY>
+        <assignmentItems>
+            <assignToReference>error_message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Cannot fill both fields &apos;Project Result Statement&apos; and &apos;Parent Activity&apos; on Result Based type</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Error_Message_Screen</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>Set_Error_For_Activities</name>
         <label>Set Error For Activities</label>
-        <locationX>650</locationX>
-        <locationY>451</locationY>
+        <locationX>541</locationX>
+        <locationY>320</locationY>
         <assignmentItems>
             <assignToReference>error_message</assignToReference>
             <operator>Assign</operator>
@@ -228,8 +244,8 @@
         <description>Validation should happen when user tries to save activity on standard grant and humanitarian projects without activity type.</description>
         <name>Activity_Type_is_mandatory</name>
         <label>Activity Type is mandatory?</label>
-        <locationX>837</locationX>
-        <locationY>450</locationY>
+        <locationX>757</locationX>
+        <locationY>297</locationY>
         <defaultConnector>
             <targetReference>what_is_selected</targetReference>
         </defaultConnector>
@@ -282,14 +298,14 @@
         <name>Check_If</name>
         <label>Check If ResultBase Type Is Selected Correctly</label>
         <locationX>849</locationX>
-        <locationY>626</locationY>
+        <locationY>627</locationY>
         <defaultConnector>
-            <targetReference>Activity_Type_is_mandatory</targetReference>
+            <targetReference>ResultBased_Type_ParentAct_And_RS_Selected</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>Yes</defaultConnectorLabel>
         <rules>
             <name>No</name>
-            <conditionLogic>1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 7)</conditionLogic>
+            <conditionLogic>1 AND ((2 OR 4 OR 6) AND (3 OR 5 OR 7))</conditionLogic>
             <conditions>
                 <leftValueReference>Activity_Type_New</leftValueReference>
                 <operator>EqualTo</operator>
@@ -383,6 +399,59 @@
                 <targetReference>Select_Implementation_Plan</targetReference>
             </connector>
             <label>Multiple Implementation Plans</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>ResultBased_Type_ParentAct_And_RS_Selected</name>
+        <label>ResultBased Type ParentAct And RS Selected?</label>
+        <locationX>836</locationX>
+        <locationY>449</locationY>
+        <defaultConnector>
+            <targetReference>Activity_Type_is_mandatory</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes_RB</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Activity_Type_New</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>choice_Results_Based</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Parent_Activity_New_RB</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Parent_Activity_New_RB</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Result_Statement_New</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Result_Statement_New</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Message_RB</targetReference>
+            </connector>
+            <label>Yes</label>
         </rules>
     </decisions>
     <decisions>
@@ -670,7 +739,12 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
     <formulas>
         <name>value_status_new_or_open</name>
         <dataType>String</dataType>
-        <expression>IF({!Activity_Type_Task_Milestone_New} == {!choice_Task}, {!choice_Status_New}, {!choice_Status_Open})</expression>
+        <expression>IF(OR(ISNULL({!Activity_Type_Task_Milestone_New}), ISBLANK({!Activity_Type_Task_Milestone_New}), {!Activity_Type_Task_Milestone_New} == {!choice_Task}), {!choice_Status_New}, {!choice_Status_Open})</expression>
+    </formulas>
+    <formulas>
+        <name>xx_Activity_Type_Final_Value</name>
+        <dataType>String</dataType>
+        <expression>IF({!Activity_Type_Task_Milestone_New}=={!choice_Milestone},&quot;Milestone&quot;,&quot;Task&quot;)</expression>
     </formulas>
     <interviewLabel>Create Project Activity 2.0 {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Create Project Activity</label>
@@ -805,7 +879,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
         <inputAssignments>
             <field>ampi__xx_Activity_Type__c</field>
             <value>
-                <elementReference>Activity_Type_Task_Milestone_New</elementReference>
+                <elementReference>xx_Activity_Type_Final_Value</elementReference>
             </value>
         </inputAssignments>
         <object>ampi__Activity__c</object>
@@ -1066,7 +1140,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
         <name>Choose_Parent_Or_Project_Result_Statement</name>
         <label>Choose Parent Or Project Result Statement</label>
         <locationX>868</locationX>
-        <locationY>801</locationY>
+        <locationY>800</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1082,6 +1156,30 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
             <fieldText>Task or Milestone</fieldText>
             <fieldType>DropdownBox</fieldType>
             <isRequired>false</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>Get_Record_Type_From_Project.DeveloperName</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>Standard</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Get_Record_Type_From_Project.DeveloperName</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>Grant</stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Get_Record_Type_From_Project.DeveloperName</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>Humanitarian</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
         </fields>
         <fields>
             <name>Activity_Type_New</name>
@@ -1107,13 +1205,6 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
                 <conditions>
-                    <leftValueReference>Result_Statement_New</leftValueReference>
-                    <operator>EqualTo</operator>
-                    <rightValue>
-                        <elementReference>choice_None</elementReference>
-                    </rightValue>
-                </conditions>
-                <conditions>
                     <leftValueReference>Activity_Type_New</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
@@ -1131,12 +1222,33 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
             <helpText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, &amp;quot;Fira Sans&amp;quot;, &amp;quot;Droid Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; color: rgb(23, 43, 77);&quot;&gt;For sub-activities, please select the related main activities (needs to be entered before). For main activities, please select &quot;none&quot;&lt;/span&gt;&lt;/p&gt;</helpText>
             <isRequired>false</isRequired>
             <visibilityRule>
-                <conditionLogic>and</conditionLogic>
+                <conditionLogic>1 OR (1 AND (2 OR 3 oR 4))</conditionLogic>
                 <conditions>
                     <leftValueReference>Activity_Type_New</leftValueReference>
                     <operator>EqualTo</operator>
                     <rightValue>
                         <elementReference>choice_Results_Based</elementReference>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Result_Statement_New</leftValueReference>
+                    <operator>IsNull</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Result_Statement_New</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue></stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Result_Statement_New</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>choice_None</elementReference>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -1145,11 +1257,11 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
             <name>Result_Statement_New</name>
             <choiceReferences>rChoice_Result_Statements</choiceReferences>
             <dataType>String</dataType>
-            <fieldText>Result Statement</fieldText>
+            <fieldText>Project Result Statement</fieldText>
             <fieldType>DropdownBox</fieldType>
             <isRequired>false</isRequired>
             <visibilityRule>
-                <conditionLogic>and</conditionLogic>
+                <conditionLogic>(1 AND 2) OR (1 AND 2 AND (3 OR 4 OR 5))</conditionLogic>
                 <conditions>
                     <leftValueReference>Parent_Activity_New_Overarching</leftValueReference>
                     <operator>EqualTo</operator>
@@ -1162,6 +1274,27 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
                     <operator>EqualTo</operator>
                     <rightValue>
                         <elementReference>choice_Results_Based</elementReference>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Parent_Activity_New_RB</leftValueReference>
+                    <operator>IsNull</operator>
+                    <rightValue>
+                        <booleanValue>true</booleanValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Parent_Activity_New_RB</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue></stringValue>
+                    </rightValue>
+                </conditions>
+                <conditions>
+                    <leftValueReference>Parent_Activity_New_RB</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <elementReference>choice_None</elementReference>
                     </rightValue>
                 </conditions>
             </visibilityRule>
@@ -1241,7 +1374,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
         </fields>
         <fields>
             <name>label_rs</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Result Statement: {!Result_Statement_New}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Project Result Statement: {!Result_Statement_New}&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <visibilityRule>
                 <conditionLogic>and</conditionLogic>
@@ -1570,7 +1703,7 @@ LEFT({!var_Parent_Activity_OrderID} &amp; &quot;.&quot; &amp; TEXT({!Activity_ID
         </connector>
         <fields>
             <name>Output_Values</name>
-            <fieldText>&lt;p&gt;&lt;strong&gt;Implementation Plan: &lt;/strong&gt;{!var_Implementation_Plan_Name}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Activity Type: &lt;/strong&gt;{!Activity_Type_New}&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Parent Activity For Overarching: &lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!Parent_Activity_New_Overarching}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;Parent Activity For Results-Based: &lt;/strong&gt;&lt;span style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;{!Parent_Activity_New_RB}&lt;/span&gt;&lt;strong style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt; &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Result Statement For Results-Based:&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt; {!var_Result_Statement_Name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Activity Name:&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt; {!fx_Activity_Name_New}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Activity ID: &lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!Activity_ID}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Description:&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt; {!Description}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Person Responsible: &lt;/strong&gt;{!Person_Responsible}&lt;span style=&quot;color: var(--lwc-colorTextWeak,rgb(62, 62, 60)); font-size: var(--lwc-fontSize3,0.8125rem); font-family: var(--lwc-fontFamily,&amp;quot;Salesforce Sans&amp;quot;, Arial, sans-serif);&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Persons Involved: &lt;/strong&gt;{!Persons_Involved}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Start Date: &lt;/strong&gt;&lt;span style=&quot;background-color: var(--lwc-colorBackgroundInput,rgb(255, 255, 255)); color: var(--lwc-colorTextWeak,rgb(62, 62, 60)); font-size: var(--lwc-fontSize3,0.8125rem); font-family: var(--lwc-fontFamily,&amp;quot;Salesforce Sans&amp;quot;, Arial, sans-serif);&quot;&gt;{!Start_Date}&lt;/span&gt;&lt;span style=&quot;color: var(--lwc-colorTextWeak,rgb(62, 62, 60)); font-size: var(--lwc-fontSize3,0.8125rem); font-family: var(--lwc-fontFamily,&amp;quot;Salesforce Sans&amp;quot;, Arial, sans-serif);&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;End Date:&lt;/strong&gt; {!End_Date}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; {!value_status_new_or_open}&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;Service Type:&lt;/strong&gt;&lt;span style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;{!PTAsForm}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Implementation Plan: &lt;/strong&gt;{!var_Implementation_Plan_Name}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Activity Type: &lt;/strong&gt;{!Activity_Type_New}&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;Parent Activity For Overarching: &lt;/strong&gt;&lt;span style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;{!Parent_Activity_New_Overarching}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Parent Activity For Results-Based: &lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;{!Parent_Activity_New_RB}&lt;/span&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt; &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;Project Result Statement For Results-Based:&lt;/strong&gt;&lt;span style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt; {!var_Result_Statement_Name}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;Activity Name:&lt;/strong&gt;&lt;span style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt; {!fx_Activity_Name_New}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;Activity ID: &lt;/strong&gt;&lt;span style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;{!Activity_ID}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;Description:&lt;/strong&gt;&lt;span style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt; {!Description}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Person Responsible: &lt;/strong&gt;{!Person_Responsible}&lt;span style=&quot;font-family: var(--lwc-fontFamily,&amp;quot;Salesforce Sans&amp;quot;, Arial, sans-serif); font-size: var(--lwc-fontSize3,0.8125rem); color: var(--lwc-colorTextWeak,rgb(62, 62, 60));&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Persons Involved: &lt;/strong&gt;{!Persons_Involved}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Start Date: &lt;/strong&gt;&lt;span style=&quot;font-family: var(--lwc-fontFamily,&amp;quot;Salesforce Sans&amp;quot;, Arial, sans-serif); font-size: var(--lwc-fontSize3,0.8125rem); color: var(--lwc-colorTextWeak,rgb(62, 62, 60)); background-color: var(--lwc-colorBackgroundInput,rgb(255, 255, 255));&quot;&gt;{!Start_Date}&lt;/span&gt;&lt;span style=&quot;font-family: var(--lwc-fontFamily,&amp;quot;Salesforce Sans&amp;quot;, Arial, sans-serif); font-size: var(--lwc-fontSize3,0.8125rem); color: var(--lwc-colorTextWeak,rgb(62, 62, 60));&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;End Date:&lt;/strong&gt; {!End_Date}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; {!value_status_new_or_open}&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt;Service Type:&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(62, 62, 60);&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!PTAsForm}&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <nextOrFinishButtonLabel>Save</nextOrFinishButtonLabel>

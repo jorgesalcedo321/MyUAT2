@@ -63,21 +63,10 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Description_Language_1__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Description_Language_1__c , [ampi__Project_Indicator__c].ampi__Description_Language_1__c )</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_10_myRule_1_A1_5934972818</name>
-        <dataType>String</dataType>
-        <expression>IF(ISBLANK({!myVariable_current.ampi__Description_Language_1__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Description_Language_1__c} , {!myVariable_current.ampi__Description_Language_1__c} )</expression>
-    </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Description_Language_2__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Description_Language_2__c , [ampi__Project_Indicator__c].ampi__Description_Language_2__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_11_myRule_1_A1_8596607202</name>
+        <name>formula_10_myRule_1_A1_8254774571</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Description_Language_2__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Description_Language_2__c} , {!myVariable_current.ampi__Description_Language_2__c} )</expression>
     </formulas>
@@ -88,7 +77,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Description_Language_3__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Description_Language_3__c , [ampi__Project_Indicator__c].ampi__Description_Language_3__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_12_myRule_1_A1_9431038067</name>
+        <name>formula_11_myRule_1_A1_7620499085</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Description_Language_3__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Description_Language_3__c} , {!myVariable_current.ampi__Description_Language_3__c} )</expression>
     </formulas>
@@ -99,7 +88,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Description__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Description__c , [ampi__Project_Indicator__c].ampi__Description__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_13_myRule_1_A1_4903108626</name>
+        <name>formula_12_myRule_1_A1_9978537367</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Description__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Description__c} , {!myVariable_current.ampi__Description__c} )</expression>
     </formulas>
@@ -110,7 +99,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Disaggregation_Group_Language_1__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Disaggregation_Group_Language_1__c , [ampi__Project_Indicator__c].ampi__Disaggregation_Group_Language_1__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_14_myRule_1_A1_2424920466</name>
+        <name>formula_13_myRule_1_A1_1581336686</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Disaggregation_Group_Language_1__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Disaggregation_Group_Language_1__c} , {!myVariable_current.ampi__Disaggregation_Group_Language_1__c} )</expression>
     </formulas>
@@ -121,7 +110,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Disaggregation_Group_Language_2__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Disaggregation_Group_Language_2__c , [ampi__Project_Indicator__c].ampi__Disaggregation_Group_Language_2__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_15_myRule_1_A1_2340543566</name>
+        <name>formula_14_myRule_1_A1_3731312741</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Disaggregation_Group_Language_2__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Disaggregation_Group_Language_2__c} , {!myVariable_current.ampi__Disaggregation_Group_Language_2__c} )</expression>
     </formulas>
@@ -132,7 +121,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Disaggregation_Group_Language_3__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Disaggregation_Group_Language_3__c , [ampi__Project_Indicator__c].ampi__Disaggregation_Group_Language_3__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_16_myRule_1_A1_1001672030</name>
+        <name>formula_15_myRule_1_A1_1841043976</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Disaggregation_Group_Language_3__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Disaggregation_Group_Language_3__c} , {!myVariable_current.ampi__Disaggregation_Group_Language_3__c} )</expression>
     </formulas>
@@ -143,7 +132,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Disaggregation_Group__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Disaggregation_Group__c , [ampi__Project_Indicator__c].ampi__Disaggregation_Group__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_17_myRule_1_A1_9129588724</name>
+        <name>formula_16_myRule_1_A1_6033860225</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Disaggregation_Group__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Disaggregation_Group__c} , {!myVariable_current.ampi__Disaggregation_Group__c} )</expression>
     </formulas>
@@ -154,7 +143,7 @@
                 <stringValue>OR([ampi__Project_Indicator__c].ampi__Exclude_From_IATI__c , [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Exclude_From_IATI__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_18_myRule_1_A1_8955884329</name>
+        <name>formula_17_myRule_1_A1_3061406570</name>
         <dataType>Boolean</dataType>
         <expression>OR({!myVariable_current.ampi__Exclude_From_IATI__c} , {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Exclude_From_IATI__c} )</expression>
     </formulas>
@@ -165,7 +154,7 @@
                 <stringValue>IF(ISBLANK(TEXT([ampi__Project_Indicator__c].ampi__Geographical_Disaggregation__c )), TEXT([ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Geographical_Disaggregation__c ), TEXT([ampi__Project_Indicator__c].ampi__Geographical_Disaggregation__c ))</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_19_myRule_1_A1_6786007533</name>
+        <name>formula_18_myRule_1_A1_2995186253</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK(TEXT({!myVariable_current.ampi__Geographical_Disaggregation__c} )), TEXT({!myVariable_current.ampi__Catalog_Indicator__r.ampi__Geographical_Disaggregation__c} ), TEXT({!myVariable_current.ampi__Geographical_Disaggregation__c} ))</expression>
     </formulas>
@@ -176,7 +165,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Guideline_Language_1__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Guideline_Language_1__c , [ampi__Project_Indicator__c].ampi__Guideline_Language_1__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_20_myRule_1_A1_6335106762</name>
+        <name>formula_19_myRule_1_A1_4660839839</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Guideline_Language_1__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Guideline_Language_1__c} , {!myVariable_current.ampi__Guideline_Language_1__c} )</expression>
     </formulas>
@@ -187,7 +176,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Guideline_Language_2__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Guideline_Language_2__c , [ampi__Project_Indicator__c].ampi__Guideline_Language_2__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_21_myRule_1_A1_6476681386</name>
+        <name>formula_20_myRule_1_A1_7296640332</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Guideline_Language_2__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Guideline_Language_2__c} , {!myVariable_current.ampi__Guideline_Language_2__c} )</expression>
     </formulas>
@@ -198,7 +187,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Guideline_Language_3__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Guideline_Language_3__c , [ampi__Project_Indicator__c].ampi__Guideline_Language_3__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_22_myRule_1_A1_2360570783</name>
+        <name>formula_21_myRule_1_A1_4505618461</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Guideline_Language_3__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Guideline_Language_3__c} , {!myVariable_current.ampi__Guideline_Language_3__c} )</expression>
     </formulas>
@@ -209,7 +198,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Guideline__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Guideline__c, [ampi__Project_Indicator__c].ampi__Guideline__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_23_myRule_1_A1_3233909920</name>
+        <name>formula_22_myRule_1_A1_8113273523</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Guideline__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Guideline__c}, {!myVariable_current.ampi__Guideline__c} )</expression>
     </formulas>
@@ -220,7 +209,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Notes__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Notes__c, [ampi__Project_Indicator__c].ampi__Notes__c  )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_24_myRule_1_A1_9954561432</name>
+        <name>formula_23_myRule_1_A1_3256965696</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Notes__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Notes__c}, {!myVariable_current.ampi__Notes__c}  )</expression>
     </formulas>
@@ -232,7 +221,7 @@
                 </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_25_myRule_1_A1_0289156361</name>
+        <name>formula_24_myRule_1_A1_2925275052</name>
         <dataType>String</dataType>
         <expression>IF(TEXT({!myVariable_current.ampi__Number_of_Decimals_Places_Allowed__c}) == &apos;0&apos;, TEXT({!myVariable_current.ampi__Catalog_Indicator__r.ampi__Number_Of_Decimal_Places_Allowed__c}), TEXT({!myVariable_current.ampi__Number_of_Decimals_Places_Allowed__c}))</expression>
     </formulas>
@@ -243,7 +232,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Red_Yellow_Threshold__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Red_Yellow_Threshold__c *100, [ampi__Project_Indicator__c].ampi__Red_Yellow_Threshold__c *100)</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_26_myRule_1_A1_8279062884</name>
+        <name>formula_25_myRule_1_A1_9993076175</name>
         <dataType>Number</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Red_Yellow_Threshold__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Red_Yellow_Threshold__c} *100, {!myVariable_current.ampi__Red_Yellow_Threshold__c} *100)</expression>
         <scale>18</scale>
@@ -255,7 +244,7 @@
                 <stringValue>IF(ISBLANK(TEXT([ampi__Project_Indicator__c].ampi__Reporting_Frequency__c )), TEXT([ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Reporting_Frequency__c), TEXT([ampi__Project_Indicator__c].ampi__Reporting_Frequency__c ) )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_27_myRule_1_A1_0639212952</name>
+        <name>formula_26_myRule_1_A1_2540503796</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK(TEXT({!myVariable_current.ampi__Reporting_Frequency__c} )), TEXT({!myVariable_current.ampi__Catalog_Indicator__r.ampi__Reporting_Frequency__c}), TEXT({!myVariable_current.ampi__Reporting_Frequency__c} ) )</expression>
     </formulas>
@@ -266,7 +255,7 @@
                 <stringValue>IF(([ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Targets_Are_Disaggregated__c = TRUE) , TRUE, FALSE )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_28_myRule_1_A1_4358022110</name>
+        <name>formula_27_myRule_1_A1_0198561507</name>
         <dataType>Boolean</dataType>
         <expression>IF(({!myVariable_current.ampi__Catalog_Indicator__r.ampi__Targets_Are_Disaggregated__c} = TRUE) , TRUE, FALSE )</expression>
     </formulas>
@@ -277,20 +266,9 @@
                 <stringValue>IF(ISBLANK(TEXT([ampi__Project_Indicator__c].ampi__Type_of_Results__c )), TEXT([ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Type_of_Results__c ), TEXT([ampi__Project_Indicator__c].ampi__Type_of_Results__c ))</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_29_myRule_1_A1_8637269557</name>
+        <name>formula_28_myRule_1_A1_7699957416</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK(TEXT({!myVariable_current.ampi__Type_of_Results__c} )), TEXT({!myVariable_current.ampi__Catalog_Indicator__r.ampi__Type_of_Results__c} ), TEXT({!myVariable_current.ampi__Type_of_Results__c} ))</expression>
-    </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>$User.Id </stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_2_myRule_1_A2_9532870281</name>
-        <dataType>String</dataType>
-        <expression>{!$User.Id}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -299,9 +277,20 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Units_Language_1__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Units_Language_1__c , [ampi__Project_Indicator__c].ampi__Units_Language_1__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_30_myRule_1_A1_0755112866</name>
+        <name>formula_29_myRule_1_A1_0046606183</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Units_Language_1__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Units_Language_1__c} , {!myVariable_current.ampi__Units_Language_1__c} )</expression>
+    </formulas>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>IF(ISBLANK(TEXT([ampi__Project_Indicator__c].ampi__Calculate_Total__c )), TEXT([ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Calculate_Total__c ), TEXT([ampi__Project_Indicator__c].ampi__Calculate_Total__c ))</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_2_myRule_1_A1_8312689958</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK(TEXT({!myVariable_current.ampi__Calculate_Total__c} )), TEXT({!myVariable_current.ampi__Catalog_Indicator__r.ampi__Calculate_Total__c} ), TEXT({!myVariable_current.ampi__Calculate_Total__c} ))</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -310,7 +299,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Units_Language_2__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Units_Language_2__c , [ampi__Project_Indicator__c].ampi__Units_Language_2__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_31_myRule_1_A1_6685495598</name>
+        <name>formula_30_myRule_1_A1_5450996798</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Units_Language_2__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Units_Language_2__c} , {!myVariable_current.ampi__Units_Language_2__c} )</expression>
     </formulas>
@@ -321,7 +310,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Units_Language_3__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Units_Language_3__c , [ampi__Project_Indicator__c].ampi__Units_Language_3__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_32_myRule_1_A1_3475429979</name>
+        <name>formula_31_myRule_1_A1_7004012805</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Units_Language_3__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Units_Language_3__c} , {!myVariable_current.ampi__Units_Language_3__c} )</expression>
     </formulas>
@@ -332,7 +321,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Units__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Units__c , [ampi__Project_Indicator__c].ampi__Units__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_33_myRule_1_A1_0887069025</name>
+        <name>formula_32_myRule_1_A1_0869405662</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Units__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Units__c} , {!myVariable_current.ampi__Units__c} )</expression>
     </formulas>
@@ -343,7 +332,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Validation_Range_Maximum__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Validation_Range_Maximum__c, [ampi__Project_Indicator__c].ampi__Validation_Range_Maximum__c  )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_34_myRule_1_A1_6473781754</name>
+        <name>formula_33_myRule_1_A1_2427363851</name>
         <dataType>Number</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Validation_Range_Maximum__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Validation_Range_Maximum__c}, {!myVariable_current.ampi__Validation_Range_Maximum__c}  )</expression>
         <scale>18</scale>
@@ -355,7 +344,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Validation_Range_Minimum__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Validation_Range_Minimum__c , [ampi__Project_Indicator__c].ampi__Validation_Range_Minimum__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_35_myRule_1_A1_0467915372</name>
+        <name>formula_34_myRule_1_A1_7216470550</name>
         <dataType>Number</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Validation_Range_Minimum__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Validation_Range_Minimum__c} , {!myVariable_current.ampi__Validation_Range_Minimum__c} )</expression>
         <scale>18</scale>
@@ -367,7 +356,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Yellow_Green_Threshold__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Yellow_Green_Threshold__c*100 , [ampi__Project_Indicator__c].ampi__Yellow_Green_Threshold__c*100 )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_36_myRule_1_A1_7136140756</name>
+        <name>formula_35_myRule_1_A1_5787991492</name>
         <dataType>Number</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Yellow_Green_Threshold__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Yellow_Green_Threshold__c}*100 , {!myVariable_current.ampi__Yellow_Green_Threshold__c}*100 )</expression>
         <scale>18</scale>
@@ -376,12 +365,12 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(ISBLANK(TEXT([ampi__Project_Indicator__c].ampi__Calculate_Total__c )), TEXT([ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Calculate_Total__c ), TEXT([ampi__Project_Indicator__c].ampi__Calculate_Total__c ))</stringValue>
+                <stringValue>$User.Id </stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_3_myRule_1_A1_9023858097</name>
+        <name>formula_36_myRule_1_A1_4058289764</name>
         <dataType>String</dataType>
-        <expression>IF(ISBLANK(TEXT({!myVariable_current.ampi__Calculate_Total__c} )), TEXT({!myVariable_current.ampi__Catalog_Indicator__r.ampi__Calculate_Total__c} ), TEXT({!myVariable_current.ampi__Calculate_Total__c} ))</expression>
+        <expression>{!$User.Id}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -390,7 +379,7 @@
                 <stringValue>OR([ampi__Project_Indicator__c].ampi__Cross_Disaggregation_by_Sex__c , [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Cross_Disaggregation_by_Sex__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_4_myRule_1_A1_7441223194</name>
+        <name>formula_3_myRule_1_A1_0833197836</name>
         <dataType>Boolean</dataType>
         <expression>OR({!myVariable_current.ampi__Cross_Disaggregation_by_Sex__c} , {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Cross_Disaggregation_by_Sex__c} )</expression>
     </formulas>
@@ -401,7 +390,7 @@
                 <stringValue>OR([ampi__Project_Indicator__c].ampi__Cumulative__c , [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Cumulative__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_5_myRule_1_A1_8430973241</name>
+        <name>formula_4_myRule_1_A1_3733796847</name>
         <dataType>Boolean</dataType>
         <expression>OR({!myVariable_current.ampi__Cumulative__c} , {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Cumulative__c} )</expression>
     </formulas>
@@ -412,7 +401,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Data_Source_Language_1__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Data_Source_Language_1__c , [ampi__Project_Indicator__c].ampi__Data_Source_Language_1__c  )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_6_myRule_1_A1_3125972303</name>
+        <name>formula_5_myRule_1_A1_4193343258</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Data_Source_Language_1__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Data_Source_Language_1__c} , {!myVariable_current.ampi__Data_Source_Language_1__c}  )</expression>
     </formulas>
@@ -423,7 +412,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Data_Source_Language_2__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Data_Source_Language_2__c , [ampi__Project_Indicator__c].ampi__Data_Source_Language_2__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_7_myRule_1_A1_3084898642</name>
+        <name>formula_6_myRule_1_A1_5044848150</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Data_Source_Language_2__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Data_Source_Language_2__c} , {!myVariable_current.ampi__Data_Source_Language_2__c} )</expression>
     </formulas>
@@ -434,7 +423,7 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Data_Source_Language_3__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Data_Source_Language_3__c , [ampi__Project_Indicator__c].ampi__Data_Source_Language_3__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_8_myRule_1_A1_8883689056</name>
+        <name>formula_7_myRule_1_A1_1750960792</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Data_Source_Language_3__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Data_Source_Language_3__c} , {!myVariable_current.ampi__Data_Source_Language_3__c} )</expression>
     </formulas>
@@ -445,11 +434,22 @@
                 <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Data_Source__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Data_Source__c , [ampi__Project_Indicator__c].ampi__Data_Source__c )</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_9_myRule_1_A1_9499210622</name>
+        <name>formula_8_myRule_1_A1_9635165649</name>
         <dataType>String</dataType>
         <expression>IF(ISBLANK({!myVariable_current.ampi__Data_Source__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Data_Source__c} , {!myVariable_current.ampi__Data_Source__c} )</expression>
     </formulas>
-    <interviewLabel>Test-2_InterviewLabel</interviewLabel>
+    <formulas>
+        <processMetadataValues>
+            <name>originalFormula</name>
+            <value>
+                <stringValue>IF(ISBLANK([ampi__Project_Indicator__c].ampi__Description_Language_1__c ), [ampi__Project_Indicator__c].ampi__Catalog_Indicator__c.ampi__Description_Language_1__c , [ampi__Project_Indicator__c].ampi__Description_Language_1__c )</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>formula_9_myRule_1_A1_6564114243</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!myVariable_current.ampi__Description_Language_1__c} ), {!myVariable_current.ampi__Catalog_Indicator__r.ampi__Description_Language_1__c} , {!myVariable_current.ampi__Description_Language_1__c} )</expression>
+    </formulas>
+    <interviewLabel>Test-3_InterviewLabel</interviewLabel>
     <isTemplate>true</isTemplate>
     <label>New PB Indicator Field Values Onto Project Indicator</label>
     <processMetadataValues>
@@ -506,9 +506,6 @@
         <label>Copy Indicator field values into Project Indicators fields</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
-        <connector>
-            <targetReference>myRule_1_A2</targetReference>
-        </connector>
         <filterLogic>and</filterLogic>
         <filters>
             <processMetadataValues>
@@ -592,7 +589,7 @@
             </processMetadataValues>
             <field>ampi__Calculate_Total__c</field>
             <value>
-                <elementReference>formula_3_myRule_1_A1_9023858097</elementReference>
+                <elementReference>formula_2_myRule_1_A1_8312689958</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -628,7 +625,7 @@
             </processMetadataValues>
             <field>ampi__Cross_Disaggregation_by_Sex__c</field>
             <value>
-                <elementReference>formula_4_myRule_1_A1_7441223194</elementReference>
+                <elementReference>formula_3_myRule_1_A1_0833197836</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -664,7 +661,7 @@
             </processMetadataValues>
             <field>ampi__Cumulative__c</field>
             <value>
-                <elementReference>formula_5_myRule_1_A1_8430973241</elementReference>
+                <elementReference>formula_4_myRule_1_A1_3733796847</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -700,7 +697,7 @@
             </processMetadataValues>
             <field>ampi__Data_Source_Language_1__c</field>
             <value>
-                <elementReference>formula_6_myRule_1_A1_3125972303</elementReference>
+                <elementReference>formula_5_myRule_1_A1_4193343258</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -736,7 +733,7 @@
             </processMetadataValues>
             <field>ampi__Data_Source_Language_2__c</field>
             <value>
-                <elementReference>formula_7_myRule_1_A1_3084898642</elementReference>
+                <elementReference>formula_6_myRule_1_A1_5044848150</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -772,7 +769,7 @@
             </processMetadataValues>
             <field>ampi__Data_Source_Language_3__c</field>
             <value>
-                <elementReference>formula_8_myRule_1_A1_8883689056</elementReference>
+                <elementReference>formula_7_myRule_1_A1_1750960792</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -808,7 +805,7 @@
             </processMetadataValues>
             <field>ampi__Data_Source__c</field>
             <value>
-                <elementReference>formula_9_myRule_1_A1_9499210622</elementReference>
+                <elementReference>formula_8_myRule_1_A1_9635165649</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -844,7 +841,7 @@
             </processMetadataValues>
             <field>ampi__Description_Language_1__c</field>
             <value>
-                <elementReference>formula_10_myRule_1_A1_5934972818</elementReference>
+                <elementReference>formula_9_myRule_1_A1_6564114243</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -880,7 +877,7 @@
             </processMetadataValues>
             <field>ampi__Description_Language_2__c</field>
             <value>
-                <elementReference>formula_11_myRule_1_A1_8596607202</elementReference>
+                <elementReference>formula_10_myRule_1_A1_8254774571</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -916,7 +913,7 @@
             </processMetadataValues>
             <field>ampi__Description_Language_3__c</field>
             <value>
-                <elementReference>formula_12_myRule_1_A1_9431038067</elementReference>
+                <elementReference>formula_11_myRule_1_A1_7620499085</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -952,7 +949,7 @@
             </processMetadataValues>
             <field>ampi__Description__c</field>
             <value>
-                <elementReference>formula_13_myRule_1_A1_4903108626</elementReference>
+                <elementReference>formula_12_myRule_1_A1_9978537367</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -988,7 +985,7 @@
             </processMetadataValues>
             <field>ampi__Disaggregation_Group_Language_1__c</field>
             <value>
-                <elementReference>formula_14_myRule_1_A1_2424920466</elementReference>
+                <elementReference>formula_13_myRule_1_A1_1581336686</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1024,7 +1021,7 @@
             </processMetadataValues>
             <field>ampi__Disaggregation_Group_Language_2__c</field>
             <value>
-                <elementReference>formula_15_myRule_1_A1_2340543566</elementReference>
+                <elementReference>formula_14_myRule_1_A1_3731312741</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1060,7 +1057,7 @@
             </processMetadataValues>
             <field>ampi__Disaggregation_Group_Language_3__c</field>
             <value>
-                <elementReference>formula_16_myRule_1_A1_1001672030</elementReference>
+                <elementReference>formula_15_myRule_1_A1_1841043976</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1096,7 +1093,7 @@
             </processMetadataValues>
             <field>ampi__Disaggregation_Group__c</field>
             <value>
-                <elementReference>formula_17_myRule_1_A1_9129588724</elementReference>
+                <elementReference>formula_16_myRule_1_A1_6033860225</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1132,7 +1129,7 @@
             </processMetadataValues>
             <field>ampi__Exclude_From_IATI__c</field>
             <value>
-                <elementReference>formula_18_myRule_1_A1_8955884329</elementReference>
+                <elementReference>formula_17_myRule_1_A1_3061406570</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1168,7 +1165,7 @@
             </processMetadataValues>
             <field>ampi__Geographical_Disaggregation__c</field>
             <value>
-                <elementReference>formula_19_myRule_1_A1_6786007533</elementReference>
+                <elementReference>formula_18_myRule_1_A1_2995186253</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1204,7 +1201,7 @@
             </processMetadataValues>
             <field>ampi__Guideline_Language_1__c</field>
             <value>
-                <elementReference>formula_20_myRule_1_A1_6335106762</elementReference>
+                <elementReference>formula_19_myRule_1_A1_4660839839</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1240,7 +1237,7 @@
             </processMetadataValues>
             <field>ampi__Guideline_Language_2__c</field>
             <value>
-                <elementReference>formula_21_myRule_1_A1_6476681386</elementReference>
+                <elementReference>formula_20_myRule_1_A1_7296640332</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1276,7 +1273,7 @@
             </processMetadataValues>
             <field>ampi__Guideline_Language_3__c</field>
             <value>
-                <elementReference>formula_22_myRule_1_A1_2360570783</elementReference>
+                <elementReference>formula_21_myRule_1_A1_4505618461</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1312,7 +1309,7 @@
             </processMetadataValues>
             <field>ampi__Guideline__c</field>
             <value>
-                <elementReference>formula_23_myRule_1_A1_3233909920</elementReference>
+                <elementReference>formula_22_myRule_1_A1_8113273523</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1348,7 +1345,7 @@
             </processMetadataValues>
             <field>ampi__Notes__c</field>
             <value>
-                <elementReference>formula_24_myRule_1_A1_9954561432</elementReference>
+                <elementReference>formula_23_myRule_1_A1_3256965696</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1384,7 +1381,7 @@
             </processMetadataValues>
             <field>ampi__Number_of_Decimals_Places_Allowed__c</field>
             <value>
-                <elementReference>formula_25_myRule_1_A1_0289156361</elementReference>
+                <elementReference>formula_24_myRule_1_A1_2925275052</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1420,7 +1417,7 @@
             </processMetadataValues>
             <field>ampi__Red_Yellow_Threshold__c</field>
             <value>
-                <elementReference>formula_26_myRule_1_A1_8279062884</elementReference>
+                <elementReference>formula_25_myRule_1_A1_9993076175</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1456,7 +1453,7 @@
             </processMetadataValues>
             <field>ampi__Reporting_Frequency__c</field>
             <value>
-                <elementReference>formula_27_myRule_1_A1_0639212952</elementReference>
+                <elementReference>formula_26_myRule_1_A1_2540503796</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1492,7 +1489,7 @@
             </processMetadataValues>
             <field>ampi__Targets_Are_Disaggregated__c</field>
             <value>
-                <elementReference>formula_28_myRule_1_A1_4358022110</elementReference>
+                <elementReference>formula_27_myRule_1_A1_0198561507</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1528,7 +1525,7 @@
             </processMetadataValues>
             <field>ampi__Type_of_Results__c</field>
             <value>
-                <elementReference>formula_29_myRule_1_A1_8637269557</elementReference>
+                <elementReference>formula_28_myRule_1_A1_7699957416</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1564,7 +1561,7 @@
             </processMetadataValues>
             <field>ampi__Units_Language_1__c</field>
             <value>
-                <elementReference>formula_30_myRule_1_A1_0755112866</elementReference>
+                <elementReference>formula_29_myRule_1_A1_0046606183</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1600,7 +1597,7 @@
             </processMetadataValues>
             <field>ampi__Units_Language_2__c</field>
             <value>
-                <elementReference>formula_31_myRule_1_A1_6685495598</elementReference>
+                <elementReference>formula_30_myRule_1_A1_5450996798</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1636,7 +1633,7 @@
             </processMetadataValues>
             <field>ampi__Units_Language_3__c</field>
             <value>
-                <elementReference>formula_32_myRule_1_A1_3475429979</elementReference>
+                <elementReference>formula_31_myRule_1_A1_7004012805</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1672,7 +1669,7 @@
             </processMetadataValues>
             <field>ampi__Units__c</field>
             <value>
-                <elementReference>formula_33_myRule_1_A1_0887069025</elementReference>
+                <elementReference>formula_32_myRule_1_A1_0869405662</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1708,7 +1705,7 @@
             </processMetadataValues>
             <field>ampi__Validation_Range_Maximum__c</field>
             <value>
-                <elementReference>formula_34_myRule_1_A1_6473781754</elementReference>
+                <elementReference>formula_33_myRule_1_A1_2427363851</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1744,7 +1741,7 @@
             </processMetadataValues>
             <field>ampi__Validation_Range_Minimum__c</field>
             <value>
-                <elementReference>formula_35_myRule_1_A1_0467915372</elementReference>
+                <elementReference>formula_34_myRule_1_A1_7216470550</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -1780,54 +1777,9 @@
             </processMetadataValues>
             <field>ampi__Yellow_Green_Threshold__c</field>
             <value>
-                <elementReference>formula_36_myRule_1_A1_7136140756</elementReference>
+                <elementReference>formula_35_myRule_1_A1_5787991492</elementReference>
             </value>
         </inputAssignments>
-        <object>ampi__Project_Indicator__c</object>
-    </recordUpdates>
-    <recordUpdates>
-        <processMetadataValues>
-            <name>evaluationType</name>
-            <value>
-                <stringValue>always</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>extraTypeInfo</name>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>isChildRelationship</name>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>reference</name>
-            <value>
-                <stringValue>[ampi__Project_Indicator__c]</stringValue>
-            </value>
-        </processMetadataValues>
-        <processMetadataValues>
-            <name>referenceTargetField</name>
-        </processMetadataValues>
-        <name>myRule_1_A2</name>
-        <label>Responsible Person</label>
-        <locationX>100</locationX>
-        <locationY>300</locationY>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <processMetadataValues>
-                <name>implicit</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </processMetadataValues>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </filters>
         <inputAssignments>
             <processMetadataValues>
                 <name>dataType</name>
@@ -1861,7 +1813,7 @@
             </processMetadataValues>
             <field>responsiblePerson__c</field>
             <value>
-                <elementReference>formula_2_myRule_1_A2_9532870281</elementReference>
+                <elementReference>formula_36_myRule_1_A1_4058289764</elementReference>
             </value>
         </inputAssignments>
         <object>ampi__Project_Indicator__c</object>

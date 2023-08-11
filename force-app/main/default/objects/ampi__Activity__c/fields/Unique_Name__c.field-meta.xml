@@ -11,7 +11,7 @@ IF(TEXT(ampi__Type__c) == &apos;Results-Based&apos;,
 IF(TEXT(ampi__Type__c) == &apos;Overarching&apos;,  
     IF (ampi__Parent_Activity__c &lt;&gt; &apos;&apos;, 
         (ampi__Parent_Activity__r.Order_ID__c + &apos;_&apos; + Order_ID__c),
-							  Order_ID__c), &apos;&apos;)</formula>
+							  Order_ID__c), &apos;NT_&apos; + Order_ID__c)</formula>
     <label>Unique Name</label>
     <required>false</required>
     <trackTrending>false</trackTrending>

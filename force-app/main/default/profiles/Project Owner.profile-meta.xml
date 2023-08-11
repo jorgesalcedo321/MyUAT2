@@ -639,7 +639,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>activityExtension</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>activityExtensionTest</apexClass>
@@ -647,7 +647,7 @@
     </classAccesses>
     <classAccesses>
         <apexClass>agreementQueries</apexClass>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>agreementQueriesTest</apexClass>
@@ -5593,11 +5593,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ampi__Project__c.International_Director_Approver__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ampi__Project__c.International_Funding_Required_for_Imp__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

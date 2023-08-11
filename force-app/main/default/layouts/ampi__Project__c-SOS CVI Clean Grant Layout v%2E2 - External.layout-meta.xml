@@ -8,6 +8,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
+                <field>International_Funding_Required_for_Imp__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
@@ -515,6 +519,9 @@
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
+    <miniLayout>
+        <fields>International_Funding_Required_for_Imp__c</fields>
+    </miniLayout>
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>

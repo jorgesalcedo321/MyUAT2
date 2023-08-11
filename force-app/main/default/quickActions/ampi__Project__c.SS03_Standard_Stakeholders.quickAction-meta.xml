@@ -14,7 +14,7 @@
             <quickActionLayoutItems>
                 <emptySpace>false</emptySpace>
                 <field>International_Funding_Required_for_Imp__c</field>
-                <uiBehavior>Edit</uiBehavior>
+                <uiBehavior>Required</uiBehavior>
             </quickActionLayoutItems>
         </quickActionLayoutColumns>
         <quickActionLayoutColumns>

@@ -6,7 +6,7 @@
     <externalId>false</externalId>
     <inlineHelpText>Specify if the project requires additional international funding for it&apos;s implementation</inlineHelpText>
     <label>International Funding Required?</label>
-    <required>false</required>
+    <required>true</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>true</trackHistory>
     <type>Picklist</type>
@@ -16,7 +16,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>Yes</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>Yes</label>
             </value>
             <value>
